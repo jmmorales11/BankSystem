@@ -1,0 +1,13 @@
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\bin\Debug\netstandard2.0\SLC.deps.json
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\bin\Debug\netstandard2.0\SLC.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\bin\Debug\netstandard2.0\SLC.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.AssemblyInfo.cs
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.Up2Date
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.pdb

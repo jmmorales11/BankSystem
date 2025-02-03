@@ -1,0 +1,16 @@
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\BLL.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\BLL.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\DAL.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\EntityFramework.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\DAL.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\EntityFramework.xml
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\obj\Debug\BLL.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\obj\Debug\BLL.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\SLC.dll
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\SLC.pdb
+C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\DAL.dll.config

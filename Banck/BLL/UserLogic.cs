@@ -22,5 +22,24 @@ namespace BLL
             }
 
         }
+
+        public User Authenticate(string email, string password)
+        {
+            using (var r = RepositoryFactory.CreateRepository())
+            {
+                // Recuperar el usuario por correo electrónico y contraseña
+                User user = r.Retrieve<User>(u => u.email == email && u.password == password);
+
+                if (user == null)
+                {
+                    throw new System.UnauthorizedAccessException("Credenciales incorrectas.");
+                }
+
+                return user; // Usuario autenticado correctamente
+            }
+        }
+
+
+
     }
 }

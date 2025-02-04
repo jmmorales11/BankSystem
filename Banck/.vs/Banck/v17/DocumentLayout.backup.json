@@ -3,23 +3,59 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\service\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\service\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\service\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\service\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\sl\\authentication\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|solutionrelative:sl\\authentication\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\service\\models\\verifycoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\models\\verifycoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\service\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\service\\models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\models\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\sl\\authentication\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|solutionrelative:sl\\authentication\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\sl\\authorization\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|solutionrelative:sl\\authorization\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\sl\\sl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|solutionrelative:sl\\sl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\sl\\authentication\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|solutionrelative:sl\\authentication\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|c:\\users\\asus tuf a15\\source\\repos\\banck\\sl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{272E331E-5AA8-4B4C-BB31-893908C9B229}|SL\\SL.csproj|solutionrelative:sl\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\service\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -30,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,47 +93,168 @@
               "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "EmailRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Models\\EmailRequest.cs",
+              "RelativeDocumentMoniker": "Service\\Models\\EmailRequest.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Models\\EmailRequest.cs",
+              "RelativeToolTip": "Service\\Models\\EmailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:54:11.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VerifyCodeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Models\\VerifyCodeRequest.cs",
+              "RelativeDocumentMoniker": "Service\\Models\\VerifyCodeRequest.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Models\\VerifyCodeRequest.cs",
+              "RelativeToolTip": "Service\\Models\\VerifyCodeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:53:47.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Service\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "Service\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:49:05.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authorization\\JwtService.cs",
+              "RelativeDocumentMoniker": "SL\\Authorization\\JwtService.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authorization\\JwtService.cs",
+              "RelativeToolTip": "SL\\Authorization\\JwtService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwCMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:31:37.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authentication\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "SL\\Authentication\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authentication\\PasswordHasher.cs",
+              "RelativeToolTip": "SL\\Authentication\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:29:42.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authentication\\EmailService.cs",
+              "RelativeDocumentMoniker": "SL\\Authentication\\EmailService.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authentication\\EmailService.cs",
+              "RelativeToolTip": "SL\\Authentication\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:28:50.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authentication\\IEmailService.cs",
+              "RelativeDocumentMoniker": "SL\\Authentication\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Authentication\\IEmailService.cs",
+              "RelativeToolTip": "SL\\Authentication\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:28:04.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SL.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\SL.csproj",
+              "RelativeDocumentMoniker": "SL\\SL.csproj",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\SL.csproj",
+              "RelativeToolTip": "SL\\SL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-04T16:27:08.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Class1.cs",
+              "RelativeDocumentMoniker": "SL\\Class1.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\SL\\Class1.cs",
+              "RelativeToolTip": "SL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T16:26:14.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Entities\\User.cs",
               "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Entities\\User.cs",
               "RelativeToolTip": "Entities\\User.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAmwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T04:44:31.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserLogic.cs",
               "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\BLL\\UserLogic.cs",
               "RelativeDocumentMoniker": "BLL\\UserLogic.cs",
               "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\BLL\\UserLogic.cs",
               "RelativeToolTip": "BLL\\UserLogic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T04:44:16.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Service\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Controllers\\UserController.cs",
               "RelativeToolTip": "Service\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAIwDoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T04:40:45.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "WebApiConfig.cs",
               "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\App_Start\\WebApiConfig.cs",
               "RelativeDocumentMoniker": "Service\\App_Start\\WebApiConfig.cs",
@@ -110,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\Banck\\Service\\Web.config",
               "RelativeDocumentMoniker": "Service\\Web.config",

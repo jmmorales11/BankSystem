@@ -11,6 +11,7 @@ using Service.Models;
 using System.Threading.Tasks;
 using SL.Authentication;
 using SL.Authorization;
+using Entities.DTOs;
 
 namespace Service.Controllers
 {
@@ -28,33 +29,47 @@ namespace Service.Controllers
 
         private static Dictionary<string, User> PendingRegistrations = new Dictionary<string, User>();
 
+ 
+        //Envia el codigo de verificación
         [HttpPost]
         public async Task<IHttpActionResult> CreateUser([FromBody] User newUser)
         {
             var BL = new UserLogic();
 
-            // Verificar si el usuario ya existe
-            //var existingUser = BL.GetUserByEmail(newUser.Email);
-            //if (existingUser != null)
-            //{
-            //    return Content(HttpStatusCode.Conflict, new { Message = "El usuario ya existe." });
-            //}
+            try
+            {
+                // Validar que el usuario no exista y que la contraseña sea segura
+                BL.validateExistingUserAndPasswordSecure(newUser);
 
-            // Generar código de verificación
-            string verificationCode = new Random().Next(100000, 999999).ToString();
+                // Generar código de verificación
+                string verificationCode = new Random().Next(100000, 999999).ToString();
 
-            // Guardar el código y los datos del usuario en memoria
-            VerificationCodes[newUser.email] = verificationCode;
-            PendingRegistrations[newUser.email] = newUser;
+                // Guardar el código y los datos del usuario en memoria
+                VerificationCodes[newUser.email] = verificationCode;
+                PendingRegistrations[newUser.email] = newUser;
 
-            // Enviar el código por correo electrónico
-            string subject = "Código de verificación para registro";
-            string body = $"Tu código de verificación es: <strong>{verificationCode}</strong>";
-            await _emailService.SendEmailAsync(newUser.email, subject, body);
+                // Enviar el código por correo electrónico
+                string subject = "Código de verificación para registro";
+                string body = $"Tu código de verificación es: <strong>{verificationCode}</strong>";
+                await _emailService.SendEmailAsync(newUser.email, subject, body);
 
-            return Ok(new { Message = "Se ha enviado un código de verificación al correo. Ingresa el código para completar el registro." });
+                // Crear la respuesta con el mensaje y el usuario
+                var response = new UserCreationResponse
+                {
+                    User = newUser,
+                    Message = "Se ha enviado un código de verificación al correo. Ingresa el código para completar el registro."
+                };
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message); 
+            }
         }
 
+
+        //Verifica el código que se envió
         [HttpPost]
         public IHttpActionResult VerifyAndCreateUser([FromBody] VerifyCodeRequest verifyRequest)
         {

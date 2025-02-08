@@ -11,3 +11,17 @@ C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj
 C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.Up2Date
 C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.dll
 C:\Users\ASUS TUF A15\source\repos\Banck\SLC\obj\Debug\netstandard2.0\SLC.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\bin\Debug\netstandard2.0\SLC.deps.json
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\bin\Debug\netstandard2.0\SLC.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\bin\Debug\netstandard2.0\SLC.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\bin\Debug\netstandard2.0\Entities.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\bin\Debug\netstandard2.0\Entities.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.AssemblyReference.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.GeneratedMSBuildEditorConfig.editorconfig
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.AssemblyInfoInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.AssemblyInfo.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.CoreCompileInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.sourcelink.json
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.csproj.Up2Date
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\obj\Debug\netstandard2.0\SLC.pdb

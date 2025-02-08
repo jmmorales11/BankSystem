@@ -7,7 +7,7 @@
     <Property Name="alert_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="user_id" Type="Int32" Nullable="false" />
     <Property Name="alert_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="alert_time" Type="DateTime" />
+    <Property Name="alert_time" Type="DateTime" Precision="3" />
     <Property Name="email_sent" Type="Boolean" Nullable="false" />
     <Property Name="details" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="User" Relationship="Self.FK__Alert__user_id__3C69FB99" FromRole="Alert" ToRole="User" />
@@ -18,11 +18,11 @@
     </Key>
     <Property Name="amortization_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="installment_number" Type="Int32" Nullable="false" />
-    <Property Name="due_date" Type="DateTime" Nullable="false" />
+    <Property Name="due_date" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="remaining_balance" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="principal" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="loan_id" Type="Int32" Nullable="false" />
-    <Property Name="payment_date" Type="DateTime" />
+    <Property Name="payment_date" Type="DateTime" Precision="0" />
     <Property Name="payment_amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="penalty_interest" Type="Decimal" Precision="10" Scale="2" />
     <NavigationProperty Name="Loan" Relationship="Self.FK__Amortizat__loan___49C3F6B7" FromRole="Amortization" ToRole="Loan" />
@@ -35,7 +35,7 @@
     <Property Name="requested_amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="interest_rate" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
     <Property Name="payment_term_months" Type="Int32" Nullable="false" />
-    <Property Name="application_date" Type="DateTime" />
+    <Property Name="application_date" Type="DateTime" Precision="0" />
     <Property Name="status" Type="Byte" Nullable="false" />
     <Property Name="user_id" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Amortizations" Relationship="Self.FK__Amortizat__loan___49C3F6B7" FromRole="Loan" ToRole="Amortization" />
@@ -48,7 +48,7 @@
     <Property Name="log_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="user_id" Type="Int32" Nullable="false" />
     <Property Name="event_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="event_time" Type="DateTime" />
+    <Property Name="event_time" Type="DateTime" Precision="3" />
     <Property Name="ip_address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
     <Property Name="description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="User" Relationship="Self.FK__Log__user_id__403A8C7D" FromRole="Log" ToRole="User" />
@@ -60,15 +60,15 @@
     <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="first_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="last_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="birth_date" Type="DateTime" Nullable="false" />
+    <Property Name="birth_date" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
     <Property Name="email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="role" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="password" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="registration_date" Type="DateTime" />
-    <Property Name="account_locked_until" Type="DateTime" />
+    <Property Name="registration_date" Type="DateTime" Precision="3" />
+    <Property Name="account_locked_until" Type="DateTime" Precision="0" />
     <Property Name="failed_login_attempts" Type="Int32" />
-    <Property Name="status" Type="Byte" Nullable="false" />
+    <Property Name="status" Type="Byte" />
     <NavigationProperty Name="Alerts" Relationship="Self.FK__Alert__user_id__3C69FB99" FromRole="User" ToRole="Alert" />
     <NavigationProperty Name="Loans" Relationship="Self.FK__Loan__user_id__46E78A0C" FromRole="User" ToRole="Loan" />
     <NavigationProperty Name="Logs" Relationship="Self.FK__Log__user_id__403A8C7D" FromRole="User" ToRole="Log" />

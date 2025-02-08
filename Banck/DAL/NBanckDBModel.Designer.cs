@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\ASUS TUF A15\source\repos\Banck\DAL\NBanckDBModel.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\NBanckDBModel.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

@@ -8,3 +8,14 @@ C:\Users\ASUS TUF A15\source\repos\Banck\Entities\obj\Debug\netstandard2.0\Entit
 C:\Users\ASUS TUF A15\source\repos\Banck\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
 C:\Users\ASUS TUF A15\source\repos\Banck\Entities\obj\Debug\netstandard2.0\Entities.dll
 C:\Users\ASUS TUF A15\source\repos\Banck\Entities\obj\Debug\netstandard2.0\Entities.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\bin\Debug\netstandard2.0\Entities.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\bin\Debug\netstandard2.0\Entities.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.sourcelink.json
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.pdb

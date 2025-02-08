@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Verify and Create User";
+}
+
+<h2>Verificar y Completar Registro</h2>
+
+<!-- Mensajes de éxito y error -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="notification" class="notification success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div id="notification" class="notification error">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="form-container">
+    <h3>Ingresa el código de verificación que te fue enviado al correo</h3>
+    <form id="verifyCodeForm" method="post" action="@Url.Action("VerifyAndCreateUser", "User")">
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control minimal-input" required />
+        </div>
+
+        <div class="form-group">
+            <label for="verificationCode">Código de Verificación:</label>
+            <input type="text" id="verificationCode" name="code" class="form-control minimal-input" required />
+        </div>
+
+        <button type="submit" class="btn minimal-btn">Verificar y Completar Registro</button>
+    </form>
+
+    <div id="resultMessage" style="margin-top: 15px;"></div>
+</div>
+
+<script>
+    // Código para manejar el resultado de la verificación
+    document.getElementById("verifyCodeForm").onsubmit = function (event) {
+        event.preventDefault(); // Prevenir el envío estándar del formulario
+
+        const email = document.getElementById("email").value;
+        const code = document.getElementById("verificationCode").value;
+
+        // Realizar la verificación mediante el Proxy (AJAX o Fetch)
+        fetch('@Url.Action("VerifyAndCreateUser", "User")', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email, code: code })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.Message) {
+                    // Mostrar mensaje de éxito o error
+                    document.getElementById("resultMessage").innerText = data.Message;
+                    if (data.Message === "Usuario creado correctamente") {
+                        document.getElementById("resultMessage").style.color = "green";
+                    } else {
+                        document.getElementById("resultMessage").style.color = "red";
+                    }
+                }
+            })
+            .catch(error => {
+                document.getElementById("resultMessage").innerText = "Error al verificar el código.";
+                document.getElementById("resultMessage").style.color = "red";
+            });
+    };
+</script>

@@ -117,7 +117,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="..\Entities\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{8feb840b-bf8d-4c67-b296-9d2d982e95b5}</Project>

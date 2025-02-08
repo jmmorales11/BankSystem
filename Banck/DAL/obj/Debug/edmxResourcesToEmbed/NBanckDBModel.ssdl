@@ -63,7 +63,7 @@
     <Property Name="registration_date" Type="datetime" />
     <Property Name="account_locked_until" Type="date" />
     <Property Name="failed_login_attempts" Type="int" />
-    <Property Name="status" Type="tinyint" Nullable="false" />
+    <Property Name="status" Type="tinyint" />
   </EntityType>
   <EntityType Name="User_Data">
     <Key>

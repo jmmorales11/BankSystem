@@ -34,7 +34,7 @@ namespace Entities
         public Nullable<System.DateTime> registration_date { get; set; }
         public Nullable<System.DateTime> account_locked_until { get; set; }
         public Nullable<int> failed_login_attempts { get; set; }
-        public byte status { get; set; }
+        public Nullable<byte> status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Alert> Alerts { get; set; }

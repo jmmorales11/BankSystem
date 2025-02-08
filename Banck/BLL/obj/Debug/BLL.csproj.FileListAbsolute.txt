@@ -14,3 +14,19 @@ C:\Users\ASUS TUF A15\source\repos\Banck\BLL\obj\Debug\BLL.pdb
 C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\SLC.dll
 C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\SLC.pdb
 C:\Users\ASUS TUF A15\source\repos\Banck\BLL\bin\Debug\DAL.dll.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\BLL.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\BLL.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\DAL.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\Entities.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\SLC.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\EntityFramework.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\DAL.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\DAL.dll.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\Entities.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\SLC.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\bin\Debug\EntityFramework.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\obj\Debug\BLL.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\obj\Debug\BLL.pdb

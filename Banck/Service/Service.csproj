@@ -154,7 +154,6 @@
     </Compile>
     <Compile Include="Models\EmailRequest.cs" />
     <Compile Include="Models\LoginRequest.cs" />
-    <Compile Include="Models\VerifyCodeRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

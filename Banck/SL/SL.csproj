@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Logger\" />
+    <Compile Remove="Logger\**" />
+    <EmbeddedResource Remove="Logger\**" />
+    <None Remove="Logger\**" />
   </ItemGroup>
 
   <ItemGroup>

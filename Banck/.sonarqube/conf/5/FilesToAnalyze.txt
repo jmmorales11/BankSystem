@@ -1,0 +1,11 @@
+﻿C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\App_Start\WebApiConfig.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Controllers\UserController.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Global.asax.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Models\EmailRequest.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Models\LoginRequest.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Properties\AssemblyInfo.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Global.asax
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Web.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\packages.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Web.Debug.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Web.Release.config

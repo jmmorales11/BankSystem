@@ -1,1 +1,1 @@
-lRMC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SLC\SLC.csproj¢netstandard2.0ò	CSharp7_3
+rRSC:\Users\ASUS TUF A15\source\repos\Taller1Seguridad\BankSystem\Banck\SLC\SLC.csproj¢netstandard2.0ò	CSharp7_3

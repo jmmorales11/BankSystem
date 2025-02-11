@@ -1,1 +1,1 @@
-mR_C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Presentation.csprojò	CSharp7_3
+sReC:\Users\ASUS TUF A15\source\repos\Taller1Seguridad\BankSystem\Banck\Presentation\Presentation.csprojò	CSharp7_3

@@ -1,1 +1,1 @@
-_RQC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\Proxy.csprojò	CSharp7_3
+eRWC:\Users\ASUS TUF A15\source\repos\Taller1Seguridad\BankSystem\Banck\Proxy\Proxy.csprojò	CSharp7_3

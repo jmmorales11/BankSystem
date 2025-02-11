@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/SL/Authorization/JwtService.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/SL/Authorization/JwtService.cs",
                 "region": {
                   "startLine": 49,
                   "startColumn": 30,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/SL/Authorization/JwtService.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/SL/Authorization/JwtService.cs",
                 "region": {
                   "startLine": 80,
                   "startColumn": 30,
@@ -54,18 +54,18 @@
           }
         },
         {
-          "ruleId": "S1118",
+          "ruleId": "S2094",
           "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "message": "Remove this empty class, write its code or make it an \"interface\".",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/SL/Authentication/PasswordHasher.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/SL/Class1.cs",
                 "region": {
-                  "startLine": 7,
+                  "startLine": 5,
                   "startColumn": 18,
-                  "endLine": 7,
-                  "endColumn": 32
+                  "endLine": 5,
+                  "endColumn": 24
                 }
               }
             }
@@ -75,18 +75,18 @@
           }
         },
         {
-          "ruleId": "S2094",
+          "ruleId": "S1118",
           "level": "warning",
-          "message": "Remove this empty class, write its code or make it an \"interface\".",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/SL/Class1.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/SL/Authentication/PasswordHasher.cs",
                 "region": {
-                  "startLine": 5,
+                  "startLine": 7,
                   "startColumn": 18,
-                  "endLine": 5,
-                  "endColumn": 24
+                  "endLine": 7,
+                  "endColumn": 32
                 }
               }
             }
@@ -102,7 +102,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/SL/Authentication/EmailService.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/SL/Authentication/EmailService.cs",
                 "region": {
                   "startLine": 15,
                   "startColumn": 30,
@@ -123,7 +123,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/SL/Authentication/EmailService.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/SL/Authentication/EmailService.cs",
                 "region": {
                   "startLine": 22,
                   "startColumn": 36,

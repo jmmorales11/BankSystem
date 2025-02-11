@@ -18,12 +18,54 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 16,
                   "startColumn": 21,
                   "endLine": 16,
                   "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'Create' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/LoanLogic.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 21,
+                  "endLine": 13,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'RetrieveAllLoan' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/LoanLogic.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 27,
+                  "endLine": 28,
+                  "endColumn": 42
                 }
               }
             }
@@ -39,7 +81,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 76,
                   "startColumn": 34,
@@ -52,7 +94,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 78,
                   "startColumn": 21,
@@ -76,7 +118,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 84,
                   "startColumn": 34,
@@ -89,7 +131,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 86,
                   "startColumn": 21,
@@ -113,7 +155,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 64,
                   "startColumn": 22,
@@ -130,11 +172,32 @@
         {
           "ruleId": "S2325",
           "level": "warning",
+          "message": "Make 'RetrieveByIdLoan' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/LoanLogic.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 21,
+                  "endLine": 38,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
           "message": "Make 'Authenticate' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 48,
                   "startColumn": 21,
@@ -155,7 +218,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 38,
                   "startColumn": 27,
@@ -176,7 +239,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 42,
                   "startColumn": 27,
@@ -197,7 +260,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/BLL/UserLogic.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/Taller1Seguridad/BankSystem/Banck/BLL/UserLogic.cs",
                 "region": {
                   "startLine": 71,
                   "startColumn": 18,

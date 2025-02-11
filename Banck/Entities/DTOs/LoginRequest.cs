@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Text;
 
-namespace Service.Models
+namespace Entities.DTOs
 {
     public class LoginRequest
     {

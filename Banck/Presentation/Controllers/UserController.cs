@@ -36,7 +36,7 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateUser(User newUser)
         {
-            var proxy_service = new proxy();
+            var proxy_service = new ProxyUser();
 
             if (ModelState.IsValid)
             {
@@ -46,7 +46,7 @@ namespace Presentation.Controllers
 
                     if (createdUserResponse != null && createdUserResponse.Message != null)
                     {
-                        TempData["SuccessMessage"] = createdUserResponse.Message; 
+                        TempData["SuccessMessage"] = createdUserResponse.Message;
                         return RedirectToAction("VerifyAndCreateUser");
                     }
                 }
@@ -69,7 +69,7 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> VerifyAndCreateUser(string email, string code)
         {
-            var proxy_service = new proxy();
+            var proxy_service = new ProxyUser();
 
             try
             {
@@ -90,6 +90,86 @@ namespace Presentation.Controllers
                 return Json(new { Message = $"Error al verificar el código: {ex.Message}" });
             }
         }
+
+
+        // Mostrar la vista de Login
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        // Enviar el código de verificación para el inicio de sesión
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Login(string email, string password)
+        {
+            var proxy_service = new ProxyUser();
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            {
+                TempData["ErrorMessage"] = "Correo y contraseña son obligatorios.";
+                return View();
+            }
+
+            try
+            {
+                var response = await proxy_service.Login(email, password);
+
+                if (!string.IsNullOrEmpty(response))
+                {
+                    TempData["SuccessMessage"] = response;
+                    TempData["Email"] = email; 
+                    return RedirectToAction("VerifyLoginCode");
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = ex.Message;
+            }
+
+            return View();
+        }
+
+        // Mostrar la vista para verificar el código del login
+        public ActionResult VerifyLoginCode()
+        {
+            ViewBag.Email = TempData["Email"];
+            return View();
+        }
+
+        // Verificar el código de autenticación y completar el inicio de sesión
+        [HttpPost]
+        public async Task<ActionResult> VerifyLoginCode(string email, string code)
+        {
+            var proxy_service = new ProxyUser();
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(code))
+            {
+                return Json(new { Message = "Email y código son obligatorios." });
+            }
+
+            try
+            {
+                var response = await proxy_service.VerifyCode(email, code);
+
+                if (response != null && !string.IsNullOrEmpty(response.Token))
+                {
+                    TempData["SuccessMessage"] = "Inicio de sesión exitoso.";
+                    // Podrías almacenar el token o redirigir al usuario según sea necesario
+                    return Json(new { Message = response.Message, Token = response.Token });
+                }
+                else
+                {
+                    return Json(new { Message = "Código incorrecto o expirado." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { Message = $"Error al verificar el código: {ex.Message}" });
+            }
+        }
+
+
 
     }
 }

@@ -11,7 +11,7 @@ using Service.Models;
 
 namespace Proxy
 {
-    public class proxy : IUserService
+    public class ProxyUser : IUserService
     {
         string BaseAddress = "https://localhost:44314";
 
@@ -102,7 +102,7 @@ namespace Proxy
 
                 if (response != null)
                 {
-                    return response;  
+                    return response;
                 }
                 else
                 {
@@ -114,5 +114,62 @@ namespace Proxy
                 throw new Exception($"Error al verificar el código y crear el usuario: {ex.Message}");
             }
         }
+
+        // Método para iniciar sesión y enviar código de verificación
+        public async Task<string> Login(string email, string password)
+        {
+            var loginRequest = new LoginRequest
+            {
+                Email = email,
+                Password = password
+            };
+
+            try
+            {
+                var response = await SendPost<string, LoginRequest>("/api/User/Login", loginRequest);
+
+                if (!string.IsNullOrEmpty(response))
+                {
+                    return response; // Mensaje del backend
+                }
+                else
+                {
+                    throw new Exception("Error en el inicio de sesión.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al iniciar sesión: {ex.Message}");
+            }
+        }
+
+        // Método para verificar el código de autenticación
+        public async Task<LoginResponse> VerifyCode(string email, string code)
+        {
+            var verifyRequest = new VerifyCodeRequest
+            {
+                Email = email,
+                Code = code
+            };
+
+            try
+            {
+                var response = await SendPost<LoginResponse, VerifyCodeRequest>("/api/User/VerifyCode", verifyRequest);
+
+                if (response != null)
+                {
+                    return response; // Devuelve el token y rol del usuario si el código es válido
+                }
+                else
+                {
+                    throw new Exception("Error al verificar el código de autenticación.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al verificar el código: {ex.Message}");
+            }
+        }
+
     }
 }

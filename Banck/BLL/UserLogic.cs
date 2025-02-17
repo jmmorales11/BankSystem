@@ -14,6 +14,49 @@ namespace BLL
 {
     public class UserLogic
     {
+        public List<User> RetrieveAllUser()
+        {
+            List<User> res = null;
+            using (var r = RepositoryFactory.CreateRepository())
+            {
+                res = r.RetrieveAll<User>();
+            }
+            return res;
+        }
+        public User RetrieveByIdUser(int id)
+        {
+            User res = null;
+            using (var r = RepositoryFactory.CreateRepository())
+            {
+                res = r.Retrieve<User>(p => p.user_id == id);
+            }
+            return res;
+        }
+        public bool Delete(int id)
+        {
+            bool res = false;
+            var user = RetrieveByIdUser(id);
+            if (user != null)
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    res = r.Delete(user);
+                }
+            }
+            return res;
+        }
+        public bool UpdateUser(User user)
+        {
+            bool result = false;
+            using (var r = RepositoryFactory.CreateRepository())
+            {
+                // Llamamos al repositorio para realizar la actualización del usuario
+                result = r.Update(user);
+            }
+            return result;
+        }
+
+
         public User Create(User users)
         {
             User res = null;

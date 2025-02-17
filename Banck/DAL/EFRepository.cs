@@ -20,7 +20,7 @@ namespace DAL
 
             // Crea el DbContext usando la cadena de conexión actualizada
             _dbContext = new DbContext(connectionString);
-            _dbContext.Configuration.LazyLoadingEnabled = true;
+            _dbContext.Configuration.LazyLoadingEnabled = false;
         }
 
         public TEntity Create<TEntity>(TEntity toCreate) where TEntity : class

@@ -8,39 +8,37 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class LoanLogic
+    public class UserDataLogic
     {
-        public Loan Create(Loan loan)
+        public User_Data Create(User_Data users)
         {
-            Loan res = null;
+            User_Data res = null;
             using (var r = RepositoryFactory.CreateRepository())
             {
 
-                loan.application_date = DateTime.Now;
-
-                res = r.Create(loan);
+                res = r.Create(users);
 
                 return res;
             }
 
         }
 
-        public List<Loan> RetrieveAllLoan()
+        public List<User_Data> RetrieveAllUserData()
         {
-            List<Loan> res = null;
+            List<User_Data> res = null;
             using (var r = RepositoryFactory.CreateRepository())
             {
-                res = r.RetrieveAll<Loan>();
+                res = r.RetrieveAll<User_Data>();
             }
             return res;
         }
 
-        public Loan RetrieveByIdLoan(int id)
+        public User_Data RetrieveByIdUserData(int id)
         {
-            Loan res = null;
+            User_Data res = null;
             using (var r = RepositoryFactory.CreateRepository())
             {
-                res = r.Retrieve<Loan>(p => p.loan_id == id);
+                res = r.Retrieve<User_Data>(p => p.user_data_id == id);
             }
             return res;
         }
@@ -48,27 +46,26 @@ namespace BLL
         public bool Delete(int id)
         {
             bool res = false;
-            var loan = RetrieveByIdLoan(id);
-            if (loan!= null)
+            var user = RetrieveByIdUserData(id);
+            if (user != null)
             {
                 using (var r = RepositoryFactory.CreateRepository())
                 {
-                    res = r.Delete(loan);
+                    res = r.Delete(user);
                 }
             }
             return res;
         }
-        public bool UpdateLoan(Loan loan)
+        public bool UpdateUser_Data(User_Data user_Data)
         {
             bool result = false;
             using (var r = RepositoryFactory.CreateRepository())
             {
                 // Actualiza el préstamo y devuelve un booleano indicando si fue exitoso
-                result = r.Update(loan);
+                result = r.Update(user_Data);
             }
             return result;
         }
-
 
     }
 }

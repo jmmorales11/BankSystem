@@ -85,5 +85,35 @@ namespace Service.Controllers
                 return InternalServerError(ex);
             }
         }
+
+
+        [HttpPut]
+        public IHttpActionResult UpdateLoan([FromBody] Loan loan)
+        {
+            if (loan == null)
+            {
+                return BadRequest("Los datos del préstamo no son válidos.");
+            }
+
+            var loanLogic = new LoanLogic();
+            try
+            {
+                // Llamamos a la lógica de negocio para actualizar el préstamo
+                bool updateSuccess = loanLogic.UpdateLoan(loan);
+
+                if (updateSuccess)
+                {
+                    return Ok(new { Message = "Préstamo actualizado exitosamente" });
+                }
+                else
+                {
+                    return Content(HttpStatusCode.NotFound, new { Message = "Préstamo no encontrado o no se pudo actualizar." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex); // Manejo de errores internos
+            }
+        }
     }
 }

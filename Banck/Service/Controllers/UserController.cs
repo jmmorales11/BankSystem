@@ -187,5 +187,114 @@ namespace Service.Controllers
                 return Content(HttpStatusCode.Unauthorized, new { Message = "Código de verificación inválido o expirado." });
             }
         }
+
+
+        ///CRUD DE USUARIOS
+        ///
+
+        [HttpGet]
+        public IHttpActionResult GetAllUsers()
+        {
+            try
+            {
+                var BL = new UserLogic();
+                var users = BL.RetrieveAllUser();
+                if (users == null || !users.Any())
+                {
+                    return Content(HttpStatusCode.NotFound, new { Message = "No se encontraron usuarios." });
+                }
+
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+            }
+        }
+
+        [HttpGet]
+        public IHttpActionResult GetUserById(int id)
+        {
+            try
+            {
+                var BL = new UserLogic();
+                var user = BL.RetrieveByIdUser(id);
+                if (user == null)
+                {
+                    return Content(HttpStatusCode.NotFound, new { Message = "Usuario no encontrado." });
+                }
+
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+            }
+        }
+
+        [HttpDelete]
+        public IHttpActionResult DeleteUser(int id)
+        {
+            try
+            {
+                var BL = new UserLogic();
+                bool deleted = BL.Delete(id);
+                if (!deleted)
+                {
+                    return Content(HttpStatusCode.NotFound, new { Message = "No se pudo eliminar el usuario. Puede que no exista." });
+                }
+
+                return Ok(new { Message = "Usuario eliminado exitosamente." });
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+            }
+        }
+
+        [HttpPut]
+        public IHttpActionResult UpdateUser(int id, [FromBody] User updatedUser)
+        {
+            var BL = new UserLogic();
+
+            try
+            {
+                // Verificar si el usuario existe
+                var existingUser = BL.RetrieveByIdUser(id);
+                if (existingUser == null)
+                {
+                    return Content(HttpStatusCode.NotFound, new { Message = "Usuario no encontrado." });
+                }
+
+                // Actualizar los campos del usuario
+                existingUser.first_name = updatedUser.first_name ?? existingUser.first_name;
+                existingUser.last_name = updatedUser.last_name ?? existingUser.last_name;
+                existingUser.birth_date = updatedUser.birth_date != default(DateTime) ? updatedUser.birth_date : existingUser.birth_date;
+                existingUser.address = updatedUser.address ?? existingUser.address;
+                existingUser.email = updatedUser.email ?? existingUser.email;
+                existingUser.role = updatedUser.role ?? existingUser.role;
+                existingUser.password = updatedUser.password ?? existingUser.password;
+                existingUser.registration_date = updatedUser.registration_date ?? existingUser.registration_date;
+                existingUser.account_locked_until = updatedUser.account_locked_until ?? existingUser.account_locked_until;
+                existingUser.failed_login_attempts = updatedUser.failed_login_attempts ?? existingUser.failed_login_attempts;
+                existingUser.status = updatedUser.status ?? existingUser.status;
+
+                // Llamar al método de lógica para realizar la actualización
+                bool updated = BL.UpdateUser(existingUser);
+
+                if (!updated)
+                {
+                    return Content(HttpStatusCode.InternalServerError, new { Message = "No se pudo actualizar el usuario." });
+                }
+
+                return Ok(new { Message = "Usuario actualizado exitosamente.", User = existingUser });
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+            }
+        }
+
+
     }
 }

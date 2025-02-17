@@ -1,5 +1,5 @@
-Â
-KC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Class1.cs
+Î
+QC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Class1.cs
 	namespace 	
 SL
  
@@ -10,8 +10,8 @@ KC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Class1.cs
 Class1 
 { 
 } 
-}		 ·X
-]C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authorization\JwtService.cs
+}		 ÁX
+cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authorization\JwtService.cs
 	namespace 	
 SL
  
@@ -740,8 +740,35 @@ emailClaim
 üü 	
 }
 †† 
-}°° π	
-bC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
+}°° Ø
+gC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\IEmailService.cs
+	namespace 	
+SL
+ 
+. 
+Authentication 
+{ 
+public 
+
+	interface 
+IEmailService "
+{		 
+Task 
+SendEmailAsync 
+( 
+string "
+recipientEmail# 1
+,1 2
+string3 9
+subject: A
+,A B
+stringC I
+bodyJ N
+)N O
+;O P
+} 
+} ø	
+hC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
 	namespace 	
 SL
  
@@ -819,35 +846,8 @@ bC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authenticatio
 ;E F
 } 	
 } 
-} ©
-aC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authentication\IEmailService.cs
-	namespace 	
-SL
- 
-. 
-Authentication 
-{ 
-public 
-
-	interface 
-IEmailService "
-{		 
-Task 
-SendEmailAsync 
-( 
-string "
-recipientEmail# 1
-,1 2
-string3 9
-subject: A
-,A B
-stringC I
-bodyJ N
-)N O
-;O P
-} 
-} ö
-`C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authentication\EmailService.cs
+} †
+fC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\EmailService.cs
 	namespace 	
 SL
  

@@ -18,54 +18,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
-                  "startLine": 16,
+                  "startLine": 15,
                   "startColumn": 16,
-                  "endLine": 16,
+                  "endLine": 15,
                   "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1144",
-          "level": "warning",
-          "message": "Remove the unused private method 'SendGet'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 31,
-                  "endLine": 45,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'proxy' to match pascal case naming rules, consider using 'Proxy'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 18,
-                  "endLine": 14,
-                  "endColumn": 23
                 }
               }
             }
@@ -81,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 109,
                   "startColumn": 27,
@@ -102,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 114,
                   "startColumn": 23,
@@ -123,7 +81,112 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 27,
+                  "endLine": 137,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 23,
+                  "endLine": 142,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 27,
+                  "endLine": 166,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private method 'SendGet'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 31,
+                  "endLine": 45,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 23,
+                  "endLine": 171,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 80,
                   "startColumn": 27,
@@ -144,7 +207,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/Proxy/proxy.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 85,
                   "startColumn": 23,
@@ -160,23 +223,6 @@
         }
       ],
       "rules": {
-        "S101": {
-          "id": "S101",
-          "shortDescription": "Types should be named in PascalCase",
-          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
         "S112": {
           "id": "S112",
           "shortDescription": "General or reserved exceptions should never be thrown",

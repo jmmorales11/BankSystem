@@ -16,7 +16,10 @@ namespace DAL
 
         public EFRepository(DbContext dbContext)
         {
-            _dbContext = dbContext;
+            string connectionString = ConnectionStringHelper.GetConnectionString("BankEntities");
+
+            // Crea el DbContext usando la cadena de conexión actualizada
+            _dbContext = new DbContext(connectionString);
             _dbContext.Configuration.LazyLoadingEnabled = true;
         }
 

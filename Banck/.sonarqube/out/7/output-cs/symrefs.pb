@@ -1,11 +1,61 @@
-t
-ZC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Global.asax.cs
+n
+lC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Properties\AssemblyInfo.csz
+`C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Global.asax.cs
 
  
 
- (h
-fC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Properties\AssemblyInfo.cs›
-iC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Controllers\HomeController.cs
+ (ó
+oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Controllers\UserController.cs
+
+ 
+' 4 
+
+ !
+
+ &
+
+$$ &
+$$, 3,,C J>> 
+&& ,,. ;(
+,, +.. +005 H553 F
+
+DD /
+
+JJ( ;
+JJC HPPG L
+JJQ UPPN R
+LL PP% 2(
+PP RR RR( 0TT0 8
+
+cc !
+
+jj( -
+jj5 :nn* /vv9 >
+jjC KnnN Vvv@ H
+ll vv% 24
+vv xx zz1 9{{( 0
+€€/ 7
+
+ŒŒ +
+
+““( 7
+
+““? D
+žž> C$
+
+““M Q
+——* .
+žžE I
+
+•• 
+žž% 2<
+
+žž 
+   
+  > F
+¤¤0 8
+¤¤J R¡
+oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Controllers\HomeController.cs
 
 		 
 
@@ -13,47 +63,26 @@ iC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Con
 
  !
 
- #•
-iC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Controllers\UserController.cs
-
- 
-' 4 
-
- !
-
- &
-
-%% &
-%%, 3--C J:: 
-'' --. ;(
--- +// +//7 J115 H
-
-?? /
-
-FF( ;
-FFC HMMG L
-FFQ UMMN R
-HH MM% 2(
-MM OO OO( 0QQ0 8ž
-dC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App_Start\RouteConfig.cs
+ #¤
+jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\RouteConfig.cs
 
 
 
  
 
  )
-: @  •
-eC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App_Start\FilterConfig.cs
+: @  ›
+kC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\FilterConfig.cs
 
  
 
  0
 H O
 
- Ç
-eC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App_Start\BundleConfig.cs
+ á
+kC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\BundleConfig.cs
 
  
 
-		 *F
-		< C      
+		 *Z
+		< C          

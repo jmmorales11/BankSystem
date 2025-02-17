@@ -1,1 +1,1 @@
-jRKC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\SL.csproj¢netstandard2.0ò	CSharp7_3
+pRQC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\SL.csproj¢netstandard2.0ò	CSharp7_3

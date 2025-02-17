@@ -1,5 +1,16 @@
-‡
-aC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\VerifyCodeRequest.cs
+”
+bC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\LoginRequest.cs
+
+ 
+
+		 
+
+
+
+ 
+
+ ™
+gC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\VerifyCodeRequest.cs
 
  "
 
@@ -7,11 +18,10 @@ aC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\Ve
 
  
 
- _
-QC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Class1.cs
+ 
 
- Š
-dC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\UserCreationResponse.cs
+ œ
+jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\UserCreationResponse.cs
 
  %
 
@@ -19,4 +29,24 @@ dC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\Us
 
 
 
- 
+ 
+
+ ­
+cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\LoginResponse.cs
+
+ 
+
+		 
+
+
+
+ 
+
+ 
+
+ 
+
+ e
+WC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Class1.cs
+
+ 

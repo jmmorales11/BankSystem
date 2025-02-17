@@ -1,5 +1,5 @@
-˚
-RC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SLC\IUserService.cs
+Å
+XC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SLC\IUserService.cs
 	namespace 	
 SLC
  

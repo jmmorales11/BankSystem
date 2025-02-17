@@ -1,5 +1,5 @@
-¹
-aC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\VerifyCodeRequest.cs
+÷
+gC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\VerifyCodeRequest.cs
  
  
  
@@ -13,12 +13,8 @@ aC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\Ve
 
  !
 
-# &    " %•
-QC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Class1.cs
- 
- 	 
-  °
-dC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\UserCreationResponse.cs
+# &    " %   !# &î
+jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\UserCreationResponse.cs
  
  
  
@@ -31,4 +27,36 @@ dC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\Us
 
   #
 
-% (
+% (   !# &æ
+bC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\LoginRequest.cs
+ 
+ 
+ 
+ 	 
+  		 		 		 !		# &
+
+ 
+
+ 
+
+! $
+
+& )   !# &×
+cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\DTOs\LoginResponse.cs
+ 
+ 
+ 
+ 	 
+  		 		 		 !		# &
+
+ 
+
+ 
+
+ !
+
+# &    " %    #% (   !# &›
+WC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Class1.cs
+ 
+ 	 
+  

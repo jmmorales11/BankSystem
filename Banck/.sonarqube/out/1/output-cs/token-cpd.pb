@@ -1,5 +1,5 @@
-ˆ
-]C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\DAL\Properties\AssemblyInfo.cs
+Ž
+cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\Properties\AssemblyInfo.cs
 [ 
 assembly 	
 :	 
@@ -124,8 +124,8 @@ ComVisible 
 (!! 
 $str!! (
 )!!( )
-]!!) *Õ
-QC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\DAL\IRepository.cs
+]!!) *Û
+WC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\IRepository.cs
 	namespace		 	
 DAL		
  
@@ -246,8 +246,8 @@ Expression& 0
 class= B
 ;B C
 } 
-} ‡;
-RC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\DAL\EFRepository.cs
+} ®=
+XC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\EFRepository.cs
 	namespace 	
 DAL
  
@@ -269,430 +269,444 @@ _dbContext 
 	DbContext %
 	dbContext& /
 )/ 0
-{ 	
+{ 	
+string 
+connectionString #
+=$ %"
+ConnectionStringHelper& <
+.< =
+GetConnectionString= P
+(P Q
+$strQ _
+)_ `
+;` a
 
-_dbContext 
-= 
-	dbContext "
-;" #
+_dbContext 
+= 
+new 
+	DbContext &
+(& '
+connectionString' 7
+)7 8
+;8 9
 
-_dbContext 
-. 
-Configuration $
-.$ %
-LazyLoadingEnabled% 7
-=8 9
-true: >
-;> ?
-} 	
-public 
-TEntity 
-Create 
-< 
-TEntity %
->% &
-(& '
-TEntity' .
-toCreate/ 7
-)7 8
-where9 >
-TEntity? F
-:G H
-classI N
-{ 	
-TEntity 
-result 
-= 
-default $
-;$ %
-try 
-{ 
+_dbContext 
+. 
+Configuration $
+.$ %
+LazyLoadingEnabled% 7
+=8 9
+true: >
+;> ?
+} 	
+public 
+TEntity 
+Create 
+< 
+TEntity %
+>% &
+(& '
+TEntity' .
+toCreate/ 7
+)7 8
+where9 >
+TEntity? F
+:G H
+classI N
+{ 	
+TEntity 
+result 
+= 
+default $
+;$ %
+try 
+{ 
 
-_dbContext 
-. 
-Set 
-< 
-TEntity &
->& '
-(' (
-)( )
-.) *
-Add* -
-(- .
-toCreate. 6
-)6 7
-;7 8
+_dbContext 
+. 
+Set 
+< 
+TEntity &
+>& '
+(' (
+)( )
+.) *
+Add* -
+(- .
+toCreate. 6
+)6 7
+;7 8
 
-_dbContext 
-. 
-SaveChanges &
-(& '
-)' (
-;( )
-result 
-= 
-toCreate !
-;! "
-} 
-catch   
-(   
-	Exception   
-)   
-{!! 
-throw"" 
-;"" 
-}## 
-return$$ 
-result$$ 
-;$$ 
-}%% 	
-public'' 
-bool'' 
-Delete'' 
-<'' 
-TEntity'' "
->''" #
-(''# $
-TEntity''$ +
-toDelete'', 4
-)''4 5
-where''6 ;
-TEntity''< C
-:''D E
-class''F K
-{(( 	
-bool)) 
-result)) 
-=)) 
-false)) 
-;))  
-try** 
-{++ 
+_dbContext   
+.   
+SaveChanges   &
+(  & '
+)  ' (
+;  ( )
+result!! 
+=!! 
+toCreate!! !
+;!!! "
+}"" 
+catch## 
+(## 
+	Exception## 
+)## 
+{$$ 
+throw%% 
+;%% 
+}&& 
+return'' 
+result'' 
+;'' 
+}(( 	
+public** 
+bool** 
+Delete** 
+<** 
+TEntity** "
+>**" #
+(**# $
+TEntity**$ +
+toDelete**, 4
+)**4 5
+where**6 ;
+TEntity**< C
+:**D E
+class**F K
+{++ 	
+bool,, 
+result,, 
+=,, 
+false,, 
+;,,  
+try-- 
+{.. 
 
-_dbContext,, 
-.,, 
-Entry,,  
-<,,  !
-TEntity,,! (
->,,( )
-(,,) *
-toDelete,,* 2
-),,2 3
-.,,3 4
-State,,4 9
-=,,: ;
-EntityState,,< G
-.,,G H
-Deleted,,H O
-;,,O P
-result-- 
-=-- 
+_dbContext// 
+.// 
+Entry//  
+<//  !
+TEntity//! (
+>//( )
+(//) *
+toDelete//* 2
+)//2 3
+.//3 4
+State//4 9
+=//: ;
+EntityState//< G
+.//G H
+Deleted//H O
+;//O P
+result00 
+=00 
 
-_dbContext-- #
-.--# $
-SaveChanges--$ /
-(--/ 0
-)--0 1
->--2 3
-$num--4 5
-;--5 6
-}.. 
-catch// 
-(// 
-	Exception// 
-)// 
-{00 
-throw11 
-;11 
-}22 
-return33 
-result33 
-;33 
-}44 	
-public66 
-void66 
-Dispose66 
-(66 
-)66 
-{77 	
-if88 
-(88 
+_dbContext00 #
+.00# $
+SaveChanges00$ /
+(00/ 0
+)000 1
+>002 3
+$num004 5
+;005 6
+}11 
+catch22 
+(22 
+	Exception22 
+)22 
+{33 
+throw44 
+;44 
+}55 
+return66 
+result66 
+;66 
+}77 	
+public99 
+void99 
+Dispose99 
+(99 
+)99 
+{:: 	
+if;; 
+(;; 
 
-_dbContext88 
-!=88 
-null88 "
-)88" #
-{99 
+_dbContext;; 
+!=;; 
+null;; "
+);;" #
+{<< 
 
-_dbContext:: 
-.:: 
-Dispose:: "
-(::" #
-)::# $
-;::$ %
-};; 
-}<< 	
-public>> 
-List>> 
-<>> 
-TEntity>> 
->>> 
-Filter>> #
-<>># $
-TEntity>>$ +
->>>+ ,
-(>>, -
+_dbContext== 
+.== 
+Dispose== "
+(==" #
+)==# $
+;==$ %
+}>> 
+}?? 	
+publicAA 
+ListAA 
+<AA 
+TEntityAA 
+>AA 
+FilterAA #
+<AA# $
+TEntityAA$ +
+>AA+ ,
+(AA, -
 
-Expression>>- 7
-<>>7 8
-Func>>8 <
-<>>< =
-TEntity>>= D
-,>>D E
-bool>>F J
->>>J K
->>>K L
-criteria>>M U
-)>>U V
-where>>W \
-TEntity>>] d
-:>>e f
-class>>g l
-{?? 	
-List@@ 
-<@@ 
-TEntity@@ 
->@@ 
-result@@  
-=@@! "
-null@@# '
-;@@' (
-tryAA 
-{BB 
-resultCC 
-=CC 
+ExpressionAA- 7
+<AA7 8
+FuncAA8 <
+<AA< =
+TEntityAA= D
+,AAD E
+boolAAF J
+>AAJ K
+>AAK L
+criteriaAAM U
+)AAU V
+whereAAW \
+TEntityAA] d
+:AAe f
+classAAg l
+{BB 	
+ListCC 
+<CC 
+TEntityCC 
+>CC 
+resultCC  
+=CC! "
+nullCC# '
+;CC' (
+tryDD 
+{EE 
+resultFF 
+=FF 
 
-_dbContextCC #
-.CC# $
-SetCC$ '
-<CC' (
-TEntityCC( /
->CC/ 0
-(CC0 1
-)CC1 2
-.CC2 3
-WhereCC3 8
-(CC8 9
-criteriaCC9 A
-)CCA B
-.CCB C
-ToListCCC I
-(CCI J
-)CCJ K
-;CCK L
-}DD 
-catchEE 
-(EE 
-	ExceptionEE 
-)EE 
-{FF 
-throwGG 
-;GG 
-}HH 
-returnII 
-resultII 
-;II 
-}JJ 	
-publicLL 
-TEntityLL 
-RetrieveLL 
-<LL  
-TEntityLL  '
->LL' (
-(LL( )
+_dbContextFF #
+.FF# $
+SetFF$ '
+<FF' (
+TEntityFF( /
+>FF/ 0
+(FF0 1
+)FF1 2
+.FF2 3
+WhereFF3 8
+(FF8 9
+criteriaFF9 A
+)FFA B
+.FFB C
+ToListFFC I
+(FFI J
+)FFJ K
+;FFK L
+}GG 
+catchHH 
+(HH 
+	ExceptionHH 
+)HH 
+{II 
+throwJJ 
+;JJ 
+}KK 
+returnLL 
+resultLL 
+;LL 
+}MM 	
+publicOO 
+TEntityOO 
+RetrieveOO 
+<OO  
+TEntityOO  '
+>OO' (
+(OO( )
 
-ExpressionLL) 3
-<LL3 4
-FuncLL4 8
-<LL8 9
-TEntityLL9 @
-,LL@ A
-boolLLB F
->LLF G
->LLG H
-criteriaLLI Q
-)LLQ R
-whereLLS X
-TEntityLLY `
-:LLa b
-classLLc h
-{MM 	
-TEntityNN 
-resultNN 
-=NN 
-nullNN !
-;NN! "
-tryOO 
-{PP 
-resultQQ 
-=QQ 
+ExpressionOO) 3
+<OO3 4
+FuncOO4 8
+<OO8 9
+TEntityOO9 @
+,OO@ A
+boolOOB F
+>OOF G
+>OOG H
+criteriaOOI Q
+)OOQ R
+whereOOS X
+TEntityOOY `
+:OOa b
+classOOc h
+{PP 	
+TEntityQQ 
+resultQQ 
+=QQ 
+nullQQ !
+;QQ! "
+tryRR 
+{SS 
+resultTT 
+=TT 
 
-_dbContextQQ #
-.QQ# $
-SetQQ$ '
-<QQ' (
-TEntityQQ( /
->QQ/ 0
-(QQ0 1
-)QQ1 2
-.QQ2 3
-FirstOrDefaultQQ3 A
-(QQA B
-criteriaQQB J
-)QQJ K
-;QQK L
-}RR 
-catchSS 
-(SS 
-	ExceptionSS 
-)SS 
-{TT 
-throwUU 
-;UU 
-}VV 
-returnWW 
-resultWW 
-;WW 
-}XX 	
-publicZZ 
-boolZZ 
-UpdateZZ 
-<ZZ 
-TEntityZZ "
->ZZ" #
-(ZZ# $
-TEntityZZ$ +
-toUpdateZZ, 4
-)ZZ4 5
-whereZZ6 ;
-TEntityZZ< C
-:ZZD E
-classZZF K
-{[[ 	
-bool\\ 
-result\\ 
-=\\ 
-false\\ 
-;\\  
-try]] 
-{^^ 
+_dbContextTT #
+.TT# $
+SetTT$ '
+<TT' (
+TEntityTT( /
+>TT/ 0
+(TT0 1
+)TT1 2
+.TT2 3
+FirstOrDefaultTT3 A
+(TTA B
+criteriaTTB J
+)TTJ K
+;TTK L
+}UU 
+catchVV 
+(VV 
+	ExceptionVV 
+)VV 
+{WW 
+throwXX 
+;XX 
+}YY 
+returnZZ 
+resultZZ 
+;ZZ 
+}[[ 	
+public]] 
+bool]] 
+Update]] 
+<]] 
+TEntity]] "
+>]]" #
+(]]# $
+TEntity]]$ +
+toUpdate]], 4
+)]]4 5
+where]]6 ;
+TEntity]]< C
+:]]D E
+class]]F K
+{^^ 	
+bool__ 
+result__ 
+=__ 
+false__ 
+;__  
+try`` 
+{aa 
 
-_dbContext__ 
-.__ 
-Entry__  
-<__  !
-TEntity__! (
->__( )
-(__) *
-toUpdate__* 2
-)__2 3
-.__3 4
-State__4 9
-=__: ;
-EntityState__< G
-.__G H
-Modified__H P
-;__P Q
-result`` 
-=`` 
+_dbContextbb 
+.bb 
+Entrybb  
+<bb  !
+TEntitybb! (
+>bb( )
+(bb) *
+toUpdatebb* 2
+)bb2 3
+.bb3 4
+Statebb4 9
+=bb: ;
+EntityStatebb< G
+.bbG H
+ModifiedbbH P
+;bbP Q
+resultcc 
+=cc 
 
-_dbContext`` #
-.``# $
-SaveChanges``$ /
-(``/ 0
-)``0 1
->``2 3
-$num``4 5
-;``5 6
-}aa 
-catchbb 
-(bb 
-	Exceptionbb 
-)bb 
-{cc 
-throwdd 
-;dd 
-}ee 
-returnff 
-resultff 
-;ff 
-}gg 	
-publicii 
-Listii 
-<ii 
-TEntityii 
->ii 
-RetrieveAllii (
-<ii( )
-TEntityii) 0
->ii0 1
-(ii1 2
-)ii2 3
-whereii4 9
-TEntityii: A
-:iiB C
-classiiD I
-{jj 	
-Listkk 
-<kk 
-TEntitykk 
->kk 
-resultkk  
-=kk! "
-nullkk# '
-;kk' (
-tryll 
-{mm 
-resultoo 
-=oo 
+_dbContextcc #
+.cc# $
+SaveChangescc$ /
+(cc/ 0
+)cc0 1
+>cc2 3
+$numcc4 5
+;cc5 6
+}dd 
+catchee 
+(ee 
+	Exceptionee 
+)ee 
+{ff 
+throwgg 
+;gg 
+}hh 
+returnii 
+resultii 
+;ii 
+}jj 	
+publicll 
+Listll 
+<ll 
+TEntityll 
+>ll 
+RetrieveAllll (
+<ll( )
+TEntityll) 0
+>ll0 1
+(ll1 2
+)ll2 3
+wherell4 9
+TEntityll: A
+:llB C
+classllD I
+{mm 	
+Listnn 
+<nn 
+TEntitynn 
+>nn 
+resultnn  
+=nn! "
+nullnn# '
+;nn' (
+tryoo 
+{pp 
+resultrr 
+=rr 
 
-_dbContextoo #
-.oo# $
-Setoo$ '
-<oo' (
-TEntityoo( /
->oo/ 0
-(oo0 1
-)oo1 2
-.oo2 3
-ToListoo3 9
-(oo9 :
-)oo: ;
-;oo; <
-}pp 
-catchqq 
-(qq 
-	Exceptionqq 
-exqq 
-)qq  
-{rr 
-throwtt 
-newtt 
-	Exceptiontt #
-(tt# $
-$strtt$ L
-,ttL M
-exttN P
-)ttP Q
-;ttQ R
-}uu 
-returnvv 
-resultvv 
-;vv 
-}ww 	
-}yy 
-}zz ò
-WC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\DAL\RepositoryFactory.cs
+_dbContextrr #
+.rr# $
+Setrr$ '
+<rr' (
+TEntityrr( /
+>rr/ 0
+(rr0 1
+)rr1 2
+.rr2 3
+ToListrr3 9
+(rr9 :
+)rr: ;
+;rr; <
+}ss 
+catchtt 
+(tt 
+	Exceptiontt 
+extt 
+)tt  
+{uu 
+throwww 
+newww 
+	Exceptionww #
+(ww# $
+$strww$ L
+,wwL M
+exwwN P
+)wwP Q
+;wwQ R
+}xx 
+returnyy 
+resultyy 
+;yy 
+}zz 	
+}|| 
+}}} ø
+]C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\RepositoryFactory.cs
 	namespace 	
 DAL
  
@@ -725,4 +739,89 @@ WC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\DAL\RepositoryFa
 ;@ A
 } 	
 } 
-} 
+} ²
+bC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\ConnectionStringHelper.cs
+	namespace 	
+DAL
+ 
+{ 
+public 
+
+static 
+class "
+ConnectionStringHelper .
+{ 
+public 
+static 
+string 
+GetConnectionString 0
+(0 1
+string1 7
+connectionName8 F
+)F G
+{		 	
+string 
+password 
+= 
+Environment )
+.) *"
+GetEnvironmentVariable* @
+(@ A
+$strA N
+)N O
+;O P
+string  
+baseConnectionString '
+=( ) 
+ConfigurationManager* >
+.> ?
+ConnectionStrings? P
+[P Q
+connectionNameQ _
+]_ `
+?` a
+.a b
+ConnectionStringb r
+;r s
+if 
+( 
+string 
+. 
+IsNullOrEmpty $
+($ % 
+baseConnectionString% 9
+)9 :
+): ;
+{ 
+throw 
+new 
+	Exception #
+(# $
+$"$ &
+$str& Z
+{Z [
+connectionName[ i
+}i j
+$strj }
+"} ~
+)~ 
+;	 €
+} 
+string #
+updatedConnectionString *
+=+ , 
+baseConnectionString- A
+.A B
+ReplaceB I
+(I J
+$strJ b
+,b c
+passwordd l
+)l m
+;m n
+return #
+updatedConnectionString *
+;* +
+} 	
+} 
+} 

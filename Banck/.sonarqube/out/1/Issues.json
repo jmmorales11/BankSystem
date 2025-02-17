@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 7,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 7,
@@ -60,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/IRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/IRepository.cs",
                 "region": {
                   "startLine": 7,
                   "startColumn": 7,
@@ -81,7 +81,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/RepositoryFactory.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/RepositoryFactory.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 18,
@@ -102,7 +102,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 15,
                   "startColumn": 19,
@@ -123,11 +123,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
-                  "startLine": 32,
+                  "startLine": 35,
                   "startColumn": 13,
-                  "endLine": 35,
+                  "endLine": 38,
                   "endColumn": 14
                 }
               }
@@ -144,11 +144,74 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
-                  "startLine": 47,
+                  "startLine": 72,
                   "startColumn": 13,
-                  "endLine": 50,
+                  "endLine": 75,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 13,
+                  "endLine": 89,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 13,
+                  "endLine": 104,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 13,
+                  "endLine": 53,
                   "endColumn": 14
                 }
               }
@@ -165,7 +228,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 13,
                   "startColumn": 18,
@@ -178,7 +241,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 13,
                   "startColumn": 18,
@@ -189,11 +252,11 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
-                  "startLine": 54,
+                  "startLine": 57,
                   "startColumn": 21,
-                  "endLine": 54,
+                  "endLine": 57,
                   "endColumn": 28
                 }
               }
@@ -208,60 +271,18 @@
           }
         },
         {
-          "ruleId": "S2737",
+          "ruleId": "S112",
           "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "message": "'System.Exception' should not be thrown by user code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
-                  "startLine": 83,
-                  "startColumn": 13,
-                  "endLine": 86,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2737",
-          "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 98,
-                  "startColumn": 13,
-                  "endLine": 101,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2737",
-          "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 69,
-                  "startColumn": 13,
-                  "endLine": 72,
-                  "endColumn": 14
+                  "startLine": 119,
+                  "startColumn": 23,
+                  "endLine": 119,
+                  "endColumn": 82
                 }
               }
             }
@@ -277,12 +298,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/bancoNuevo/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/ConnectionStringHelper.cs",
                 "region": {
-                  "startLine": 116,
+                  "startLine": 18,
                   "startColumn": 23,
-                  "endLine": 116,
-                  "endColumn": 82
+                  "endLine": 18,
+                  "endColumn": 128
                 }
               }
             }

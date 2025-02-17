@@ -1,1 +1,1 @@
-C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\out\0
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\out\0

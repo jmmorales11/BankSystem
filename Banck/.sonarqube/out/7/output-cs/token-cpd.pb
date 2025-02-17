@@ -1,5 +1,5 @@
-ë
-fC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Properties\AssemblyInfo.cs
+ó
+lC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Properties\AssemblyInfo.cs
 [ 
 assembly 	
 :	 
@@ -124,8 +124,8 @@ ComVisible 
 (## 
 $str## (
 )##( )
-]##) *Ö	
-ZC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Global.asax.cs
+]##) *ã	
+`C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Global.asax.cs
 	namespace		 	
 Presentation		
  
@@ -185,286 +185,818 @@ RouteTable' 1
 ;= >
 } 	
 } 
-} Â&
-iC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Controllers\UserController.cs
-	namespace 	
-Presentation
+} ﬂV
+oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Controllers\UserController.cs
+	namespace 	
+Presentation
  
-. 
-Controllers "
-{ 
-public 
+. 
+Controllers "
+{ 
+public 
 
-class 
-UserController 
-:  !
+class 
+UserController 
+:  !
 
-Controller" ,
-{ 
-private 
-readonly 
-IEmailService &
-_emailService' 4
-;4 5
-public 
-UserController 
-( 
-) 
-{ 	
-_emailService 
-= 
-new 
-EmailService  ,
-(, -
-)- .
-;. /
-} 	
-public 
-ActionResult 
-Index !
-(! "
-)" #
-{ 	
-return 
-View 
-( 
-) 
-; 
-} 	
-public 
-ActionResult 
+Controller" ,
+{ 
+private 
+readonly 
+IEmailService &
+_emailService' 4
+;4 5
+public 
+UserController 
+( 
+) 
+{ 	
+_emailService 
+= 
+new 
+EmailService  ,
+(, -
+)- .
+;. /
+} 	
+public 
+ActionResult 
+Index !
+(! "
+)" #
+{ 	
+return 
+View 
+( 
+) 
+; 
+} 	
+public 
+ActionResult 
 
-CreateUser &
-(& '
-)' (
-{ 	
-return 
-View 
-( 
-) 
-; 
-} 	
-[## 	
-HttpPost##	 
-]## 
-[$$ 	$
-ValidateAntiForgeryToken$$	 !
-]$$! "
-public%% 
-ActionResult%% 
+CreateUser &
+(& '
+)' (
+{ 	
+return 
+View 
+( 
+) 
+; 
+}   	
+["" 	
+HttpPost""	 
+]"" 
+[## 	$
+ValidateAntiForgeryToken##	 !
+]##! "
+public$$ 
+ActionResult$$ 
 
-CreateUser%% &
-(%%& '
-User%%' +
-newUser%%, 3
-)%%3 4
-{&& 	
-var'' 
-proxy_service'' 
-='' 
-new''  #
-proxy''$ )
-('') *
-)''* +
-;''+ ,
-if)) 
-()) 
+CreateUser$$ &
+($$& '
+User$$' +
+newUser$$, 3
+)$$3 4
+{%% 	
+var&& 
+proxy_service&& 
+=&& 
+new&&  #
+	ProxyUser&&$ -
+(&&- .
+)&&. /
+;&&/ 0
+if(( 
+((( 
 
-ModelState)) 
-.)) 
-IsValid)) "
-)))" #
-{** 
-try++ 
-{,, 
-var-- 
-createdUserResponse-- +
-=--, -
-proxy_service--. ;
-.--; <
-Create--< B
-(--B C
-newUser--C J
-)--J K
-;--K L
-if// 
-(// 
-createdUserResponse// +
-!=//, .
-null/// 3
-&&//4 6
-createdUserResponse//7 J
-.//J K
-Message//K R
-!=//S U
-null//V Z
-)//Z [
-{00 
-TempData11  
-[11  !
-$str11! 1
-]111 2
-=113 4
-createdUserResponse115 H
-.11H I
-Message11I P
-;11P Q
-return22 
-RedirectToAction22 /
-(22/ 0
-$str220 E
-)22E F
-;22F G
-}33 
-}44 
-catch55 
-(55 
-	Exception55  
-ex55! #
-)55# $
-{66 
-TempData77 
-[77 
-$str77 +
-]77+ ,
-=77- .
-ex77/ 1
-.771 2
-Message772 9
-;779 :
-}88 
-}99 
-return:: 
-View:: 
-(:: 
-newUser:: 
-)::  
-;::  !
-};; 	
-public?? 
-ActionResult?? 
-VerifyAndCreateUser?? /
-(??/ 0
-)??0 1
-{@@ 	
-returnAA 
-ViewAA 
-(AA 
-)AA 
-;AA 
-}BB 	
-[EE 	
-HttpPostEE	 
-]EE 
-publicFF 
-asyncFF 
-TaskFF 
-<FF 
-ActionResultFF &
->FF& '
-VerifyAndCreateUserFF( ;
-(FF; <
-stringFF< B
-emailFFC H
-,FFH I
-stringFFJ P
-codeFFQ U
-)FFU V
-{GG 	
-varHH 
-proxy_serviceHH 
-=HH 
-newHH  #
-proxyHH$ )
-(HH) *
-)HH* +
-;HH+ ,
-tryJJ 
-{KK 
-varMM 
-responseMM 
-=MM 
-awaitMM $
-proxy_serviceMM% 2
-.MM2 3
-VerifyAndCreateUserMM3 F
-(MMF G
-emailMMG L
-,MML M
-codeMMN R
-)MMR S
-;MMS T
-ifOO 
-(OO 
-responseOO 
-!=OO 
-nullOO  $
-&&OO% '
-responseOO( 0
-.OO0 1
-MessageOO1 8
-!=OO9 ;
-nullOO< @
-)OO@ A
-{PP 
-returnQQ 
-JsonQQ 
-(QQ  
-newQQ  #
-{QQ$ %
-MessageQQ& -
-=QQ. /
-responseQQ0 8
-.QQ8 9
-MessageQQ9 @
-}QQA B
-)QQB C
-;QQC D
-}RR 
-elseSS 
-{TT 
-returnUU 
-JsonUU 
-(UU  
-newUU  #
-{UU$ %
-MessageUU& -
-=UU. /
-$strUU0 N
-}UUO P
-)UUP Q
-;UUQ R
-}VV 
-}WW 
-catchXX 
-(XX 
-	ExceptionXX 
-exXX 
-)XX  
-{YY 
-returnZZ 
-JsonZZ 
-(ZZ 
-newZZ 
-{ZZ  !
-MessageZZ" )
-=ZZ* +
-$"ZZ, .
-$strZZ. L
-{ZZL M
-exZZM O
-.ZZO P
-MessageZZP W
-}ZZW X
-"ZZX Y
-}ZZZ [
-)ZZ[ \
-;ZZ\ ]
-}[[ 
-}\\ 	
-}^^ 
-}__ ®	
-iC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\Controllers\HomeController.cs
+ModelState(( 
+.(( 
+IsValid(( "
+)((" #
+{)) 
+try** 
+{++ 
+var,, 
+createdUserResponse,, +
+=,,, -
+proxy_service,,. ;
+.,,; <
+Create,,< B
+(,,B C
+newUser,,C J
+),,J K
+;,,K L
+if.. 
+(.. 
+createdUserResponse.. +
+...+ ,
+Success.., 3
+)..3 4
+{// 
+TempData00  
+[00  !
+$str00! 1
+]001 2
+=003 4
+createdUserResponse005 H
+.00H I
+Message00I P
+;00P Q
+return11 
+RedirectToAction11 /
+(11/ 0
+$str110 E
+)11E F
+;11F G
+}22 
+else33 
+{44 
+TempData55  
+[55  !
+$str55! /
+]55/ 0
+=551 2
+createdUserResponse553 F
+.55F G
+Message55G N
+;55N O
+}66 
+}77 
+catch88 
+(88 
+	Exception88  
+ex88! #
+)88# $
+{99 
+TempData:: 
+[:: 
+$str:: +
+]::+ ,
+=::- .
+ex::/ 1
+.::1 2
+Message::2 9
+;::9 :
+};; 
+}<< 
+return>> 
+View>> 
+(>> 
+newUser>> 
+)>>  
+;>>  !
+}?? 	
+publicDD 
+ActionResultDD 
+VerifyAndCreateUserDD /
+(DD/ 0
+)DD0 1
+{EE 	
+returnFF 
+ViewFF 
+(FF 
+)FF 
+;FF 
+}GG 	
+[II 	
+HttpPostII	 
+]II 
+publicJJ 
+asyncJJ 
+TaskJJ 
+<JJ 
+ActionResultJJ &
+>JJ& '
+VerifyAndCreateUserJJ( ;
+(JJ; <
+stringJJ< B
+emailJJC H
+,JJH I
+stringJJJ P
+codeJJQ U
+)JJU V
+{KK 	
+varLL 
+proxy_serviceLL 
+=LL 
+newLL  #
+	ProxyUserLL$ -
+(LL- .
+)LL. /
+;LL/ 0
+tryNN 
+{OO 
+varPP 
+responsePP 
+=PP 
+awaitPP $
+proxy_servicePP% 2
+.PP2 3
+VerifyAndCreateUserPP3 F
+(PPF G
+emailPPG L
+,PPL M
+codePPN R
+)PPR S
+;PPS T
+ifRR 
+(RR 
+responseRR 
+!=RR 
+nullRR  $
+&&RR% '
+responseRR( 0
+.RR0 1
+MessageRR1 8
+!=RR9 ;
+nullRR< @
+)RR@ A
+{SS 
+returnTT 
+JsonTT 
+(TT  
+newTT  #
+{TT$ %
+MessageTT& -
+=TT. /
+responseTT0 8
+.TT8 9
+MessageTT9 @
+}TTA B
+)TTB C
+;TTC D
+}UU 
+elseVV 
+{WW 
+returnXX 
+JsonXX 
+(XX  
+newXX  #
+{XX$ %
+MessageXX& -
+=XX. /
+$strXX0 N
+}XXO P
+)XXP Q
+;XXQ R
+}YY 
+}ZZ 
+catch[[ 
+([[ 
+	Exception[[ 
+ex[[ 
+)[[  
+{\\ 
+return]] 
+Json]] 
+(]] 
+new]] 
+{]]  !
+Message]]" )
+=]]* +
+$"]], .
+$str]]. L
+{]]L M
+ex]]M O
+.]]O P
+Message]]P W
+}]]W X
+"]]X Y
+}]]Z [
+)]][ \
+;]]\ ]
+}^^ 
+}__ 	
+publiccc 
+ActionResultcc 
+Logincc !
+(cc! "
+)cc" #
+{dd 	
+returnee 
+Viewee 
+(ee 
+)ee 
+;ee 
+}ff 	
+[hh 	
+HttpPosthh	 
+]hh 
+[ii 	$
+ValidateAntiForgeryTokenii	 !
+]ii! "
+publicjj 
+asyncjj 
+Taskjj 
+<jj 
+ActionResultjj &
+>jj& '
+Loginjj( -
+(jj- .
+stringjj. 4
+emailjj5 :
+,jj: ;
+stringjj< B
+passwordjjC K
+)jjK L
+{kk 	
+varll 
+proxy_servicell 
+=ll 
+newll  #
+	ProxyUserll$ -
+(ll- .
+)ll. /
+;ll/ 0
+ifnn 
+(nn 
+stringnn 
+.nn 
+IsNullOrWhiteSpacenn )
+(nn) *
+emailnn* /
+)nn/ 0
+||nn1 3
+stringnn4 :
+.nn: ;
+IsNullOrWhiteSpacenn; M
+(nnM N
+passwordnnN V
+)nnV W
+)nnW X
+{oo 
+TempDatapp 
+[pp 
+$strpp '
+]pp' (
+=pp) *
+$strpp+ R
+;ppR S
+returnqq 
+Viewqq 
+(qq 
+)qq 
+;qq 
+}rr 
+trytt 
+{uu 
+varvv 
+responsevv 
+=vv 
+awaitvv $
+proxy_servicevv% 2
+.vv2 3
+Loginvv3 8
+(vv8 9
+emailvv9 >
+,vv> ?
+passwordvv@ H
+)vvH I
+;vvI J
+ifxx 
+(xx 
+responsexx 
+.xx 
+Successxx $
+)xx$ %
+{yy 
+TempDatazz 
+[zz 
+$strzz -
+]zz- .
+=zz/ 0
+responsezz1 9
+.zz9 :
+Messagezz: A
+;zzA B
+TempData{{ 
+[{{ 
+$str{{ $
+]{{$ %
+={{& '
+response{{( 0
+.{{0 1
+Email{{1 6
+;{{6 7
+return|| 
+RedirectToAction|| +
+(||+ ,
+$str||, =
+)||= >
+;||> ?
+}}} 
+else~~ 
+{ 
+TempData
+ÄÄ 
+[
+ÄÄ 
+$str
+ÄÄ +
+]
+ÄÄ+ ,
+=
+ÄÄ- .
+response
+ÄÄ/ 7
+.
+ÄÄ7 8
+Message
+ÄÄ8 ?
+;
+ÄÄ? @
+}
+ÅÅ 
+}
+ÇÇ 
+catch
+ÉÉ 
+(
+ÉÉ 
+	Exception
+ÉÉ 
+ex
+ÉÉ 
+)
+ÉÉ  
+{
+ÑÑ 
+TempData
+ÖÖ 
+[
+ÖÖ 
+$str
+ÖÖ '
+]
+ÖÖ' (
+=
+ÖÖ) *
+ex
+ÖÖ+ -
+.
+ÖÖ- .
+Message
+ÖÖ. 5
+;
+ÖÖ5 6
+}
+ÜÜ 
+return
+áá 
+View
+áá 
+(
+áá 
+)
+áá 
+;
+áá 
+}
+àà 	
+public
+åå 
+ActionResult
+åå 
+VerifyLoginCode
+åå +
+(
+åå+ ,
+)
+åå, -
+{
+çç 	
+ViewBag
+éé 
+.
+éé 
+Email
+éé 
+=
+éé 
+TempData
+éé $
+[
+éé$ %
+$str
+éé% ,
+]
+éé, -
+;
+éé- .
+return
+èè 
+View
+èè 
+(
+èè 
+)
+èè 
+;
+èè 
+}
+êê 	
+[
+íí 	
+HttpPost
+íí	 
+]
+íí 
+public
+ìì 
+async
+ìì 
+Task
+ìì 
+<
+ìì 
+ActionResult
+ìì &
+>
+ìì& '
+VerifyLoginCode
+ìì( 7
+(
+ìì7 8
+string
+ìì8 >
+email
+ìì? D
+,
+ììD E
+string
+ììF L
+code
+ììM Q
+)
+ììQ R
+{
+îî 	
+var
+ïï 
+proxy_service
+ïï 
+=
+ïï 
+new
+ïï  #
+	ProxyUser
+ïï$ -
+(
+ïï- .
+)
+ïï. /
+;
+ïï/ 0
+if
+óó 
+(
+óó 
+string
+óó 
+.
+óó  
+IsNullOrWhiteSpace
+óó )
+(
+óó) *
+code
+óó* .
+)
+óó. /
+)
+óó/ 0
+{
+òò 
+return
+ôô 
+Json
+ôô 
+(
+ôô 
+new
+ôô 
+{
+ôô  !
+Message
+ôô" )
+=
+ôô* +
+$str
+ôô, ?
+}
+ôô@ A
+)
+ôôA B
+;
+ôôB C
+}
+öö 
+try
+úú 
+{
+ùù 
+var
+ûû 
+response
+ûû 
+=
+ûû 
+await
+ûû $
+proxy_service
+ûû% 2
+.
+ûû2 3
+
+VerifyCode
+ûû3 =
+(
+ûû= >
+email
+ûû> C
+,
+ûûC D
+code
+ûûE I
+)
+ûûI J
+;
+ûûJ K
+if
+†† 
+(
+†† 
+response
+†† 
+!=
+†† 
+null
+††  $
+&&
+††% '
+!
+††( )
+string
+††) /
+.
+††/ 0
+IsNullOrEmpty
+††0 =
+(
+††= >
+response
+††> F
+.
+††F G
+Token
+††G L
+)
+††L M
+)
+††M N
+{
+°° 
+TempData
+¢¢ 
+[
+¢¢ 
+$str
+¢¢ -
+]
+¢¢- .
+=
+¢¢/ 0
+$str
+¢¢1 L
+;
+¢¢L M
+return
+§§ 
+Json
+§§ 
+(
+§§  
+new
+§§  #
+{
+§§$ %
+Message
+§§& -
+=
+§§. /
+response
+§§0 8
+.
+§§8 9
+Message
+§§9 @
+,
+§§@ A
+Token
+§§B G
+=
+§§H I
+response
+§§J R
+.
+§§R S
+Token
+§§S X
+}
+§§Y Z
+)
+§§Z [
+;
+§§[ \
+}
+•• 
+else
+¶¶ 
+{
+ßß 
+return
+®® 
+Json
+®® 
+(
+®®  
+new
+®®  #
+{
+®®$ %
+Message
+®®& -
+=
+®®. /
+$str
+®®0 O
+}
+®®P Q
+)
+®®Q R
+;
+®®R S
+}
+©© 
+}
+™™ 
+catch
+´´ 
+(
+´´ 
+	Exception
+´´ 
+ex
+´´ 
+)
+´´  
+{
+¨¨ 
+return
+≠≠ 
+Json
+≠≠ 
+(
+≠≠ 
+new
+≠≠ 
+{
+≠≠  !
+Message
+≠≠" )
+=
+≠≠* +
+$"
+≠≠, .
+$str
+≠≠. L
+{
+≠≠L M
+ex
+≠≠M O
+.
+≠≠O P
+Message
+≠≠P W
+}
+≠≠W X
+"
+≠≠X Y
+}
+≠≠Z [
+)
+≠≠[ \
+;
+≠≠\ ]
+}
+ÆÆ 
+}
+ØØ 	
+}
+≥≥ 
+}¥¥ Æ	
+oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Controllers\HomeController.cs
 	namespace 	
 Presentation
  
@@ -530,8 +1062,8 @@ Controller		" ,
 ; 
 } 	
 } 
-} Ú
-dC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App_Start\RouteConfig.cs
+} ¯
+jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\RouteConfig.cs
 	namespace 	
 Presentation
  
@@ -598,8 +1130,8 @@ controller  *
 ; 
 } 	
 } 
-} î
-eC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App_Start\FilterConfig.cs
+} ö
+kC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\FilterConfig.cs
 	namespace 	
 Presentation
  
@@ -650,8 +1182,8 @@ eC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App
 3 4
 } 	
 } 
-} ‘
-eC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App_Start\BundleConfig.cs
+} ˙
+kC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\BundleConfig.cs
 	namespace 	
 Presentation
  
@@ -769,7 +1301,39 @@ eC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\App
 $str 4
 )4 5
 )5 6
-;6 7
-} 	
-} 
-}   
+;6 7
+bundles 
+. 
+Add 
+( 
+new 
+StyleBundle '
+(' (
+$str( A
+)A B
+.B C
+IncludeC J
+(J K
+$str 0
+)0 1
+)1 2
+;2 3
+bundles   
+.   
+Add   
+(   
+new   
+StyleBundle   '
+(  ' (
+$str  ( E
+)  E F
+.  F G
+Include  G N
+(  N O
+$str!! A
+)!!A B
+)!!B C
+;!!C D
+}"" 	
+}## 
+}$$ 

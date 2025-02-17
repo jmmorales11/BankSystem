@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AnalysisConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <SonarConfigDir>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf</SonarConfigDir>
-  <SonarOutputDir>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\out</SonarOutputDir>
-  <SonarBinDir>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\bin</SonarBinDir>
-  <SonarScannerWorkingDirectory>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck</SonarScannerWorkingDirectory>
+  <SonarConfigDir>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf</SonarConfigDir>
+  <SonarOutputDir>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\out</SonarOutputDir>
+  <SonarBinDir>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\bin</SonarBinDir>
+  <SonarScannerWorkingDirectory>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck</SonarScannerWorkingDirectory>
   <JavaExePath>C:\Users\ASUS TUF A15\.sonar\cache\11a61a94d383e755b08b4e5890a13d148bc9f95b7149cbbeec62efb8c75a4a67\OpenJDK17U-jre_x64_windows_hotspot_17.0.13_11.zip_extracted\jdk-17.0.13+11-jre/bin/java.exe</JavaExePath>
   <ScanAllAnalysis>true</ScanAllAnalysis>
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
@@ -15,7 +15,7 @@
     <ConfigSetting Id="TfsUri" />
     <ConfigSetting Id="VsCoverageConverterToolPath" />
     <ConfigSetting Id="UnchangedFilesPath" />
-    <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck" />
+    <ConfigSetting Id="sonar.pullrequest.cache.basepath" Value="C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck" />
     <ConfigSetting Id="settings.file.path" Value="C:\SonarQube\SonarQube.Analysis.xml" />
   </AdditionalConfig>
   <ServerSettings>
@@ -143,7 +143,7 @@
     <Property Name="sonar.java.jvmframeworkconfig.activate">true</Property>
     <Property Name="sonar.updatecenter.url">https://downloads.sonarsource.com/sonarqube/update/update-center.properties</Property>
     <Property Name="sonar.core.id">147B411E-AZTcWD6ElfQeUhhbw6dc</Property>
-    <Property Name="sonar.core.startTime">11/2/2025 9:32:23</Property>
+    <Property Name="sonar.core.startTime">16/2/2025 20:58:40</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
@@ -151,8 +151,8 @@
   <AnalyzersSettings>
     <AnalyzerSettings>
       <Language>cs</Language>
-      <RulesetPath>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf\Sonar-cs.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf\Sonar-cs-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\Sonar-cs.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\Sonar-cs-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="10.4.0.108396" StaticResourceName="SonarAnalyzer-csharp-10.4.0.108396.zip">
           <AssemblyPaths>
@@ -168,13 +168,13 @@
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf\cs\SonarLint.xml</Path>
+        <Path>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\cs\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
     <AnalyzerSettings>
       <Language>vbnet</Language>
-      <RulesetPath>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf\Sonar-vbnet.ruleset</RulesetPath>
-      <DeactivatedRulesetPath>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf\Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
+      <RulesetPath>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\Sonar-vbnet.ruleset</RulesetPath>
+      <DeactivatedRulesetPath>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\Sonar-vbnet-none.ruleset</DeactivatedRulesetPath>
       <AnalyzerPlugins>
         <AnalyzerPlugin Key="csharp" Version="10.4.0.108396" StaticResourceName="SonarAnalyzer-csharp-10.4.0.108396.zip">
           <AssemblyPaths>
@@ -190,7 +190,7 @@
         </AnalyzerPlugin>
       </AnalyzerPlugins>
       <AdditionalFilePaths>
-        <Path>C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\.sonarqube\conf\vbnet\SonarLint.xml</Path>
+        <Path>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\vbnet\SonarLint.xml</Path>
       </AdditionalFilePaths>
     </AnalyzerSettings>
   </AnalyzersSettings>

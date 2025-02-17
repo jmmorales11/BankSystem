@@ -1,0 +1,26 @@
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\Proxy.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\Proxy.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\Entities.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\Newtonsoft.Json.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\SLC.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\Entities.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\SLC.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\bin\Debug\Newtonsoft.Json.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.AssemblyReference.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.Up2Date
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\obj\Debug\Proxy.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\obj\Debug\Proxy.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\Proxy.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\Proxy.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\SLC.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\SLC.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.Up2Date
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\obj\Debug\Proxy.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\obj\Debug\Proxy.pdb

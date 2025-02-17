@@ -1,0 +1,3 @@
+﻿C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\proxy.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\Properties\AssemblyInfo.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Proxy\packages.config

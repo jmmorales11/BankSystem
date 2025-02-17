@@ -1,0 +1,1 @@
+vRWC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Entities.csproj¢netstandard2.0ò	CSharp7_3

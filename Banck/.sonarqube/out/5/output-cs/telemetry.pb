@@ -1,0 +1,1 @@
+cRUC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Service\Service.csprojò	CSharp7_3

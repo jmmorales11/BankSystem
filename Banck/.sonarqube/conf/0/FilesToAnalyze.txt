@@ -1,0 +1,9 @@
+﻿C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Alert.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Amortization.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Class1.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\UserCreationResponse.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\DTOs\VerifyCodeRequest.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Loan.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\Log.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\User.cs
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Entities\User_Data.cs

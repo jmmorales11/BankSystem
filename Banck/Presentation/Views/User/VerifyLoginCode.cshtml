@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "VerifyLoginCode";
+    Layout = null;
+
+}
+
+<head>
+    @Styles.Render("~/Content/UserLogin/css")
+</head>
+
+<h2>VerifyLoginCode</h2>
+
+@using (Html.BeginForm("VerifyLoginCode", "User", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="form-group">
+        <label for="code">Código de Verificación:</label>
+        <input type="text" id="code" name="code" class="form-control" required />
+
+        <!-- El correo se pasa desde TempData -->
+        <input type="text" id="email" name="email" value="@TempData["Email"]" hidden />
+    </div>
+    <button type="submit" class="btn btn-success">Verificar</button>
+}

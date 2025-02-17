@@ -29,7 +29,7 @@ namespace Service.Controllers
 
         private static Dictionary<string, User> PendingRegistrations = new Dictionary<string, User>();
 
- 
+
         //Envia el codigo de verificación
         [HttpPost]
         public async Task<IHttpActionResult> CreateUser([FromBody] User newUser)
@@ -38,10 +38,16 @@ namespace Service.Controllers
 
             try
             {
-                // Validar que el usuario no exista y que la contraseña sea segura
-                BL.validateExistingUserAndPasswordSecure(newUser);
+                // Verificar si el usuario ya existe
+                if (BL.validateExistingUser(newUser))
+                {
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = "Este usuario ya existe."
+                    });
+                }
 
-                // Generar código de verificación
                 string verificationCode = new Random().Next(100000, 999999).ToString();
 
                 // Guardar el código y los datos del usuario en memoria
@@ -57,6 +63,7 @@ namespace Service.Controllers
                 var response = new UserCreationResponse
                 {
                     User = newUser,
+                    Success = true,
                     Message = "Se ha enviado un código de verificación al correo. Ingresa el código para completar el registro."
                 };
 
@@ -64,7 +71,11 @@ namespace Service.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message); 
+                return Content(HttpStatusCode.InternalServerError, new
+                {
+                    Success = false,
+                    Message = "Ocurrió un error inesperado. Inténtalo de nuevo."
+                });
             }
         }
 
@@ -90,6 +101,8 @@ namespace Service.Controllers
                     // Eliminar los datos pendientes de registro
                     PendingRegistrations.Remove(verifyRequest.Email);
 
+ 
+   
                     return Ok(new { Message = "Usuario creado exitosamente.", User = createdUser });
                 }
                 else
@@ -103,15 +116,11 @@ namespace Service.Controllers
             }
         }
 
-        ///INICIAR SESION
-
+        /// INICIAR SESION
         [HttpPost]
         public async Task<IHttpActionResult> Login([FromBody] LoginRequest loginRequest)
         {
             var BL = new UserLogic();
-            string recipientEmail = loginRequest.Email;
-            string subject1 = "Código de verificación";
-            string body1;
 
             try
             {
@@ -120,7 +129,7 @@ namespace Service.Controllers
 
                 if (user == null)
                 {
-                    return Content(HttpStatusCode.Unauthorized, new { Message = "Usuario no encontrado" });
+                    return Content(HttpStatusCode.Unauthorized, new { Success = false, Message = "Credenciales incorrectas." });
                 }
 
                 // Generar código de verificación
@@ -130,16 +139,25 @@ namespace Service.Controllers
                 VerificationCodes[loginRequest.Email] = verificationCode;
 
                 // Enviar el código por correo electrónico
-                body1 = $"Tu código de verificación es: <strong>{verificationCode}</strong>";
-                await _emailService.SendEmailAsync(recipientEmail, subject1, body1);
+                string subject = "Código de verificación";
+                string body = $"Tu código de verificación es: <strong>{verificationCode}</strong>";
+                await _emailService.SendEmailAsync(loginRequest.Email, subject, body);
 
-                return Ok(new { Message = "Se ha enviado un código al correo. Ingresa el código para completar el inicio de sesión." });
+                // Devolver el correo y el mensaje
+                return Ok(new
+                {
+                    Success = true,
+                    Email = loginRequest.Email,
+                    Message = "Se ha enviado un código al correo. Ingresa el código para completar el inicio de sesión."
+                });
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error en el servidor: " + ex.Message });
             }
         }
+
+
 
         // Endpoint para verificar el código de autenticación
         [HttpPost]

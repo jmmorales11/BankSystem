@@ -1,6 +1,5 @@
 ﻿using Entities;
 using Proxy;
-using Service.Models;
 using SL.Authentication;
 using System;
 using System.Collections.Generic;
@@ -17,7 +16,7 @@ namespace Presentation.Controllers
 
         public UserController()
         {
-            _emailService = new EmailService(); // Inicialización manual del servicio de correos
+            _emailService = new EmailService(); 
         }
 
         public ActionResult Index()
@@ -25,13 +24,13 @@ namespace Presentation.Controllers
             return View();
         }
 
+
+        //ACCIÓN PARA ENVIAR EL CÓDIGO DE VERFICACIÓN ANTES DE CREAR EL USUARIO
         public ActionResult CreateUser()
         {
             return View();
         }
 
-
-        //enviar el codigo de verificacion
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateUser(User newUser)
@@ -44,10 +43,14 @@ namespace Presentation.Controllers
                 {
                     var createdUserResponse = proxy_service.Create(newUser);
 
-                    if (createdUserResponse != null && createdUserResponse.Message != null)
+                    if (createdUserResponse.Success)
                     {
                         TempData["SuccessMessage"] = createdUserResponse.Message;
                         return RedirectToAction("VerifyAndCreateUser");
+                    }
+                    else
+                    {
+                        TempData["ErrorMessage"] = createdUserResponse.Message;
                     }
                 }
                 catch (Exception ex)
@@ -55,17 +58,18 @@ namespace Presentation.Controllers
                     TempData["ErrorMessage"] = ex.Message;
                 }
             }
+
             return View(newUser);
         }
 
 
 
+        //ACCIÓN PARA VERIFICAR EL CÓDIGO QUE SE ENVIÓ Y CREAR EL USUARIO
         public ActionResult VerifyAndCreateUser()
         {
             return View();
         }
 
-        // Verificar el código y crear el usuario
         [HttpPost]
         public async Task<ActionResult> VerifyAndCreateUser(string email, string code)
         {
@@ -73,7 +77,6 @@ namespace Presentation.Controllers
 
             try
             {
-                // Usamos await para esperar la respuesta de la tarea asincrónica
                 var response = await proxy_service.VerifyAndCreateUser(email, code);
 
                 if (response != null && response.Message != null)
@@ -92,13 +95,12 @@ namespace Presentation.Controllers
         }
 
 
-        // Mostrar la vista de Login
+        // ACCIÓN PARA ENVIAR CÓDIGO DE VERRIFICACIÓN ANTES DE INGRESAR AL SISTEMA 
         public ActionResult Login()
         {
             return View();
         }
 
-        // Enviar el código de verificación para el inicio de sesión
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(string email, string password)
@@ -115,37 +117,40 @@ namespace Presentation.Controllers
             {
                 var response = await proxy_service.Login(email, password);
 
-                if (!string.IsNullOrEmpty(response))
+                if (response.Success)
                 {
-                    TempData["SuccessMessage"] = response;
-                    TempData["Email"] = email; 
+                    TempData["SuccessMessage"] = response.Message;
+                    TempData["Email"] = response.Email;
                     return RedirectToAction("VerifyLoginCode");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response.Message;
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = ex.Message;
             }
-
             return View();
         }
 
-        // Mostrar la vista para verificar el código del login
+
+        //ACCIÓN PARA VERIFICAR EL CÓDIGO DE ACCESO DE USUARIO
         public ActionResult VerifyLoginCode()
         {
             ViewBag.Email = TempData["Email"];
             return View();
         }
 
-        // Verificar el código de autenticación y completar el inicio de sesión
         [HttpPost]
         public async Task<ActionResult> VerifyLoginCode(string email, string code)
         {
             var proxy_service = new ProxyUser();
 
-            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(code))
+            if (string.IsNullOrWhiteSpace(code))
             {
-                return Json(new { Message = "Email y código son obligatorios." });
+                return Json(new { Message = "Ingrese el código" });
             }
 
             try

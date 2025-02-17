@@ -3,28 +3,68 @@
   "WorkspaceRootPath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\verifylogincode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\verifylogincode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\content\\user\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\content\\user\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\content\\user\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\content\\user\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\verifylogincode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\verifylogincode.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\verifyandcreateuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\verifyandcreateuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\content\\notifications\\notifications.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\content\\notifications\\notifications.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\content\\user\\styleuser.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\content\\user\\styleuser.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\verifycoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\verifycoderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\usercreationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\usercreationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,113 +74,206 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.css",
-              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\User\\Login.css",
-              "RelativeDocumentMoniker": "Presentation\\Content\\User\\Login.css",
-              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\User\\Login.css",
-              "RelativeToolTip": "Presentation\\Content\\User\\Login.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-11T16:45:32.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "VerifyLoginCode.cshtml",
               "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\VerifyLoginCode.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\User\\VerifyLoginCode.cshtml",
               "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\VerifyLoginCode.cshtml",
               "RelativeToolTip": "Presentation\\Views\\User\\VerifyLoginCode.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-11T16:43:48.891Z",
+              "WhenOpened": "2025-02-17T00:10:11.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "VerifyAndCreateUser.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\VerifyAndCreateUser.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\User\\VerifyAndCreateUser.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\VerifyAndCreateUser.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\User\\VerifyAndCreateUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T00:10:06.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\User\\CreateUser.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\CreateUser.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\User\\CreateUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T00:09:59.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\User\\Login.cshtml",
               "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\Login.cshtml",
               "RelativeToolTip": "Presentation\\Views\\User\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-11T16:43:36.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAADwv5kAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T16:36:43.219Z",
+              "DocumentIndex": 0,
+              "Title": "Login.css",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\User\\Login.css",
+              "RelativeDocumentMoniker": "Presentation\\Content\\User\\Login.css",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\User\\Login.css",
+              "RelativeToolTip": "Presentation\\Content\\User\\Login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-13T03:28:22.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "Presentation\\App_Start\\BundleConfig.cs",
-              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "Presentation\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwB4AAAAzAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "notifications.css",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\Notifications\\notifications.css",
+              "RelativeDocumentMoniker": "Presentation\\Content\\Notifications\\notifications.css",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\Notifications\\notifications.css",
+              "RelativeToolTip": "Presentation\\Content\\Notifications\\notifications.css",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-13T03:32:30.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Presentation\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Presentation\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T16:30:23.862Z",
+              "WhenOpened": "2025-02-13T03:22:15.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "StyleUser.css",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\User\\StyleUser.css",
+              "RelativeDocumentMoniker": "Presentation\\Content\\User\\StyleUser.css",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Content\\User\\StyleUser.css",
+              "RelativeToolTip": "Presentation\\Content\\User\\StyleUser.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-13T03:28:29.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserLogic.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\UserLogic.cs",
+              "RelativeDocumentMoniker": "BLL\\UserLogic.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\UserLogic.cs",
+              "RelativeToolTip": "BLL\\UserLogic.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA6wDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T22:55:50.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VerifyCodeRequest.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\VerifyCodeRequest.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\VerifyCodeRequest.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\VerifyCodeRequest.cs",
+              "RelativeToolTip": "Entities\\DTOs\\VerifyCodeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T23:20:31.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBQAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-08T15:44:58.31Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "Presentation\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "Presentation\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T03:40:50.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\LoginResponse.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\LoginResponse.cs",
+              "RelativeToolTip": "Entities\\DTOs\\LoginResponse.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T23:19:41.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\LoginRequest.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "Entities\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T23:13:02.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserCreationResponse.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserCreationResponse.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\UserCreationResponse.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserCreationResponse.cs",
+              "RelativeToolTip": "Entities\\DTOs\\UserCreationResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T23:20:29.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA+wCQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T23:00:58.302Z"
             }
           ]
         }

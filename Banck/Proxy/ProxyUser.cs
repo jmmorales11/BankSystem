@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using SLC;
 using Entities.DTOs;
-using Service.Models;
 
 namespace Proxy
 {
@@ -41,6 +40,7 @@ namespace Proxy
             return Result;
         }
 
+
         // Método SendGet para enviar una solicitud GET
         private async Task<T> SendGet<T>(string requestURI)
         {
@@ -71,7 +71,7 @@ namespace Proxy
             {
                 var response = Task.Run(async () => await SendPost<UserCreationResponse, User>("/api/User/CreateUser", users)).Result;
 
-                if (response != null)
+                if (response != null && !string.IsNullOrEmpty(response.Message))
                 {
                     return response;
                 }
@@ -116,7 +116,7 @@ namespace Proxy
         }
 
         // Método para iniciar sesión y enviar código de verificación
-        public async Task<string> Login(string email, string password)
+        public async Task<LoginResponse> Login(string email, string password)
         {
             var loginRequest = new LoginRequest
             {
@@ -126,11 +126,11 @@ namespace Proxy
 
             try
             {
-                var response = await SendPost<string, LoginRequest>("/api/User/Login", loginRequest);
+                var response = await SendPost<LoginResponse, LoginRequest>("/api/User/Login", loginRequest);
 
-                if (!string.IsNullOrEmpty(response))
+                if (response != null && !string.IsNullOrEmpty(response.Message))
                 {
-                    return response; // Mensaje del backend
+                    return response;
                 }
                 else
                 {
@@ -142,6 +142,7 @@ namespace Proxy
                 throw new Exception($"Error al iniciar sesión: {ex.Message}");
             }
         }
+
 
         // Método para verificar el código de autenticación
         public async Task<LoginResponse> VerifyCode(string email, string code)

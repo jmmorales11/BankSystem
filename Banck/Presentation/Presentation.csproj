@@ -144,6 +144,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Notifications\notifications.css" />
     <Content Include="Content\User\Login.css" />
     <Content Include="Content\User\StyleUser.css" />
     <Content Include="favicon.ico" />

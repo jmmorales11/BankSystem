@@ -1,5 +1,0 @@
-﻿C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authentication\EmailService.cs
-C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authentication\IEmailService.cs
-C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
-C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Authorization\JwtService.cs
-C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\SL\Class1.cs

@@ -1,1 +1,0 @@
-[RMC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\DAL\DAL.csprojò	CSharp7_3

@@ -1,1 +1,0 @@
-[RMC:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\BLL\BLL.csprojò	CSharp7_3

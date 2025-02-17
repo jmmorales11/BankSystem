@@ -1,2 +1,0 @@
-﻿C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\BLL\UserLogic.cs
-C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\BLL\Properties\AssemblyInfo.cs

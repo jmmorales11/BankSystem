@@ -1,30 +1,28 @@
 ﻿using BLL;
 using Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Http;
-
+using Newtonsoft.Json;
 
 namespace Service.Controllers
 {
-    public class AmortizatioController : ApiController
+    public class AmortizationController : ApiController
     {
         // Crear una nueva amortización
         [HttpPost]
         public IHttpActionResult CreateAmortization([FromBody] Amortization newAmortization)
         {
             var amortizationLogic = new AmortizationLogic();
-            try
+            var (success, message, createdAmortization) = amortizationLogic.CreateAmortization(newAmortization);
+
+            if (success)
             {
-                var createdAmortization = amortizationLogic.CreateAmortization(newAmortization);
-                return Ok(new { Message = "Amortización creada exitosamente", Amortization = createdAmortization });
+                return Ok(new { Success = true, Message = message, Amortization = createdAmortization });
             }
-            catch (Exception ex)
+            else
             {
-                return BadRequest(ex.Message);
+                return BadRequest(JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
 
@@ -33,14 +31,15 @@ namespace Service.Controllers
         public IHttpActionResult GetAllAmortizations()
         {
             var amortizationLogic = new AmortizationLogic();
-            try
+            var (success, message, amortizations) = amortizationLogic.RetrieveAllAmortization();
+
+            if (success)
             {
-                var amortizations = amortizationLogic.RetrieveAllAmortization();
-                return Ok(new { Amortizations = amortizations });
+                return Ok(new { Success = true, Amortizations = amortizations });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.NotFound, JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
 
@@ -49,18 +48,15 @@ namespace Service.Controllers
         public IHttpActionResult GetAmortizationById(int id)
         {
             var amortizationLogic = new AmortizationLogic();
-            try
+            var (success, message, amortization) = amortizationLogic.RetrieveByIdAmortization(id);
+
+            if (success)
             {
-                var amortization = amortizationLogic.RetrieveByIdAmortization(id);
-                if (amortization == null)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Amortización no encontrada" });
-                }
-                return Ok(new { Amortization = amortization });
+                return Ok(new { Success = true, Amortization = amortization });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.NotFound, JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
 
@@ -69,48 +65,32 @@ namespace Service.Controllers
         public IHttpActionResult DeleteAmortization(int id)
         {
             var amortizationLogic = new AmortizationLogic();
-            try
-            {
-                bool deleted = amortizationLogic.Delete(id);
-                if (!deleted)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Amortización no encontrada o no se pudo eliminar" });
-                }
+            var (success, message) = amortizationLogic.Delete(id);
 
-                return Ok(new { Message = "Amortización eliminada exitosamente" });
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return InternalServerError(ex);
+                return Ok(new { Success = true, Message = message });
+            }
+            else
+            {
+                return Content(HttpStatusCode.NotFound, JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
 
+        // Actualizar una amortización
         [HttpPut]
         public IHttpActionResult UpdateAmortization([FromBody] Amortization amortization)
         {
-            if (amortization == null)
-            {
-                return BadRequest("Los datos de la amortización no son válidos.");
-            }
-
             var amortizationLogic = new AmortizationLogic();
-            try
-            {
-                // Llamar a la lógica de negocio para actualizar la amortización
-                bool updateSuccess = amortizationLogic.UpdateAmortization(amortization);
+            var (success, message) = amortizationLogic.UpdateAmortization(amortization);
 
-                if (updateSuccess)
-                {
-                    return Ok(new { Message = "Amortización actualizada exitosamente" });
-                }
-                else
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Amortización no encontrada o no se pudo actualizar." });
-                }
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return InternalServerError(ex); // Manejo de errores internos
+                return Ok(new { Success = true, Message = message });
+            }
+            else
+            {
+                return Content(HttpStatusCode.NotFound, JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,7 +11,14 @@ namespace Service
         public static void Register(HttpConfiguration config)
         {
             // Configuración y servicios de Web API
+            // Configuración y servicios de Web API
 
+            // Eliminar XML como formato de respuesta
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+
+            // Configurar JSON como el formato de respuesta por defecto
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Formatting.Indented; // Para que el JSON sea legible
             // Rutas de Web API
             config.MapHttpAttributeRoutes();
 

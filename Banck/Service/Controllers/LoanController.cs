@@ -1,32 +1,26 @@
 ﻿using BLL;
 using Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Newtonsoft.Json;
 using System.Net;
-using System.Web;
 using System.Web.Http;
-
 
 namespace Service.Controllers
 {
     public class LoanController : ApiController
     {
-        // GET: Loan
         [HttpPost]
         public IHttpActionResult CreateLoan([FromBody] Loan newLoan)
         {
             var loanLogic = new LoanLogic();
-            try
-            {
-                // Se debe agregar alguna validación de negocio aquí, si corresponde
-                var createdLoan = loanLogic.Create(newLoan);
+            var (success, message, createdLoan) = loanLogic.Create(newLoan);
 
-                return Ok(new { Message = "Préstamo creado exitosamente", Loan = createdLoan });
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return BadRequest(ex.Message);
+                return Ok(new { Success = true, Message = message, Loan = createdLoan });
+            }
+            else
+            {
+                return BadRequest(JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
 
@@ -34,85 +28,63 @@ namespace Service.Controllers
         public IHttpActionResult GetAllLoans()
         {
             var loanLogic = new LoanLogic();
-            try
+            var (success, message, loans) = loanLogic.RetrieveAllLoan();
+
+            if (success)
             {
-                var loans = loanLogic.RetrieveAllLoan();
-                return Ok(new { Loans = loans });
+                return Ok(new { Success = true, Loans = loans });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = message });
             }
         }
 
-        // Endpoint para recuperar un préstamo por ID
         [HttpGet]
         public IHttpActionResult GetLoanById(int id)
         {
             var loanLogic = new LoanLogic();
-            try
+            var (success, message, loan) = loanLogic.RetrieveByIdLoan(id);
+
+            if (success)
             {
-                var loan = loanLogic.RetrieveByIdLoan(id);
-                if (loan == null)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Préstamo no encontrado" });
-                }
-                return Ok(new { Loan = loan });
+                return Ok(new { Success = true, Loan = loan });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
 
-        // Endpoint para eliminar un préstamo por ID
         [HttpDelete]
         public IHttpActionResult DeleteLoan(int id)
         {
             var loanLogic = new LoanLogic();
-            try
-            {
-                bool deleted = loanLogic.Delete(id);
-                if (!deleted)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Préstamo no encontrado o no se pudo eliminar" });
-                }
+            var (success, message) = loanLogic.Delete(id);
 
-                return Ok(new { Message = "Préstamo eliminado exitosamente" });
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return InternalServerError(ex);
+                return Ok(new { Success = true, Message = message });
+            }
+            else
+            {
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
-
 
         [HttpPut]
         public IHttpActionResult UpdateLoan([FromBody] Loan loan)
         {
-            if (loan == null)
-            {
-                return BadRequest("Los datos del préstamo no son válidos.");
-            }
-
             var loanLogic = new LoanLogic();
-            try
-            {
-                // Llamamos a la lógica de negocio para actualizar el préstamo
-                bool updateSuccess = loanLogic.UpdateLoan(loan);
+            var (success, message) = loanLogic.UpdateLoan(loan);
 
-                if (updateSuccess)
-                {
-                    return Ok(new { Message = "Préstamo actualizado exitosamente" });
-                }
-                else
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Préstamo no encontrado o no se pudo actualizar." });
-                }
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return InternalServerError(ex); // Manejo de errores internos
+                return Ok(new { Success = true, Message = message });
+            }
+            else
+            {
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
     }

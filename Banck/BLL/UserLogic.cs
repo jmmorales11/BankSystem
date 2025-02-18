@@ -14,46 +14,81 @@ namespace BLL
 {
     public class UserLogic
     {
-        public List<User> RetrieveAllUser()
+        public (bool Success, string Message, List<User> UserList) RetrieveAllUser()
         {
-            List<User> res = null;
-            using (var r = RepositoryFactory.CreateRepository())
-            {
-                res = r.RetrieveAll<User>();
-            }
-            return res;
-        }
-        public User RetrieveByIdUser(int id)
-        {
-            User res = null;
-            using (var r = RepositoryFactory.CreateRepository())
-            {
-                res = r.Retrieve<User>(p => p.user_id == id);
-            }
-            return res;
-        }
-        public bool Delete(int id)
-        {
-            bool res = false;
-            var user = RetrieveByIdUser(id);
-            if (user != null)
+            try
             {
                 using (var r = RepositoryFactory.CreateRepository())
                 {
-                    res = r.Delete(user);
+                    var userList = r.RetrieveAll<User>();
+                    return (true, "Usuarios recuperados exitosamente", userList);
                 }
             }
-            return res;
-        }
-        public bool UpdateUser(User user)
-        {
-            bool result = false;
-            using (var r = RepositoryFactory.CreateRepository())
+            catch (Exception ex)
             {
-                // Llamamos al repositorio para realizar la actualización del usuario
-                result = r.Update(user);
+                return (false, $"Error al recuperar usuarios: {ex.Message}", null);
             }
-            return result;
+        }
+        public (bool Success, string Message, User User) RetrieveByIdUser(int id)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    var user = r.Retrieve<User>(p => p.user_id == id);
+                    if (user == null)
+                    {
+                        return (false, "Usuario no encontrado", null);
+                    }
+                    return (true, "Usuario encontrado", user);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al recuperar usuario: {ex.Message}", null);
+            }
+        }
+
+        public (bool Success, string Message) Delete(int id)
+        {
+            try
+            {
+                var user = RetrieveByIdUser(id).User;
+                if (user == null)
+                {
+                    return (false, "Usuario no encontrado");
+                }
+
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    bool deleted = r.Delete(user);
+                    return deleted
+                        ? (true, "Usuario eliminado exitosamente")
+                        : (false, "No se pudo eliminar el usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al eliminar usuario: {ex.Message}");
+            }
+        }
+
+        public (bool Success, string Message) UpdateUser(User user)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    bool updated = r.Update(user);
+                    return updated
+                        ? (true, "Usuario actualizado exitosamente")
+                        : (false, "No se pudo actualizar el usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al actualizar usuario: {ex.Message}");
+            }
         }
 
 

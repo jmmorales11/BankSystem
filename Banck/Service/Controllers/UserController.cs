@@ -195,75 +195,63 @@ namespace Service.Controllers
         [HttpGet]
         public IHttpActionResult GetAllUsers()
         {
-            try
-            {
-                var BL = new UserLogic();
-                var users = BL.RetrieveAllUser();
-                if (users == null || !users.Any())
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "No se encontraron usuarios." });
-                }
+            var userLogic = new UserLogic();
+            var (success, message, users) = userLogic.RetrieveAllUser();
 
-                return Ok(users);
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+                return Ok(new { Success = true, Users = users });
+            }
+            else
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = message });
             }
         }
 
         [HttpGet]
         public IHttpActionResult GetUserById(int id)
         {
-            try
-            {
-                var BL = new UserLogic();
-                var user = BL.RetrieveByIdUser(id);
-                if (user == null)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Usuario no encontrado." });
-                }
+            var userLogic = new UserLogic();
+            var (success, message, user) = userLogic.RetrieveByIdUser(id);
 
-                return Ok(user);
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+                return Ok(new { Success = true, User = user });
+            }
+            else
+            {
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
 
         [HttpDelete]
         public IHttpActionResult DeleteUser(int id)
         {
-            try
-            {
-                var BL = new UserLogic();
-                bool deleted = BL.Delete(id);
-                if (!deleted)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "No se pudo eliminar el usuario. Puede que no exista." });
-                }
+            var userLogic = new UserLogic();
+            var (success, message) = userLogic.Delete(id);
 
-                return Ok(new { Message = "Usuario eliminado exitosamente." });
-            }
-            catch (Exception ex)
+            if (success)
             {
-                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+                return Ok(new { Success = true, Message = message });
+            }
+            else
+            {
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
 
         [HttpPut]
         public IHttpActionResult UpdateUser(int id, [FromBody] User updatedUser)
         {
-            var BL = new UserLogic();
+            var userLogic = new UserLogic();
 
             try
             {
                 // Verificar si el usuario existe
-                var existingUser = BL.RetrieveByIdUser(id);
-                if (existingUser == null)
+                var (successRetrieve, messageRetrieve, existingUser) = userLogic.RetrieveByIdUser(id);
+                if (!successRetrieve)
                 {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Usuario no encontrado." });
+                    return Content(HttpStatusCode.NotFound, new { Success = false, Message = messageRetrieve });
                 }
 
                 // Actualizar los campos del usuario
@@ -280,18 +268,18 @@ namespace Service.Controllers
                 existingUser.status = updatedUser.status ?? existingUser.status;
 
                 // Llamar al método de lógica para realizar la actualización
-                bool updated = BL.UpdateUser(existingUser);
+                var (successUpdate, messageUpdate) = userLogic.UpdateUser(existingUser);
 
-                if (!updated)
+                if (!successUpdate)
                 {
-                    return Content(HttpStatusCode.InternalServerError, new { Message = "No se pudo actualizar el usuario." });
+                    return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = messageUpdate });
                 }
 
-                return Ok(new { Message = "Usuario actualizado exitosamente.", User = existingUser });
+                return Ok(new { Success = true, Message = messageUpdate, User = existingUser });
             }
             catch (Exception ex)
             {
-                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error en el servidor: " + ex.Message });
             }
         }
 

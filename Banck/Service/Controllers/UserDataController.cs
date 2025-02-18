@@ -1,10 +1,8 @@
 ﻿using BLL;
 using Entities;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Http;
 
 namespace Service.Controllers
@@ -15,93 +13,80 @@ namespace Service.Controllers
         public IHttpActionResult CreateUserData([FromBody] User_Data newUserData)
         {
             var userDataLogic = new UserDataLogic();
-            try
+            var (success, message, createdUserData) = userDataLogic.Create(newUserData);
+
+            if (success)
             {
-                var createdUserData = userDataLogic.Create(newUserData);
-                return Ok(new { Message = "Datos de usuario creados exitosamente", UserData = createdUserData });
+                return Ok(new { Success = true, Message = message, UserData = createdUserData });
             }
-            catch (Exception ex)
+            else
             {
-                return BadRequest(ex.Message);
+                return BadRequest(JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
 
-        // GET: Obtener todos los registros de User_Data
         [HttpGet]
         public IHttpActionResult GetAllUserData()
         {
             var userDataLogic = new UserDataLogic();
-            try
+            var (success, message, userDataList) = userDataLogic.RetrieveAllUserData();
+
+            if (success)
             {
-                var userDataList = userDataLogic.RetrieveAllUserData();
-                return Ok(new { UserDataList = userDataList });
+                return Ok(new { Success = true, UserDataList = userDataList });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = message });
             }
         }
 
-        // GET: Obtener un User_Data por ID
         [HttpGet]
         public IHttpActionResult GetUserDataById(int id)
         {
             var userDataLogic = new UserDataLogic();
-            try
+            var (success, message, userData) = userDataLogic.RetrieveByIdUserData(id);
+
+            if (success)
             {
-                var userData = userDataLogic.RetrieveByIdUserData(id);
-                if (userData == null)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Datos de usuario no encontrados" });
-                }
-                return Ok(new { UserData = userData });
+                return Ok(new { Success = true, UserData = userData });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
 
-        // DELETE: Eliminar un User_Data por ID
         [HttpDelete]
         public IHttpActionResult DeleteUserData(int id)
         {
             var userDataLogic = new UserDataLogic();
-            try
+            var (success, message) = userDataLogic.Delete(id);
+
+            if (success)
             {
-                bool deleted = userDataLogic.Delete(id);
-                if (!deleted)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "Datos de usuario no encontrados o no se pudieron eliminar" });
-                }
-                return Ok(new { Message = "Datos de usuario eliminados exitosamente" });
+                return Ok(new { Success = true, Message = message });
             }
-            catch (Exception ex)
+            else
             {
-                return InternalServerError(ex);
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
 
         [HttpPut]
         public IHttpActionResult UpdateUserData([FromBody] User_Data updatedUserData)
         {
-            try
+            var userDataLogic = new UserDataLogic();
+            var (success, message) = userDataLogic.UpdateUser_Data(updatedUserData);
+
+            if (success)
             {
-                var BL = new UserDataLogic();
-                bool isUpdated = BL.UpdateUser_Data(updatedUserData);
-
-                if (!isUpdated)
-                {
-                    return Content(HttpStatusCode.NotFound, new { Message = "No se encontró el dato del usuario para actualizar." });
-                }
-
-                return Ok(new { Message = "Datos del usuario actualizados exitosamente." });
+                return Ok(new { Success = true, Message = message });
             }
-            catch (Exception ex)
+            else
             {
-                return Content(HttpStatusCode.InternalServerError, new { Message = "Error en el servidor: " + ex.Message });
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
-
     }
 }

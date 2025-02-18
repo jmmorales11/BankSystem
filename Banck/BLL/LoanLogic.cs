@@ -2,73 +2,104 @@
 using Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
     public class LoanLogic
     {
-        public Loan Create(Loan loan)
+        public (bool Success, string Message, Loan CreatedLoan) Create(Loan loan)
         {
-            Loan res = null;
-            using (var r = RepositoryFactory.CreateRepository())
-            {
-
-                loan.application_date = DateTime.Now;
-
-                res = r.Create(loan);
-
-                return res;
-            }
-
-        }
-
-        public List<Loan> RetrieveAllLoan()
-        {
-            List<Loan> res = null;
-            using (var r = RepositoryFactory.CreateRepository())
-            {
-                res = r.RetrieveAll<Loan>();
-            }
-            return res;
-        }
-
-        public Loan RetrieveByIdLoan(int id)
-        {
-            Loan res = null;
-            using (var r = RepositoryFactory.CreateRepository())
-            {
-                res = r.Retrieve<Loan>(p => p.loan_id == id);
-            }
-            return res;
-        }
-
-        public bool Delete(int id)
-        {
-            bool res = false;
-            var loan = RetrieveByIdLoan(id);
-            if (loan!= null)
+            try
             {
                 using (var r = RepositoryFactory.CreateRepository())
                 {
-                    res = r.Delete(loan);
+                    loan.application_date = DateTime.Now;
+                    var createdLoan = r.Create(loan);
+                    return (true, "Préstamo creado exitosamente", createdLoan);
                 }
             }
-            return res;
-        }
-        public bool UpdateLoan(Loan loan)
-        {
-            bool result = false;
-            using (var r = RepositoryFactory.CreateRepository())
+            catch (Exception ex)
             {
-                // Actualiza el préstamo y devuelve un booleano indicando si fue exitoso
-                result = r.Update(loan);
+                return (false, $"Error al crear el préstamo: {ex.Message}", null);
             }
-            return result;
         }
 
+        public (bool Success, string Message, List<Loan> Loans) RetrieveAllLoan()
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    var loans = r.RetrieveAll<Loan>();
+                    return (true, "Préstamos recuperados exitosamente", loans);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al recuperar los préstamos: {ex.Message}", null);
+            }
+        }
 
+        public (bool Success, string Message, Loan Loan) RetrieveByIdLoan(int id)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    var loan = r.Retrieve<Loan>(p => p.loan_id == id);
+                    if (loan == null)
+                    {
+                        return (false, "Préstamo no encontrado", null);
+                    }
+                    return (true, "Préstamo encontrado", loan);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al recuperar el préstamo: {ex.Message}", null);
+            }
+        }
+
+        public (bool Success, string Message) Delete(int id)
+        {
+            try
+            {
+                var loan = RetrieveByIdLoan(id).Loan;
+                if (loan == null)
+                {
+                    return (false, "Préstamo no encontrado");
+                }
+
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    bool deleted = r.Delete(loan);
+                    return deleted
+                        ? (true, "Préstamo eliminado exitosamente")
+                        : (false, "No se pudo eliminar el préstamo");
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al eliminar el préstamo: {ex.Message}");
+            }
+        }
+
+        public (bool Success, string Message) UpdateLoan(Loan loan)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    bool updated = r.Update(loan);
+                    return updated
+                        ? (true, "Préstamo actualizado exitosamente")
+                        : (false, "No se pudo actualizar el préstamo");
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al actualizar el préstamo: {ex.Message}");
+            }
+        }
     }
 }

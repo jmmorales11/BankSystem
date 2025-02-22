@@ -1,0 +1,62 @@
+﻿@model Entities.User_Data
+
+@{
+    ViewBag.Title = (Model.user_data_id == 0 ? "Crear" : "Actualizar") + " Datos de Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@(Model.user_data_id == 0 ? "Crear" : "Actualizar") Datos de Usuario</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @* Campo oculto para enviar el user_id *@
+    @Html.HiddenFor(m => m.user_id)
+    @Html.HiddenFor(m => m.user_data_id)
+
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.salary)
+        @Html.TextBoxFor(m => m.salary, new { @class = "form-control", placeholder = "Salario" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.family_load)
+        @Html.TextBoxFor(m => m.family_load, new { @class = "form-control", placeholder = "Carga Familiar" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.workplace)
+        @Html.TextBoxFor(m => m.workplace, new { @class = "form-control", placeholder = "Lugar de Trabajo" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.housing_type)
+        @Html.TextBoxFor(m => m.housing_type, new { @class = "form-control", placeholder = "Tipo de Vivienda" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.rent_cost)
+        @Html.TextBoxFor(m => m.rent_cost, new { @class = "form-control", placeholder = "Costo de Alquiler" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.years_of_employment)
+        @Html.TextBoxFor(m => m.years_of_employment, new { @class = "form-control", placeholder = "Años de Empleo" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.employment_status)
+        @Html.TextBoxFor(m => m.employment_status, new { @class = "form-control", placeholder = "Estado de Empleo" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+}
+
+<div>
+    <a href="@Url.Action("ListUserData", "UserData")" class="btn btn-secondary">Volver</a>
+</div>

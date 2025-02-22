@@ -1,108 +1,134 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\",
+  "WorkspaceRootPath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\service\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\service\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\bll\\userdatalogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userdatalogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\service\\controllers\\userdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\userdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|c:\\users\\asus tuf a15\\source\\repos\\desarrolloseguro\\banksystem\\banck\\service\\controllers\\amortizatiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\amortizatiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\bll\\amortizationlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\bll\\amortizationlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\amortizationlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\bll\\loanlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\loanlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\service\\controllers\\amortizatiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\amortizatiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9DC07203-CF62-406E-80F3-4318771FA624}|DAL\\DAL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\dal\\nbanckdbmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{9DC07203-CF62-406E-80F3-4318771FA624}|DAL\\DAL.csproj|solutionrelative:dal\\nbanckdbmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Service||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\service\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\service\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DC07203-CF62-406E-80F3-4318771FA624}|DAL\\DAL.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\dal\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9DC07203-CF62-406E-80F3-4318771FA624}|DAL\\DAL.csproj|solutionrelative:dal\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\content\\notifications\\notifications.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\content\\notifications\\notifications.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\content\\user\\styleuser.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\content\\user\\styleuser.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\views\\user\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|c:\\users\\asus tuf a15\\source\\repos\\desarrolloseguro\\banksystem\\banck\\entities\\user_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|c:\\users\\asus tuf a15\\source\\repos\\desarrolloseguro\\banksystem\\banck\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|c:\\users\\asus tuf a15\\source\\repos\\desarrolloseguro\\banksystem\\banck\\entities\\amortization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\amortization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\amortization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS TUF A15\\AppData\\Local\\Temp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\loan\\createloan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\loan\\createloan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\service\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1D02B0-FE76-46F8-ACCF-7030FCB070F9}|Service\\Service.csproj|solutionrelative:service\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E36403A0-51B3-4089-802F-212DDCADAEDF}|Proxy\\Proxy.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\proxy\\proxyloan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36403A0-51B3-4089-802F-212DDCADAEDF}|Proxy\\Proxy.csproj|solutionrelative:proxy\\proxyloan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\loan\\listuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\loan\\listuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\loan\\listloansbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\loan\\listloansbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\controllers\\userdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\userdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\loanresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\loanresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E36403A0-51B3-4089-802F-212DDCADAEDF}|Proxy\\Proxy.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\proxy\\proxyuserdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36403A0-51B3-4089-802F-212DDCADAEDF}|Proxy\\Proxy.csproj|solutionrelative:proxy\\proxyuserdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\bll\\loanlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\loanlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\bll\\userdatalogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userdatalogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99B5AD-4601-4A4D-A2B2-FCF947AC2168}|BLL\\BLL.csproj|solutionrelative:bll\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\presentation\\views\\userdata\\listuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\userdata\\listuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\presentation\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\usercreationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\usercreationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\userdataresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\userdataresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\dtos\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\dtos\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E36403A0-51B3-4089-802F-212DDCADAEDF}|Proxy\\Proxy.csproj|D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\proxy\\proxyuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36403A0-51B3-4089-802F-212DDCADAEDF}|Proxy\\Proxy.csproj|solutionrelative:proxy\\proxyuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\user_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\user\\getallusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\user\\getallusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\userdata\\viewuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\userdata\\viewuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\presentation\\views\\userdata\\createuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3B90ED-4309-4C6A-A04C-605EFCAF0B3A}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\userdata\\createuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|d:\\7. septimo semestre\\7. desarrollo de software seguro\\tercer parcial\\banksystem\\banck\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FEB840B-BF8D-4C67-B296-9D2D982E95B5}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -112,350 +138,427 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NBanckDBModel.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\DAL\\NBanckDBModel.edmx",
-              "RelativeDocumentMoniker": "DAL\\NBanckDBModel.edmx",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\DAL\\NBanckDBModel.edmx [Diagram1]",
-              "RelativeToolTip": "DAL\\NBanckDBModel.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-02-18T17:16:39.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Service",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Service.csproj",
-              "RelativeDocumentMoniker": "Service\\Service.csproj",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Service.csproj",
-              "RelativeToolTip": "Service\\Service.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-18T17:01:14.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WebApiConfig.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\App_Start\\WebApiConfig.cs",
-              "RelativeDocumentMoniker": "Service\\App_Start\\WebApiConfig.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\App_Start\\WebApiConfig.cs",
-              "RelativeToolTip": "Service\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAACAAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "ProxyUser.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Proxy\\ProxyUser.cs",
+              "RelativeDocumentMoniker": "Proxy\\ProxyUser.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Proxy\\ProxyUser.cs",
+              "RelativeToolTip": "Proxy\\ProxyUser.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAgwCgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T16:52:21.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T04:10:10.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T04:10:01.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "User_Data.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\User_Data.cs",
-              "RelativeDocumentMoniker": "Entities\\User_Data.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\User_Data.cs",
-              "RelativeToolTip": "Entities\\User_Data.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T04:04:04.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserDataController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\UserDataController.cs",
-              "RelativeDocumentMoniker": "Service\\Controllers\\UserDataController.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\UserDataController.cs",
-              "RelativeToolTip": "Service\\Controllers\\UserDataController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABcAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T04:04:07.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Entities\\User.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\User.cs",
-              "RelativeToolTip": "Entities\\User.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:58:32.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Service\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Service\\Controllers\\UserController.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAowBwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:53:55.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoanController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\LoanController.cs",
-              "RelativeDocumentMoniker": "Service\\Controllers\\LoanController.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\LoanController.cs",
-              "RelativeToolTip": "Service\\Controllers\\LoanController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowDsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:52:17.092Z",
+              "WhenOpened": "2025-02-19T00:43:06.236Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "EFRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\DAL\\EFRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\EFRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\DAL\\EFRepository.cs",
-              "RelativeToolTip": "DAL\\EFRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Title": "ProxyUserData.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Proxy\\ProxyUserData.cs",
+              "RelativeDocumentMoniker": "Proxy\\ProxyUserData.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Proxy\\ProxyUserData.cs",
+              "RelativeToolTip": "Proxy\\ProxyUserData.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:44:07.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Amortization.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\Amortization.cs",
-              "RelativeDocumentMoniker": "Entities\\Amortization.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\Amortization.cs",
-              "RelativeToolTip": "Entities\\Amortization.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:38:45.124Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "readme.txt",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\AppData\\Local\\Temp\\readme.txt",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\readme.txt",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\AppData\\Local\\Temp\\readme.txt",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\readme.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-02-17T03:37:54.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AmortizatioController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\AmortizatioController.cs",
-              "RelativeDocumentMoniker": "Service\\Controllers\\AmortizatioController.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Controllers\\AmortizatioController.cs",
-              "RelativeToolTip": "Service\\Controllers\\AmortizatioController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBgAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:37:54.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Web.config",
-              "RelativeDocumentMoniker": "Service\\Web.config",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Service\\Web.config",
-              "RelativeToolTip": "Service\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-02-17T03:37:54.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoanLogic.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\LoanLogic.cs",
-              "RelativeDocumentMoniker": "BLL\\LoanLogic.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\LoanLogic.cs",
-              "RelativeToolTip": "BLL\\LoanLogic.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAwwGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:34:32.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserDataLogic.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\UserDataLogic.cs",
-              "RelativeDocumentMoniker": "BLL\\UserDataLogic.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\UserDataLogic.cs",
-              "RelativeToolTip": "BLL\\UserDataLogic.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAswFEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:31:35.82Z",
+              "WhenOpened": "2025-02-20T02:36:45.491Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AmortizationLogic.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\AmortizationLogic.cs",
-              "RelativeDocumentMoniker": "BLL\\AmortizationLogic.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\AmortizationLogic.cs",
-              "RelativeToolTip": "BLL\\AmortizationLogic.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAJYAAAAAAAAAAAAAAA==",
+              "Title": "ProxyLoan.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Proxy\\ProxyLoan.cs",
+              "RelativeDocumentMoniker": "Proxy\\ProxyLoan.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Proxy\\ProxyLoan.cs",
+              "RelativeToolTip": "Proxy\\ProxyLoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T03:31:25.268Z",
+              "WhenOpened": "2025-02-21T20:35:43.094Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListUser.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Loan\\ListUser.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Loan\\ListUser.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Loan\\ListUser.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Loan\\ListUser.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T20:56:42.407Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Amortization.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Amortization.cs",
+              "RelativeDocumentMoniker": "Entities\\Amortization.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Amortization.cs",
+              "RelativeToolTip": "Entities\\Amortization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T23:59:16.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AmortizationLogic.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\AmortizationLogic.cs",
+              "RelativeDocumentMoniker": "BLL\\AmortizationLogic.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\AmortizationLogic.cs",
+              "RelativeToolTip": "BLL\\AmortizationLogic.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAADwv5MAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T00:08:58.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AmortizatioController.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Service\\Controllers\\AmortizatioController.cs",
+              "RelativeDocumentMoniker": "Service\\Controllers\\AmortizatioController.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Service\\Controllers\\AmortizatioController.cs",
+              "RelativeToolTip": "Service\\Controllers\\AmortizatioController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T00:09:19.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateLoan.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Loan\\CreateLoan.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Loan\\CreateLoan.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Loan\\CreateLoan.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Loan\\CreateLoan.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T21:26:57.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoanController.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Service\\Controllers\\LoanController.cs",
+              "RelativeDocumentMoniker": "Service\\Controllers\\LoanController.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Service\\Controllers\\LoanController.cs",
+              "RelativeToolTip": "Service\\Controllers\\LoanController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:34:14.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoanController.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\LoanController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\LoanController.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\LoanController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\LoanController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T22:41:47.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListLoansByUser.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Loan\\ListLoansByUser.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Loan\\ListLoansByUser.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Loan\\ListLoansByUser.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Loan\\ListLoansByUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T22:25:34.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\User\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T04:24:00.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDataController.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\UserDataController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\UserDataController.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\UserDataController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\UserDataController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T02:44:43.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Loan.cs",
+              "RelativeDocumentMoniker": "Entities\\Loan.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Loan.cs",
+              "RelativeToolTip": "Entities\\Loan.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:26:29.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "CreateUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\User\\CreateUser.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\CreateUser.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\User\\CreateUser.cshtml",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\User\\CreateUser.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\CreateUser.cshtml",
               "RelativeToolTip": "Presentation\\Views\\User\\CreateUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T00:09:59.238Z"
+              "WhenOpened": "2025-02-21T22:29:26.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\User\\Login.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\User\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\User\\Login.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\User\\Login.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-11T16:43:36.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "notifications.css",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Content\\Notifications\\notifications.css",
-              "RelativeDocumentMoniker": "Presentation\\Content\\Notifications\\notifications.css",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Content\\Notifications\\notifications.css",
-              "RelativeToolTip": "Presentation\\Content\\Notifications\\notifications.css",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-13T03:32:30.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "Presentation\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "Presentation\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "LoanResponseDto.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\LoanResponseDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\LoanResponseDto.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\LoanResponseDto.cs",
+              "RelativeToolTip": "Entities\\DTOs\\LoanResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T03:22:15.451Z"
+              "WhenOpened": "2025-02-21T20:44:59.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "StyleUser.css",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Content\\User\\StyleUser.css",
-              "RelativeDocumentMoniker": "Presentation\\Content\\User\\StyleUser.css",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Content\\User\\StyleUser.css",
-              "RelativeToolTip": "Presentation\\Content\\User\\StyleUser.css",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-13T03:28:29.493Z"
+              "Title": "LoanLogic.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\LoanLogic.cs",
+              "RelativeDocumentMoniker": "BLL\\LoanLogic.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\LoanLogic.cs",
+              "RelativeToolTip": "BLL\\LoanLogic.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T21:12:32.252Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserLogic.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\UserLogic.cs",
-              "RelativeDocumentMoniker": "BLL\\UserLogic.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\BLL\\UserLogic.cs",
-              "RelativeToolTip": "BLL\\UserLogic.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFsAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Log.cs",
+              "RelativeDocumentMoniker": "Entities\\Log.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Log.cs",
+              "RelativeToolTip": "Entities\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T22:55:50.446Z",
+              "WhenOpened": "2025-02-21T21:57:20.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResponseDto.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\ResponseDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\ResponseDto.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\ResponseDto.cs",
+              "RelativeToolTip": "Entities\\DTOs\\ResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T03:47:23.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserLogic.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\UserLogic.cs",
+              "RelativeDocumentMoniker": "BLL\\UserLogic.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\UserLogic.cs",
+              "RelativeToolTip": "BLL\\UserLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T21:12:03.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T02:46:04.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserDataLogic.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\UserDataLogic.cs",
+              "RelativeDocumentMoniker": "BLL\\UserDataLogic.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\BLL\\UserDataLogic.cs",
+              "RelativeToolTip": "BLL\\UserDataLogic.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAADwvz0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T15:16:44.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T15:59:10.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ListUserData.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\UserData\\ListUserData.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\UserData\\ListUserData.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\UserData\\ListUserData.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\UserData\\ListUserData.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T03:22:51.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-08T15:44:58.31Z"
+              "Title": "UserCreationResponse.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserCreationResponse.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\UserCreationResponse.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserCreationResponse.cs",
+              "RelativeToolTip": "Entities\\DTOs\\UserCreationResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:46:05.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserDataResponseDto.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserDataResponseDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\UserDataResponseDto.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserDataResponseDto.cs",
+              "RelativeToolTip": "Entities\\DTOs\\UserDataResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T02:51:32.977Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "Presentation\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Presentation\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "Presentation\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAA4AAAAAAAAAA==",
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DTOs\\UserResponseDto.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\DTOs\\UserResponseDto.cs",
+              "RelativeToolTip": "Entities\\DTOs\\UserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T03:40:50.345Z"
+              "WhenOpened": "2025-02-20T02:54:01.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "User_Data.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\User_Data.cs",
+              "RelativeDocumentMoniker": "Entities\\User_Data.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\User_Data.cs",
+              "RelativeToolTip": "Entities\\User_Data.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T03:28:41.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GetAllUsers.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\GetAllUsers.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\User\\GetAllUsers.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\User\\GetAllUsers.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\User\\GetAllUsers.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T16:03:29.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ViewUserData.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\UserData\\ViewUserData.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\UserData\\ViewUserData.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\UserData\\ViewUserData.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\UserData\\ViewUserData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T19:13:22.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CreateUserData.cshtml",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\UserData\\CreateUserData.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\UserData\\CreateUserData.cshtml",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Presentation\\Views\\UserData\\CreateUserData.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\UserData\\CreateUserData.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T15:54:46.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAzwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T03:27:32.642Z",
+              "EditorCaption": ""
             }
           ]
         }

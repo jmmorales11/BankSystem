@@ -1,5 +1,5 @@
-ë
-QC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Class1.cs
+þ
+dD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Class1.cs
 	namespace 	
 SL
  
@@ -10,8 +10,8 @@ QC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Class1.
 Class1 
 { 
 } 
-}		 çX
-cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authorization\JwtService.cs
+}		 úX
+vD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authorization\JwtService.cs
 	namespace 	
 SL
  
@@ -740,35 +740,8 @@ emailClaim
 ŸŸ 	
 }
    
-}¡¡ ¯
-gC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\IEmailService.cs
-	namespace 	
-SL
- 
-. 
-Authentication 
-{ 
-public 
-
-	interface 
-IEmailService "
-{		 
-Task 
-SendEmailAsync 
-( 
-string "
-recipientEmail# 1
-,1 2
-string3 9
-subject: A
-,A B
-stringC I
-bodyJ N
-)N O
-;O P
-} 
-} ¿	
-hC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
+}¡¡ Ò	
+{D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
 	namespace 	
 SL
  
@@ -846,8 +819,35 @@ hC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authent
 ;E F
 } 	
 } 
-}  
-fC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\EmailService.cs
+} Â
+zD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\IEmailService.cs
+	namespace 	
+SL
+ 
+. 
+Authentication 
+{ 
+public 
+
+	interface 
+IEmailService "
+{		 
+Task 
+SendEmailAsync 
+( 
+string "
+recipientEmail# 1
+,1 2
+string3 9
+subject: A
+,A B
+stringC I
+bodyJ N
+)N O
+;O P
+} 
+} ³
+yD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\EmailService.cs
 	namespace 	
 SL
  

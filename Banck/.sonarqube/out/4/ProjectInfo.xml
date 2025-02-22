@@ -4,14 +4,14 @@
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
   <ProjectGuid>272e331e-5aa8-4b4c-bb31-893908c9b229</ProjectGuid>
-  <FullPath>C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\SL.csproj</FullPath>
+  <FullPath>D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\SL.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\conf\4\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\.sonarqube\conf\4\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\out\4\Issues.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\.sonarqube\out\4</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\.sonarqube\out\4\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\.sonarqube\out\4</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

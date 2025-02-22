@@ -4,13 +4,11 @@ using System.Text;
 
 namespace Entities.DTOs
 {
-    public class LoginResponse
+    public class LoginResponse:ResponseDto
     {
         public string Token { get; set; }  
         public string Email { get; set; }   
         public string Role { get; set; }    
-        public string Message { get; set; }
-        public bool Success { get; set; }
 
     }
 

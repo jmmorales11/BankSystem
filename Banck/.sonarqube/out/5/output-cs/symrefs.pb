@@ -1,13 +1,42 @@
-}
-cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Models\EmailRequest.cs
-
- 
+Œ
+ÅD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\UserDataController.cs
 
 
 
- i
-gC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Properties\AssemblyInfo.csÑ
-jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Controllers\UserController.cs
+ #
+
+! /
+E PK V
+ 6 C
+  
+ !: A_ f
+# 2N ]
+
+! /
+   3 @
+   "" 
+   !((d k
+  # /$$? K
+
+--! 0
+--5 700R T
+// 00/ <
+00 22 
+00 !88Y `
+00# +44; C
+
+==! /
+==4 6@@: <
+?? @@% 2
+@@ BB 
+@@ !DD: AHHY `
+
+MM! /
+MME TPPC R
+OO PP% 2
+PP RR 
+PP !TT: AXXY `Ø
+}D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\UserController.cs
 
  @
 2 C66 !ZZ !]] !
@@ -71,43 +100,205 @@ jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Co
 µµ #
 
 ØØ 
-≥≥ !u
-[C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Global.asax.cs
+≥≥ !
+
+ƒƒ! ,
+
+∆∆ 
+««, 5
+
+«« 
+…… 
+
+«« !
+œœd k
+
+««# (
+ÀÀ8 =
+
+‘‘! ,
+
+‘‘1 3
+◊◊F H
+
+÷÷ 
+◊◊+ 4
+
+◊◊ 
+ŸŸ 
+
+◊◊ !
+ﬂﬂY `
+
+◊◊# '
+€€7 ;
+
+‰‰! +
+
+‰‰0 2
+ÁÁ6 8
+
+ÊÊ 
+ÁÁ% .
+
+ÁÁ 
+ÈÈ $
+
+ÁÁ !
+ÎÎ: A
+ÔÔY `
+
+ˆˆ! +
+
+ˆˆ0 2
+˝˝b dú
+
+ˆˆD O
+ÑÑ* 5
+ÖÖ) 4
+ÜÜ* 5
+ÜÜX c
+áá' 2
+àà% 0
+ââ$ /
+ää( 3
+ãã1 <
+åå4 ?
+çç5 @
+éé& 1$
+
+¯¯ 
+˝˝G P
+ëë5 >
+
+˝˝ $
+˛˛ $
+
+˝˝& 5
+ÄÄ] l¨
+
+˝˝7 C
+ÑÑ 
+ÑÑD P
+ÖÖ 
+ÖÖB N
+ÜÜ 
+ÜÜq }
+áá 
+áá> J
+àà 
+àà: F
+ââ 
+ââ8 D
+ää 
+ää@ L
+ãã 
+ããR ^
+åå 
+ååX d
+çç 
+ççZ f
+éé 
+éé< H
+ëëJ V
+òòP \
+
+ëë "
+ìì "$
+
+ëë$ 1
+ïïh u
+òò: Gà
+nD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Global.asax.cs
 
 
 
  "
 
- (§
-jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Controllers\LoanController.cs
+ (ê
+vD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Models\EmailRequest.cs
 
- 
-
-! +
-< C3 :
- " +
- Q \
-
-""! ,
-$$ '' %
-'' ((( -
-
-22! ,
-221 3776 8
-44 77 $
-77 88 <<' +
-
-FF! +
-FF0 2KK0 2
-HH KK (
-KK LL †
-fC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\App_Start\WebApiConfig.cs
-
- $
+ 
 
 
 
- #
+ |
+zD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Properties\AssemblyInfo.cs…
+}D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\LoanController.cs
+
+		 
+
+! +
+< CC J
+ 2 ;
+  
+ !: A_ f
+# .J U
+
+! ,
+ , 5
+ !! 
+ !''d k
+# (##8 =
+
+,,! ,
+,,1 3//F H
+.. //+ 4
+// 11 
+// !77Y `
+//# '337 ;
+
+<<! +
+<<0 2??6 8
+>> ??% .
+?? AA 
+?? !CC: AGGY `
+
+LL! +
+LL< @OO: >
+NN OO% .
+OO QQ 
+OO !SS: AWWY `—
+ÑD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\AmortizatioController.cs
+
 
 
-6 <  
+ '
+
+! 3
+L [_ n
+ !: K
+  
+ !: A_ f
+# 6R e
+
+! 4
+!! !""4 E
+"" $$ 
+"" !**u |
+""# 0&&@ M
+
+00! 4
+009 ;33^ `
+22 !333 D
+33 55 
+33 !;;u |
+33# /77? K
+
+AA! 3
+AA8 :DD> @
+CC !DD% 6
+DD FF 
+DD !HH: ALLu |
+
+RR! 3
+RRL XUUJ V
+TT !UU% 6
+UU WW 
+UU !YY: A]]u |€
+yD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\App_Start\WebApiConfig.cs
+
+		 $
+
+ #F
+6 < % +    

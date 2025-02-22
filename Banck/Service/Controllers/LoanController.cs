@@ -1,6 +1,7 @@
 ﻿using BLL;
 using Entities;
 using Newtonsoft.Json;
+using System;
 using System.Net;
 using System.Web.Http;
 
@@ -12,6 +13,8 @@ namespace Service.Controllers
         public IHttpActionResult CreateLoan([FromBody] Loan newLoan)
         {
             var loanLogic = new LoanLogic();
+            newLoan.application_date = DateTime.Now;
+            newLoan.status = 1;
             var (success, message, createdLoan) = loanLogic.Create(newLoan);
 
             if (success)
@@ -41,10 +44,10 @@ namespace Service.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult GetLoanById(int id)
+        public IHttpActionResult GetLoanById(int userId)
         {
             var loanLogic = new LoanLogic();
-            var (success, message, loan) = loanLogic.RetrieveByIdLoan(id);
+            var (success, message, loan) = loanLogic.RetrieveByIdLoan(userId);
 
             if (success)
             {
@@ -87,5 +90,32 @@ namespace Service.Controllers
                 return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
+
+
+        [HttpGet]
+        [Route("api/Loan/GetLoansByUserId/{userId}")]
+        public IHttpActionResult GetLoansByUserId(int userId)
+        {
+            var loanLogic = new LoanLogic();
+            try
+            {
+                // Filtramos los préstamos por user_id
+                var (success, message, loans) = loanLogic.RetrieveLoansByUserId(userId);
+
+                if (success)
+                {
+                    return Ok(new { Success = true, Loans = loans });
+                }
+                else
+                {
+                    return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = ex.Message });
+            }
+        }
+
     }
 }

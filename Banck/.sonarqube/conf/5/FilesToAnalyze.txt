@@ -1,16 +1,18 @@
-﻿C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\App_Start\WebApiConfig.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Controllers\LoanController.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Controllers\UserController.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Global.asax.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Models\EmailRequest.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Properties\AssemblyInfo.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Content\Site.css
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Global.asax
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Web.config
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Views\Shared\Error.cshtml
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Views\_ViewStart.cshtml
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Views\Shared\_Layout.cshtml
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Views\web.config
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\packages.config
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Web.Debug.config
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Web.Release.config
+﻿D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\App_Start\WebApiConfig.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\AmortizatioController.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\LoanController.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\UserController.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\UserDataController.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Global.asax.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Models\EmailRequest.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Properties\AssemblyInfo.cs
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Content\Site.css
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Global.asax
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Web.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Views\Shared\Error.cshtml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Views\_ViewStart.cshtml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Views\Shared\_Layout.cshtml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Views\web.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\packages.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Web.Debug.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Web.Release.config

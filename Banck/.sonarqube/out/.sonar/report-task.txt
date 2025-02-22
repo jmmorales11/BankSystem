@@ -1,6 +1,6 @@
-projectKey=Back
+projectKey=bank
 serverUrl=http://localhost:9000
-serverVersion=25.1.0.102122
-dashboardUrl=http://localhost:9000/dashboard?id=Back
-ceTaskId=1e94c16e-686b-4fd1-98a9-87d8ca46957b
-ceTaskUrl=http://localhost:9000/api/ce/task?id=1e94c16e-686b-4fd1-98a9-87d8ca46957b
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9000/dashboard?id=bank
+ceTaskId=129dc3f8-f0e5-4e11-8763-93a2c2f02dfc
+ceTaskUrl=http://localhost:9000/api/ce/task?id=129dc3f8-f0e5-4e11-8763-93a2c2f02dfc

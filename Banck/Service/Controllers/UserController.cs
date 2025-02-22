@@ -224,7 +224,7 @@ namespace Service.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpPost] 
         public IHttpActionResult DeleteUser(int id)
         {
             var userLogic = new UserLogic();
@@ -239,6 +239,8 @@ namespace Service.Controllers
                 return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
+
+
 
         [HttpPut]
         public IHttpActionResult UpdateUser(int id, [FromBody] User updatedUser)

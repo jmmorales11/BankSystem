@@ -1131,19 +1131,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS TUF A15\\.nuget\\packages\\": {}
+    "C:\\Users\\steve\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\SL\\SL.csproj",
+      "projectUniqueName": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\SL\\SL.csproj",
       "projectName": "SL",
-      "projectPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\SL\\SL.csproj",
-      "packagesPath": "C:\\Users\\ASUS TUF A15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\SL\\obj\\",
+      "projectPath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\SL\\SL.csproj",
+      "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+      "outputPath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\SL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS TUF A15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

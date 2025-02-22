@@ -146,5 +146,35 @@ namespace BLL
 
             return (success, message);
         }
+
+        public List<Amortization> GenerateAmortizationSchedule(decimal requestedAmount, decimal interestRate, int paymentTermMonths, int loanId)
+        {
+            var amortizations = new List<Amortization>();
+            decimal monthlyInterestRate = interestRate / 100 / 12;  // Tasa mensual
+            decimal monthlyPayment = requestedAmount * (monthlyInterestRate * (decimal)Math.Pow((double)(1 + monthlyInterestRate), paymentTermMonths)) / ((decimal)Math.Pow((double)(1 + monthlyInterestRate), paymentTermMonths) - 1);
+            decimal remainingBalance = requestedAmount;
+
+            for (int i = 1; i <= paymentTermMonths; i++)
+            {
+                decimal interestPayment = remainingBalance * monthlyInterestRate;
+                decimal principalPayment = monthlyPayment - interestPayment;
+                remainingBalance -= principalPayment;
+
+                amortizations.Add(new Amortization
+                {
+                    installment_number = i,
+                    due_date = DateTime.Now.AddMonths(i),
+                    remaining_balance = remainingBalance,
+                    principal = principalPayment,
+                    loan_id = loanId,
+                    payment_date = null,  // La fecha de pago es null hasta que se realice un pago
+                    payment_amount = monthlyPayment,
+                    penalty_interest = null
+                });
+            }
+
+            return amortizations;
+        }
+
     }
 }

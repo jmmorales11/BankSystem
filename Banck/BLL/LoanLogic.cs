@@ -2,6 +2,7 @@
 using Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BLL
 {
@@ -101,5 +102,27 @@ namespace BLL
                 return (false, $"Error al actualizar el préstamo: {ex.Message}");
             }
         }
+
+        public (bool Success, string Message, List<Loan> Loans) RetrieveLoansByUserId(int userId)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    // Filtramos los préstamos por user_id
+                    var loans = r.RetrieveAll<Loan>().Where(loan => loan.user_id == userId).ToList();
+                    if (loans == null || loans.Count == 0)
+                    {
+                        return (false, "No se encontraron préstamos para este usuario.", null);
+                    }
+                    return (true, "Préstamos recuperados exitosamente", loans);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al recuperar los préstamos: {ex.Message}", null);
+            }
+        }
+
     }
 }

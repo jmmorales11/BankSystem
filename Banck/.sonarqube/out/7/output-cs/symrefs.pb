@@ -1,11 +1,34 @@
-n
-lC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Properties\AssemblyInfo.csz
-`C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Global.asax.cs
+◊
+ÜD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\Controllers\UserDataController.cs
+
+		 #
+
+( 4
+ % 1(
+    (/ 7
+
+&&( 7
+&&< B++B H
+(( ++% 12
+++ -- 33 55: B99/ 7
+
+GG( >
+GGC IMMB HWW: @
+II MM% 1(
+MM OO OO( 0RR  (
+
+dd( >P
+ddI Qjj 'kk8 @ll8 @llO WqqN Vvv  (|| $
+ff kk (ll (
+jj nn uu/ 7ç
+sD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\Global.asax.cs
 
  
 
- (Û
-oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Controllers\UserController.cs
+ (Å
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\Properties\AssemblyInfo.csÖ
+
+ÇD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\Controllers\UserController.cs
 
  
 ' 4 
@@ -15,74 +38,130 @@ oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentati
  &
 
 $$ &
-$$, 3,,C J>> 
-&& ,,. ;(
-,, +.. +005 H553 F
+$$, 3,,C J?? 
+&& ,,. ;2
+,, +.. +005 H11, ?663 F
 
-DD /
+EE /
 
-JJ( ;
-JJC HPPG L
-JJQ UPPN R
-LL PP% 2(
-PP RR RR( 0TT0 8
+LL( ;
+LLC HRRG L
+LLQ URRN R
+NN RR% 2(
+RR TT TT( 0VV0 8
 
-cc !
+ee !
 
-jj( -
-jj5 :nn* /vv9 >
-jjC KnnN Vvv@ H
-ll vv% 24
-vv xx zz1 9{{( 0
-ÄÄ/ 7
+ll( -
+ll5 :pp* /xx9 >
+llC KppN Vxx@ H
+nn xx% 24
+xx zz ||1 9}}( 0
+ÇÇ/ 7
 
-åå +
+éé +
 
-ìì( 7
+ïï( 7$
 
-ìì? D
-ûû> C$
+ïï? D
+††> C
+••( -$
 
-ììM Q
-óó* .
-ûûE I
+ïïM Q
+ôô* .
+††E I
 
-ïï 
-ûû% 2<
+óó 
+††% 2<
 
-ûû 
 †† 
-††> F
-§§0 8
-§§J R°
-oC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Controllers\HomeController.cs
+¢¢ 
+¢¢> F
+ßß0 8
+ßßJ R
 
-		 
+∑∑( 3
 
- !
+ππ 
+ºº% 20
 
- !
+ºº 
+ΩΩ 
+øø  (
+√√/ 7
 
- #§
-jC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\RouteConfig.cs
+–– &
 
-
-
- 
+––+ -
+÷÷8 :
 
- )
-: @  õ
-kC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\FilterConfig.cs
+““ 
+÷÷ ,0
+
+÷÷ 
+ÿÿ 
+ÿÿ( 0
+ﬁﬁ/ 7
+
+ÏÏ $
+
+ÏÏ) +
+ÔÔ8 :
+
+ÓÓ 
+ÔÔ +0
+
+ÔÔ 
+ÒÒ 
+ÛÛ+ 7
+˜˜ $
+
+˚˚ $
+
+˚˚) +
+ÅÅ7 90
+
+˚˚2 =
+ÅÅ; F
+ãã  +
+ëë '
+
+˝˝ 
+ÅÅ +0
+
+ÅÅ 
+ÉÉ 
+ÖÖ1 9
+ää/ 7Æ
+~D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\App_Start\FilterConfig.cs
 
  
 
  0
 H O
 
- ·
-kC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\App_Start\BundleConfig.cs
+ À
+ÇD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\Controllers\HomeController.cs
+
+		 
+
+ !
+  !
+
+ !
+
+ #∑
+}D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\App_Start\RouteConfig.cs
+
+
+
+ 
+
+ )
+: @  ˛
+~D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\App_Start\BundleConfig.cs
 
  
 
-		 *Z
-		< C          
+		 *d
+		< C          "" 

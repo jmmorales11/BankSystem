@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 7,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 7,
@@ -60,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/IRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/IRepository.cs",
                 "region": {
                   "startLine": 7,
                   "startColumn": 7,
@@ -81,7 +81,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/RepositoryFactory.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/RepositoryFactory.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 18,
@@ -102,7 +102,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 15,
                   "startColumn": 19,
@@ -117,13 +117,62 @@
           }
         },
         {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 30
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 21,
+                  "endLine": 57,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'EFRepository' or mark the type as 'sealed'.",
+              "1": "'EFRepository.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
+          }
+        },
+        {
           "ruleId": "S2737",
           "level": "warning",
           "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 35,
                   "startColumn": 13,
@@ -144,7 +193,28 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 13,
+                  "endLine": 53,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 72,
                   "startColumn": 13,
@@ -165,7 +235,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 86,
                   "startColumn": 13,
@@ -186,7 +256,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
                 "region": {
                   "startLine": 101,
                   "startColumn": 13,
@@ -201,109 +271,39 @@
           }
         },
         {
-          "ruleId": "S2737",
-          "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 13,
-                  "endLine": 53,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3881",
-          "level": "warning",
-          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 18,
-                  "endLine": 13,
-                  "endColumn": 30
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 21,
-                  "endLine": 57,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'EFRepository' or mark the type as 'sealed'.",
-              "1": "'EFRepository.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
-            }
-          }
-        },
-        {
           "ruleId": "S112",
           "level": "warning",
           "message": "'System.Exception' should not be thrown by user code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/EFRepository.cs",
-                "region": {
-                  "startLine": 119,
-                  "startColumn": 23,
-                  "endLine": 119,
-                  "endColumn": 82
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/DAL/ConnectionStringHelper.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/ConnectionStringHelper.cs",
                 "region": {
                   "startLine": 18,
                   "startColumn": 23,
                   "endLine": 18,
                   "endColumn": 128
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/DAL/EFRepository.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 23,
+                  "endLine": 119,
+                  "endColumn": 82
                 }
               }
             }

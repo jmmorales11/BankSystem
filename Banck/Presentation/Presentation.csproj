@@ -121,7 +121,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoanController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -145,6 +147,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Notifications\notifications.css" />
+    <Content Include="Content\User\forms.css" />
     <Content Include="Content\User\Login.css" />
     <Content Include="Content\User\StyleUser.css" />
     <Content Include="favicon.ico" />
@@ -185,11 +188,18 @@
     <Content Include="Views\User\VerifyAndCreateUser.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\VerifyLoginCode.cshtml" />
+    <Content Include="Views\User\GetAllUsers.cshtml" />
+    <Content Include="Views\User\EditUser.cshtml" />
+    <Content Include="Views\UserData\ListUserData.cshtml" />
+    <Content Include="Views\UserData\CreateUserData.cshtml" />
+    <Content Include="Views\UserData\ViewUserData.cshtml" />
+    <Content Include="Views\Loan\ListUser.cshtml" />
+    <Content Include="Views\Loan\CreateLoan.cshtml" />
+    <Content Include="Views\Loan\ListLoansByUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Loan\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

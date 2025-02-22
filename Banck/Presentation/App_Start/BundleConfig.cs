@@ -31,6 +31,8 @@ namespace Presentation
                       "~/Content/User/Login.css"));
             bundles.Add(new StyleBundle("~/Content/Notifications/css").Include(
                       "~/Content/Notifications/notifications.css"));
+            bundles.Add(new StyleBundle("~/Content/Forms/css").Include(
+                      "~/Content/User/forms.css"));
         }
     }
 }

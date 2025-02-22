@@ -9,7 +9,6 @@ namespace Entities
     {
         public string Email { get; set; }
         public string Code { get; set; }
-
         public bool Success { get; set; }
     }
 }

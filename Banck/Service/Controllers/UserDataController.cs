@@ -57,7 +57,7 @@ namespace Service.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpPost]
         public IHttpActionResult DeleteUserData(int id)
         {
             var userDataLogic = new UserDataLogic();

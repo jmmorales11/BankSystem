@@ -1,0 +1,99 @@
+﻿@model Entities.User
+
+@{
+    ViewBag.Title = "Editar Usuario";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    @Styles.Render("~/Content/Forms/css")
+</head>
+<body>
+
+    <!-- Contenedor del formulario de edición de usuario -->
+    <div class="edit-user-container">
+        <h2 class="edit-user-title">Editar Usuario</h2>
+
+        @using (Html.BeginForm("EditUser", "User", FormMethod.Post, new { id = "editUserForm" }))
+        {
+            @Html.HiddenFor(model => model.user_id)
+
+            <div class="edit-user-row">
+                <div class="edit-user-col-half">
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(model => model.first_name)
+                        @Html.TextBoxFor(model => model.first_name, new { @class = "form-control edit-user-form-control" })
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(model => model.last_name)
+                        @Html.TextBoxFor(model => model.last_name, new { @class = "form-control edit-user-form-control" })
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(model => model.email)
+                        @Html.TextBoxFor(model => model.email, new { @class = "form-control edit-user-form-control" })
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(model => model.address)
+                        @Html.TextBoxFor(model => model.address, new { @class = "form-control edit-user-form-control" })
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(model => model.role)
+                        @Html.TextBoxFor(model => model.role, new { @class = "form-control edit-user-form-control" })
+                    </div>
+                </div>
+
+                <div class="edit-user-col-half">
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(model => model.status)
+                        @Html.DropDownListFor(model => model.status, new List<SelectListItem>
+                        {
+                            new SelectListItem { Text = "Activo", Value = "Activo" },
+                            new SelectListItem { Text = "Inactivo", Value = "Inactivo" }
+                        }, new { @class = "form-control edit-user-form-control" })
+                    </div>
+
+                    <button type="button" class="btn btn-primary edit-user-btn" data-bs-toggle="modal" data-bs-target="#confirmUpdateModal">Actualizar Usuario</button>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Modal de Confirmación de Actualización -->
+    <div class="modal fade" id="confirmUpdateModal" tabindex="-1" aria-labelledby="confirmUpdateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="confirmUpdateModalLabel">Confirmar Actualización</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Estás seguro de que deseas actualizar los datos de este usuario?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="confirmUpdateBtn">Actualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Enviar el formulario al confirmar la actualización
+        document.getElementById('confirmUpdateBtn').addEventListener('click', function () {
+            document.getElementById('editUserForm').submit();
+        });
+    </script>
+
+</body>
+</html>

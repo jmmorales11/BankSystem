@@ -56,3 +56,5 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\obj\Deb
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\obj\Debug\DAL.dll
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\obj\Debug\DAL.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\bin\Debug\System.Configuration.ConfigurationManager.xml

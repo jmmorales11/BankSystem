@@ -64,6 +64,34 @@ namespace Proxy
             return Result;
         }
 
+
+        // Método SendPut para enviar una solicitud PUT
+        private async Task<T> SendPut<T, PutData>(string requestURI, PutData data)
+        {
+            T Result = default(T);
+            using (var Client = new HttpClient())
+            {
+                try
+                {
+                    requestURI = BaseAddress + requestURI;
+                    Client.DefaultRequestHeaders.Accept.Clear();
+                    Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var JSONData = JsonConvert.SerializeObject(data);
+                    var Response = await Client.PutAsync(requestURI, new StringContent(JSONData, Encoding.UTF8, "application/json"));
+
+                    var ResultWebAPI = await Response.Content.ReadAsStringAsync();
+                    Result = JsonConvert.DeserializeObject<T>(ResultWebAPI);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error en SendPut: {ex.Message}");
+                }
+            }
+            return Result;
+        }
+
+
         // Método Create para crear un nuevo usuario
         public UserCreationResponse Create(User users)
         {
@@ -171,6 +199,98 @@ namespace Proxy
                 throw new Exception($"Error al verificar el código: {ex.Message}");
             }
         }
+
+        //CRUD DE USER
+
+        public async Task<UserResponseDto> GetAllUsers()
+        {
+            try
+            {
+                var response = await SendGet<UserResponseDto>("/api/User/GetAllUsers");
+
+                if (response != null)
+                {
+                    return response;
+                }
+                else
+                {
+                    throw new Exception("No se pudo obtener los usuarios.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al obtener los usuarios: {ex.Message}");
+            }
+        }
+
+
+
+
+        // Método para obtener un usuario por ID
+        public UserResponseDto GetUserById(int id)
+        {
+            try
+            {
+                return Task.Run(async () => await SendGet<UserResponseDto>($"/api/User/GetUserById/{id}")).Result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al obtener el usuario por ID: {ex.Message}");
+            }
+        }
+
+
+        // Método para eliminar un usuario por ID
+        public ResponseDto DeleteUser(int id)
+        {
+            try
+            {
+                // Cambiar la llamada para enviar el id como parte de la URL
+                var response = Task.Run(async () => await SendPost<ResponseDto, int>($"/api/User/DeleteUser/{id}", id)).Result;
+
+                if (response != null)
+                {
+                    return response; // Mensaje de éxito
+                }
+                else
+                {
+                    throw new Exception("No se pudo eliminar el usuario.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al eliminar el usuario: {ex.Message}");
+            }
+        }
+
+
+
+        // Método para actualizar un usuario por ID
+        public ResponseDto UpdateUser(int id, User updatedUser)
+        {
+            try
+            {
+                var response = Task.Run(async () => await SendPut<ResponseDto, User>($"/api/User/UpdateUser/{id}", updatedUser)).Result;
+
+                if (response != null)
+                {
+                    return response; // Mensaje de éxito
+                }
+                else
+                {
+                    throw new Exception("No se pudo actualizar el usuario.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al actualizar el usuario: {ex.Message}");
+            }
+        }
+
+
+
+
+
 
     }
 }

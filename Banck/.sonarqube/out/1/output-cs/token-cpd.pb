@@ -1,5 +1,5 @@
-Ž
-cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\Properties\AssemblyInfo.cs
+¡
+vD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\Properties\AssemblyInfo.cs
 [ 
 assembly 	
 :	 
@@ -124,8 +124,8 @@ ComVisible 
 (!! 
 $str!! (
 )!!( )
-]!!) *Û
-WC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\IRepository.cs
+]!!) *î
+jD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\IRepository.cs
 	namespace		 	
 DAL		
  
@@ -246,8 +246,8 @@ Expression& 0
 class= B
 ;B C
 } 
-} ®=
-XC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\EFRepository.cs
+} Â=
+kD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\EFRepository.cs
 	namespace 	
 DAL
  
@@ -295,9 +295,9 @@ _dbContext 
 Configuration $
 .$ %
 LazyLoadingEnabled% 7
-=8 9
-true: >
-;> ?
+=8 9
+false: ?
+;? @
 } 	
 public 
 TEntity 
@@ -705,8 +705,8 @@ _dbContextrr #
 ;yy 
 }zz 	
 }|| 
-}}} ø
-]C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\RepositoryFactory.cs
+}}} ‹
+pD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\RepositoryFactory.cs
 	namespace 	
 DAL
  
@@ -739,8 +739,8 @@ _dbContextrr #
 ;@ A
 } 	
 } 
-} ²
-bC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\ConnectionStringHelper.cs
+} Å
+uD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\ConnectionStringHelper.cs
 	namespace 	
 DAL
  

@@ -15,9 +15,9 @@ namespace Entities
     public partial class Amortization
     {
         public int amortization_id { get; set; }
-        public int installment_number { get; set; }
-        public System.DateTime due_date { get; set; }
-        public decimal remaining_balance { get; set; }
+        public int installment_number { get; set; } 
+        public System.DateTime due_date { get; set; } 
+        public decimal remaining_balance { get; set; } 
         public decimal principal { get; set; }
         public int loan_id { get; set; }
         public Nullable<System.DateTime> payment_date { get; set; }

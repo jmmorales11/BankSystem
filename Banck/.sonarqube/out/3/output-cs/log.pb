@@ -1,1 +1,1 @@
-Roslyn version: 4.11.0.0Language version: CSharp7_3!Concurrent execution: enabled≠®File 'C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\BLL\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated
+Roslyn version: 4.11.0.0Language version: CSharp7_3!Concurrent execution: enabled¿ªFile 'D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated

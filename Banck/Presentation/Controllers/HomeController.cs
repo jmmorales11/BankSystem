@@ -10,6 +10,9 @@ namespace Presentation.Controllers
     {
         public ActionResult Index()
         {
+            var email = TempData["Email"] as string; // Obtener el correo guardado
+            ViewBag.Email = email; // Pasar a la vista
+
             return View();
         }
 

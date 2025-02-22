@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 72,
                   "startColumn": 30,
@@ -33,13 +33,34 @@
           }
         },
         {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Web.config",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 34,
+                  "endLine": 64,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S125",
           "level": "warning",
           "message": "Remove this commented out code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 169,
                   "startColumn": 17,
@@ -60,7 +81,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 51,
                   "startColumn": 43,
@@ -81,33 +102,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 136,
                   "startColumn": 43,
                   "endLine": 136,
                   "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2068",
-          "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Web.config",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 34,
-                  "endLine": 64,
-                  "endColumn": 50
                 }
               }
             }

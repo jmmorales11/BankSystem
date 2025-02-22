@@ -46,6 +46,7 @@ namespace Presentation.Controllers
                     if (createdUserResponse.Success)
                     {
                         TempData["SuccessMessage"] = createdUserResponse.Message;
+                        TempData["Email"] = createdUserResponse.User.email;
                         return RedirectToAction("VerifyAndCreateUser");
                     }
                     else
@@ -67,6 +68,7 @@ namespace Presentation.Controllers
         //ACCIÓN PARA VERIFICAR EL CÓDIGO QUE SE ENVIÓ Y CREAR EL USUARIO
         public ActionResult VerifyAndCreateUser()
         {
+            ViewBag.Email = TempData["Email"];
             return View();
         }
 
@@ -160,7 +162,8 @@ namespace Presentation.Controllers
                 if (response != null && !string.IsNullOrEmpty(response.Token))
                 {
                     TempData["SuccessMessage"] = "Inicio de sesión exitoso.";
-                    // Podrías almacenar el token o redirigir al usuario según sea necesario
+                    TempData["Email"] = email; // Guardar el correo para usar en HomeController
+                                               // Almacenar el token en el LocalStorage usando JavaScript
                     return Json(new { Message = response.Message, Token = response.Token });
                 }
                 else
@@ -175,6 +178,101 @@ namespace Presentation.Controllers
         }
 
 
+        //OBTENER TODOS LOS USUARIOS
+        [HttpGet]
+        public async Task<ActionResult> GetAllUsers()
+        {
+            var proxy_service = new ProxyUser();
+            try
+            {
+                var response = await proxy_service.GetAllUsers();
+                if (response.Success)
+                {
+                    return View(response.Users);  
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response.Message;
+                    return View();
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = ex.Message;
+                return View();
+            }
+        }
+
+
+        // Acción para eliminar un usuario por ID
+        public ActionResult DeleteUser(int id)
+        {
+            var proxy_service = new ProxyUser();
+
+            try
+            {
+                var response = proxy_service.DeleteUser(id);
+
+                if (response != null && response.Success)
+                {
+                    TempData["SuccessMessage"] = "Usuario eliminado correctamente.";
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response?.Message ?? "No se pudo eliminar al usuario. Respuesta vacía.";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Error al eliminar el usuario: {ex.Message}";
+            }
+
+            return RedirectToAction("GetAllUsers");
+        }
+
+
+
+        //ACTUALIZAR UN USUARIOS
+        public ActionResult EditUser(int id)
+        {
+            var proxyService = new ProxyUser();
+            var userResponse = proxyService.GetUserById(id); // Llamar al proxy para obtener el usuario
+
+            if (!userResponse.Success)
+            {
+                TempData["ErrorMessage"] = userResponse.Message;
+                return RedirectToAction("GetAllUsers"); // Redirigir a la lista si no se encuentra el usuario
+            }
+
+            return View(userResponse.User); // Pasa el usuario a la vista de edición
+        }
+
+        [HttpPost]
+        public ActionResult EditUser(int id, User updatedUser)
+        {
+            var proxyService = new ProxyUser();
+
+            try
+            {
+                var response = proxyService.UpdateUser(id, updatedUser);  // Llamada al servicio para actualizar
+
+                if (response.Success)
+                {
+                    TempData["SuccessMessage"] = response.Message;  // Mensaje de éxito
+                    return RedirectToAction("GetAllUsers");  // Redirigir a la lista de usuarios
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response.Message;  // Mensaje de error
+                    return View(updatedUser);  // Mostrar de nuevo el formulario de edición con errores
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Error: {ex.Message}";
+                return View(updatedUser);  // Mostrar el formulario de edición con errores
+            }
+        }
 
     }
 }

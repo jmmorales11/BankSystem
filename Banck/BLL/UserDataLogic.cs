@@ -39,13 +39,33 @@ namespace BLL
             }
         }
 
+        //public (bool Success, string Message, User_Data UserData) RetrieveByIdUserData(int id)
+        //{
+        //    try
+        //    {
+        //        using (var r = RepositoryFactory.CreateRepository())
+        //        {
+        //            var userData = r.Retrieve<User_Data>(p => p.user_data_id == id);
+        //            if (userData == null)
+        //            {
+        //                return (false, "Datos de usuario no encontrados", null);
+        //            }
+        //            return (true, "Datos de usuario encontrados", userData);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return (false, $"Error al recuperar datos de usuario: {ex.Message}", null);
+        //    }
+        //}
+
         public (bool Success, string Message, User_Data UserData) RetrieveByIdUserData(int id)
         {
             try
             {
                 using (var r = RepositoryFactory.CreateRepository())
                 {
-                    var userData = r.Retrieve<User_Data>(p => p.user_data_id == id);
+                    var userData = r.Retrieve<User_Data>(p => p.user_id == id);
                     if (userData == null)
                     {
                         return (false, "Datos de usuario no encontrados", null);

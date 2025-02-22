@@ -4,11 +4,8 @@ using System.Text;
 
 namespace Entities.DTOs
 {
-    public class UserCreationResponse
+    public class UserCreationResponse:ResponseDto
     {
         public User User { get; set; }
-        public string Message { get; set; }
-
-        public bool Success { get; set; }
     }
 }

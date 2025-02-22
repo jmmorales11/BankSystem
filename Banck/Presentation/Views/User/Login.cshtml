@@ -10,12 +10,6 @@
 </head>
 
 <!-- Mensajes de éxito y error -->
-@if (TempData["SuccessMessage"] != null)
-{
-    <div id="notification" class="notification success">
-        @TempData["SuccessMessage"]
-    </div>
-}
 @if (TempData["ErrorMessage"] != null)
 {
     <div id="notification" class="notification error">
@@ -52,7 +46,7 @@
                 <div class="overlay-panel overlay-right">
                     <h1>¡Bienvenido!</h1>
                     <p>Por favor, inicia sesión con tus credenciales.</p>
-                    <button class="ghost" id="signUp" onclick="window.location.href='@Url.Action("AddUser", "User")'">Sign Up</button>
+                    <button class="ghost" id="signUp" onclick="window.location.href='@Url.Action("CreateUser", "User")'">Sign Up</button>
                 </div>
             </div>
         </div>

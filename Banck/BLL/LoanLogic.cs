@@ -109,7 +109,6 @@ namespace BLL
             {
                 using (var r = RepositoryFactory.CreateRepository())
                 {
-                    // Filtramos los préstamos por user_id
                     var loans = r.RetrieveAll<Loan>().Where(loan => loan.user_id == userId).ToList();
                     if (loans == null || loans.Count == 0)
                     {

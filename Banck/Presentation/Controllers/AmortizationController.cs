@@ -38,6 +38,23 @@ namespace Presentation.Controllers
             }
         }
 
+        [HttpPost]
+        // Acción para registrar el pago de una cuota usando el proxy
+        public async Task<JsonResult> PayInstallment(int id)
+        {
+            var proxy = new ProxyAmortization();
+            try
+            {
+                // Invocamos el método del proxy que llama al endpoint de pago en el servicio
+                var response = await proxy.PayInstallment(id);
+                return Json(new { success = response.Success, message = response.Message });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
 
 
     }

@@ -32,5 +32,24 @@ namespace Service.Controllers
             return Ok(new { Success = true, AmortizationSchedule = schedule });
         }
 
+        // Nuevo endpoint para registrar el pago de una cuota
+        [HttpPost]
+        [Route("api/amortization/pay/{id}")]
+        public IHttpActionResult PayInstallment(int id)
+        {
+            var amortizationLogic = new AmortizationLogic();
+            var (success, message, amortization) = amortizationLogic.PayInstallment(id);
+
+            if (success)
+            {
+                return Ok(new { Success = true, Message = message, Amortization = amortization });
+            }
+            else
+            {
+                return Content(HttpStatusCode.BadRequest, new { Success = false, Message = message });
+            }
+        }
+
+
     }
 }

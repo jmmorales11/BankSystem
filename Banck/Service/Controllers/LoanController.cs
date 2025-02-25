@@ -2,6 +2,7 @@
 using Entities;
 using Newtonsoft.Json;
 using System;
+using System.Linq;
 using System.Net;
 using System.Web.Http;
 
@@ -13,13 +14,20 @@ namespace Service.Controllers
         public IHttpActionResult CreateLoan([FromBody] Loan newLoan)
         {
             var loanLogic = new LoanLogic();
+
+            var (retrieveSuccess, retrieveMessage, userLoans) = loanLogic.RetrieveLoansByUserId(newLoan.user_id);
+            if (userLoans != null && userLoans.Any(l => l.status == 1))
+            {
+                return Content(HttpStatusCode.BadRequest, new { Success = false, Message = "El usuario ya tiene un préstamo activo." });
+            }
+
             newLoan.application_date = DateTime.Now;
             newLoan.status = 1;
             var (success, message, createdLoan) = loanLogic.Create(newLoan);
 
             if (!success)
             {
-                return BadRequest(Newtonsoft.Json.JsonConvert.SerializeObject(new { Success = false, Message = message }));
+                return Content(HttpStatusCode.BadRequest, new { Success = false, Message = message });
             }
 
             var amortizationLogic = new AmortizationLogic();
@@ -36,6 +44,7 @@ namespace Service.Controllers
 
             return Ok(new { Success = true, Message = message + " " + scheduleMessage, Loan = createdLoan });
         }
+
 
 
         [HttpGet]

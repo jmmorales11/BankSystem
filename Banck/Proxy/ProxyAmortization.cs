@@ -110,5 +110,27 @@ namespace Proxy
                 throw new Exception($"Error al obtener el cronograma de amortización: {ex.Message}");
             }
         }
+
+        // Nuevo método para pagar una cuota
+        public async Task<ResponseDto> PayInstallment(int amortizationId)
+        {
+            try
+            {
+                // Usamos SendPost; se envía el ID en el body (aunque el endpoint lo obtiene de la URL)
+                var response = await SendPost<ResponseDto, int>($"/api/amortization/pay/{amortizationId}", amortizationId);
+                if (response != null)
+                {
+                    return response;
+                }
+                else
+                {
+                    throw new Exception("No se pudo procesar el pago de la cuota.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al pagar la cuota: {ex.Message}");
+            }
+        }
     }
 }

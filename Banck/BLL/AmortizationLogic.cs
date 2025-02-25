@@ -2,6 +2,7 @@
 using Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BLL
 {
@@ -155,21 +156,16 @@ namespace BLL
 
                 decimal remainingPrincipal = loan.requested_amount;
                 int totalPayments = loan.payment_term_months;
-                // Convertir tasa de interés anual a tasa mensual (porcentaje a decimal)
                 decimal monthlyInterestRate = loan.interest_rate / 100 / 12;
-                // Calcular el pago mensual usando la fórmula de amortización
                 decimal monthlyPayment = remainingPrincipal * monthlyInterestRate *
                                          (decimal)Math.Pow((double)(1 + monthlyInterestRate), totalPayments) /
                                          ((decimal)Math.Pow((double)(1 + monthlyInterestRate), totalPayments) - 1);
 
-                // Utilizamos la fecha de aplicación del préstamo o DateTime.Now si es null
                 DateTime startDate = loan.application_date ?? DateTime.Now;
 
                 for (int i = 1; i <= totalPayments; i++)
                 {
-                    // Interés del periodo actual
                     decimal interestForPeriod = remainingPrincipal * monthlyInterestRate;
-                    // Parte del principal
                     decimal principalPayment = monthlyPayment - interestForPeriod;
 
                     Amortization amortizationRecord = new Amortization
@@ -188,7 +184,6 @@ namespace BLL
                         remainingPrincipal = 0;
                 }
 
-                // Persistir la tabla de amortización en la base de datos
                 using (var r = RepositoryFactory.CreateRepository())
                 {
                     foreach (var amortization in schedule)
@@ -204,6 +199,78 @@ namespace BLL
                 return (false, $"Error al generar el cronograma: {ex.Message}", null);
             }
         }
+
+        public (bool Success, string Message, Amortization Amortization) PayInstallment(int amortizationId)
+        {
+            // Recuperamos la cuota usando el método existente
+            var retrieveResult = RetrieveByIdAmortization(amortizationId);
+            if (!retrieveResult.Success || retrieveResult.Amortization == null)
+            {
+                return (false, "Amortización no encontrada.", null);
+            }
+
+            var installment = retrieveResult.Amortization;
+
+            // Si ya se ha registrado la fecha de pago, retornamos esa información
+            if (installment.payment_date.HasValue)
+            {
+                return (true, "La cuota ya fue pagada.", installment);
+            }
+
+            // Actualizamos la fecha de pago a la fecha actual
+            installment.payment_date = DateTime.Now;
+
+            // Actualizamos la cuota en la base de datos
+            var updateResult = UpdateAmortization(installment);
+            if (!updateResult.Success)
+            {
+                return (false, updateResult.Message, null);
+            }
+
+            // Verificamos si se han pagado todas las cuotas del préstamo
+            // Primero, obtenemos todas las cuotas del préstamo asociado
+            var allScheduleResult = RetrieveAllAmortization();
+            if (!allScheduleResult.Success || allScheduleResult.Amortizations == null)
+            {
+                return (false, "No se pudieron recuperar las cuotas del préstamo.", installment);
+            }
+
+            // Filtramos las cuotas del préstamo actual
+            var schedule = allScheduleResult.Amortizations.Where(a => a.loan_id == installment.loan_id).ToList();
+            // Contamos las cuotas pagadas
+            int cuotasPagadas = schedule.Count(a => a.payment_date.HasValue);
+            int totalCuotas = schedule.Count;
+
+            // Si todas las cuotas están pagadas, actualizamos el estado del préstamo a inactivo
+            if (cuotasPagadas == totalCuotas)
+            {
+                // Supongamos que LoanLogic tiene un método para actualizar el préstamo
+                var loanLogic = new LoanLogic();
+                // Recuperamos el préstamo
+                var loanResult = loanLogic.RetrieveByIdLoan(installment.loan_id);
+                if (loanResult.Success && loanResult.Loan != null)
+                {
+                    var loan = loanResult.Loan;
+                    // Cambiamos el estado a inactivo (por ejemplo, 0)
+                    loan.status = 0;
+                    var updateLoanResult = loanLogic.UpdateLoan(loan);
+                    if (updateLoanResult.Success)
+                    {
+                        // Puedes agregar un mensaje indicando que el préstamo se cerró
+                        updateResult.Message += " Además, el préstamo ha sido finalizado.";
+                    }
+                    else
+                    {
+                        // Si falla la actualización, se puede registrar el error, pero no se detiene el proceso
+                        updateResult.Message += " Sin embargo, no se pudo actualizar el estado del préstamo.";
+                    }
+                }
+            }
+
+            return (true, "Cuota pagada exitosamente. " + updateResult.Message, installment);
+        }
+
+
 
 
     }

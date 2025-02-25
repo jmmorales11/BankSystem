@@ -286,5 +286,40 @@ namespace Service.Controllers
         }
 
 
+        [HttpPost]
+        [Route("api/user/directcreate")]
+        public IHttpActionResult DirectCreateUser([FromBody] User newUser)
+        {
+            var BL = new UserLogic();
+            try
+            {
+                // Verificar si el usuario ya existe
+                if (BL.validateExistingUser(newUser))
+                {
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = "Este usuario ya existe."
+                    });
+                }
+
+                // Asignar rol por defecto "Editor"
+                newUser.role = "Editor";
+                newUser.status = 1;
+                newUser.registration_date = DateTime.Now;
+
+                // Crear el usuario directamente
+                var createdUser = BL.CreateUser(newUser);
+
+                return Ok(new { Success = true, Message = "Usuario creado exitosamente.", User = createdUser });
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error: " + ex.Message });
+            }
+        }
+
+
+
     }
 }

@@ -99,8 +99,24 @@ namespace BLL
             {
                 users.status = 1;
                 users.registration_date = DateTime.Now;
+                users.role = "Editor";
 
-                    res = r.Create(users);
+                res = r.Create(users);
+
+                return res;
+            }
+
+        }
+
+        public User CreateUser(User users)
+        {
+            User res = null;
+            using (var r = RepositoryFactory.CreateRepository())
+            {
+                users.status = 1;
+                users.registration_date = DateTime.Now;
+
+                res = r.Create(users);
 
                 return res;
             }

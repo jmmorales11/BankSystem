@@ -287,6 +287,30 @@ namespace Proxy
             }
         }
 
+        // *** Nuevo método para crear el usuario de forma directa (sin verificación) ***
+        public async Task<UserCreationResponse> DirectCreateUser(User user)
+        {
+            try
+            {
+                user.status = 1;
+                user.registration_date = DateTime.Now;
+
+                var response = await SendPost<UserCreationResponse, User>("/api/user/directcreate", user);
+                if (response != null)
+                {
+                    return response;
+                }
+                else
+                {
+                    throw new Exception("No se pudo crear el usuario directamente.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al crear usuario directamente: {ex.Message}");
+            }
+        }
+
 
 
 

@@ -274,5 +274,41 @@ namespace Presentation.Controllers
             }
         }
 
+
+        // GET: Mostrar el formulario para crear un usuario de forma directa
+        public ActionResult DirectCreateUser()
+        {
+            return View();
+        }
+
+        // POST: Crear usuario de forma directa (sin verificación)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> DirectCreateUser(User newUser)
+        {
+            var proxyService = new ProxyUser();
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var response = await proxyService.DirectCreateUser(newUser);
+                    if (response != null && response.Success)
+                    {
+                        TempData["SuccessMessage"] = response.Message;
+                        return RedirectToAction("GetAllUsers");
+                    }
+                    else
+                    {
+                        TempData["ErrorMessage"] = response?.Message ?? "No se pudo crear el usuario.";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    TempData["ErrorMessage"] = ex.Message;
+                }
+            }
+            return View(newUser);
+        }
+
     }
 }

@@ -146,14 +146,7 @@
                     @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
                 </div>
 
-                <div class="form-group">
-                    @Html.LabelFor(model => model.role, "Rol", htmlAttributes: new { @class = "form-label" })
-                    @Html.DropDownListFor(model => model.role,
-                         new SelectList(new List<string> { "Admin", "Editor", "Viewer" }),
-                         "Selecciona un rol",
-                         new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.role, "", new { @class = "text-danger" })
-                </div>
+          
             </div>
 
             <div class="form-buttons">

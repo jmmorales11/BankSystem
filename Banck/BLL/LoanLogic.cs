@@ -10,6 +10,13 @@ namespace BLL
     {
         public (bool Success, string Message, Loan CreatedLoan) Create(Loan loan)
         {
+            // Validar la elegibilidad del usuario para el préstamo
+            var eligibility = ValidateLoanEligibility(loan);
+            if (!eligibility.IsEligible)
+            {
+                return (false, eligibility.Message, null);
+            }
+
             try
             {
                 using (var r = RepositoryFactory.CreateRepository())
@@ -24,6 +31,7 @@ namespace BLL
                 return (false, $"Error al crear el préstamo: {ex.Message}", null);
             }
         }
+
 
         public (bool Success, string Message, List<Loan> Loans) RetrieveAllLoan()
         {
@@ -122,6 +130,43 @@ namespace BLL
                 return (false, $"Error al recuperar los préstamos: {ex.Message}", null);
             }
         }
+
+        // Método para validar la elegibilidad del usuario para el préstamo
+        public (bool IsEligible, string Message) ValidateLoanEligibility(Loan loan)
+        {
+            var userDataLogic = new UserDataLogic();
+            var (success, message, userData) = userDataLogic.RetrieveByIdUserData(loan.user_id);
+
+            if (!success || userData == null)
+            {
+                return (false, "No se encontraron datos del usuario para validar el préstamo.");
+            }
+
+            // Calculamos la cuota mensual usando la fórmula de amortización
+            decimal monthlyInterestRate = loan.interest_rate / 100 / 12;
+            int totalPayments = loan.payment_term_months;
+            decimal monthlyPayment = loan.requested_amount * monthlyInterestRate *
+                                     (decimal)Math.Pow((double)(1 + monthlyInterestRate), totalPayments) /
+                                     ((decimal)Math.Pow((double)(1 + monthlyInterestRate), totalPayments) - 1);
+
+            // Ejemplo de validación: la cuota mensual no debe superar el 30% del salario del usuario
+            decimal maxAllowedPayment = userData.salary * 0.30m;
+            if (monthlyPayment > maxAllowedPayment)
+            {
+                return (false, $"El monto solicitado genera una cuota mensual de {monthlyPayment:C} que excede el 30% de su salario.");
+            }
+
+            // Validación adicional: por ejemplo, que el usuario tenga empleo fijo.
+            // Supongamos que employment_status == 1 significa que tiene empleo fijo.
+            if (userData.employment_status != 1)
+            {
+                return (false, "El usuario no cuenta con un empleo fijo para acceder al préstamo.");
+            }
+
+            // Si se cumplen las condiciones:
+            return (true, "El usuario es elegible para el préstamo.");
+        }
+
 
     }
 }

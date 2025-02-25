@@ -198,6 +198,7 @@
     <Content Include="Views\Loan\CreateLoan.cshtml" />
     <Content Include="Views\Loan\ListLoansByUser.cshtml" />
     <Content Include="Views\Amortization\Amortization.cshtml" />
+    <Content Include="Views\User\DirectCreateUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

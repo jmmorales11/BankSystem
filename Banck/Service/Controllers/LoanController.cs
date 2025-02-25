@@ -17,15 +17,26 @@ namespace Service.Controllers
             newLoan.status = 1;
             var (success, message, createdLoan) = loanLogic.Create(newLoan);
 
-            if (success)
+            if (!success)
             {
-                return Ok(new { Success = true, Message = message, Loan = createdLoan });
+                return BadRequest(Newtonsoft.Json.JsonConvert.SerializeObject(new { Success = false, Message = message }));
+            }
+
+            var amortizationLogic = new AmortizationLogic();
+            var (scheduleSuccess, scheduleMessage, schedule) = amortizationLogic.GenerateAndSaveSchedule(createdLoan);
+
+            if (scheduleSuccess)
+            {
+                createdLoan.Amortizations = schedule;
             }
             else
             {
-                return BadRequest(JsonConvert.SerializeObject(new { Success = false, Message = message }));
+                scheduleMessage = "Préstamo creado, pero hubo un problema al generar la amortización: " + scheduleMessage;
             }
+
+            return Ok(new { Success = true, Message = message + " " + scheduleMessage, Loan = createdLoan });
         }
+
 
         [HttpGet]
         public IHttpActionResult GetAllLoans()

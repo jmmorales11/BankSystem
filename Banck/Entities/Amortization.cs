@@ -23,7 +23,6 @@ namespace Entities
         public Nullable<System.DateTime> payment_date { get; set; }
         public decimal payment_amount { get; set; }
         public Nullable<decimal> penalty_interest { get; set; }
-    
         public virtual Loan Loan { get; set; }
     }
 }

@@ -1,0 +1,45 @@
+﻿@model List<Entities.Amortization>
+
+<h2>Cronograma de Amortización</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Número de Cuota</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Monto del Pago</th>
+                <th>Principal</th>
+                <th>Saldo Restante</th>
+                <th>Fecha de Pago</th>
+                <th>Interés de Penalización</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var amortization in Model)
+            {
+                <tr>
+                    <td>@amortization.installment_number</td>
+                    <td>@amortization.due_date.ToString("dd/MM/yyyy")</td>
+                    <td>@amortization.payment_amount</td>
+                    <td>@amortization.principal</td>
+                    <td>@amortization.remaining_balance</td>
+                    <td>@(amortization.payment_date.HasValue ? amortization.payment_date.Value.ToString("dd/MM/yyyy") : "-")</td>
+                    <td>@(amortization.penalty_interest.HasValue ? amortization.penalty_interest.Value.ToString("N2") : "-")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No se encontró cronograma de amortización para este préstamo.</p>
+}
+
+<a href="@Url.Action("ListLoansByUser", "Loan")" class="btn btn-secondary">Volver a Préstamos</a>

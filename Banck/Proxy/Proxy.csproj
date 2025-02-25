@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProxyAmortization.cs" />
     <Compile Include="ProxyLoan.cs" />
     <Compile Include="ProxyUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

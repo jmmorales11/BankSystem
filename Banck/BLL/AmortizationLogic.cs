@@ -147,34 +147,64 @@ namespace BLL
             return (success, message);
         }
 
-        public List<Amortization> GenerateAmortizationSchedule(decimal requestedAmount, decimal interestRate, int paymentTermMonths, int loanId)
+        public (bool Success, string Message, List<Amortization> Schedule) GenerateAndSaveSchedule(Loan loan)
         {
-            var amortizations = new List<Amortization>();
-            decimal monthlyInterestRate = interestRate / 100 / 12;  // Tasa mensual
-            decimal monthlyPayment = requestedAmount * (monthlyInterestRate * (decimal)Math.Pow((double)(1 + monthlyInterestRate), paymentTermMonths)) / ((decimal)Math.Pow((double)(1 + monthlyInterestRate), paymentTermMonths) - 1);
-            decimal remainingBalance = requestedAmount;
-
-            for (int i = 1; i <= paymentTermMonths; i++)
+            try
             {
-                decimal interestPayment = remainingBalance * monthlyInterestRate;
-                decimal principalPayment = monthlyPayment - interestPayment;
-                remainingBalance -= principalPayment;
+                List<Amortization> schedule = new List<Amortization>();
 
-                amortizations.Add(new Amortization
+                decimal remainingPrincipal = loan.requested_amount;
+                int totalPayments = loan.payment_term_months;
+                // Convertir tasa de interés anual a tasa mensual (porcentaje a decimal)
+                decimal monthlyInterestRate = loan.interest_rate / 100 / 12;
+                // Calcular el pago mensual usando la fórmula de amortización
+                decimal monthlyPayment = remainingPrincipal * monthlyInterestRate *
+                                         (decimal)Math.Pow((double)(1 + monthlyInterestRate), totalPayments) /
+                                         ((decimal)Math.Pow((double)(1 + monthlyInterestRate), totalPayments) - 1);
+
+                // Utilizamos la fecha de aplicación del préstamo o DateTime.Now si es null
+                DateTime startDate = loan.application_date ?? DateTime.Now;
+
+                for (int i = 1; i <= totalPayments; i++)
                 {
-                    installment_number = i,
-                    due_date = DateTime.Now.AddMonths(i),
-                    remaining_balance = remainingBalance,
-                    principal = principalPayment,
-                    loan_id = loanId,
-                    payment_date = null,  // La fecha de pago es null hasta que se realice un pago
-                    payment_amount = monthlyPayment,
-                    penalty_interest = null
-                });
-            }
+                    // Interés del periodo actual
+                    decimal interestForPeriod = remainingPrincipal * monthlyInterestRate;
+                    // Parte del principal
+                    decimal principalPayment = monthlyPayment - interestForPeriod;
 
-            return amortizations;
+                    Amortization amortizationRecord = new Amortization
+                    {
+                        installment_number = i,
+                        due_date = startDate.AddMonths(i),
+                        payment_amount = decimal.Round(monthlyPayment, 2),
+                        principal = decimal.Round(principalPayment, 2),
+                        remaining_balance = decimal.Round(remainingPrincipal - principalPayment, 2),
+                        loan_id = loan.loan_id
+                    };
+
+                    schedule.Add(amortizationRecord);
+                    remainingPrincipal -= principalPayment;
+                    if (remainingPrincipal < 0)
+                        remainingPrincipal = 0;
+                }
+
+                // Persistir la tabla de amortización en la base de datos
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    foreach (var amortization in schedule)
+                    {
+                        r.Create(amortization);
+                    }
+                }
+
+                return (true, "Cronograma de amortización generado y guardado exitosamente.", schedule);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al generar el cronograma: {ex.Message}", null);
+            }
         }
+
 
     }
 }

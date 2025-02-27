@@ -199,6 +199,8 @@
     <Content Include="Views\Loan\ListLoansByUser.cshtml" />
     <Content Include="Views\Amortization\Amortization.cshtml" />
     <Content Include="Views\User\DirectCreateUser.cshtml" />
+    <Content Include="Views\User\RecoverPassword.cshtml" />
+    <Content Include="Views\User\ResetPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -18,6 +18,8 @@ namespace Service.Controllers
     public class UserController : ApiController
     {
         private static Dictionary<string, string> VerificationCodes = new Dictionary<string, string>();
+        private static Dictionary<string, string> RecoveryCodes = new Dictionary<string, string>();
+
         private readonly IEmailService _emailService;
 
         public UserController()
@@ -30,7 +32,7 @@ namespace Service.Controllers
         private static Dictionary<string, User> PendingRegistrations = new Dictionary<string, User>();
 
 
-        //Envia el codigo de verificación
+        // Envia el codigo de verificación
         [HttpPost]
         public async Task<IHttpActionResult> CreateUser([FromBody] User newUser)
         {
@@ -48,6 +50,20 @@ namespace Service.Controllers
                     });
                 }
 
+                // Validar la contraseña y encriptarla
+                var passwordResult = BL.ValidateAndEncryptPassword(newUser.password);
+                if (!passwordResult.IsSafe)
+                {
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = passwordResult.Message
+                    });
+                }
+                // Reemplazar la contraseña por su versión encriptada
+                newUser.password = passwordResult.EncryptedPassword;
+
+                // Generar y enviar el código de verificación
                 string verificationCode = new Random().Next(100000, 999999).ToString();
 
                 // Guardar el código y los datos del usuario en memoria
@@ -59,7 +75,7 @@ namespace Service.Controllers
                 string body = $"Tu código de verificación es: <strong>{verificationCode}</strong>";
                 await _emailService.SendEmailAsync(newUser.email, subject, body);
 
-                // Crear la respuesta con el mensaje y el usuario
+                // Crear la respuesta con el mensaje y el usuario (pendiente de verificación)
                 var response = new UserCreationResponse
                 {
                     User = newUser,
@@ -78,6 +94,7 @@ namespace Service.Controllers
                 });
             }
         }
+
 
 
         //Verifica el código que se envió
@@ -303,6 +320,19 @@ namespace Service.Controllers
                     });
                 }
 
+                // Validar la contraseña y encriptarla
+                var passwordResult = BL.ValidateAndEncryptPassword(newUser.password);
+                if (!passwordResult.IsSafe)
+                {
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = passwordResult.Message
+                    });
+                }
+                // Reemplazar la contraseña por su versión encriptada
+                newUser.password = passwordResult.EncryptedPassword;
+
                 // Asignar rol por defecto "Editor"
                 newUser.role = "Editor";
                 newUser.status = 1;
@@ -316,6 +346,65 @@ namespace Service.Controllers
             catch (Exception ex)
             {
                 return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error: " + ex.Message });
+            }
+        }
+
+
+        // RECUPERAR CONTRASEÑA: Envía el código de recuperación
+        [HttpPost]
+        [Route("api/user/recoverpassword")]
+        public async Task<IHttpActionResult> RecoverPassword([FromBody] EmailRequest request)
+        {
+            var userLogic = new UserLogic();
+            var user = userLogic.RetrieveByEmail(request.Email);
+            if (user == null)
+            {
+                return Content(HttpStatusCode.NotFound, new { Success = false, Message = "Usuario no encontrado" });
+            }
+
+            string recoveryCode = new Random().Next(100000, 999999).ToString();
+            RecoveryCodes[request.Email] = recoveryCode;
+
+            string subject = "Código de recuperación de contraseña";
+            string body = $"Tu código de recuperación es: <strong>{recoveryCode}</strong>";
+            await _emailService.SendEmailAsync(request.Email, subject, body);
+
+            return Ok(new { Success = true, Message = "Se ha enviado un código de recuperación al correo." });
+        }
+
+        // RESET PASSWORD: Verifica el código y actualiza la contraseña (después de validarla y encriptarla)
+        [HttpPost]
+        [Route("api/user/resetpassword")]
+        public IHttpActionResult ResetPassword([FromBody] ResetPasswordRequest request)
+        {
+            if (RecoveryCodes.TryGetValue(request.Email, out string storedCode) && storedCode == request.Code)
+            {
+                // Una vez validado el código, lo eliminamos para evitar reusos
+                RecoveryCodes.Remove(request.Email);
+
+                var userLogic = new UserLogic();
+                // Validar y encriptar la nueva contraseña
+                var passwordValidation = userLogic.ValidateAndEncryptPassword(request.NewPassword);
+                if (!passwordValidation.IsSafe)
+                {
+                    // Si la contraseña no es segura, se retorna un error
+                    return Content(HttpStatusCode.BadRequest, new { Success = false, Message = passwordValidation.Message });
+                }
+
+                // Se actualiza la contraseña usando la versión encriptada
+                var (success, message) = userLogic.ResetPassword(request.Email, passwordValidation.EncryptedPassword);
+                if (success)
+                {
+                    return Ok(new { Success = true, Message = message });
+                }
+                else
+                {
+                    return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = message });
+                }
+            }
+            else
+            {
+                return Content(HttpStatusCode.Unauthorized, new { Success = false, Message = "Código de recuperación inválido o expirado." });
             }
         }
 

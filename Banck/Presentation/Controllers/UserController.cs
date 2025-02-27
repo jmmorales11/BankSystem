@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Entities.DTOs;
 using Proxy;
 using SL.Authentication;
 using System;
@@ -309,6 +310,98 @@ namespace Presentation.Controllers
             }
             return View(newUser);
         }
+
+        // ===================== ACCIONES PARA RECUPERAR CONTRASEÑA =====================
+
+        // GET: Mostrar el formulario para solicitar el código de recuperación
+        public ActionResult RecoverPassword()
+        {
+            return View();
+        }
+
+        // POST: Enviar el código de recuperación al correo del usuario
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> RecoverPassword(string email)
+        {
+            var proxy_service = new ProxyUser();
+
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                TempData["ErrorMessage"] = "El email es requerido.";
+                return View();
+            }
+
+            try
+            {
+                var response = await proxy_service.RecoverPassword(email);
+                if (response.Success)
+                {
+                    TempData["SuccessMessage"] = response.Message;
+                    // Almacenar el email para el siguiente paso
+                    TempData["Email"] = email;
+                    return RedirectToAction("ResetPassword");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response.Message;
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = ex.Message;
+            }
+            return View();
+        }
+
+        // GET: Mostrar el formulario para ingresar el código recibido y la nueva contraseña
+        public ActionResult ResetPassword()
+        {
+            ViewBag.Email = TempData["Email"];
+            return View();
+        }
+
+        // POST: Validar el código y actualizar la contraseña
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> ResetPassword(string email, string code, string newPassword)
+        {
+            var proxy_service = new ProxyUser();
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(code) || string.IsNullOrWhiteSpace(newPassword))
+            {
+                TempData["ErrorMessage"] = "Todos los campos son obligatorios.";
+                return View();
+            }
+
+            try
+            {
+                var request = new ResetPasswordRequest
+                {
+                    Email = email,
+                    Code = code,
+                    NewPassword = newPassword
+                };
+
+                var response = await proxy_service.ResetPassword(request);
+                if (response.Success)
+                {
+                    TempData["SuccessMessage"] = response.Message;
+                    return RedirectToAction("Login");
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response.Message;
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = ex.Message;
+            }
+            return View();
+        }
+
+
 
     }
 }

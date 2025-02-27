@@ -13,7 +13,7 @@ namespace SL.Authentication
         private const int SmtpPort = 587;
         private const string SenderEmail = "jeimymorales234@gmail.com";
         private const string SenderPassword = "wwxxktzzhyszqywj";
-        private const string SenderName = "Gestión de productos";
+        private const string SenderName = "UwU Company";
 
         public async Task SendEmailAsync(string recipientEmail, string subject, string body)
         {

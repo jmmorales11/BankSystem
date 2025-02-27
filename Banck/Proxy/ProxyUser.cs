@@ -311,6 +311,52 @@ namespace Proxy
             }
         }
 
+        // Método para solicitar el envío del código de recuperación de contraseña
+        public async Task<ResponseDto> RecoverPassword(string email)
+        {
+            try
+            {
+                // Enviar un objeto con la propiedad Email
+                var requestData = new EmailRequestDto { Email = email };
+                var response = await SendPost<ResponseDto, EmailRequestDto>("/api/user/recoverpassword", requestData);
+                if (response != null)
+                {
+                    return response;
+                }
+                else
+                {
+                    throw new Exception("No se pudo enviar el código de recuperación.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al solicitar recuperación de contraseña: {ex.Message}");
+            }
+        }
+
+
+        // Método para confirmar el código y restablecer la contraseña
+        public async Task<ResponseDto> ResetPassword(ResetPasswordRequest request)
+        {
+            try
+            {
+                var response = await SendPost<ResponseDto, ResetPasswordRequest>("/api/user/resetpassword", request);
+                if (response != null)
+                {
+                    return response;
+                }
+                else
+                {
+                    throw new Exception("No se pudo restablecer la contraseña.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al restablecer la contraseña: {ex.Message}");
+            }
+        }
+
+
 
 
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -144,11 +145,91 @@ namespace BLL
         {
             using (var r = RepositoryFactory.CreateRepository())
             {
-                User user = r.Retrieve<User>(u => u.email == email && u.password == password);
-
-                return user; // Retorna `null` si no encuentra usuario
+                // Encriptar la contraseña ingresada para compararla con la almacenada
+                string encryptedPassword = EncryptPassword(password);
+                return r.Retrieve<User>(u => u.email.ToLower() == email.ToLower() && u.password == encryptedPassword);
             }
         }
+
+
+        public (bool Success, string Message) ResetPassword(string email, string newPassword)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    // Buscar el usuario por correo
+                    var user = r.Retrieve<User>(u => u.email == email);
+                    if (user == null)
+                    {
+                        return (false, "Usuario no encontrado");
+                    }
+                    // Actualizar la contraseña
+                    user.password = newPassword; 
+                    bool updated = r.Update(user);
+                    return updated
+                        ? (true, "Contraseña actualizada exitosamente")
+                        : (false, "No se pudo actualizar la contraseña");
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al actualizar la contraseña: {ex.Message}");
+            }
+        }
+
+        public User RetrieveByEmail(string email)
+        {
+            using (var r = RepositoryFactory.CreateRepository())
+            {
+                return r.Retrieve<User>(u => u.email == email);
+            }
+        }
+
+
+        // Método para validar y encriptar la contraseña
+        public (bool IsSafe, string EncryptedPassword, string Message) ValidateAndEncryptPassword(string password)
+        {
+            if (string.IsNullOrEmpty(password))
+                return (false, null, "La contraseña no puede estar vacía.");
+
+            // Validación: al menos 8 caracteres
+            if (password.Length < 8)
+                return (false, null, "La contraseña debe tener al menos 8 caracteres.");
+
+            // Debe contener al menos una letra mayúscula
+            if (!password.Any(c => char.IsUpper(c)))
+                return (false, null, "La contraseña debe contener al menos una letra mayúscula.");
+
+            // Debe contener al menos una letra minúscula
+            if (!password.Any(c => char.IsLower(c)))
+                return (false, null, "La contraseña debe contener al menos una letra minúscula.");
+
+            // Debe contener al menos un dígito
+            if (!password.Any(c => char.IsDigit(c)))
+                return (false, null, "La contraseña debe contener al menos un dígito.");
+
+            // Debe contener al menos un carácter especial
+            if (!password.Any(c => "!@#$%^&*()_+-=[]{}|;':\",.<>/?".Contains(c)))
+                return (false, null, "La contraseña debe contener al menos un carácter especial.");
+
+            // Si pasa todas las validaciones, encriptamos la contraseña
+            string encrypted = EncryptPassword(password);
+            return (true, encrypted, "La contraseña es segura y fue encriptada correctamente.");
+        }
+
+        // Método privado para encriptar la contraseña usando SHA256
+        private string EncryptPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(password);
+                byte[] hash = sha256.ComputeHash(bytes);
+                return Convert.ToBase64String(hash);
+            }
+        }
+
+
 
 
 

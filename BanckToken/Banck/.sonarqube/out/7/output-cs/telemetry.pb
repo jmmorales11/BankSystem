@@ -1,1 +1,0 @@
-sReC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Presentation.csprojò	CSharp7_3

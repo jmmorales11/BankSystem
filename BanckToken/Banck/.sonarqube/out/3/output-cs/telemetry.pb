@@ -1,1 +1,0 @@
-aRSC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\BLL\BLL.csprojò	CSharp7_3

@@ -1,6 +1,0 @@
-﻿C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyAmortization.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyLoan.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyUser.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\Properties\AssemblyInfo.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyUserData.cs
-C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\packages.config

@@ -365,6 +365,7 @@ namespace Service.Controllers
 
 
         // RECUPERAR CONTRASEÑA: Envía el código de recuperación
+        [AllowAnonymous]
         [HttpPost]
         [Route("api/user/recoverpassword")]
         public async Task<IHttpActionResult> RecoverPassword([FromBody] EmailRequest request)
@@ -387,6 +388,7 @@ namespace Service.Controllers
         }
 
         // RESET PASSWORD: Verifica el código y actualiza la contraseña (después de validarla y encriptarla)
+        [AllowAnonymous]
         [HttpPost]
         [Route("api/user/resetpassword")]
         public IHttpActionResult ResetPassword([FromBody] ResetPasswordRequest request)

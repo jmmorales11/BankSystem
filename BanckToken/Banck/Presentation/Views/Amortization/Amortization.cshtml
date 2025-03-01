@@ -1,0 +1,105 @@
+﻿@model List<Entities.Amortization>
+
+<h2>Cronograma de Amortización</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Número de Cuota</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Monto del Pago</th>
+                <th>Principal</th>
+                <th>Saldo Restante</th>
+                <th>Fecha de Pago</th>
+                <th>Interés de Penalización</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                var amortization = Model[i];
+                bool habilitarBoton = false;
+                // Si es la primera cuota, se habilita
+                if (i == 0)
+                {
+                    habilitarBoton = true;
+                }
+                else
+                {
+                    // Habilitamos solo si la cuota anterior ya fue pagada
+                    habilitarBoton = Model[i - 1].payment_date.HasValue;
+                }
+                <tr id="row-@amortization.amortization_id">
+                    <td>@amortization.installment_number</td>
+                    <td>@amortization.due_date.ToString("dd/MM/yyyy")</td>
+                    <td>@amortization.payment_amount</td>
+                    <td>@amortization.principal</td>
+                    <td>@amortization.remaining_balance</td>
+                    <td>
+                        @(amortization.payment_date.HasValue
+                            ? amortization.payment_date.Value.ToString("dd/MM/yyyy")
+                            : "-")
+                    </td>
+                    <td>
+                        @(amortization.penalty_interest.HasValue
+                            ? amortization.penalty_interest.Value.ToString("N2")
+                            : "-")
+                    </td>
+                    <td>
+                        @if (!amortization.payment_date.HasValue)
+                        {
+                            <button class="btn btn-success" onclick="payInstallment(@amortization.amortization_id)" @(habilitarBoton ? "" : "disabled")>Pagar</button>
+                        }
+                        else
+                        {
+                            <span class="badge badge-info">Pagada</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+    <a href="@Url.Action("ListUserData", "UserData")" class="btn btn-secondary">Volver</a>
+</div>
+}
+else
+{
+    <p>No se encontró cronograma de amortización para este préstamo.</p>
+}
+
+<a href="@Url.Action("ListLoansByUser", "Loan")" class="btn btn-secondary">Volver a Préstamos</a>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function payInstallment(amortizationId) {
+            if (confirm("¿Está seguro de registrar el pago de esta cuota?")) {
+                $.ajax({
+                    url: '@Url.Action("PayInstallment", "Amortization")',
+                    type: 'POST',
+                    data: { id: amortizationId },
+                    success: function (result) {
+                        if (result.success) {
+                            // Recargamos la página para mostrar la actualización
+                            location.reload();
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Error al procesar el pago de la cuota.");
+                    }
+                });
+            }
+        }
+    </script>
+}

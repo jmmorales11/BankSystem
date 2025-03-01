@@ -1,0 +1,1 @@
+|R]C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Entities.csproj¢netstandard2.0ò	CSharp7_3

@@ -1,0 +1,47 @@
+﻿@model Entities.User_Data
+
+@{
+    ViewBag.Title = "Ver Datos de Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ver Datos de Usuario</h2>
+
+<div class="form-group">
+    <label>Salario:</label>
+    <p>@Model.salary</p>
+</div>
+
+<div class="form-group">
+    <label>Carga Familiar:</label>
+    <p>@Model.family_load</p>
+</div>
+
+<div class="form-group">
+    <label>Lugar de Trabajo:</label>
+    <p>@Model.workplace</p>
+</div>
+
+<div class="form-group">
+    <label>Tipo de Vivienda:</label>
+    <p>@Model.housing_type</p>
+</div>
+
+<div class="form-group">
+    <label>Costo de Alquiler:</label>
+    <p>@Model.rent_cost</p>
+</div>
+
+<div class="form-group">
+    <label>Años de Empleo:</label>
+    <p>@Model.years_of_employment</p>
+</div>
+
+<div class="form-group">
+    <label>Estado de Empleo:</label>
+    <p>@Model.employment_status</p>
+</div>
+
+<div>
+    <a href="@Url.Action("ListUserData", "UserData")" class="btn btn-secondary">Volver</a>
+</div>

@@ -1,0 +1,16 @@
+﻿@model Entities.User
+
+@{
+    ViewBag.Title = "Mi Perfil";
+}
+
+<h2>Mi Perfil</h2>
+
+<div>
+    <p><strong>ID:</strong> @Model.user_id</p>
+    <p><strong>Nombre:</strong> @Model.first_name</p>
+    <p><strong>Apellido:</strong> @Model.last_name</p>
+    <p><strong>Correo:</strong> @Model.email</p>
+    <p><strong>Rol:</strong> @Model.role</p>
+    <!-- Muestra más propiedades que necesites -->
+</div>

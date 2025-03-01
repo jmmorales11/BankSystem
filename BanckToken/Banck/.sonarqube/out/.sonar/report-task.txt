@@ -1,0 +1,6 @@
+projectKey=Back
+serverUrl=http://localhost:9000
+serverVersion=25.1.0.102122
+dashboardUrl=http://localhost:9000/dashboard?id=Back
+ceTaskId=667b6316-da2e-4757-a105-f27e20e5f236
+ceTaskUrl=http://localhost:9000/api/ce/task?id=667b6316-da2e-4757-a105-f27e20e5f236

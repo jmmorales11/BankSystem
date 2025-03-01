@@ -1,0 +1,53 @@
+﻿@model Entities.Loan
+
+@{
+    ViewBag.Title = "Crear Préstamo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear Préstamo</h2>
+
+<!-- Mostrar mensaje de error si existe -->
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<!-- Mostrar mensaje de éxito si existe -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@using (Html.BeginForm("CreateLoan", "Loan", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <!-- Campo oculto para el user_id -->
+    @Html.HiddenFor(model => model.user_id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.requested_amount)
+        @Html.TextBoxFor(model => model.requested_amount, new { @class = "form-control", placeholder = "Monto solicitado" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.interest_rate)
+        @Html.TextBoxFor(model => model.interest_rate, new { @class = "form-control", placeholder = "Tasa de interés" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.payment_term_months)
+        @Html.TextBoxFor(model => model.payment_term_months, new { @class = "form-control", placeholder = "Plazo en meses" })
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Crear Préstamo</button>
+}
+
+<a href="@Url.Action("ListUser", "Loan")" class="btn btn-secondary mt-3">Volver a la Lista de Préstamos</a>
+

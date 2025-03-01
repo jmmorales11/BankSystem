@@ -1,0 +1,1 @@
+pRQC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\SL.csproj¢netstandard2.0ò	CSharp7_3

@@ -1,0 +1,100 @@
+﻿@model Entities.User_Data
+
+@{
+    ViewBag.Title = (Model.user_data_id == 0 ? "Crear" : "Actualizar") + " Datos de Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@(Model.user_data_id == 0 ? "Crear" : "Actualizar") Datos de Usuario</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <!-- Campo oculto para enviar el user_id y el user_data_id -->
+    @Html.HiddenFor(m => m.user_id)
+    @Html.HiddenFor(m => m.user_data_id)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.salary, "Salario")
+        @Html.TextBoxFor(m => m.salary, new
+        {
+            @class = "form-control",
+            placeholder = "Ingrese su salario",
+            type = "number",
+            min = "0",
+            step = "any"
+        })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.family_load, "Carga Familiar")
+        @Html.TextBoxFor(m => m.family_load, new
+        {
+            @class = "form-control",
+            placeholder = "Ingrese su carga familiar",
+            type = "number",
+            min = "0",
+            step = "1"
+        })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.workplace, "Lugar de Trabajo")
+        @Html.TextBoxFor(m => m.workplace, new
+        {
+            @class = "form-control",
+            placeholder = "Ingrese su lugar de trabajo"
+        })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.housing_type, "Tipo de Vivienda")
+        @Html.TextBoxFor(m => m.housing_type, new
+        {
+            @class = "form-control",
+            placeholder = "Ingrese el tipo de vivienda"
+        })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.rent_cost, "Costo de Alquiler")
+        @Html.TextBoxFor(m => m.rent_cost, new
+        {
+            @class = "form-control",
+            placeholder = "Ingrese el costo de alquiler",
+            type = "number",
+            min = "0",
+            step = "any"
+        })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.years_of_employment, "Años de Empleo")
+        @Html.TextBoxFor(m => m.years_of_employment, new
+        {
+            @class = "form-control",
+            placeholder = "Ingrese los años de empleo",
+            type = "number",
+            min = "0",
+            max = "80",
+            step = "1"
+        })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.employment_status, "¿Cuenta con Empleo Fijo?")
+        @Html.DropDownListFor(m => m.employment_status, new List<SelectListItem> {
+            new SelectListItem { Value = "1", Text = "Si" },
+            new SelectListItem { Value = "0", Text = "No" }
+        }, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+}
+
+<div>
+    <a href="@Url.Action("ListUserData", "UserData")" class="btn btn-secondary">Volver</a>
+</div>

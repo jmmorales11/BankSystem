@@ -1,0 +1,1 @@
+iR[C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Service.csprojò	CSharp7_3

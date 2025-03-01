@@ -1,0 +1,1 @@
+eRWC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\Proxy.csprojò	CSharp7_3

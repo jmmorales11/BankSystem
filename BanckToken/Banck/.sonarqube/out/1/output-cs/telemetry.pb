@@ -1,0 +1,1 @@
+aRSC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\DAL.csprojò	CSharp7_3

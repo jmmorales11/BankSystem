@@ -1,0 +1,196 @@
+﻿@model Entities.User
+
+@{
+    ViewBag.Title = "Crear Usuario";
+    Layout = null;
+}
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden; /* Evita desbordes por el pseudo-elemento */
+        }
+
+            /* Pseudo-elemento para la imagen de fondo desenfocada */
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('https://wallpaper-house.com/data/out/8/wallpaper2you_252332.jpg') no-repeat center center fixed;
+                background-size: cover;
+                filter: blur(18px); /* Ajusta el valor para más o menos desenfoque */
+                z-index: -1; /* Coloca la imagen detrás del contenido */
+                opacity: 0.9; /* Controla la visibilidad de la imagen */
+            }
+
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-control {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .minimal-btn, .minimal-btn-cancel {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .minimal-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .minimal-btn-cancel {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .text-danger {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<div class="form-container">
+    <h2>Registrar usuario</h2>
+
+    <div id="userCreationSection">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-grid">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.first_name, "Nombre", htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.first_name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.first_name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.last_name, "Apellido", htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.last_name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.last_name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.email, "Correo electrónico", htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.birth_date, "Fecha de nacimiento", htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.birth_date, new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.birth_date, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.address, "Dirección", htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.address, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.password, "Contraseña", htmlAttributes: new { @class = "form-label" })
+                    @Html.TextBoxFor(model => model.password, new { @class = "form-control", type = "password" })
+                    @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                </div>
+
+          
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="minimal-btn" onclick="handleSubmit(event)">Crear</button>
+                <a href="@Url.Action("List")" class="minimal-btn-cancel">Cancelar</a>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const now = new Date();
+        const formattedDate = now.toISOString().slice(0, 16);
+        const createdAtInput = document.getElementById('CreatedAt');
+
+        if (createdAtInput && !createdAtInput.value) {
+            createdAtInput.value = formattedDate;
+        }
+    });
+
+    function escapeHTML(str) {
+        return str.replace(/[&<>"']/g, function (char) {
+            return {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            }[char];
+        });
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const fields = ['first_name', 'last_name', 'email', 'birth_date', 'address', 'password', 'role'];
+        fields.forEach(field => {
+            const input = document.getElementById(field);
+            if (input) {
+                input.value = escapeHTML(input.value);
+            }
+        });
+
+        event.target.form.submit();
+    }
+</script>

@@ -1,0 +1,31 @@
+Product projects
+---------------------------------------
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Entities.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\DAL.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SLC\SLC.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\BLL\BLL.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\SL.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\Service.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\Proxy.csproj
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\Presentation.csproj
+
+
+Test projects
+---------------------------------------
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

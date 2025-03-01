@@ -1,0 +1,318 @@
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Presentation.dll.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Presentation.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Presentation.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\csc.exe
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\csc.exe.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\csc.rsp
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\csi.exe
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\csi.exe.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\csi.rsp
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.AppContext.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Collections.Immutable.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Console.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Globalization.Calendars.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.IO.Compression.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.IO.FileSystem.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Net.Http.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Net.Sockets.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Reflection.Metadata.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.ValueTuple.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XPath.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\vbc.exe
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\vbc.exe.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\vbc.rsp
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\VBCSCompiler.exe
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\roslyn\VBCSCompiler.exe.config
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Antlr3.Runtime.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Entities.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Web.Infrastructure.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Newtonsoft.Json.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Proxy.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\SL.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Helpers.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Mvc.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Optimization.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Razor.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Deployment.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.WebPages.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Razor.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\WebGrease.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\SLC.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Entities.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Proxy.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\SL.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Helpers.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Mvc.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Optimization.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.Razor.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.WebPages.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Deployment.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Razor.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Newtonsoft.Json.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Antlr3.Runtime.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\SLC.pdb
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.Helpers.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.Mvc.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.Optimization.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.Razor.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\obj\Debug\Presenta.BC777DBE.Up2Date
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\obj\Debug\Presentation.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\obj\Debug\Presentation.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Presentation.dll.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Presentation.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Presentation.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\csc.exe
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\csc.exe.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\csc.rsp
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\csi.exe
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\csi.exe.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\csi.rsp
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Console.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\vbc.exe
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\vbc.exe.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\vbc.rsp
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Antlr3.Runtime.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Newtonsoft.Json.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Proxy.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\SL.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Helpers.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Mvc.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Optimization.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Razor.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.WebPages.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\WebGrease.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\SLC.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Proxy.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\SL.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Helpers.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Mvc.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Optimization.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.Razor.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.WebPages.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Newtonsoft.Json.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\SLC.pdb
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.Razor.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\obj\Debug\Presenta.BC777DBE.Up2Date
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\obj\Debug\Presentation.dll
+C:\Users\ASUS TUF A15\source\repos\bancoNuevo\BankSystem\Banck\Presentation\obj\Debug\Presentation.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Presentation.dll.config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Presentation.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Presentation.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\csc.exe
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\csc.exe.config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\csc.rsp
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\csi.exe
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\csi.exe.config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\csi.rsp
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Console.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\vbc.exe
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\vbc.exe.config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\vbc.rsp
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Antlr3.Runtime.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Newtonsoft.Json.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Proxy.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\SL.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Helpers.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Mvc.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Optimization.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Razor.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.WebPages.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\WebGrease.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\SLC.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Proxy.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\SL.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Helpers.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Mvc.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Optimization.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.Razor.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.WebPages.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Newtonsoft.Json.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\SLC.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.Razor.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\obj\Debug\Presenta.BC777DBE.Up2Date
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\obj\Debug\Presentation.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\obj\Debug\Presentation.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.Memory.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.TimeProvider.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Buffers.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Memory.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Numerics.Vectors.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Text.Encodings.Web.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Text.Json.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.ValueTuple.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.Memory.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.TimeProvider.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Buffers.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Memory.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Numerics.Vectors.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Text.Encodings.Web.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Text.Json.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.ValueTuple.xml

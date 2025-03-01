@@ -1,0 +1,90 @@
+﻿@model List<Entities.Loan>
+
+<h2>Préstamos del Usuario</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (Model != null && Model.Any())
+{
+    <!-- Filtro de Estado -->
+    <div class="form-group">
+        <label for="statusFilter">Filtrar por Estado:</label>
+        <select id="statusFilter" class="form-control" onchange="filterLoans()">
+            <option value="all">Todos</option>
+            <option value="active">Activos</option>
+            <option value="finalized">Finalizados</option>
+        </select>
+    </div>
+
+    <table class="table" id="loansTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Importe Solicitado</th>
+                <th>Plazo (meses)</th>
+                <th>Fecha de Solicitud</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var loan in Model)
+            {
+                <tr data-status="@loan.status">
+                    <td>@loan.loan_id</td>
+                    <td>@loan.requested_amount</td>
+                    <td>@loan.payment_term_months</td>
+                    <td>@(loan.application_date.HasValue ? loan.application_date.Value.ToString("dd/MM/yyyy") : "Fecha no disponible")</td>
+                    <td>
+                        @if (loan.status == 1)
+                        {
+                            <span>Activo</span>
+                        }
+                        else if (loan.status == 0)
+                        {
+                            <span>Finalizado</span>
+                        }
+                        else
+                        {
+                            <span>Estado desconocido</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Amortization", "Amortization", new { loanId = loan.loan_id })" class="btn btn-primary mt-3">Ver Amortización</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No se encontraron préstamos para este usuario.</p>
+}
+
+<a href="@Url.Action("ListUser", "Loan")" class="btn btn-secondary mt-3">Volver a la Lista de Préstamos</a>
+
+<!-- Script para filtrar los préstamos -->
+<script>
+    function filterLoans() {
+        var filter = document.getElementById("statusFilter").value;
+        var rows = document.querySelectorAll("#loansTable tbody tr");
+
+        rows.forEach(function (row) {
+            var status = row.getAttribute("data-status");
+
+            if (filter === "all") {
+                row.style.display = "";
+            } else if (filter === "active" && status === "1") {
+                row.style.display = "";
+            } else if (filter === "finalized" && status === "0") {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    }
+</script>

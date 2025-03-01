@@ -153,6 +153,7 @@
     <Compile Include="Controllers\LoanController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UserDataController.cs" />
+    <Compile Include="Filters\JwtAuthenticationFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

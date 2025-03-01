@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Service.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,12 @@ namespace Service
             // Configurar JSON como el formato de respuesta por defecto
             config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Formatting.Indented; // Para que el JSON sea legible
+
+
+            // Registrar el filtro de autenticación JWT
+            // Asegúrate de que esta clase esté implementada correctamente
+
+
             // Rutas de Web API
             config.MapHttpAttributeRoutes();
 
@@ -27,6 +34,7 @@ namespace Service
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Filters.Add(new JwtAuthenticationFilter());
         }
     }
 }

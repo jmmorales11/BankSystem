@@ -1,1 +1,1 @@
-…RfD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SLC\SLC.csproj¢netstandard2.0ò	CSharp7_3
+rRSC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SLC\SLC.csproj¢netstandard2.0ò	CSharp7_3

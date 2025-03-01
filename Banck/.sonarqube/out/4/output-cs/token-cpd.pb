@@ -1,5 +1,5 @@
-þ
-dD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Class1.cs
+ë
+QC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Class1.cs
 	namespace 	
 SL
  
@@ -10,8 +10,8 @@ dD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSyst
 Class1 
 { 
 } 
-}		 úX
-vD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authorization\JwtService.cs
+}		 çX
+cC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authorization\JwtService.cs
 	namespace 	
 SL
  
@@ -740,8 +740,8 @@ emailClaim
 ŸŸ 	
 }
    
-}¡¡ Ò	
-{D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
+}¡¡ ¿	
+hC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\PasswordHasher.cs
 	namespace 	
 SL
  
@@ -819,8 +819,8 @@ emailClaim
 ;E F
 } 	
 } 
-} Â
-zD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\IEmailService.cs
+} ¯
+gC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\IEmailService.cs
 	namespace 	
 SL
  
@@ -846,8 +846,8 @@ zD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSyst
 )N O
 ;O P
 } 
-} ³
-yD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\EmailService.cs
+}  
+fC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\Authentication\EmailService.cs
 	namespace 	
 SL
  

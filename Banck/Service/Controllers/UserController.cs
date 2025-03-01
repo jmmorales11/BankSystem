@@ -31,6 +31,7 @@ namespace Service.Controllers
 
 
         //Envia el codigo de verificación
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IHttpActionResult> CreateUser([FromBody] User newUser)
         {
@@ -81,6 +82,7 @@ namespace Service.Controllers
 
 
         //Verifica el código que se envió
+        [AllowAnonymous]
         [HttpPost]
         public IHttpActionResult VerifyAndCreateUser([FromBody] VerifyCodeRequest verifyRequest)
         {
@@ -117,6 +119,7 @@ namespace Service.Controllers
         }
 
         /// INICIAR SESION
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IHttpActionResult> Login([FromBody] LoginRequest loginRequest)
         {
@@ -158,21 +161,28 @@ namespace Service.Controllers
         }
 
 
-
-        // Endpoint para verificar el código de autenticación
+        [AllowAnonymous]
         [HttpPost]
         public IHttpActionResult VerifyCode([FromBody] VerifyCodeRequest verifyRequest)
         {
             if (VerificationCodes.TryGetValue(verifyRequest.Email, out string storedCode) && storedCode == verifyRequest.Code)
             {
-                // Eliminar el código una vez validado si lo deseas
-                // VerificationCodes.Remove(verifyRequest.Email);
+                // Eliminar el código una vez validado (opcional)
+                VerificationCodes.Remove(verifyRequest.Email);
 
-                // Para el ejemplo, asignamos un rol predeterminado
-                string userRole = "User";
+                // Recuperar el usuario real mediante el correo
+                var userLogic = new UserLogic();
+                var (success, message, user) = userLogic.RetrieveByEmail(verifyRequest.Email);
+                if (!success)
+                {
+                    return Content(HttpStatusCode.NotFound, new { Message = message });
+                }
 
-                // Generar token JWT
-                var token = JwtService.GenerateToken(verifyRequest.Email, userRole);
+                // Extraer el rol real del usuario
+                string userRole = user.role;
+
+                // Generar el token JWT con el email y el rol real
+                var token = JwtService.GenerateToken(verifyRequest.Email, userRole, user.user_id);
 
                 return Ok(new
                 {
@@ -189,9 +199,10 @@ namespace Service.Controllers
         }
 
 
+
         ///CRUD DE USUARIOS
         ///
-
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IHttpActionResult GetAllUsers()
         {
@@ -208,6 +219,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,User")]
         [HttpGet]
         public IHttpActionResult GetUserById(int id)
         {
@@ -224,6 +236,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost] 
         public IHttpActionResult DeleteUser(int id)
         {
@@ -241,7 +254,7 @@ namespace Service.Controllers
         }
 
 
-
+        [Authorize(Roles = "Admin,User")]
         [HttpPut]
         public IHttpActionResult UpdateUser(int id, [FromBody] User updatedUser)
         {
@@ -285,7 +298,7 @@ namespace Service.Controllers
             }
         }
 
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [Route("api/user/directcreate")]
         public IHttpActionResult DirectCreateUser([FromBody] User newUser)
@@ -304,7 +317,7 @@ namespace Service.Controllers
                 }
 
                 // Asignar rol por defecto "Editor"
-                newUser.role = "Editor";
+                newUser.role = "User";
                 newUser.status = 1;
                 newUser.registration_date = DateTime.Now;
 

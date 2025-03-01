@@ -1,5 +1,7 @@
-˛	
-nD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\ProxyUserData.cs
+g
+eC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\Properties\AssemblyInfo.csù
+
+[C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyUserData.cs
 
  (
  ! ,22! ,II! ,
@@ -57,15 +59,101 @@ nD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSyst
 ∞∞X Z
 ∞∞^ `
 
-∫∫' 5
+ππ/ =
 
-∫∫: <
-ææ] _
+ππB D
+ææm o
 
-∫∫H W
-ææc rz
-xD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\Properties\AssemblyInfo.cs°
-jD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Proxy\ProxyUser.cs
+ππP X
+ææs {0
+
+ææ 
+¡¡ 
+¡¡) 1
+ÀÀ ã
+WC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyLoan.cs
+
+ (
+ ! ,44! ,KK! ,
+
+ &2
+' (    ""; <
+* 2G O(
+; E / 9: D
+P T? C
+ "" )) (
+   ) /
+  X `
+  !!- 5
+!! $""> J
+
+-- %2
+--& '-- // //  99; <(
+--0 :44 44/ 988A K
+// 99 @@ (
+00 55 66 88+ 1
+88 "99> H
+
+DD %2
+DD& 'DD FF FF  SS; <
+DD) 0DDE L(
+DD9 CKK KK/ 9PP9 C
+DDM QOO? C
+FF SS ZZ (
+GG LL MM PP) /
+OO  PPW _
+PP  RR- 5
+RR $SS> J
+
+``' 1
+``7 ;ddY ]
+dd ff hh #
+
+vv+ 5
+zz || ~~ #
+
+åå+ 6
+
+åå; =
+ëëW Y<
+
+ëë 
+îî 
+îî( 0
+üü 
+†† 
+
+ÆÆ' 5$
+
+ÆÆ: <
+≤≤P R
+≤≤V X
+
+ºº+ 9
+
+ºº> @
+¡¡\ ^
+
+ººG K
+¡¡b f0
+
+¡¡ 
+ƒƒ 
+ƒƒ) 1
+ŒŒ 
+
+€€+ ;
+
+€€@ F
+‡‡\ bH
+
+‡‡ 
+„„ 
+„„( 0
+„„C K
+ÓÓ 
+ÔÔ Ù
+WC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyUser.cs
 
  (
  ! ,44! ,LL! ,
@@ -174,4 +262,56 @@ jD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSyst
 
 ëë 
 ìì 
-ïï #
+ïï #
+
+££0 @0
+
+££F J
+ßß 
+®® 
+™™d h$
+
+™™ 
+´´ 
+≠≠ #Ω
+_C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\ProxyAmortization.cs
+
+ "(
+ ! ,33! ,JJ! ,
+
+ &2
+' (    !!; <
+* 2G O(
+; E / 9: D
+P T? C
+ !! (( (
+   ) /
+  X `
+    - 5
+   $!!> J
+
+,, %2
+,,& ',, .. ..  88; <(
+,,0 :33 33/ 977A K
+.. 88 ?? (
+// 44 55 77+ 1
+77 "88> H
+
+CC %2
+CC& 'CC EE EE  RR; <
+CC) 0CCE L(
+CC9 CJJ JJ/ 9OO9 C
+CCM QNN? C
+EE RR YY (
+FF KK LL OO) /
+NN  OOW _
+OO  QQ- 5
+QQ $RR> J
+
+]]3 N
+]]S YaaS Y(
+aa cc cc( 0ee #
+
+ss' 5
+ss: HxxY gxxk y
+xx yy {{ #

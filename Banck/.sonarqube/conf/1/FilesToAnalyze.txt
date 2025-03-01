@@ -1,17 +1,17 @@
-﻿D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\ConnectionStringHelper.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\RepositoryFactory.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\EFRepository.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\IRepository.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\Properties\AssemblyInfo.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\NBanckDBModel.Context.tt
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\NBanckDBModel.tt
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\NBanckDBModel.edmx
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\Alert.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\Amortization.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\Loan.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\Log.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\User.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\User_Data.cs
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\App.Config
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\packages.config
-D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\NBanckDBModel.edmx.diagram
+﻿C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\ConnectionStringHelper.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\RepositoryFactory.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\EFRepository.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\IRepository.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\Properties\AssemblyInfo.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\NBanckDBModel.Context.tt
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\NBanckDBModel.tt
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\NBanckDBModel.edmx
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Alert.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Amortization.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Loan.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Log.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\User.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\User_Data.cs
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\App.Config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\packages.config
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\NBanckDBModel.edmx.diagram

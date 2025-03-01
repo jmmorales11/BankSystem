@@ -16,7 +16,8 @@ namespace Presentation.Controllers
         // Acción para mostrar el cronograma de amortización de un préstamo
         public async Task<ActionResult> Amortization(int loanId)
         {
-            var proxy = new ProxyAmortization();
+            var token = Session["JWT_Token"] as string;
+            var proxy = new ProxyAmortization(token);
             try
             {
                 AmortizationResponseDto response = await proxy.GetLoanAmortizationSchedule(loanId);
@@ -42,7 +43,8 @@ namespace Presentation.Controllers
         // Acción para registrar el pago de una cuota usando el proxy
         public async Task<JsonResult> PayInstallment(int id)
         {
-            var proxy = new ProxyAmortization();
+            var token = Session["JWT_Token"] as string;
+            var proxy = new ProxyAmortization(token);
             try
             {
                 // Invocamos el método del proxy que llama al endpoint de pago en el servicio

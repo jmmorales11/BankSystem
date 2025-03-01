@@ -11,47 +11,7 @@
         "language": "es-MX"
       },
       "results": [
-        {
-          "ruleId": "S2094",
-          "level": "warning",
-          "message": "Remove this empty class, write its code or make it an \"interface\".",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Entities/Class1.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 18,
-                  "endLine": 5,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        }
-      ],
-      "rules": {
-        "S2094": {
-          "id": "S2094",
-          "shortDescription": "Classes should not be empty",
-          "fullDescription": "There is no good excuse for an empty class. If it’s being used simply as a common extension point, it should be replaced with an interface. If it was stubbed in as a placeholder for future development it should be fleshed-out. In any other case, it should be eliminated.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2094",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        }
-      }
+      ]
     }
   ]
 }

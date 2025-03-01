@@ -41,3 +41,6 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\obj\Debu
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.sourcelink.json
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.dll
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.Up2Date

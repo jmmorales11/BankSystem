@@ -10,6 +10,7 @@
       "SL/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
+          "Entities": "1.0.0",
           "Microsoft.IdentityModel.JsonWebTokens": "8.3.1",
           "NETStandard.Library": "2.0.3",
           "System.IdentityModel.Tokens.Jwt": "8.3.1"
@@ -229,6 +230,14 @@
             "fileVersion": "4.6.28619.1"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "runtime": {
+          "Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -384,6 +393,11 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

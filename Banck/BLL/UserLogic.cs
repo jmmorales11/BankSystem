@@ -149,6 +149,26 @@ namespace BLL
                 return user; // Retorna `null` si no encuentra usuario
             }
         }
+        public (bool Success, string Message, User User) RetrieveByEmail(string email)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    var user = r.Retrieve<User>(u => u.email == email);
+                    if (user == null)
+                    {
+                        return (false, "Usuario no encontrado", null);
+                    }
+                    return (true, "Usuario encontrado", user);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al recuperar usuario: {ex.Message}", null);
+            }
+        }
+
 
 
 

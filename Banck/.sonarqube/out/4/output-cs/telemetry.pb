@@ -1,1 +1,1 @@
-ƒRdD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\SL.csproj¢netstandard2.0ò	CSharp7_3
+pRQC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\SL.csproj¢netstandard2.0ò	CSharp7_3

@@ -331,6 +331,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -1120,30 +1130,36 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "BCrypt.Net-Next >= 4.0.3",
+      "Entities >= 1.0.0",
       "Microsoft.IdentityModel.JsonWebTokens >= 8.3.1",
       "NETStandard.Library >= 2.0.3",
       "System.IdentityModel.Tokens.Jwt >= 8.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steve\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS TUF A15\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\SL\\SL.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\SL\\SL.csproj",
       "projectName": "SL",
-      "projectPath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\SL\\SL.csproj",
-      "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
-      "outputPath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\SL\\obj\\",
+      "projectPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\SL\\SL.csproj",
+      "packagesPath": "C:\\Users\\ASUS TUF A15\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\SL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS TUF A15\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1157,7 +1173,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\ASUS TUF A15\\source\\repos\\DesarrolloSeguro\\BankSystem\\Banck\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

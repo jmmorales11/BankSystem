@@ -1,9 +1,28 @@
-﻿<!DOCTYPE html>
+﻿@using System.IdentityModel.Tokens.Jwt
+@using System.Linq
+
+@{
+    // 1. Obtener el rol desde el token en sesión (o desde ASP.NET Identity, según tu caso)
+    string userRole = "No definido";
+    if (Session["JWT_Token"] != null)
+    {
+        var token = Session["JWT_Token"].ToString();
+        var handler = new JwtSecurityTokenHandler();
+        var jwtToken = handler.ReadJwtToken(token);
+
+        // Ajusta este claim de acuerdo a tu configuración
+        var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+        if (roleClaim != null)
+        {
+            userRole = roleClaim.Value;
+        }
+    }
+}
+
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
@@ -43,23 +62,37 @@
     </style>
 </head>
 <body>
-    <!-- Barra Lateral -->
     <div class="sidebar">
         <h4 class="text-center text-white">Mi Aplicación</h4>
-        <a href="@Url.Action("GetAllUsers", "User")" class="nav-link">Gestión de cuentas</a>
-        <a href="@Url.Action("ListUserData", "UserData")" class="nav-link">Gestión de usuarios</a>
-        <a href="@Url.Action("ListUser", "Loan")" class="nav-link">Préstamos</a>
+
+        <!-- 2. Mostrar opciones según el rol -->
+        @if (userRole == "Admin")
+        {
+            <!-- Opciones que solo ve el Admin -->
+            <a href="@Url.Action("GetAllUsers", "User")" class="nav-link">Gestión de cuentas</a>
+            <a href="@Url.Action("ListUserData", "UserData")" class="nav-link">Gestión de usuarios</a>
+            <a href="@Url.Action("ListUser", "Loan")" class="nav-link">Préstamos</a>
+            <a href="@Url.Action("MyProfile", "User")" class="nav-link">Mi Perfil</a>
+        }
+        else if (userRole == "User")
+        {
+            <!-- Opciones que solo ve el User -->
+            <a href="@Url.Action("MyProfile", "User")" class="nav-link">Mi Perfil</a>
+        }
+        else
+        {
+            <!-- Opciones para rol indefinido o no autenticado -->
+            <span class="ms-3">No definido o no autenticado</span>
+        }
+
     </div>
 
-    <!-- Contenido Principal -->
     <div class="content">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
                 <span class="navbar-brand">@ViewBag.Title - Mi aplicación</span>
             </div>
         </nav>
-
-        <!-- Contenido de la Página -->
         <div class="container body-content">
             @RenderBody()
             <hr />
@@ -68,9 +101,7 @@
             </footer>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @RenderSection("Scripts", required: false)
-
 </body>
 </html>

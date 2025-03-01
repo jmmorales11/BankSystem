@@ -10,7 +10,7 @@ namespace Service.Controllers
     public class AmortizationController : ApiController
     {
         //Obtener Amortización de un préstamo
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet]
         [Route("api/loan/{loanId}/amortization")]
         public IHttpActionResult GetLoanAmortizationSchedule(int loanId)
@@ -31,7 +31,7 @@ namespace Service.Controllers
 
             return Ok(new { Success = true, AmortizationSchedule = schedule });
         }
-
+        [Authorize(Roles = "Admin,User")]
         // Nuevo endpoint para registrar el pago de una cuota
         [HttpPost]
         [Route("api/amortization/pay/{id}")]

@@ -1,1 +1,1 @@
-tRfD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\DAL.csprojò	CSharp7_3
+aRSC:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\DAL.csprojò	CSharp7_3

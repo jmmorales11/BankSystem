@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 72,
                   "startColumn": 30,
@@ -33,34 +33,13 @@
           }
         },
         {
-          "ruleId": "S2068",
-          "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Web.config",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 34,
-                  "endLine": 64,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S125",
           "level": "warning",
           "message": "Remove this commented out code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 169,
                   "startColumn": 17,
@@ -81,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 51,
                   "startColumn": 43,
@@ -102,12 +81,75 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Service/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/UserController.cs",
                 "region": {
                   "startLine": 136,
                   "startColumn": 43,
                   "endLine": 136,
                   "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Web.config",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 34,
+                  "endLine": 64,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'retrieveSuccess'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/LoanController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 18,
+                  "endLine": 18,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'retrieveMessage'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Service/Controllers/LoanController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 35,
+                  "endLine": 18,
+                  "endColumn": 50
                 }
               }
             }
@@ -140,6 +182,23 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
           "properties": {
             "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "An unused local variable is a variable that has been declared but is not used anywhere in the block of code where it is defined. It is dead code, contributing to unnecessary complexity and leading to confusion when reading the code. Therefore, it should be removed from your code to maintain clarity and efficiency.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

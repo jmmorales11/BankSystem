@@ -10,6 +10,7 @@ namespace Service.Controllers
 {
     public class LoanController : ApiController
     {
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         public IHttpActionResult CreateLoan([FromBody] Loan newLoan)
         {
@@ -46,7 +47,7 @@ namespace Service.Controllers
         }
 
 
-
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IHttpActionResult GetAllLoans()
         {
@@ -63,6 +64,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,User")]
         [HttpGet]
         public IHttpActionResult GetLoanById(int userId)
         {
@@ -79,6 +81,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
         public IHttpActionResult DeleteLoan(int id)
         {
@@ -95,6 +98,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,User")]
         [HttpPut]
         public IHttpActionResult UpdateLoan([FromBody] Loan loan)
         {
@@ -111,7 +115,7 @@ namespace Service.Controllers
             }
         }
 
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet]
         [Route("api/Loan/GetLoansByUserId/{userId}")]
         public IHttpActionResult GetLoansByUserId(int userId)

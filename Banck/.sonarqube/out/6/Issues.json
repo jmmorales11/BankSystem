@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 14,
                   "startColumn": 16,
@@ -39,12 +39,75 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 16,
+                  "endLine": 16,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'BaseAddress' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
                 "region": {
                   "startLine": 15,
                   "startColumn": 16,
                   "endLine": 15,
                   "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'BaseAddress' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 16,
+                  "endLine": 15,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private method 'SendPut'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 31,
+                  "endLine": 67,
+                  "endColumn": 38
                 }
               }
             }
@@ -60,7 +123,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 26,
                   "startColumn": 97,
@@ -73,7 +136,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 29,
                   "startColumn": 114,
@@ -84,7 +147,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 52,
                   "startColumn": 97,
@@ -95,7 +158,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 75,
                   "startColumn": 97,
@@ -106,7 +169,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 78,
                   "startColumn": 113,
@@ -133,7 +196,80 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 97,
+                  "endLine": 28,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 114,
+                  "endLine": 31,
+                  "endColumn": 132
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 97,
+                  "endLine": 54,
+                  "endColumn": 115
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 97,
+                  "endLine": 77,
+                  "endColumn": 115
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 113,
+                  "endLine": 80,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'application/json' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
                 "region": {
                   "startLine": 27,
                   "startColumn": 97,
@@ -146,7 +282,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
                 "region": {
                   "startLine": 30,
                   "startColumn": 114,
@@ -157,7 +293,80 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 97,
+                  "endLine": 53,
+                  "endColumn": 115
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 97,
+                  "endLine": 76,
+                  "endColumn": 115
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 113,
+                  "endLine": 79,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'application/json' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 97,
+                  "endLine": 27,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 114,
+                  "endLine": 30,
+                  "endColumn": 132
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 54,
                   "startColumn": 97,
@@ -168,7 +377,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 78,
                   "startColumn": 97,
@@ -179,7 +388,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 81,
                   "startColumn": 113,
@@ -206,12 +415,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
                 "region": {
-                  "startLine": 104,
+                  "startLine": 108,
                   "startColumn": 27,
-                  "endLine": 104,
-                  "endColumn": 83
+                  "endLine": 108,
+                  "endColumn": 84
                 }
               }
             }
@@ -227,12 +436,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
                 "region": {
-                  "startLine": 109,
+                  "startLine": 113,
                   "startColumn": 23,
-                  "endLine": 109,
-                  "endColumn": 91
+                  "endLine": 113,
+                  "endColumn": 92
                 }
               }
             }
@@ -248,7 +457,91 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 27,
+                  "endLine": 105,
+                  "endColumn": 114
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 23,
+                  "endLine": 110,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 23,
+                  "endLine": 182,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 27,
+                  "endLine": 127,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 126,
                   "startColumn": 27,
@@ -269,7 +562,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
                   "startLine": 131,
                   "startColumn": 23,
@@ -290,12 +583,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyAmortization.cs",
                 "region": {
-                  "startLine": 108,
+                  "startLine": 132,
+                  "startColumn": 23,
+                  "endLine": 132,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "region": {
+                  "startLine": 104,
                   "startColumn": 27,
-                  "endLine": 108,
-                  "endColumn": 72
+                  "endLine": 104,
+                  "endColumn": 83
                 }
               }
             }
@@ -311,12 +625,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
                 "region": {
-                  "startLine": 113,
-                  "startColumn": 23,
-                  "endLine": 113,
-                  "endColumn": 77
+                  "startLine": 130,
+                  "startColumn": 27,
+                  "endLine": 130,
+                  "endColumn": 85
                 }
               }
             }
@@ -332,11 +646,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyLoan.cs",
                 "region": {
-                  "startLine": 180,
+                  "startLine": 135,
                   "startColumn": 23,
-                  "endLine": 180,
+                  "endLine": 135,
                   "endColumn": 94
                 }
               }
@@ -353,7 +667,28 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 23,
+                  "endLine": 109,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 137,
                   "startColumn": 27,
@@ -374,7 +709,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 142,
                   "startColumn": 23,
@@ -395,33 +730,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUserData.cs",
                 "region": {
-                  "startLine": 165,
-                  "startColumn": 27,
-                  "endLine": 165,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
-                "region": {
-                  "startLine": 170,
+                  "startLine": 180,
                   "startColumn": 23,
-                  "endLine": 170,
-                  "endColumn": 78
+                  "endLine": 180,
+                  "endColumn": 94
                 }
               }
             }
@@ -437,28 +751,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUserData.cs",
-                "region": {
-                  "startLine": 194,
-                  "startColumn": 23,
-                  "endLine": 194,
-                  "endColumn": 96
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 217,
                   "startColumn": 27,
@@ -479,7 +772,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 222,
                   "startColumn": 23,
@@ -500,28 +793,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
-                "region": {
-                  "startLine": 238,
-                  "startColumn": 23,
-                  "endLine": 238,
-                  "endColumn": 89
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 194,
                   "startColumn": 27,
@@ -542,7 +814,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 199,
                   "startColumn": 23,
@@ -563,12 +835,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
-                  "startLine": 257,
+                  "startLine": 305,
                   "startColumn": 27,
-                  "endLine": 257,
-                  "endColumn": 75
+                  "endLine": 305,
+                  "endColumn": 85
                 }
               }
             }
@@ -584,12 +856,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
-                  "startLine": 262,
+                  "startLine": 310,
                   "startColumn": 23,
-                  "endLine": 262,
-                  "endColumn": 83
+                  "endLine": 310,
+                  "endColumn": 90
                 }
               }
             }
@@ -605,7 +877,49 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 27,
+                  "endLine": 165,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 23,
+                  "endLine": 170,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 281,
                   "startColumn": 27,
@@ -626,12 +940,117 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
                 "region": {
                   "startLine": 286,
                   "startColumn": 23,
                   "endLine": 286,
                   "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 27,
+                  "endLine": 108,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 23,
+                  "endLine": 113,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 238,
+                  "startColumn": 23,
+                  "endLine": 238,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 27,
+                  "endLine": 257,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Proxy/ProxyUser.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 23,
+                  "endLine": 262,
+                  "endColumn": 83
                 }
               }
             }
@@ -654,6 +1073,23 @@
             "tags": [
               "C#",
               "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "This rule raises an issue when a private/internal type or member is never referenced in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
               "SonarWay"
             ]
           }

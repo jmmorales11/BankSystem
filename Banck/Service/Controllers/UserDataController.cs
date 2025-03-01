@@ -9,6 +9,7 @@ namespace Service.Controllers
 {
     public class UserDataController : ApiController
     {
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         public IHttpActionResult CreateUserData([FromBody] User_Data newUserData)
         {
@@ -24,7 +25,7 @@ namespace Service.Controllers
                 return BadRequest(JsonConvert.SerializeObject(new { Success = false, Message = message }));
             }
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IHttpActionResult GetAllUserData()
         {
@@ -41,6 +42,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,User")]
         [HttpGet]
         public IHttpActionResult GetUserDataById(int id)
         {
@@ -57,6 +59,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IHttpActionResult DeleteUserData(int id)
         {
@@ -73,6 +76,7 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,User")]
         [HttpPut]
         public IHttpActionResult UpdateUserData([FromBody] User_Data updatedUserData)
         {

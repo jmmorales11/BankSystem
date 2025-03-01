@@ -18,7 +18,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/App_Start/FilterConfig.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/App_Start/FilterConfig.cs",
                 "region": {
                   "startLine": 6,
                   "startColumn": 18,
@@ -39,7 +39,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/App_Start/RouteConfig.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/App_Start/RouteConfig.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 18,
@@ -60,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/App_Start/BundleConfig.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/App_Start/BundleConfig.cs",
                 "region": {
                   "startLine": 6,
                   "startColumn": 18,
@@ -77,15 +77,15 @@
         {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'ErrorMessage' 8 times.",
+          "message": "Define a constant instead of using this literal 'ErrorMessage' 6 times.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/LoanController.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 28,
                   "startColumn": 30,
-                  "endLine": 25,
+                  "endLine": 28,
                   "endColumn": 44
                 }
               }
@@ -94,77 +94,172 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/LoanController.cs",
                 "region": {
-                  "startLine": 31,
+                  "startLine": 34,
                   "startColumn": 26,
-                  "endLine": 31,
+                  "endLine": 34,
                   "endColumn": 40
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/LoanController.cs",
                 "region": {
-                  "startLine": 47,
+                  "startLine": 55,
                   "startColumn": 30,
-                  "endLine": 47,
+                  "endLine": 55,
                   "endColumn": 44
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/LoanController.cs",
                 "region": {
-                  "startLine": 57,
-                  "startColumn": 30,
-                  "endLine": 57,
-                  "endColumn": 44
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
-                "region": {
-                  "startLine": 63,
+                  "startLine": 61,
                   "startColumn": 26,
-                  "endLine": 63,
+                  "endLine": 61,
                   "endColumn": 40
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/LoanController.cs",
                 "region": {
-                  "startLine": 92,
-                  "startColumn": 26,
-                  "endLine": 92,
-                  "endColumn": 40
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
-                "region": {
-                  "startLine": 117,
+                  "startLine": 98,
                   "startColumn": 30,
-                  "endLine": 117,
+                  "endLine": 98,
                   "endColumn": 44
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/LoanController.cs",
                 "region": {
-                  "startLine": 123,
+                  "startLine": 104,
                   "startColumn": 26,
-                  "endLine": 123,
+                  "endLine": 104,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_emailService' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 40,
+                  "endLine": 15,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'ErrorMessage' 7 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 30,
+                  "endLine": 28,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 26,
+                  "endLine": 34,
+                  "endColumn": 40
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 26,
+                  "endLine": 67,
+                  "endColumn": 40
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 30,
+                  "endLine": 93,
+                  "endColumn": 44
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 26,
+                  "endLine": 99,
+                  "endColumn": 40
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 30,
+                  "endLine": 121,
+                  "endColumn": 44
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 26,
+                  "endLine": 127,
                   "endColumn": 40
                 }
               }
@@ -178,8 +273,7 @@
               "2": null,
               "3": null,
               "4": null,
-              "5": null,
-              "6": null
+              "5": null
             }
           }
         },
@@ -190,12 +284,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
                 "region": {
-                  "startLine": 48,
-                  "startColumn": 45,
-                  "endLine": 48,
-                  "endColumn": 59
+                  "startLine": 68,
+                  "startColumn": 41,
+                  "endLine": 68,
+                  "endColumn": 55
                 }
               }
             }
@@ -203,33 +297,33 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
                 "region": {
-                  "startLine": 58,
+                  "startLine": 89,
                   "startColumn": 45,
-                  "endLine": 58,
+                  "endLine": 89,
                   "endColumn": 59
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
                 "region": {
-                  "startLine": 64,
-                  "startColumn": 41,
-                  "endLine": 64,
-                  "endColumn": 55
+                  "startLine": 122,
+                  "startColumn": 45,
+                  "endLine": 122,
+                  "endColumn": 59
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserDataController.cs",
                 "region": {
-                  "startLine": 93,
+                  "startLine": 128,
                   "startColumn": 41,
-                  "endLine": 93,
+                  "endLine": 128,
                   "endColumn": 55
                 }
               }
@@ -245,34 +339,13 @@
           }
         },
         {
-          "ruleId": "S4487",
-          "level": "warning",
-          "message": "Remove this unread private field '_emailService' or refactor the code to use its value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 40,
-                  "endLine": 15,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S4144",
           "level": "warning",
           "message": "Update this method so that its implementation is not identical to 'VerifyAndCreateUser'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 142,
                   "startColumn": 29,
@@ -285,7 +358,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 69,
                   "startColumn": 29,
@@ -298,18 +371,18 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "0": "Update this method so that its implementation is not identical to 'VerifyLoginCode'."
+              "0": null
             }
           }
         },
         {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'SuccessMessage' 5 times.",
+          "message": "Define a constant instead of using this literal 'SuccessMessage' 6 times.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 48,
                   "startColumn": 34,
@@ -322,7 +395,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 124,
                   "startColumn": 30,
@@ -333,7 +406,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 164,
                   "startColumn": 30,
@@ -344,7 +417,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 218,
                   "startColumn": 30,
@@ -355,12 +428,23 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 261,
                   "startColumn": 30,
                   "endLine": 261,
                   "endColumn": 46
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 297,
+                  "startColumn": 34,
+                  "endLine": 297,
+                  "endColumn": 50
                 }
               }
             }
@@ -371,7 +455,8 @@
               "0": null,
               "1": null,
               "2": null,
-              "3": null
+              "3": null,
+              "4": null
             }
           }
         },
@@ -382,7 +467,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 49,
                   "startColumn": 34,
@@ -395,7 +480,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 71,
                   "startColumn": 38,
@@ -406,7 +491,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 125,
                   "startColumn": 30,
@@ -417,7 +502,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 144,
                   "startColumn": 38,
@@ -428,7 +513,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 165,
                   "startColumn": 30,
@@ -451,11 +536,11 @@
         {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'ErrorMessage' 12 times.",
+          "message": "Define a constant instead of using this literal 'ErrorMessage' 14 times.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 54,
                   "startColumn": 34,
@@ -468,7 +553,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 59,
                   "startColumn": 30,
@@ -479,7 +564,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 114,
                   "startColumn": 26,
@@ -490,7 +575,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 130,
                   "startColumn": 30,
@@ -501,7 +586,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 135,
                   "startColumn": 26,
@@ -512,7 +597,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 195,
                   "startColumn": 30,
@@ -523,7 +608,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 201,
                   "startColumn": 26,
@@ -534,7 +619,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 222,
                   "startColumn": 30,
@@ -545,7 +630,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 227,
                   "startColumn": 26,
@@ -556,7 +641,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 243,
                   "startColumn": 26,
@@ -567,7 +652,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 266,
                   "startColumn": 30,
@@ -578,12 +663,34 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///D:/7.%20Septimo%20Semestre/7.%20Desarrollo%20de%20Software%20Seguro/TERCER%20PARCIAL/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
                 "region": {
                   "startLine": 272,
                   "startColumn": 26,
                   "endLine": 272,
                   "endColumn": 40
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 302,
+                  "startColumn": 34,
+                  "endLine": 302,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 307,
+                  "startColumn": 30,
+                  "endLine": 307,
+                  "endColumn": 44
                 }
               }
             }
@@ -594,6 +701,8 @@
               "0": null,
               "1": null,
               "10": null,
+              "11": null,
+              "12": null,
               "2": null,
               "3": null,
               "4": null,
@@ -602,6 +711,67 @@
               "7": null,
               "8": null,
               "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'GetAllUsers' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 37,
+                  "endLine": 230,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 41,
+                  "endLine": 244,
+                  "endColumn": 54
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 45,
+                  "endLine": 262,
+                  "endColumn": 58
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/ASUS%20TUF%20A15/source/repos/DesarrolloSeguro/BankSystem/Banck/Presentation/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 298,
+                  "startColumn": 49,
+                  "endLine": 298,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
             }
           }
         }

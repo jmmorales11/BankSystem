@@ -6,156 +6,45 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using Entities;
+
 
 
 namespace SL.Authorization
 {
     public static class JwtService
     {
-        // Configuration for token generation and validation
-        private const string SecretKey = "TuClaveSuperSecretaLargaDe32CaracteresOMas!";
-        private const int TokenExpirationMinutes = 15;
-        private const string Issuer = "TuAplicacion";
-        private const string Audience = "TuAplicacion";
+        // Clave secreta (utiliza una cadena larga y segura, idealmente en configuración)
+        private static readonly string SecretKey = "f5aN7jVh9F2LwB3zD6rM8qS1pW0tX4kY";
+        private static readonly string Issuer = "tu_issuer";
+        private static readonly string Audience = "tu_audience";
 
-        // Generate JWT token
-        public static string GenerateToken(string email, string role)
+        public static string GenerateToken(string email, string role, int userId, int expireMinutes = 60)
         {
-            try
+            var key = Encoding.ASCII.GetBytes(SecretKey);
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            // Definir las claims que incluirá el token
+            var claims = new[]
             {
-                var key = Encoding.UTF8.GetBytes(SecretKey);
-                var credentials = new SigningCredentials(
-                    new SymmetricSecurityKey(key),
-                    SecurityAlgorithms.HmacSha256
-                );
+                new Claim(ClaimTypes.Name, email),
+                new Claim(ClaimTypes.Role, role),
+                new Claim("UserId", userId.ToString())
+            };
 
-                var claims = new[]
-                {
-                    new Claim(ClaimTypes.Email, email),
-                    new Claim(ClaimTypes.Role, role),
-                    new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                };
-
-                var token = new JwtSecurityToken(
-                    issuer: Issuer,
-                    audience: Audience,
-                    claims: claims,
-                    expires: DateTime.UtcNow.AddMinutes(TokenExpirationMinutes),
-                    signingCredentials: credentials
-                );
-
-                return new JwtSecurityTokenHandler().WriteToken(token);
-            }
-            catch (Exception ex)
+            // Crear el descriptor del token
+            var tokenDescriptor = new SecurityTokenDescriptor
             {
-                // In a real-world scenario, log the exception
-                return null;
-            }
-        }
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.UtcNow.AddMinutes(expireMinutes),
+                Issuer = Issuer,
+                Audience = Audience,
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
 
-        // Validate and extract role from JWT token
-        public static string GetRoleFromToken(string token)
-        {
-            try
-            {
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.UTF8.GetBytes(SecretKey);
-
-                var validationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = true,
-                    ValidIssuer = Issuer,
-                    ValidateAudience = true,
-                    ValidAudience = Audience,
-                    ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero
-                };
-
-                var principal = tokenHandler.ValidateToken(token, validationParameters, out _);
-                var roleClaim = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
-                return roleClaim?.Value;
-            }
-            catch (Exception ex)
-            {
-                // In a real-world scenario, log the exception
-                return null;
-            }
-        }
-
-        // Validate token's overall integrity
-        public static bool ValidateToken(string token)
-        {
-            try
-            {
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.UTF8.GetBytes(SecretKey);
-
-                var validationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = true,
-                    ValidIssuer = Issuer,
-                    ValidateAudience = true,
-                    ValidAudience = Audience,
-                    ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero
-                };
-
-                tokenHandler.ValidateToken(token, validationParameters, out _);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        // Extract email from token
-        public static string GetEmailFromToken(string token)
-        {
-            try
-            {
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.UTF8.GetBytes(SecretKey);
-
-                var validationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = true,
-                    ValidIssuer = Issuer,
-                    ValidateAudience = true,
-                    ValidAudience = Audience,
-                    ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero
-                };
-
-                var principal = tokenHandler.ValidateToken(token, validationParameters, out _);
-                var emailClaim = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
-                return emailClaim?.Value;
-            }
-            catch
-            {
-                return null;
-            }
-        }
-
-        // Optional: Get token expiration time
-        public static DateTime? GetTokenExpirationTime(string token)
-        {
-            try
-            {
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var jwtToken = tokenHandler.ReadToken(token) as JwtSecurityToken;
-                return jwtToken?.ValidTo;
-            }
-            catch
-            {
-                return null;
-            }
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 }

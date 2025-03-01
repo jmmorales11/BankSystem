@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -15,7 +16,36 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> ListUserData()
         {
-            var proxyService = new ProxyUser();
+            var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                return RedirectToAction("Login");
+            }
+
+            // 2. Decodificar el token para obtener el rol
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+
+            if (roleClaim == null)
+            {
+                TempData["ErrorMessage"] = "El token no contiene el rol.";
+                return RedirectToAction("Login");
+            }
+
+            var userRole = roleClaim.Value; // "Admin", "User", etc.
+
+            // 3. Validar si es Admin
+            if (userRole != "Admin")
+            {
+                // Mostrar mensaje de "No autorizado" y NO cargar la vista
+                TempData["ErrorMessage"] = "No autorizado: Solo un administrador puede ver la lista de usuarios.";
+                return RedirectToAction("MyProfile", "User");
+                // O puedes retornar un status HTTP 403:
+                // return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "No autorizado");
+            }
+            var proxyService = new ProxyUser(token);
             try
             {
                 var response = await proxyService.GetAllUsers();
@@ -41,7 +71,8 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> CreateUserData(int userId)
         {
-            var proxyService = new ProxyUserData(); // Usar el proxy adecuado para UserData
+            var token = Session["JWT_Token"] as string;
+            var proxyService = new ProxyUserData(token); // Usar el proxy adecuado para UserData
 
             try
             {
@@ -75,7 +106,8 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> CreateUserData(User_Data userData)
         {
-            var proxyService = new ProxyUserData();
+            var token = Session["JWT_Token"] as string;
+            var proxyService = new ProxyUserData(token);
             try
             {
                 // Si el ID de User_Data es 0, es creación, si no, es actualización
@@ -105,7 +137,8 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> ViewUserData(int userId)
         {
-            var proxyService = new ProxyUserData();
+            var token = Session["JWT_Token"] as string;
+            var proxyService = new ProxyUserData(token);
 
             try
             {

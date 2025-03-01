@@ -1,1 +1,1 @@
-èRpD:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Entities\Entities.csproj¢netstandard2.0Ú	CSharp7_3
+|R]C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\Entities.csproj¢netstandard2.0Ú	CSharp7_3

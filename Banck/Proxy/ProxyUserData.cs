@@ -12,6 +12,12 @@ namespace Proxy
     public class ProxyUserData
     {
         string BaseAddress = "https://localhost:44314";
+        private readonly string _token;
+
+        public ProxyUserData(string token = null)
+        {
+            _token = token;
+        }
 
         // Método SendPost para enviar una solicitud POST
         private async Task<T> SendPost<T, PostData>(string requestURI, PostData data)
@@ -21,6 +27,13 @@ namespace Proxy
             {
                 try
                 {
+                    // <<< Agregamos esta parte para la cabecera Bearer >>>
+                    if (!string.IsNullOrEmpty(_token))
+                    {
+                        Client.DefaultRequestHeaders.Authorization =
+                            new AuthenticationHeaderValue("Bearer", _token);
+                    }
+                    // <<< fin de agregado >>>
                     requestURI = BaseAddress + requestURI;
                     Client.DefaultRequestHeaders.Accept.Clear();
                     Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -47,6 +60,13 @@ namespace Proxy
             {
                 try
                 {
+                    // <<< Agregamos esta parte para la cabecera Bearer >>>
+                    if (!string.IsNullOrEmpty(_token))
+                    {
+                        Client.DefaultRequestHeaders.Authorization =
+                            new AuthenticationHeaderValue("Bearer", _token);
+                    }
+                    // <<< fin de agregado >>>
                     requestURI = BaseAddress + requestURI;
                     Client.DefaultRequestHeaders.Accept.Clear();
                     Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -70,6 +90,13 @@ namespace Proxy
             {
                 try
                 {
+                    // <<< Agregamos esta parte para la cabecera Bearer >>>
+                    if (!string.IsNullOrEmpty(_token))
+                    {
+                        Client.DefaultRequestHeaders.Authorization =
+                            new AuthenticationHeaderValue("Bearer", _token);
+                    }
+                    // <<< fin de agregado >>>
                     requestURI = BaseAddress + requestURI;
                     Client.DefaultRequestHeaders.Accept.Clear();
                     Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -93,6 +120,7 @@ namespace Proxy
         {
             try
             {
+
                 var response = await SendPost<ResponseDto, User_Data>("/api/UserData/CreateUserData", userData);
 
                 if (response != null)

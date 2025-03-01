@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Presentation.Controllers
 {
@@ -161,6 +162,7 @@ namespace Presentation.Controllers
 
                 if (response != null && !string.IsNullOrEmpty(response.Token))
                 {
+                    Session["JWT_Token"] = response.Token;
                     TempData["SuccessMessage"] = "Inicio de sesión exitoso.";
                     TempData["Email"] = email; // Guardar el correo para usar en HomeController
                                                // Almacenar el token en el LocalStorage usando JavaScript
@@ -182,7 +184,39 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAllUsers()
         {
-            var proxy_service = new ProxyUser();
+            // Recuperar el token de la sesión (ejemplo)
+            var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                return RedirectToAction("Login");
+            }
+
+            // 2. Decodificar el token para obtener el rol
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+
+            if (roleClaim == null)
+            {
+                TempData["ErrorMessage"] = "El token no contiene el rol.";
+                return RedirectToAction("Login");
+            }
+
+            var userRole = roleClaim.Value; // "Admin", "User", etc.
+
+            // 3. Validar si es Admin
+            if (userRole != "Admin")
+            {
+                // Mostrar mensaje de "No autorizado" y NO cargar la vista
+                TempData["ErrorMessage"] = "No autorizado: Solo un administrador puede ver la lista de usuarios.";
+                return RedirectToAction("MyProfile", "User");
+                // O puedes retornar un status HTTP 403:
+                // return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "No autorizado");
+            }
+            // Instanciar el proxy con el token
+            var proxy_service = new ProxyUser(token);
+
             try
             {
                 var response = await proxy_service.GetAllUsers();
@@ -207,7 +241,8 @@ namespace Presentation.Controllers
         // Acción para eliminar un usuario por ID
         public ActionResult DeleteUser(int id)
         {
-            var proxy_service = new ProxyUser();
+            var token = Session["JWT_Token"] as string;
+            var proxy_service = new ProxyUser(token);
 
             try
             {
@@ -235,7 +270,13 @@ namespace Presentation.Controllers
         //ACTUALIZAR UN USUARIOS
         public ActionResult EditUser(int id)
         {
-            var proxyService = new ProxyUser();
+            // Recuperar el token de la sesión (ejemplo)
+            var token = Session["JWT_Token"] as string;
+
+            // Instanciar el proxy con el token
+            var proxyService = new ProxyUser(token);
+
+
             var userResponse = proxyService.GetUserById(id); // Llamar al proxy para obtener el usuario
 
             if (!userResponse.Success)
@@ -250,7 +291,8 @@ namespace Presentation.Controllers
         [HttpPost]
         public ActionResult EditUser(int id, User updatedUser)
         {
-            var proxyService = new ProxyUser();
+            var token = Session["JWT_Token"] as string;
+            var proxyService = new ProxyUser(token);
 
             try
             {
@@ -286,7 +328,8 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DirectCreateUser(User newUser)
         {
-            var proxyService = new ProxyUser();
+            var token = Session["JWT_Token"] as string;
+            var proxyService = new ProxyUser(token);
             if (ModelState.IsValid)
             {
                 try
@@ -308,6 +351,52 @@ namespace Presentation.Controllers
                 }
             }
             return View(newUser);
+        }
+
+        //Perfil del usuario
+        public ActionResult MyProfile()
+        {
+            // Recuperar el token JWT de la sesión
+            var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                return RedirectToAction("Login");
+            }
+
+            // Decodificar el token para extraer el id del usuario
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "UserId");
+
+            if (userIdClaim == null)
+            {
+                TempData["ErrorMessage"] = "El token no contiene el id de usuario.";
+                return RedirectToAction("Login");
+            }
+
+            // Convertir el id de usuario a entero
+            int userId;
+            if (!int.TryParse(userIdClaim.Value, out userId))
+            {
+                TempData["ErrorMessage"] = "El id de usuario en el token es inválido.";
+                return RedirectToAction("Login");
+            }
+
+            // Instanciar el proxy pasando el token para incluirlo en la cabecera
+            var proxyService = new ProxyUser(token);
+
+            // Llamar al método del proxy que obtiene el usuario por id
+            var userResponse = proxyService.GetUserById(userId);
+
+            if (!userResponse.Success)
+            {
+                TempData["ErrorMessage"] = userResponse.Message;
+                return RedirectToAction("GetAllUsers"); // O redirigir a donde sea apropiado
+            }
+
+            // Devolver la vista con los datos del usuario
+            return View(userResponse.User);
         }
 
     }

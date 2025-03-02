@@ -29,6 +29,23 @@ namespace Presentation.Controllers
             return View();
         }
 
+        public ActionResult Logout()
+        {
+            // Verificar y destruir el token
+            var token = Session["JWT_Token"] as string;
+            if (!string.IsNullOrEmpty(token))
+            {
+                log.Info("Token encontrado en la sesión. Procediendo a destruirlo.");
+                Session["JWT_Token"] = null;
+                log.Info("Token destruido exitosamente.");
+            }
+            else
+            {
+                log.Warn("No se encontró token en la sesión.");
+            }
+            return RedirectToAction("Login");
+        }
+
 
         //ACCIÓN PARA ENVIAR EL CÓDIGO DE VERFICACIÓN ANTES DE CREAR EL USUARIO
         public ActionResult CreateUser()

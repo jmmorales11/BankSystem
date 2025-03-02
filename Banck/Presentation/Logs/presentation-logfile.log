@@ -18,3 +18,95 @@
 2025-03-02 12:03:55,593 [5] WARN  Presentation.Controllers.UserController - Error al crear el usuario: La contraseña debe tener al menos 8 caracteres.
 2025-03-02 12:06:08,512 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
 2025-03-02 12:06:13,018 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de recuperación de contraseña.
+2025-03-02 12:20:32,037 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:20:38,583 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:21:00,861 [7] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: lasalletata@hotmail.com - Credenciales incorrectas.
+2025-03-02 12:21:25,266 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:21:25,298 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:21:35,374 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:21:44,409 [14] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1
+2025-03-02 12:21:51,532 [6] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 1 - No se encontraron préstamos para el usuario solicitado.
+2025-03-02 12:21:56,463 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1
+2025-03-02 12:21:58,261 [14] INFO  Presentation.Controllers.LoanController - Accediendo a la página de creación de préstamo para el usuario: 1
+2025-03-02 12:22:00,129 [14] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1
+2025-03-02 12:22:17,559 [6] INFO  Presentation.Controllers.UserController - Usuario ha cerrado sesión.
+2025-03-02 12:22:17,576 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:29:00,665 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:29:05,289 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:29:27,443 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:29:27,482 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:29:34,776 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:29:48,607 [5] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-02 12:29:48,610 [5] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-02 12:29:48,624 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:31:41,935 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:31:44,816 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:32:11,773 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:32:11,807 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:32:19,978 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:32:30,269 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-02 12:32:30,274 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-02 12:32:30,289 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:34:38,485 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:34:40,408 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:36:21,414 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:36:21,453 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:36:28,736 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:36:47,627 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-02 12:36:47,629 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-02 12:36:47,644 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:38:15,432 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:38:21,900 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:38:42,239 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:38:42,293 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:38:48,716 [8] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:39:15,840 [5] WARN  Presentation.Controllers.UserController - No se encontró token en la sesión.
+2025-03-02 12:39:15,853 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:40:04,774 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:40:06,496 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:40:24,362 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:40:24,413 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:40:31,526 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:40:48,906 [6] WARN  Presentation.Controllers.UserController - No se encontró token en la sesión.
+2025-03-02 12:40:48,921 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:41:37,427 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:41:38,799 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:41:59,190 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:41:59,250 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:42:06,284 [9] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:42:37,989 [7] WARN  Presentation.Controllers.UserController - No se encontró token en la sesión.
+2025-03-02 12:42:38,028 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:42:59,947 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:42:59,959 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:43:06,528 [8] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:43:10,908 [6] WARN  Presentation.Controllers.UserController - No se encontró token en la sesión.
+2025-03-02 12:43:10,930 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:44:20,538 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:44:24,023 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:44:43,316 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:44:43,363 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:44:49,904 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 12:45:07,422 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-02 12:45:07,425 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-02 12:45:07,446 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:45:17,794 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 12:45:17,831 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 12:45:24,295 [8] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 17:23:14,053 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 17:23:20,513 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 17:24:49,324 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 17:24:49,657 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 17:25:10,889 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 17:26:34,845 [7] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-02 17:26:34,920 [7] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-02 17:26:35,082 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 17:31:44,354 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 17:31:47,472 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 17:33:55,039 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 17:33:55,087 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-02 17:34:03,135 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: lasalletata@hotmail.com
+2025-03-02 17:34:28,863 [5] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-02 17:34:28,867 [5] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-02 17:34:28,885 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 17:42:31,007 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 17:42:35,071 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.

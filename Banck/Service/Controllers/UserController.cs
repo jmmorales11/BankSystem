@@ -13,6 +13,7 @@ using SL.Authentication;
 using SL.Authorization;
 using Entities.DTOs;
 using log4net;
+using System.Web;
 
 namespace Service.Controllers
 {
@@ -33,7 +34,25 @@ namespace Service.Controllers
 
         private static Dictionary<string, User> PendingRegistrations = new Dictionary<string, User>();
 
-
+        // Acción para cerrar sesión
+        [HttpPost]
+        [Route("api/user/logout")]
+        public IHttpActionResult Logout()
+        {
+            // Verificar y destruir el token
+            var token = HttpContext.Current.Session["JWT_Token"] as string;
+            if (!string.IsNullOrEmpty(token))
+            {
+                log.Info("Token encontrado en la sesión. Procediendo a destruirlo.");
+                HttpContext.Current.Session["JWT_Token"] = null;
+                log.Info("Token destruido exitosamente.");
+            }
+            else
+            {
+                log.Warn("No se encontró token en la sesión.");
+            }
+            return Ok(new { Message = "Sesión cerrada exitosamente." });
+        }
 
         [AllowAnonymous]
 

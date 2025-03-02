@@ -2,98 +2,249 @@
 
 @{
     ViewBag.Title = "Editar Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    @Styles.Render("~/Content/Forms/css")
-</head>
-<body>
+<style>
+    .edit-user-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(128, 128, 128, 0.3);
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-    <!-- Contenedor del formulario de edición de usuario -->
-    <div class="edit-user-container">
-        <h2 class="edit-user-title">Editar Usuario</h2>
+    .edit-user-title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #333;
+    }
 
-        @using (Html.BeginForm("EditUser", "User", FormMethod.Post, new { id = "editUserForm" }))
+    .edit-user-form-group {
+        margin-bottom: 1.2rem;
+    }
+
+    .edit-user-form-control {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.6rem;
+        width: 100%;
+    }
+
+    .edit-user-btn {
+        display: block;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .invalid-feedback {
+        color: #dc3545;
+        display: none;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+</style>
+
+<div class="edit-user-container">
+    <h2 class="edit-user-title">Editar Usuario</h2>
+
+    @using (Html.BeginForm("EditUser", "User", FormMethod.Post, new { id = "editUserForm", @class = "needs-validation", novalidate = "novalidate" }))
+    {
+        @Html.HiddenFor(model => model.user_id)
+
+        <!-- Si es Admin, mostramos 2 columnas. Si no, 1 sola -->
+        if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin)
         {
-            @Html.HiddenFor(model => model.user_id)
-
-            <div class="edit-user-row">
-                <div class="edit-user-col-half">
+            <!-- Dos columnas para Admin -->
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Campos comunes (Nombre, Apellido, Dirección, etc.) -->
                     <div class="edit-user-form-group">
-                        @Html.LabelFor(model => model.first_name)
-                        @Html.TextBoxFor(model => model.first_name, new { @class = "form-control edit-user-form-control" })
+                        @Html.LabelFor(m => m.first_name, "Nombre")
+                        @Html.TextBoxFor(m => m.first_name, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Nombre",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese el nombre.</div>
                     </div>
 
                     <div class="edit-user-form-group">
-                        @Html.LabelFor(model => model.last_name)
-                        @Html.TextBoxFor(model => model.last_name, new { @class = "form-control edit-user-form-control" })
+                        @Html.LabelFor(m => m.last_name, "Apellido")
+                        @Html.TextBoxFor(m => m.last_name, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Apellido",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese el apellido.</div>
                     </div>
 
                     <div class="edit-user-form-group">
-                        @Html.LabelFor(model => model.email)
-                        @Html.TextBoxFor(model => model.email, new { @class = "form-control edit-user-form-control" })
-                    </div>
-
-                    <div class="edit-user-form-group">
-                        @Html.LabelFor(model => model.address)
-                        @Html.TextBoxFor(model => model.address, new { @class = "form-control edit-user-form-control" })
-                    </div>
-
-                    <div class="edit-user-form-group">
-                        @Html.LabelFor(model => model.role)
-                        @Html.TextBoxFor(model => model.role, new { @class = "form-control edit-user-form-control" })
+                        @Html.LabelFor(m => m.address, "Dirección")
+                        @Html.TextBoxFor(m => m.address, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Dirección",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese la dirección.</div>
                     </div>
                 </div>
-
-                <div class="edit-user-col-half">
+                <div class="col-md-6">
+                    <!-- Campos exclusivos de Admin (Email, Rol, Status, etc.) -->
                     <div class="edit-user-form-group">
-                        @Html.LabelFor(model => model.status)
-                        @Html.DropDownListFor(model => model.status, new List<SelectListItem>
+                        @Html.LabelFor(m => m.email, "Correo")
+                        @Html.TextBoxFor(m => m.email, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Correo",
+                            type = "email",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese un correo válido.</div>
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(m => m.role, "Rol")
+                        @Html.TextBoxFor(m => m.role, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Rol",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese el rol.</div>
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(m => m.status, "Estado")
+                        @Html.DropDownListFor(m => m.status, new List<SelectListItem>
                         {
                             new SelectListItem { Text = "Activo", Value = "Activo" },
                             new SelectListItem { Text = "Inactivo", Value = "Inactivo" }
-                        }, new { @class = "form-control edit-user-form-control" })
+                        }, new
+                            {
+                                @class = "form-control edit-user-form-control",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Seleccione un estado.</div>
                     </div>
-
-                    <button type="button" class="btn btn-primary edit-user-btn" data-bs-toggle="modal" data-bs-target="#confirmUpdateModal">Actualizar Usuario</button>
                 </div>
             </div>
         }
-    </div>
+        else
+        {
+            <!-- Una sola columna (col-md-12) para NO Admin -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Campos comunes (Nombre, Apellido, Dirección, etc.) -->
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(m => m.first_name, "Nombre")
+                        @Html.TextBoxFor(m => m.first_name, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Nombre",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese el nombre.</div>
+                    </div>
 
-    <!-- Modal de Confirmación de Actualización -->
-    <div class="modal fade" id="confirmUpdateModal" tabindex="-1" aria-labelledby="confirmUpdateModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="confirmUpdateModalLabel">Confirmar Actualización</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(m => m.last_name, "Apellido")
+                        @Html.TextBoxFor(m => m.last_name, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Apellido",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese el apellido.</div>
+                    </div>
+
+                    <div class="edit-user-form-group">
+                        @Html.LabelFor(m => m.address, "Dirección")
+                        @Html.TextBoxFor(m => m.address, new
+                        {
+                            @class = "form-control edit-user-form-control",
+                            placeholder = "Dirección",
+                            required = "required"
+                        })
+                        <div class="invalid-feedback">Ingrese la dirección.</div>
+                    </div>
+
+                    <!-- No se muestran campos de admin. Pero mantenemos el valor del email oculto si corresponde -->
+                    @Html.HiddenFor(m => m.email)
+                    @Html.HiddenFor(m => m.role)
+                    @Html.HiddenFor(m => m.status)
                 </div>
-                <div class="modal-body">
-                    <p>¿Estás seguro de que deseas actualizar los datos de este usuario?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" id="confirmUpdateBtn">Actualizar</button>
-                </div>
+            </div>
+        }
+
+        <!-- Botón para abrir el modal de confirmación -->
+        <button type="button" class="btn btn-primary edit-user-btn" data-bs-toggle="modal" data-bs-target="#confirmUpdateModal">
+            Actualizar Usuario
+        </button>
+    }
+</div>
+
+<!-- Modal de Confirmación de Actualización -->
+<div class="modal fade" id="confirmUpdateModal" tabindex="-1" aria-labelledby="confirmUpdateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="confirmUpdateModalLabel">Confirmar Actualización</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas actualizar los datos de este usuario?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="confirmUpdateBtn">Actualizar</button>
             </div>
         </div>
     </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Botón de Cancelar (navegación según rol) -->
+<div class="text-center mt-3">
+    @if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin)
+    {
+        <a href="@Url.Action("GetAllUsers", "User")" class="btn btn-outline-secondary">Volver a Lista de Usuarios</a>
+    }
+    else
+    {
+        <a href="@Url.Action("MyProfile", "User")" class="btn btn-outline-secondary">Volver a Mi Perfil</a>
+    }
+</div>
 
-    <script>
-        // Enviar el formulario al confirmar la actualización
-        document.getElementById('confirmUpdateBtn').addEventListener('click', function () {
-            document.getElementById('editUserForm').submit();
-        });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Validación de formulario usando HTML5 y Bootstrap
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })();
 
-</body>
-</html>
+    // Enviar el formulario al confirmar la actualización
+    document.getElementById('confirmUpdateBtn').addEventListener('click', function () {
+        var form = document.getElementById('editUserForm');
+        if (form.checkValidity()) {
+            form.submit();
+        } else {
+            form.classList.add('was-validated');
+        }
+    });
+</script>

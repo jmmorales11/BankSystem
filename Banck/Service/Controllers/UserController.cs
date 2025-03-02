@@ -347,8 +347,51 @@ namespace Service.Controllers
                 // Reemplazar la contraseña por su versión encriptada
                 newUser.password = passwordResult.EncryptedPassword;
 
-                // Asignar rol por defecto "Editor"
-                newUser.role = "User";
+                newUser.status = 1;
+                newUser.registration_date = DateTime.Now;
+
+                // Crear el usuario directamente
+                var createdUser = BL.CreateUser(newUser);
+
+                return Ok(new { Success = true, Message = "Usuario creado exitosamente.", User = createdUser });
+            }
+            catch (Exception ex)
+            {
+                return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error: " + ex.Message });
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("api/user/directcreate-two")]
+        public IHttpActionResult DirectCreateUser2([FromBody] User newUser)
+        {
+            var BL = new UserLogic();
+            try
+            {
+                // Verificar si el usuario ya existe
+                if (BL.validateExistingUser(newUser))
+                {
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = "Este usuario ya existe."
+                    });
+                }
+
+                // Validar la contraseña y encriptarla
+                var passwordResult = BL.ValidateAndEncryptPassword(newUser.password);
+                if (!passwordResult.IsSafe)
+                {
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = passwordResult.Message
+                    });
+                }
+                // Reemplazar la contraseña por su versión encriptada
+                newUser.password = passwordResult.EncryptedPassword;
+
                 newUser.status = 1;
                 newUser.registration_date = DateTime.Now;
 

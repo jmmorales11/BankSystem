@@ -66,36 +66,42 @@ namespace Presentation.Controllers
             }
         }
 
-        // Acción para listar todos los préstamos de un usuario
         [HttpGet]
         public async Task<ActionResult> ListLoansByUser(int userId)
         {
             var token = Session["JWT_Token"] as string;
             var proxyService = new ProxyLoan(token);
+            // Guardamos el userId en la sesión y en el ViewBag
+            Session["UserId"] = userId;
+            ViewBag.UserId = userId;
+
+            // Decodificamos el token para obtener el rol
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            bool isAdmin = roleClaim != null && roleClaim.Value == "Admin";
+            ViewBag.IsAdmin = isAdmin;
+
             try
             {
                 // Obtener los préstamos del usuario por ID
                 var loansResponse = await proxyService.GetLoansByUserId(userId);
-
                 if (loansResponse.Success)
                 {
-                    return View(loansResponse.Loans); // Pasamos los préstamos al modelo de la vista
+                    return View(loansResponse.Loans);
                 }
                 else
                 {
                     TempData["ErrorMessage"] = loansResponse.Message;
-                    return View(new List<Loan>()); // Devolvemos una lista vacía si no se encontraron préstamos
+                    return View(new List<Loan>());
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = ex.Message;
-                return View(new List<Loan>()); // Devolvemos una lista vacía en caso de error
+                return View(new List<Loan>());
             }
         }
-
-
-
 
 
 
@@ -108,8 +114,18 @@ namespace Presentation.Controllers
             {
                 user_id = userId
             };
+
+            // Recuperar el token y obtener el rol para el ViewBag
+            var token = Session["JWT_Token"] as string;
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            ViewBag.IsAdmin = (roleClaim != null && roleClaim.Value == "Admin");
+            ViewBag.UserId = userId;
+
             return View(loan);
         }
+
 
         // Acción para crear el préstamo
         [HttpPost]

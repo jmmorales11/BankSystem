@@ -18,6 +18,9 @@ namespace Presentation.Controllers
         {
             var token = Session["JWT_Token"] as string;
             var proxy = new ProxyAmortization(token);
+
+            int userId = Convert.ToInt32(Session["UserId"]);
+            ViewBag.UserId = userId;
             try
             {
                 AmortizationResponseDto response = await proxy.GetLoanAmortizationSchedule(loanId);

@@ -7,18 +7,22 @@
     <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
 }
 
+<!-- Aquí se muestra el botón adecuado según el rol -->
+<div class="mb-3">
+    @if (ViewBag.IsAdmin != null && ViewBag.IsAdmin)
+    {
+        <a href="@Url.Action("ListUser", "Loan")" class="btn btn-secondary">Gestión de préstamos</a>
+
+    }
+    else
+    {
+        <a href="@Url.Action("MyProfile", "User", new { userId = ViewBag.UserId })" class="btn btn-secondary">Mi Perfil</a>
+    }
+</div>
+
+<!-- Resto de la vista, por ejemplo, la tabla de préstamos -->
 @if (Model != null && Model.Any())
 {
-    <!-- Filtro de Estado -->
-    <div class="form-group">
-        <label for="statusFilter">Filtrar por Estado:</label>
-        <select id="statusFilter" class="form-control" onchange="filterLoans()">
-            <option value="all">Todos</option>
-            <option value="active">Activos</option>
-            <option value="finalized">Finalizados</option>
-        </select>
-    </div>
-
     <table class="table" id="loansTable">
         <thead>
             <tr>
@@ -53,7 +57,9 @@
                         }
                     </td>
                     <td>
-                        <a href="@Url.Action("Amortization", "Amortization", new { loanId = loan.loan_id })" class="btn btn-primary mt-3">Ver Amortización</a>
+                        <a href="@Url.Action("Amortization", "Amortization", new { loanId = loan.loan_id, userId = ViewBag.UserId })" class="btn btn-primary mt-3">
+                            Ver Amortización
+                        </a>
                     </td>
                 </tr>
             }
@@ -65,7 +71,6 @@ else
     <p>No se encontraron préstamos para este usuario.</p>
 }
 
-<a href="@Url.Action("ListUser", "Loan")" class="btn btn-secondary mt-3">Volver a la Lista de Préstamos</a>
 
 <!-- Script para filtrar los préstamos -->
 <script>

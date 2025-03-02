@@ -74,12 +74,20 @@ namespace Presentation.Controllers
             var token = Session["JWT_Token"] as string;
             var proxyService = new ProxyUserData(token); // Usar el proxy adecuado para UserData
 
+            // Decodificar el token para obtener el rol
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            bool isAdmin = roleClaim != null && roleClaim.Value == "Admin";
+            ViewBag.IsAdmin = isAdmin;
+            ViewBag.UserId = userId;
+
             try
             {
                 // Obtenemos los datos de User_Data para el usuario con el userId
                 var response = await proxyService.GetUserDataById(userId);
 
-                // Agregamos un console.log (Console.WriteLine) para ver la respuesta
+                // Agregamos un console.log (Debug.WriteLine) para ver la respuesta
                 Debug.WriteLine($"Respuesta obtenida para el usuario {userId}: {response.Success}, Datos: {response.UserData}");
 
                 if (response != null && response.Success)
@@ -99,6 +107,7 @@ namespace Presentation.Controllers
                 return RedirectToAction("ListUserData");
             }
         }
+
 
 
 
@@ -140,6 +149,14 @@ namespace Presentation.Controllers
             var token = Session["JWT_Token"] as string;
             var proxyService = new ProxyUserData(token);
 
+            // Decodificar el token para obtener el rol
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            bool isAdmin = roleClaim != null && roleClaim.Value == "Admin";
+            ViewBag.IsAdmin = isAdmin;
+            ViewBag.UserId = userId;
+
             try
             {
                 var response = await proxyService.GetUserDataById(userId);
@@ -152,15 +169,16 @@ namespace Presentation.Controllers
                 else
                 {
                     TempData["ErrorMessage"] = response?.Message ?? "No se encontraron datos para el usuario.";
-                    return RedirectToAction("ListUserData");
+                    return View();
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Error al obtener los datos del usuario: {ex.Message}";
-                return RedirectToAction("ListUserData");
+                return View();
             }
         }
+
 
 
     }

@@ -316,3 +316,39 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentatio
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Text.Json.xml
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Presentation\bin\System.ValueTuple.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.Memory.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.TimeProvider.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Logging.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Tokens.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Buffers.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Diagnostics.DiagnosticSource.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Memory.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Numerics.Vectors.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Text.Encodings.Web.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Text.Json.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Threading.Tasks.Extensions.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.ValueTuple.dll
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.Memory.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Bcl.TimeProvider.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Logging.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\Microsoft.IdentityModel.Tokens.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Buffers.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Diagnostics.DiagnosticSource.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Memory.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Numerics.Vectors.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Text.Encodings.Web.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Text.Json.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.Threading.Tasks.Extensions.xml
+D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Presentation\bin\System.ValueTuple.xml

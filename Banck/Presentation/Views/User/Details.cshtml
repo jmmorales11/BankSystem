@@ -1,0 +1,82 @@
+﻿@model Entities.User
+
+@{
+    ViewBag.Title = "Detalles del Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .details-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .details-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    dl {
+        text-align: left;
+    }
+
+    dt {
+        font-weight: bold;
+        margin-top: 1rem;
+        color: #555;
+    }
+
+    dd {
+        margin-bottom: 1rem;
+        color: #666;
+    }
+
+    .back-btn {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 1.5rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #6c757d;
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+
+<div class="details-container">
+    <h2 class="details-title">Detalles del Usuario</h2>
+
+    <dl>
+        <dt>ID:</dt>
+        <dd>@Model.user_id</dd>
+
+        <dt>Nombre:</dt>
+        <dd>@Model.first_name</dd>
+
+        <dt>Apellido:</dt>
+        <dd>@Model.last_name</dd>
+
+        <dt>Correo:</dt>
+        <dd>@Model.email</dd>
+
+        <dt>Rol:</dt>
+        <dd>@Model.role</dd>
+
+        <dt>Fecha de Nacimiento:</dt>
+        <dd>@Model.birth_date.ToShortDateString()</dd>
+
+        <dt>Dirección:</dt>
+        <dd>@Model.address</dd>
+    </dl>
+
+    <a href="@Url.Action("GetAllUsers", "User")" class="back-btn">Volver a Lista de Usuarios</a>
+
+</div>

@@ -269,25 +269,28 @@ namespace Presentation.Controllers
 
 
         //ACTUALIZAR UN USUARIOS
+        [HttpGet]
         public ActionResult EditUser(int id)
         {
-            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            bool isAdmin = roleClaim != null && roleClaim.Value == "Admin";
+            ViewBag.IsAdmin = isAdmin; // Esta bandera se usará en la vista
 
-            // Instanciar el proxy con el token
             var proxyService = new ProxyUser(token);
-
-
-            var userResponse = proxyService.GetUserById(id); // Llamar al proxy para obtener el usuario
+            var userResponse = proxyService.GetUserById(id);
 
             if (!userResponse.Success)
             {
                 TempData["ErrorMessage"] = userResponse.Message;
-                return RedirectToAction("GetAllUsers"); // Redirigir a la lista si no se encuentra el usuario
+                return RedirectToAction("GetAllUsers");
             }
 
-            return View(userResponse.User); // Pasa el usuario a la vista de edición
+            return View(userResponse.User);
         }
+
 
         [HttpPost]
         public ActionResult EditUser(int id, User updatedUser)
@@ -356,50 +359,40 @@ namespace Presentation.Controllers
 
 
         //Perfil del usuario
-        public ActionResult MyProfile()
+        public ActionResult MyProfile(int? userId)
         {
-            // Recuperar el token JWT de la sesión
-            var token = Session["JWT_Token"] as string;
-            if (string.IsNullOrEmpty(token))
+            // Si se pasa userId, puedes usarlo para cargar el perfil,
+            // o de lo contrario, decodificar el token.
+            int id;
+            if (userId.HasValue)
             {
-                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
-                return RedirectToAction("Login");
+                id = userId.Value;
+            }
+            else
+            {
+                var token = Session["JWT_Token"] as string;
+                var handler = new JwtSecurityTokenHandler();
+                var jwtToken = handler.ReadJwtToken(token);
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "UserId");
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out id))
+                {
+                    TempData["ErrorMessage"] = "El token no contiene un id de usuario válido.";
+                    return RedirectToAction("Login");
+                }
             }
 
-            // Decodificar el token para extraer el id del usuario
-            var handler = new JwtSecurityTokenHandler();
-            var jwtToken = handler.ReadJwtToken(token);
-            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "UserId");
-
-            if (userIdClaim == null)
-            {
-                TempData["ErrorMessage"] = "El token no contiene el id de usuario.";
-                return RedirectToAction("Login");
-            }
-
-            // Convertir el id de usuario a entero
-            int userId;
-            if (!int.TryParse(userIdClaim.Value, out userId))
-            {
-                TempData["ErrorMessage"] = "El id de usuario en el token es inválido.";
-                return RedirectToAction("Login");
-            }
-
-            // Instanciar el proxy pasando el token para incluirlo en la cabecera
-            var proxyService = new ProxyUser(token);
-
-            // Llamar al método del proxy que obtiene el usuario por id
-            var userResponse = proxyService.GetUserById(userId);
+            var proxyService = new ProxyUser(Session["JWT_Token"] as string);
+            var userResponse = proxyService.GetUserById(id);
 
             if (!userResponse.Success)
             {
                 TempData["ErrorMessage"] = userResponse.Message;
-                return RedirectToAction("GetAllUsers"); // O redirigir a donde sea apropiado
+                return RedirectToAction("GetAllUsers"); // O la acción que consideres apropiada
             }
 
-            // Devolver la vista con los datos del usuario
             return View(userResponse.User);
         }
+
 
 
         // ===================== ACCIONES PARA RECUPERAR CONTRASEÑA =====================
@@ -491,6 +484,45 @@ namespace Presentation.Controllers
             }
             return View();
         }
+
+
+        [HttpGet]
+        public ActionResult Details(int id)
+        {
+            var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicie sesión.";
+                return RedirectToAction("Login");
+            }
+
+            // Decodificar el token para obtener el rol y el UserId (del usuario autenticado)
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            bool isAdmin = roleClaim != null && roleClaim.Value == "Admin";
+            ViewBag.IsAdmin = isAdmin;
+
+            // Obtener el id del usuario autenticado para redirección (suponiendo que se almacena en el claim "UserId")
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "UserId");
+            if (userIdClaim != null)
+            {
+                ViewBag.UserId = int.Parse(userIdClaim.Value);
+            }
+
+            var proxyService = new ProxyUser(token);
+            var userResponse = proxyService.GetUserById(id);
+
+            if (!userResponse.Success)
+            {
+                TempData["ErrorMessage"] = userResponse.Message;
+                return RedirectToAction("GetAllUsers");
+            }
+
+            return View(userResponse.User);
+        }
+
+
 
 
 

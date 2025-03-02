@@ -2,15 +2,76 @@
 
 @{
     ViewBag.Title = "Mi Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Mi Perfil</h2>
+<style>
+    .profile-container {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
 
-<div>
-    <p><strong>ID:</strong> @Model.user_id</p>
-    <p><strong>Nombre:</strong> @Model.first_name</p>
-    <p><strong>Apellido:</strong> @Model.last_name</p>
-    <p><strong>Correo:</strong> @Model.email</p>
-    <p><strong>Rol:</strong> @Model.role</p>
-    <!-- Muestra más propiedades que necesites -->
+    .profile-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .profile-info p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .profile-info strong {
+        color: #333;
+    }
+
+    .profile-buttons a {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-warning {
+        background-color: #f0ad4e;
+        color: #fff;
+    }
+
+    .btn-info {
+        background-color: #5bc0de;
+        color: #fff;
+    }
+</style>
+
+<div class="profile-container">
+    <h2 class="profile-title">Mi Perfil</h2>
+
+    <div class="profile-info">
+        <p><strong>ID:</strong> @Model.user_id</p>
+        <p><strong>Nombre:</strong> @Model.first_name</p>
+        <p><strong>Apellido:</strong> @Model.last_name</p>
+        <p><strong>Correo:</strong> @Model.email</p>
+        <p><strong>Rol:</strong> @Model.role</p>
+    </div>
+
+    @if (Model.role != "Admin")
+    {
+        <div class="profile-buttons">
+            <a href="@Url.Action("EditUser", "User", new { id = Model.user_id })" class="btn-warning">Editar</a>
+            <a href="@Url.Action("ViewUserData", "UserData", new { userId = Model.user_id })" class="btn-info">Ver Datos</a>
+            <a href="@Url.Action("CreateUserData", "UserData", new { userId = Model.user_id })" class="btn-info">Completar Datos</a>
+            <a href="@Url.Action("ListLoansByUser", "Loan", new { userId = Model.user_id })" class="btn-info">Ver Préstamos</a>
+            <a href="@Url.Action("CreateLoan", "Loan", new { userId = Model.user_id })" class="btn-info">Crear Préstamo</a>
+        </div>
+    }
 </div>

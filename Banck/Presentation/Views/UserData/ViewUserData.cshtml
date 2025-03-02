@@ -5,43 +5,99 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Ver Datos de Usuario</h2>
+<style>
+    .userdata-container {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
 
-<div class="form-group">
-    <label>Salario:</label>
-    <p>@Model.salary</p>
-</div>
+    .userdata-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-weight: bold;
+    }
 
-<div class="form-group">
-    <label>Carga Familiar:</label>
-    <p>@Model.family_load</p>
-</div>
+    .userdata-info {
+        margin-bottom: 1.2rem;
+        text-align: left;
+    }
 
-<div class="form-group">
-    <label>Lugar de Trabajo:</label>
-    <p>@Model.workplace</p>
-</div>
+        .userdata-info label {
+            display: block;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 0.3rem;
+        }
 
-<div class="form-group">
-    <label>Tipo de Vivienda:</label>
-    <p>@Model.housing_type</p>
-</div>
+        .userdata-info p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+        }
 
-<div class="form-group">
-    <label>Costo de Alquiler:</label>
-    <p>@Model.rent_cost</p>
-</div>
+    .userdata-links {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
 
-<div class="form-group">
-    <label>Años de Empleo:</label>
-    <p>@Model.years_of_employment</p>
-</div>
+        .userdata-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            background-color: #6c757d;
+            color: #fff;
+        }
+</style>
 
-<div class="form-group">
-    <label>Estado de Empleo:</label>
-    <p>@Model.employment_status</p>
-</div>
+<div class="userdata-container">
+    <h2 class="userdata-title">Ver Datos de Usuario</h2>
 
-<div>
-    <a href="@Url.Action("ListUserData", "UserData")" class="btn btn-secondary">Volver</a>
+    <div class="userdata-info">
+        <label>Salario:</label>
+        <p>@Model.salary</p>
+    </div>
+    <div class="userdata-info">
+        <label>Carga Familiar:</label>
+        <p>@Model.family_load</p>
+    </div>
+    <div class="userdata-info">
+        <label>Lugar de Trabajo:</label>
+        <p>@Model.workplace</p>
+    </div>
+    <div class="userdata-info">
+        <label>Tipo de Vivienda:</label>
+        <p>@Model.housing_type</p>
+    </div>
+    <div class="userdata-info">
+        <label>Costo de Alquiler:</label>
+        <p>@Model.rent_cost</p>
+    </div>
+    <div class="userdata-info">
+        <label>Años de Empleo:</label>
+        <p>@Model.years_of_employment</p>
+    </div>
+    <div class="userdata-info">
+        <label>Estado de Empleo:</label>
+        <p>@Model.employment_status</p>
+    </div>
+
+    <div class="userdata-links">
+        @if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin)
+        {
+            <a href="@Url.Action("ListUserData", "UserData")">Gestión de usuarios</a>
+        }
+        else
+        {
+            <a href="@Url.Action("MyProfile", "User", new { userId = ViewBag.UserId })">Volver a Mi Perfil</a>
+        }
+    </div>
 </div>

@@ -68,15 +68,13 @@
         </tbody>
     </table>
     <div>
-    <a href="@Url.Action("ListUserData", "UserData")" class="btn btn-secondary">Volver</a>
-</div>
+        <a href="@Url.Action("ListLoansByUser", "Loan", new { userId = ViewBag.UserId })" class="btn btn-secondary">Volver</a>
+    </div>
 }
 else
 {
     <p>No se encontró cronograma de amortización para este préstamo.</p>
 }
-
-<a href="@Url.Action("ListLoansByUser", "Loan")" class="btn btn-secondary">Volver a Préstamos</a>
 
 @section Scripts {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

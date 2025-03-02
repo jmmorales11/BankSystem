@@ -100,7 +100,7 @@ namespace BLL
             {
                 users.status = 1;
                 users.registration_date = DateTime.Now;
-                users.role = "Editor";
+                users.role = "User";
 
                 res = r.Create(users);
 

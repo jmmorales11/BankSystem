@@ -5,11 +5,14 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Web.Http;
+using log4net;
 
 namespace Service.Controllers
 {
     public class LoanController : ApiController
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(LoanController));
+
         [Authorize(Roles = "Admin,User")]
         [HttpPost]
         public IHttpActionResult CreateLoan([FromBody] Loan newLoan)
@@ -19,6 +22,7 @@ namespace Service.Controllers
             var (retrieveSuccess, retrieveMessage, userLoans) = loanLogic.RetrieveLoansByUserId(newLoan.user_id);
             if (userLoans != null && userLoans.Any(l => l.status == 1))
             {
+                log.Warn($"El usuario {newLoan.user_id} ya tiene un préstamo activo.");
                 return Content(HttpStatusCode.BadRequest, new { Success = false, Message = "El usuario ya tiene un préstamo activo." });
             }
 
@@ -28,6 +32,7 @@ namespace Service.Controllers
 
             if (!success)
             {
+                log.Error($"Error al crear el préstamo para el usuario {newLoan.user_id}: {message}");
                 return Content(HttpStatusCode.BadRequest, new { Success = false, Message = message });
             }
 
@@ -41,8 +46,9 @@ namespace Service.Controllers
             else
             {
                 scheduleMessage = "Préstamo creado, pero hubo un problema al generar la amortización: " + scheduleMessage;
+                log.Warn(scheduleMessage);
             }
-
+            log.Info($"Préstamo creado exitosamente para el usuario {newLoan.user_id}");
             return Ok(new { Success = true, Message = message + " " + scheduleMessage, Loan = createdLoan });
         }
 
@@ -56,10 +62,12 @@ namespace Service.Controllers
 
             if (success)
             {
+                log.Info("Préstamos recuperados exitosamente.");
                 return Ok(new { Success = true, Loans = loans });
             }
             else
             {
+                log.Error("Error al recuperar los préstamos: " + message);
                 return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = message });
             }
         }
@@ -73,10 +81,12 @@ namespace Service.Controllers
 
             if (success)
             {
+                log.Info($"Préstamo recuperado exitosamente para el usuario: {userId}");
                 return Ok(new { Success = true, Loan = loan });
             }
             else
             {
+                log.Warn($"No se encontró el préstamo para el usuario con el ID: {userId}");
                 return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
@@ -90,10 +100,12 @@ namespace Service.Controllers
 
             if (success)
             {
+                log.Info($"Préstamo eliminado exitosamente: {id}");
                 return Ok(new { Success = true, Message = message });
             }
             else
             {
+                log.Warn($"No se pudo eliminar el préstamo con el ID: {id}");
                 return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
@@ -107,10 +119,12 @@ namespace Service.Controllers
 
             if (success)
             {
+                log.Info($"Préstamo actualizado exitosamente: {loan.loan_id}");
                 return Ok(new { Success = true, Message = message });
             }
             else
             {
+                log.Warn($"No se pudo actualizar el préstamo con el ID: {loan.loan_id}");
                 return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
             }
         }
@@ -128,15 +142,18 @@ namespace Service.Controllers
 
                 if (success)
                 {
+                    log.Info($"Préstamos recuperados exitosamente para el usuario: {userId}");
                     return Ok(new { Success = true, Loans = loans });
                 }
                 else
                 {
+                    log.Warn($"No se encontraron préstamos para el usuario con el ID: {userId}");
                     return Content(HttpStatusCode.NotFound, new { Success = false, Message = message });
                 }
             }
             catch (Exception ex)
             {
+                log.Error($"Error al recuperar los préstamos para el usuario con el ID: {userId}", ex);
                 return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = ex.Message });
             }
         }

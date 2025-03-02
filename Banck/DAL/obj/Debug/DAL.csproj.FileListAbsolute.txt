@@ -58,3 +58,19 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\obj\Deb
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\DAL\obj\Debug\DAL.pdb
 D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
 D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\DAL.dll.config
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\DAL.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\DAL.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\Entities.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\EntityFramework.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\Entities.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\EntityFramework.xml
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\obj\Debug\DAL.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\DAL\obj\Debug\DAL.pdb

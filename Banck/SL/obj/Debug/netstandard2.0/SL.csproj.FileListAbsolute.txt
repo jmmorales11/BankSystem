@@ -47,3 +47,17 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\SL\obj\Debu
 D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.dll
 D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.pdb
 D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.Up2Date
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\bin\Debug\netstandard2.0\SL.deps.json
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\bin\Debug\netstandard2.0\SL.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\bin\Debug\netstandard2.0\SL.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.AssemblyReference.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.AssemblyInfoInputs.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.AssemblyInfo.cs
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.CoreCompileInputs.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.sourcelink.json
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.Up2Date
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.pdb

@@ -1,5 +1,8 @@
 is_global = true
 build_property.RootNamespace = SL
-build_property.ProjectDir = D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\
+build_property.ProjectDir = D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

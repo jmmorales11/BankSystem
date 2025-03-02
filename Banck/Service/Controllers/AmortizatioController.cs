@@ -4,11 +4,14 @@ using System;
 using System.Net;
 using System.Web.Http;
 using Newtonsoft.Json;
+using log4net;
 
 namespace Service.Controllers
 {
     public class AmortizationController : ApiController
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(AmortizationController));
+
         //Obtener Amortización de un préstamo
         [Authorize(Roles = "Admin,User")]
         [HttpGet]
@@ -20,15 +23,18 @@ namespace Service.Controllers
 
             if (!success)
             {
+                log.Error($"Error al recuperar las amortizaciones: {message}");
                 return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = message });
             }
 
             var schedule = amortizations.FindAll(a => a.loan_id == loanId);
             if (schedule.Count == 0)
             {
+                log.Warn($"No se encontró cronograma de amortización para el préstamo con ID: {loanId}");
                 return Content(HttpStatusCode.NotFound, new { Success = false, Message = "No se encontró cronograma de amortización para el préstamo indicado." });
             }
 
+            log.Info($"Cronograma de amortización recuperado exitosamente para el préstamo con ID: {loanId}");
             return Ok(new { Success = true, AmortizationSchedule = schedule });
         }
         [Authorize(Roles = "Admin,User")]
@@ -42,10 +48,12 @@ namespace Service.Controllers
 
             if (success)
             {
+                log.Info($"Cuota pagada exitosamente para la amortización con ID: {id}");
                 return Ok(new { Success = true, Message = message, Amortization = amortization });
             }
             else
             {
+                log.Warn($"Error al pagar la cuota para la amortización con ID: {id} - {message}");
                 return Content(HttpStatusCode.BadRequest, new { Success = false, Message = message });
             }
         }

@@ -37,3 +37,16 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\obj\D
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.Up2Date
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\obj\Debug\Proxy.dll
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Proxy\obj\Debug\Proxy.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\Proxy.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\Proxy.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\Entities.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\Newtonsoft.Json.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\SLC.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\Entities.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\SLC.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\bin\Debug\Newtonsoft.Json.xml
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.AssemblyReference.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\obj\Debug\Proxy.csproj.Up2Date
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\obj\Debug\Proxy.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Proxy\obj\Debug\Proxy.pdb

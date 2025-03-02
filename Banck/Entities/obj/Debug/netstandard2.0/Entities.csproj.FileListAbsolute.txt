@@ -41,3 +41,14 @@ C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\ob
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.sourcelink.json
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.dll
 C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\bin\Debug\netstandard2.0\Entities.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\bin\Debug\netstandard2.0\Entities.pdb
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.sourcelink.json
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.dll
+D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Entities\obj\Debug\netstandard2.0\Entities.pdb

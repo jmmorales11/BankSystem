@@ -1,0 +1,10 @@
+2025-03-02 11:29:28,286 [6] WARN  Service.Controllers.UserController - Intento de registro con una contraseña insegura para el usuario: 
+2025-03-02 11:30:15,566 [7] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: epramirez2@espe.edu.ec
+2025-03-02 11:36:36,851 [7] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: epramirez2@espe.edu.ec
+2025-03-02 11:45:37,997 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 11:45:59,865 [7] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: epramirez2@espe.edu.ec
+2025-03-02 11:46:15,519 [6] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: lsimbana@gmail.com
+2025-03-02 11:52:24,820 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 11:52:44,364 [6] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: epramirez2@espe.edu.ec
+2025-03-02 12:03:31,814 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 12:03:55,533 [7] WARN  Service.Controllers.UserController - Intento de registro con una contraseña insegura para el usuario: asdasd

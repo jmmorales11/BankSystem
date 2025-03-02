@@ -1,0 +1,20 @@
+2025-03-02 11:28:41,055 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 11:29:03,696 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-02 11:29:28,382 [5] WARN  Presentation.Controllers.UserController - Error al crear el usuario: La contraseña no puede estar vacía.
+2025-03-02 11:30:06,296 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-02 11:30:15,576 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: epramirez2@espe.edu.ec - Credenciales incorrectas.
+2025-03-02 11:35:57,997 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 11:36:36,933 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: epramirez2@espe.edu.ec - Credenciales incorrectas.
+2025-03-02 11:45:39,182 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 11:45:42,951 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 11:45:59,919 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: epramirez2@espe.edu.ec - Credenciales incorrectas.
+2025-03-02 11:46:15,521 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: lsimbana@gmail.com - Credenciales incorrectas.
+2025-03-02 11:52:25,187 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 11:52:28,351 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 11:52:44,449 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: epramirez2@espe.edu.ec - Credenciales incorrectas.
+2025-03-02 12:03:32,022 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-02 12:03:37,207 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-02 12:03:44,884 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-02 12:03:55,593 [5] WARN  Presentation.Controllers.UserController - Error al crear el usuario: La contraseña debe tener al menos 8 caracteres.
+2025-03-02 12:06:08,512 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-02 12:06:13,018 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de recuperación de contraseña.

@@ -7,11 +7,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using log4net;
 
 namespace Presentation.Controllers
 {
     public class LoanController : Controller
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(LoanController));
+
         // Acción para mostrar la lista de usuarios
         [HttpGet]
         public async Task<ActionResult> ListUser()
@@ -20,6 +23,7 @@ namespace Presentation.Controllers
             if (string.IsNullOrEmpty(token))
             {
                 TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
                 return RedirectToAction("Login");
             }
 
@@ -31,6 +35,7 @@ namespace Presentation.Controllers
             if (roleClaim == null)
             {
                 TempData["ErrorMessage"] = "El token no contiene el rol.";
+                log.Error("El token no contiene el rol.");
                 return RedirectToAction("Login");
             }
 
@@ -41,6 +46,7 @@ namespace Presentation.Controllers
             {
                 // Mostrar mensaje de "No autorizado" y NO cargar la vista
                 TempData["ErrorMessage"] = "No autorizado: Solo un administrador puede ver la lista de usuarios.";
+                log.Info("No autorizado: Solo un administrador puede ver la lista de usuarios.");
                 return RedirectToAction("MyProfile", "User");
                 // O puedes retornar un status HTTP 403:
                 // return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "No autorizado");
@@ -51,17 +57,20 @@ namespace Presentation.Controllers
                 var response = await proxyService.GetAllUsers();
                 if (response.Success)
                 {
+                    log.Info("Usuarios recuperados exitosamente.");
                     return View(response.Users); // Pasamos los usuarios a la vista
                 }
                 else
                 {
                     TempData["ErrorMessage"] = response.Message;
+                    log.Warn($"Error al recuperar los usuarios: {response.Message}");
                     return View();
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = ex.Message;
+                log.Error("Error al recuperar los usuarios", ex);
                 return View();
             }
         }
@@ -88,17 +97,20 @@ namespace Presentation.Controllers
                 var loansResponse = await proxyService.GetLoansByUserId(userId);
                 if (loansResponse.Success)
                 {
+                    log.Info($"Préstamos recuperados exitosamente para el usuario: {userId}");
                     return View(loansResponse.Loans);
                 }
                 else
                 {
                     TempData["ErrorMessage"] = loansResponse.Message;
+                    log.Warn($"Error al recuperar los préstamos para el usuario: {userId} - {loansResponse.Message}");
                     return View(new List<Loan>());
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = ex.Message;
+                log.Error($"Error al recuperar los préstamos para el usuario: {userId}", ex);
                 return View(new List<Loan>());
             }
         }
@@ -122,7 +134,7 @@ namespace Presentation.Controllers
             var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
             ViewBag.IsAdmin = (roleClaim != null && roleClaim.Value == "Admin");
             ViewBag.UserId = userId;
-
+            log.Info($"Accediendo a la página de creación de préstamo para el usuario: {userId}");
             return View(loan);
         }
 
@@ -139,17 +151,20 @@ namespace Presentation.Controllers
                 if (response.Success)
                 {
                     TempData["SuccessMessage"] = "Préstamo creado exitosamente.";
+                    log.Info($"Préstamo creado exitosamente para el usuario: {loan.user_id}");
                     return RedirectToAction("ListLoansByUser", new { userId = loan.user_id });
                 }
                 else
                 {
                     TempData["ErrorMessage"] = response.Message;
+                    log.Warn($"Error al crear el préstamo para el usuario: {loan.user_id} - {response.Message}");
                     return View(loan);
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = ex.Message;
+                log.Error($"Error al crear el préstamo para el usuario: {loan.user_id}", ex);
                 return View(loan);
             }
         }

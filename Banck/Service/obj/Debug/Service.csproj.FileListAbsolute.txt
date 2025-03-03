@@ -606,3 +606,6 @@ D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Service\obj\Debug\Service.cs
 D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Service\obj\Debug\Service.csproj.Up2Date
 D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Service\obj\Debug\Service.dll
 D:\Desarrollo Software Seguro\bank\BankSystem\Banck\Service\obj\Debug\Service.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\bin\log4net.dll
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\bin\log4net.pdb
+C:\Users\ASUS TUF A15\source\repos\DesarrolloSeguro\BankSystem\Banck\Service\bin\log4net.xml

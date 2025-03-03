@@ -11,9 +11,11 @@ namespace SL.Authentication
     {
         private const string SmtpServer = "smtp.gmail.com";
         private const int SmtpPort = 587;
-        private const string SenderEmail = "jeimymorales234@gmail.com";
-        private const string SenderPassword = "wwxxktzzhyszqywj";
-        private const string SenderName = "UwU Company";
+
+        private static readonly string SenderEmail = Environment.GetEnvironmentVariable("EMAIL_USER");
+        private static readonly string SenderPassword = Environment.GetEnvironmentVariable("EMAIL_PASSWORD");
+
+        private const string SenderName = "Sistema de Banco";
 
         public async Task SendEmailAsync(string recipientEmail, string subject, string body)
         {

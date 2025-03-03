@@ -318,3 +318,46 @@ System.Exception: Error al crear los datos del prestamo: No se pudo crear los da
 2025-03-02 20:15:40,235 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
 2025-03-02 20:15:42,115 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
 2025-03-02 20:15:43,523 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:06:07,623 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-03 01:06:12,004 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:06:35,758 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: jmmorales11@espe.edu.ec - Credenciales incorrectas.
+2025-03-03 01:06:39,827 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de recuperación de contraseña.
+2025-03-03 01:06:43,682 [6] WARN  Presentation.Controllers.UserController - Error al enviar el código de recuperación a: jmmorales11@espe.edu.ec - Error.
+2025-03-03 01:08:48,474 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-03 01:08:50,244 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:08:54,964 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de recuperación de contraseña.
+2025-03-03 01:09:04,962 [6] INFO  Presentation.Controllers.UserController - Código de recuperación enviado a: jmmorales11@espe.edu.ec
+2025-03-03 01:09:05,020 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de reseteo de contraseña.
+2025-03-03 01:09:27,035 [6] WARN  Presentation.Controllers.UserController - Error al resetear la contraseña para el usuario: jmmorales11@espe.edu.ec - Código de recuperación inválido o expirado.
+2025-03-03 01:09:44,049 [6] INFO  Presentation.Controllers.UserController - Contraseña reseteada exitosamente para el usuario: jmmorales11@espe.edu.ec
+2025-03-03 01:09:44,054 [15] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:09:56,755 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-03 01:09:56,764 [15] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-03 01:10:35,251 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-03 01:10:36,360 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:10:49,599 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: jmmorales11@espe.edu.ec - Error en el servidor: El valor no puede ser nulo.
+Nombre del parámetro: address
+2025-03-03 01:15:16,298 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-03 01:15:22,663 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:15:44,207 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-03 01:15:44,292 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-03 01:15:57,133 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-03 01:16:07,542 [6] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-03 01:16:08,404 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 3
+2025-03-03 01:16:20,995 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-03 01:16:20,996 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-03 01:16:21,004 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:16:26,500 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de recuperación de contraseña.
+2025-03-03 01:16:31,940 [6] INFO  Presentation.Controllers.UserController - Código de recuperación enviado a: jeimymorales234@gmail.com
+2025-03-03 01:16:31,954 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de reseteo de contraseña.
+2025-03-03 01:16:50,098 [6] INFO  Presentation.Controllers.UserController - Contraseña reseteada exitosamente para el usuario: jeimymorales234@gmail.com
+2025-03-03 01:16:50,106 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-03 01:16:59,425 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jeimymorales234@gmail.com
+2025-03-03 01:16:59,433 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-03 01:17:10,631 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jeimymorales234@gmail.com
+2025-03-03 01:17:12,365 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1004
+2025-03-03 01:17:19,449 [8] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1004
+2025-03-03 01:17:22,610 [9] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1004
+2025-03-03 01:17:24,361 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 1004
+2025-03-03 01:17:28,096 [6] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1004
+2025-03-03 01:17:29,599 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1004

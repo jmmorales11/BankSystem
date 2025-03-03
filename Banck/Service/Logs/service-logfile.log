@@ -61,3 +61,130 @@
 2025-03-02 17:34:50,835 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
 2025-03-02 17:34:52,438 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
 2025-03-02 17:42:14,553 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:07:06,887 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:10:59,135 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:12:40,806 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:20:53,947 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:23:41,893 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:29:05,573 [9] WARN  Service.Controllers.UserController - Intento de recuperación de contraseña para un usuario no encontrado: lkjkl
+2025-03-02 18:31:56,169 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:34:00,699 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:35:30,018 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:35:53,091 [6] WARN  Service.Controllers.UserController - Intento de recuperación de contraseña para un usuario no encontrado: kkjhkjhkjhkjhkjnm,klkjn,ilkj
+2025-03-02 18:36:27,209 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 18:36:35,376 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 18:36:41,335 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:36:51,308 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:37:14,921 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:37:17,075 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:37:28,875 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:53:36,207 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:55:07,968 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 18:55:57,440 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 18:56:24,065 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 18:56:28,651 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:56:40,258 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:56:41,957 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:57:12,292 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:57:38,838 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:57:44,131 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:57:54,559 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:57:59,128 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 18:59:59,240 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:00:06,848 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:00:28,887 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:06:00,174 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:07:07,449 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:07:16,038 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:07:20,795 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:08:12,982 [16] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:09:23,327 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:10:28,495 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: sary51967or@hotmail.com
+2025-03-02 19:11:26,046 [8] INFO  Service.Controllers.UserController - Usuario creado exitosamente: sary51967or@hotmail.com
+2025-03-02 19:11:35,171 [14] INFO  Service.Controllers.UserController - Código de verificación enviado a: sary51967or@hotmail.com
+2025-03-02 19:11:47,389 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: sary51967or@hotmail.com
+2025-03-02 19:11:50,383 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 2
+2025-03-02 19:12:02,664 [14] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:12:09,860 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:12:11,342 [14] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:12:29,748 [14] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:12:35,739 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:12:36,750 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:12:37,419 [14] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:14:13,343 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:14:51,237 [9] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:14:59,436 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:15:02,863 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:15:11,096 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:15:15,631 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:15:24,044 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:16:58,739 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:17:02,435 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:17:04,874 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:17:08,022 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:17:10,758 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:17:15,150 [9] WARN  Service.Controllers.LoanController - No se encontraron préstamos para el usuario con el ID: 1
+2025-03-02 19:17:22,550 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:20:56,744 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:21:55,251 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:22:15,099 [7] WARN  Service.Controllers.UserController - Código de verificación inválido o expirado para el correo: lasalletata@hotmail.com
+2025-03-02 19:22:22,398 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:22:24,929 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:24:06,660 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:24:12,480 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:26:27,582 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:26:56,665 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:27:05,182 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:27:15,581 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:29:42,345 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:29:55,931 [15] ERROR Service.Controllers.LoanController - Error al crear el préstamo para el usuario 1: El monto solicitado genera una cuota mensual de $33,89 que excede el 30% de su salario.
+2025-03-02 19:34:22,946 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:34:53,444 [8] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:35:00,556 [5] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:35:10,892 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:44:38,280 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:46:13,908 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:46:24,061 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:46:27,099 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:47:00,092 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:47:11,735 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:49:16,291 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:49:50,729 [9] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:49:58,031 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:50:00,839 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:50:33,368 [7] ERROR Service.Controllers.LoanController - Error al crear el préstamo para el usuario 1: El usuario no cuenta con un empleo fijo para acceder al préstamo.
+2025-03-02 19:50:38,475 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:50:56,995 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:51:06,352 [8] INFO  Service.Controllers.LoanController - Préstamo creado exitosamente para el usuario 1
+2025-03-02 19:51:06,452 [9] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1
+2025-03-02 19:51:09,729 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 1
+2025-03-02 19:51:18,751 [9] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1
+2025-03-02 19:51:20,393 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:51:21,326 [9] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1
+2025-03-02 19:51:22,881 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 1
+2025-03-02 19:51:27,050 [7] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1
+2025-03-02 19:51:27,983 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:51:29,837 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:56:27,411 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 19:57:11,881 [9] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 19:57:41,072 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 19:57:44,030 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:57:52,153 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 19:57:53,033 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:01:45,751 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 20:04:50,380 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 20:04:57,298 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 20:04:59,721 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:05:01,507 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:13:12,269 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-02 20:14:54,605 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: lasalletata@hotmail.com
+2025-03-02 20:15:02,932 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: lasalletata@hotmail.com
+2025-03-02 20:15:09,830 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:15:13,175 [7] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1
+2025-03-02 20:15:15,507 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 1
+2025-03-02 20:15:18,778 [8] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1
+2025-03-02 20:15:19,958 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:15:23,259 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:15:26,010 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:15:27,175 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1
+2025-03-02 20:15:38,422 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1

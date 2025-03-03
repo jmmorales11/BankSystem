@@ -130,7 +130,7 @@
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.birth_date, "Fecha de nacimiento", htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(model => model.birth_date, new { @class = "form-control", type = "date" })
+                    @Html.TextBoxFor(model => model.birth_date, new { @class = "form-control", id = "birth_date", type = "date" })
                     @Html.ValidationMessageFor(model => model.birth_date, "", new { @class = "text-danger" })
                 </div>
 
@@ -146,17 +146,86 @@
                     @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
                 </div>
 
-          
+
             </div>
 
             <div class="form-buttons">
                 <button type="submit" class="minimal-btn" onclick="handleSubmit(event)">Crear</button>
-                <a href="@Url.Action("List")" class="minimal-btn-cancel">Cancelar</a>
+                <a href="@Url.Action("Login", "User")" class="minimal-btn-cancel">Cancelar</a>
             </div>
         }
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("form").validate({
+            rules: {
+                first_name: {
+                    required: true,
+                    maxlength: 50
+                },
+                last_name: {
+                    required: true,
+                    maxlength: 50
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                birth_date: {
+                    required: true,
+                    date: true
+                },
+                address: {
+                    required: true,
+                    maxlength: 100
+                },
+                password: {
+                    required: true,
+                    minlength: 8
+                }
+            },
+            messages: {
+                first_name: {
+                    required: "Por favor, ingrese su nombre",
+                    maxlength: "El nombre no debe exceder los 50 caracteres"
+                },
+                last_name: {
+                    required: "Por favor, ingrese su apellido",
+                    maxlength: "El apellido no debe exceder los 50 caracteres"
+                },
+                email: {
+                    required: "Por favor, ingrese su correo",
+                    email: "Ingrese un correo válido"
+                },
+                birth_date: {
+                    required: "Seleccione una fecha de nacimiento válida"
+                },
+                address: {
+                    required: "Ingrese su dirección",
+                    maxlength: "La dirección no debe exceder los 100 caracteres"
+                },
+                password: {
+                    required: "Ingrese una contraseña",
+                    minlength: "La contraseña debe tener al menos 8 caracteres"
+                }
+            },
+            errorClass: "text-danger",
+            errorElement: "div"
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let today = new Date();
 
+        let maxDate = today.toISOString().split("T")[0];
+
+        document.getElementById("birth_date").setAttribute("max", maxDate);
+    });
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const now = new Date();
@@ -190,8 +259,9 @@
                 input.value = escapeHTML(input.value);
             }
         });
-
-        event.target.form.submit();
+        if ($("form").valid()) {
+            event.target.form.submit();
+        }
     }
 
 

@@ -5,82 +5,92 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    .profile-container {
-        max-width: 500px;
-        margin: 2rem auto;
-        padding: 2rem;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        text-align: center;
-    }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .profile-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
-    .profile-title {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-        color: #333;
-        font-weight: bold;
-    }
+        .profile-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            font-weight: bold;
+        }
 
-    .profile-info p {
-        margin: 0.5rem 0;
-        font-size: 1rem;
-        color: #555;
-    }
+        .profile-info p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            color: #555;
+        }
 
-    .profile-info strong {
-        color: #333;
-    }
+        .profile-info strong {
+            color: #333;
+        }
 
-    .profile-buttons a {
-        display: inline-block;
-        margin: 0.5rem;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        text-decoration: none;
-        font-size: 0.9rem;
-    }
+        .profile-buttons a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
 
-    .btn-warning {
-        background-color: #f0ad4e;
-        color: #fff;
-    }
+        .btn-warning {
+            background-color: #f0ad4e;
+            color: #fff;
+        }
 
-    .btn-info {
-        background-color: #5bc0de;
-        color: #fff;
-    }
-</style>
+        .btn-info {
+            background-color: #5bc0de;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2 class="profile-title">Mi Perfil</h2>
 
-<div class="profile-container">
-    <h2 class="profile-title">Mi Perfil</h2>
+        <div class="profile-info">
+            <p><strong>ID:</strong> @Model.user_id</p>
+            <p><strong>Nombre:</strong> @Model.first_name</p>
+            <p><strong>Apellido:</strong> @Model.last_name</p>
+            <p><strong>Correo:</strong> @Model.email</p>
+            <p><strong>Rol:</strong> @Model.role</p>
+        </div>
 
-    <div class="profile-info">
-        <p><strong>ID:</strong> @Model.user_id</p>
-        <p><strong>Nombre:</strong> @Model.first_name</p>
-        <p><strong>Apellido:</strong> @Model.last_name</p>
-        <p><strong>Correo:</strong> @Model.email</p>
-        <p><strong>Rol:</strong> @Model.role</p>
+        @if (Model.role != "Admin")
+        {
+            <div class="profile-buttons">
+                <a href="@Url.Action("EditUser", "User", new { id = Model.user_id })" class="btn-warning">Editar</a>
+                <a href="@Url.Action("ViewUserData", "UserData", new { userId = Model.user_id })" class="btn-info">Ver Datos</a>
+                <a href="@Url.Action("CreateUserData", "UserData", new { userId = Model.user_id })" class="btn-info">Completar Datos</a>
+                <a href="@Url.Action("ListLoansByUser", "Loan", new { userId = Model.user_id })" class="btn-info">Ver Préstamos</a>
+                <a href="@Url.Action("CreateLoan", "Loan", new { userId = Model.user_id })" class="btn-info">Crear Préstamo</a>
+            </div>
+        }
     </div>
 
-    @if (Model.role != "Admin")
-    {
-        <div class="profile-buttons">
-            <a href="@Url.Action("EditUser", "User", new { id = Model.user_id })" class="btn-warning">Editar</a>
-            <a href="@Url.Action("ViewUserData", "UserData", new { userId = Model.user_id })" class="btn-info">Ver Datos</a>
-            <a href="@Url.Action("CreateUserData", "UserData", new { userId = Model.user_id })" class="btn-info">Completar Datos</a>
-            <a href="@Url.Action("ListLoansByUser", "Loan", new { userId = Model.user_id })" class="btn-info">Ver Préstamos</a>
-            <a href="@Url.Action("CreateLoan", "Loan", new { userId = Model.user_id })" class="btn-info">Crear Préstamo</a>
-        </div>
-    }
-</div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var token = localStorage.getItem("authToken");
-        if (!token) {
-            window.location.href = "/User/Login";
-        }
-    });
-</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var token = localStorage.getItem("authToken");
+            if (!token) {
+                window.location.href = "/User/Login";
+            }
+        });
+    </script>
+</body>
+</html>

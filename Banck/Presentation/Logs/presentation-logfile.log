@@ -1072,3 +1072,154 @@ Nombre del parámetro: address
 2025-03-06 00:21:54,299 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: electrictiesto@gmail.com
 2025-03-06 00:21:54,326 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
 2025-03-06 00:22:18,206 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: electrictiesto@gmail.com
+2025-03-06 07:42:34,448 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 07:42:36,322 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 07:43:14,700 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-06 07:43:56,863 [5] INFO  Presentation.Controllers.UserController - Usuario creado exitosamente: sebastatoo9@gmail.com
+2025-03-06 07:43:56,961 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de usuario.
+2025-03-06 07:44:20,819 [5] INFO  Presentation.Controllers.UserController - Usuario verificado exitosamente: sebastatoo9@gmail.com
+2025-03-06 07:44:20,857 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 07:44:36,477 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: sebastatoo9@gmail.com
+2025-03-06 07:44:36,489 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 07:45:02,722 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: sebastatoo9@gmail.com
+2025-03-06 07:45:06,031 [5] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:45:16,376 [9] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 07:45:16,383 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 07:45:34,280 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 2003
+2025-03-06 07:45:41,308 [9] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 2003
+2025-03-06 07:45:41,322 [11] INFO  Presentation.Controllers.UserController - No autorizado: Solo un administrador puede ver la lista de usuarios.
+2025-03-06 07:45:41,347 [12] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:46:04,257 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 07:46:08,690 [5] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:46:22,289 [12] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:47:21,211 [13] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:47:26,928 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:47:28,916 [9] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 2003 - No se encontraron préstamos para el usuario solicitado.
+2025-03-06 07:47:31,221 [5] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:48:20,012 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 07:48:20,020 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 07:48:40,536 [14] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 07:48:42,643 [20] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 07:48:50,413 [19] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-06 07:49:06,701 [20] INFO  Presentation.Controllers.LoanController - No autorizado: Solo un administrador puede ver la lista de usuarios.
+2025-03-06 07:49:06,736 [15] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:49:13,663 [19] INFO  Presentation.Controllers.LoanController - No autorizado: Solo un administrador puede ver la lista de usuarios.
+2025-03-06 07:49:13,689 [20] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 2003
+2025-03-06 07:49:18,579 [14] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 07:49:18,580 [14] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 07:49:18,589 [20] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 07:49:26,364 [19] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 07:49:26,372 [15] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 07:59:31,210 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 07:59:32,156 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 07:59:32,312 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:00:20,812 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: jmmorales11@espe.edu.ec - Quedan 2 intentos.
+2025-03-06 08:00:32,046 [6] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-06 08:00:32,055 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:00:53,771 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: jmmorales11@espe.edu.ec - Quedan 1 intento.
+2025-03-06 08:01:08,659 [10] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: jmmorales11@espe.edu.ec - Este usuario se encuentra bloqueado por 2 minutos.
+2025-03-06 08:01:53,765 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: sebastatoo9@gmail.com
+2025-03-06 08:01:53,783 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 08:02:48,592 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: sebastatoo9@gmail.com
+2025-03-06 08:02:52,964 [8] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 08:02:52,966 [8] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 08:02:52,974 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:02:59,931 [27] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:02:59,940 [24] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:06:03,561 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 08:06:04,424 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:06:25,302 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:06:25,363 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 08:06:34,574 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:06:48,358 [8] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 3
+2025-03-06 08:06:53,600 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 08:06:53,602 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 08:06:53,606 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:06:58,488 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:06:58,496 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:08:34,984 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 08:08:35,503 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:08:57,587 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:08:57,637 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 08:09:09,459 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:09:16,173 [8] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-06 08:09:17,326 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 3
+2025-03-06 08:09:18,909 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:09:19,800 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 08:09:19,801 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 08:09:19,806 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:09:21,002 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:09:40,652 [10] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:09:40,660 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 08:09:50,547 [9] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:09:55,766 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:09:58,285 [6] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 3
+2025-03-06 08:10:01,464 [17] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 08:10:01,466 [17] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 08:10:01,471 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:10:04,464 [12] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:10:05,677 [8] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:10:06,455 [8] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:10:06,603 [10] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-06 08:10:38,101 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:10:38,109 [14] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 08:11:05,779 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:11:19,765 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:11:21,868 [6] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 3
+2025-03-06 08:11:23,406 [10] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:11:24,478 [26] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 3
+2025-03-06 08:11:30,792 [6] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 3
+2025-03-06 08:11:30,813 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:11:39,561 [6] INFO  Presentation.Controllers.UserController - Usuario eliminado correctamente: 1004
+2025-03-06 08:11:39,583 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:11:54,353 [8] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-06 08:11:55,977 [8] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 2003 - No se encontraron préstamos para el usuario solicitado.
+2025-03-06 08:11:57,339 [11] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-06 08:11:58,153 [23] INFO  Presentation.Controllers.LoanController - Accediendo a la página de creación de préstamo para el usuario: 2003
+2025-03-06 08:12:08,394 [11] INFO  Presentation.Controllers.LoanController - Préstamo creado exitosamente para el usuario: 2003
+2025-03-06 08:12:08,428 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 2003
+2025-03-06 08:12:11,642 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 2003
+2025-03-06 08:12:13,163 [10] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:17,595 [10] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3002
+2025-03-06 08:12:17,624 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:19,448 [10] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3003
+2025-03-06 08:12:19,475 [9] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:21,955 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3004
+2025-03-06 08:12:21,981 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:23,790 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3005
+2025-03-06 08:12:23,820 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:25,602 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3006
+2025-03-06 08:12:25,624 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:27,457 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3007
+2025-03-06 08:12:27,482 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:29,299 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3008
+2025-03-06 08:12:29,326 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:32,597 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3009
+2025-03-06 08:12:32,624 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:34,625 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3010
+2025-03-06 08:12:34,648 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:37,456 [10] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3011
+2025-03-06 08:12:37,483 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:39,269 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3012
+2025-03-06 08:12:39,295 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:41,151 [11] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 3013
+2025-03-06 08:12:41,180 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 2004
+2025-03-06 08:12:42,142 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 2003
+2025-03-06 08:12:44,902 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 2003
+2025-03-06 08:12:46,244 [26] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 3
+2025-03-06 08:12:49,781 [10] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 08:12:49,782 [10] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 08:12:49,788 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:12:51,834 [8] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-06 08:13:30,403 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 08:13:31,080 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:13:51,941 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:13:51,996 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 08:14:00,269 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-06 08:14:06,674 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 3
+2025-03-06 08:14:08,489 [10] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-06 08:14:10,674 [9] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-06 08:14:11,931 [8] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-06 08:14:11,933 [8] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-06 08:14:11,939 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 08:14:13,335 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.

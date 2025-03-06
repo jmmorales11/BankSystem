@@ -61,3 +61,17 @@ D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\
 D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.Up2Date
 D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.dll
 D:\Desarrollo Software Seguro\bank\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.pdb
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\bin\Debug\netstandard2.0\SL.deps.json
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\bin\Debug\netstandard2.0\SL.dll
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\bin\Debug\netstandard2.0\SL.pdb
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.AssemblyInfo.cs
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.sourcelink.json
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.csproj.Up2Date
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.dll
+C:\Users\ASUS TUF A15\source\repos\Repositorios\BankSystem\Banck\SL\obj\Debug\netstandard2.0\SL.pdb

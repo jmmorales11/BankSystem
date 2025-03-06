@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Vve+Ikq8pII=",
+  "dgSpecHash": "3yxOQQxd5Co=",
   "success": true,
-  "projectFilePath": "D:\\7. Septimo Semestre\\7. Desarrollo de Software Seguro\\TERCER PARCIAL\\BankSystem\\Banck\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\ASUS TUF A15\\source\\repos\\Repositorios\\BankSystem\\Banck\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\steve\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\steve\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\ASUS TUF A15\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ASUS TUF A15\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

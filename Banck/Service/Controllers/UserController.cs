@@ -174,25 +174,26 @@ namespace Service.Controllers
             try
             {
                 // Intentar autenticar al usuario
-                var user = BL.Authenticate(loginRequest.Email, loginRequest.Password);
+                var authResult = BL.Authenticate(loginRequest.Email, loginRequest.Password);
 
-                if (user == null)
+                // Si el usuario no fue autenticado, se envía el mensaje correspondiente
+                if (authResult.user == null)
                 {
                     log.Warn($"Intento de inicio de sesión fallido para el usuario: {loginRequest.Email}");
-                    return Content(HttpStatusCode.Unauthorized, new { Success = false, Message = "Credenciales incorrectas." });
+                    return Content(HttpStatusCode.Unauthorized, new { Success = false, Message = authResult.message });
                 }
 
                 // Generar código de verificación
                 string verificationCode = new Random().Next(100000, 999999).ToString();
 
-                // Guardar el código en memoria
+                // Guardar el código en memoria (o donde se necesite)
                 VerificationCodes[loginRequest.Email] = verificationCode;
 
                 // Enviar el código por correo electrónico
                 string subject = "Código de verificación";
                 string body = $"Tu código de verificación es: <strong>{verificationCode}</strong>";
                 await _emailService.SendEmailAsync(loginRequest.Email, subject, body);
-                
+
                 log.Info($"Código de verificación enviado a: {loginRequest.Email}");
 
                 // Devolver el correo y el mensaje
@@ -209,6 +210,7 @@ namespace Service.Controllers
                 return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error en el servidor: " + ex.Message });
             }
         }
+
 
 
         [AllowAnonymous]
@@ -312,7 +314,6 @@ namespace Service.Controllers
             }
         }
 
-
         [Authorize(Roles = "Admin,User")]
         [HttpPut]
         public IHttpActionResult UpdateUser(int id, [FromBody] User updatedUser)
@@ -321,12 +322,24 @@ namespace Service.Controllers
 
             try
             {
-                // Verificar si el usuario existe
+                // Recuperar el usuario existente primero
                 var (successRetrieve, messageRetrieve, existingUser) = userLogic.RetrieveByIdUser(id);
                 if (!successRetrieve)
                 {
                     log.Warn($"No se encontró el usuario con el ID: {id}");
                     return Content(HttpStatusCode.NotFound, new { Success = false, Message = messageRetrieve });
+                }
+
+                // Si el correo se cambió, se valida que no exista otro usuario con ese correo
+                if (!string.Equals(updatedUser.email, existingUser.email, StringComparison.OrdinalIgnoreCase)
+                    && userLogic.validateExistingUser(updatedUser))
+                {
+                    log.Warn($"Intento de actualización con un correo ya existente: {updatedUser.email}");
+                    return Content(HttpStatusCode.BadRequest, new
+                    {
+                        Success = false,
+                        Message = "Este usuario ya existe."
+                    });
                 }
 
                 // Actualizar los campos del usuario
@@ -359,6 +372,7 @@ namespace Service.Controllers
                 return Content(HttpStatusCode.InternalServerError, new { Success = false, Message = "Error en el servidor: " + ex.Message });
             }
         }
+
 
         [Authorize(Roles = "Admin")]
         [HttpPost]

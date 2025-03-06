@@ -1,0 +1,85 @@
+﻿@model Entities.DTOs.LoanDetailsDTO
+
+@{
+    ViewBag.Title = "Detalle del Préstamo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .profile-container {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .profile-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .profile-info p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .profile-info strong {
+        color: #333;
+    }
+
+    .profile-buttons a {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-warning {
+        background-color: #f0ad4e;
+        color: #fff;
+    }
+
+    .btn-info {
+        background-color: #5bc0de;
+        color: #fff;
+    }
+</style>
+
+<div class="profile-container">
+    <h2 class="profile-title">Detalle del Préstamo</h2>
+
+    <div class="profile-info">
+        <p><strong>Nombre Completo:</strong> @Model.UserFullName</p>
+        <p><strong>Dirección:</strong> @Model.Address</p>
+        <p><strong>Correo Electrónico:</strong> @Model.Email</p>
+        <p><strong>Monto Total del Préstamo:</strong> @Model.RequestedAmount.ToString("C")</p>
+        <p><strong>Plazo (meses):</strong> @Model.PaymentTermMonths</p>
+        <p><strong>Fecha de Inicio:</strong> @(Model.StartDate.HasValue ? Model.StartDate.Value.ToShortDateString() : "N/A")</p>
+        <p>
+            <strong>Fecha de Fin:</strong>
+            @(Model.EndDate.HasValue ? Model.EndDate.Value.ToShortDateString() : "El préstamo aún no ha finalizado su pago")
+        </p>
+    </div>
+
+    <div class="profile-buttons">
+        <a href="@Url.Action("ListLoansByUser", "Loan", new { userId = Session["UserId"] })" class="btn-info">
+            Volver a Mis Préstamos
+        </a>
+    </div>
+</div>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        var token = localStorage.getItem("authToken");
+        if (!token) {
+            window.location.href = "/User/Login";
+        }});
+</script>

@@ -221,3 +221,405 @@ Nombre del parámetro: address
 2025-03-03 01:17:24,348 [6] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 1004
 2025-03-03 01:17:28,093 [6] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1004
 2025-03-03 01:17:29,596 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 1004
+2025-03-05 20:12:37,100 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 20:13:32,257 [7] ERROR Service.Controllers.UserController - Error en el inicio de sesión
+System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server) ---> System.ComponentModel.Win32Exception: El sistema no puede encontrar el archivo especificado
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   en System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   en System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass2_0.<Execute>b__0()
+   en System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   en System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   en System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   en System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   en System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   en System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   en DAL.EFRepository.Retrieve[TEntity](Expression`1 criteria) en D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\DAL\EFRepository.cs:línea 88
+   en BLL.UserLogic.Authenticate(String email, String password) en D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\BLL\UserLogic.cs:línea 150
+   en Service.Controllers.UserController.<Login>d__9.MoveNext() en D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\UserController.cs:línea 177
+2025-03-05 20:15:38,105 [9] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:15:45,926 [7] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: sjpozo1@espe.edu.ec
+2025-03-05 20:16:26,378 [8] INFO  Service.Controllers.UserController - Código de recuperación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:17:18,845 [7] WARN  Service.Controllers.UserController - Intento de reseteo de contraseña: stevenpozo0999@gmail.com
+2025-03-05 20:17:26,698 [9] WARN  Service.Controllers.UserController - Código de recuperación inválido o expirado para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:17:43,871 [15] INFO  Service.Controllers.UserController - Código de recuperación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:18:05,581 [7] INFO  Service.Controllers.UserController - Contraseña reseteada exitosamente para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:18:14,470 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:18:31,563 [9] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:21:55,453 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 20:22:24,308 [8] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:43:35,780 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 20:45:00,674 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:45:21,472 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:45:31,261 [5] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:45:46,588 [6] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:45:58,510 [6] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:50:19,853 [36] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:50:39,990 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:50:54,763 [31] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:50:58,004 [36] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:51:00,576 [6] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:51:12,708 [39] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:59:58,155 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:00:42,896 [8] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:00:50,777 [6] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:01:05,675 [10] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:01:26,449 [7] WARN  Service.Controllers.UserController - Intento de inicio de sesión fallido para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:03:23,520 [14] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:04:01,183 [9] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:04:03,112 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:04:20,885 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8004
+2025-03-05 21:04:40,790 [9] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:04:47,858 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8004
+2025-03-05 21:05:19,227 [7] ERROR Service.Controllers.UserController - Error al actualizar el usuario con el ID: 8004 - Error al actualizar usuario: An error occurred while updating the entries. See the inner exception for details.
+2025-03-05 21:05:32,550 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:05:36,629 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8004
+2025-03-05 21:05:49,748 [9] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:05:52,885 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8004
+2025-03-05 21:05:55,556 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:05:58,353 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8004
+2025-03-05 21:10:57,053 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:12:26,186 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:12:56,088 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:13:01,333 [9] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:13:06,169 [6] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:25:18,190 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:25:52,762 [11] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:26:42,278 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:26:47,821 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:27:13,326 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:27:30,294 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:27:34,857 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:29:29,213 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:30:34,717 [11] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:30:46,909 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:30:54,969 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:31:34,847 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:31:44,520 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:31:46,742 [6] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:31:58,994 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:32:20,253 [19] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:32:28,390 [12] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 4002
+2025-03-05 21:33:39,125 [7] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:33:40,760 [11] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:33:44,062 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 21:33:52,635 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:34:43,533 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:35:56,604 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:36:15,989 [12] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:36:38,331 [9] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:36:44,815 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:38:05,388 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:38:20,927 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:38:33,580 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:38:40,298 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:38:48,933 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 21:39:17,356 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:39:32,117 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:39:35,544 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:41:13,209 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:43:58,450 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:44:37,819 [11] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:44:55,366 [9] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:44:59,846 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:45:08,157 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:46:40,292 [16] WARN  Service.Controllers.UserController - Intento de registro directo con una contraseña insegura para el usuario: epramirez2@espe.edu.ec
+2025-03-05 21:46:56,951 [6] INFO  Service.Controllers.UserController - Usuario creado directamente: epramirez2@espe.edu.ec
+2025-03-05 21:46:56,988 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:47:05,897 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9001
+2025-03-05 21:47:08,178 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:47:09,472 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9001
+2025-03-05 21:47:50,457 [8] ERROR Service.Controllers.UserController - Error al actualizar el usuario con el ID: 9001 - Error al actualizar usuario: An error occurred while updating the entries. See the inner exception for details.
+2025-03-05 21:47:56,577 [16] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 21:48:01,800 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:05,481 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:13,565 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:21,733 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:30,099 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 21:48:40,539 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:44,298 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 21:49:01,110 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:49:13,010 [6] INFO  Service.Controllers.UserController - Usuario eliminado exitosamente: 8009
+2025-03-05 21:49:13,032 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:49:15,392 [7] INFO  Service.Controllers.UserController - Usuario eliminado exitosamente: 8004
+2025-03-05 21:49:15,418 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:49:17,731 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:49:24,224 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:51:48,909 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:52:08,397 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:52:40,498 [8] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 21:52:51,747 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:53:06,954 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:53:27,950 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:54:55,362 [10] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:56:42,772 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:56:49,309 [7] WARN  Service.Controllers.LoanController - No se encontraron préstamos para el usuario con el ID: 8008
+2025-03-05 21:56:52,897 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:56:55,807 [7] WARN  Service.Controllers.LoanController - No se encontraron préstamos para el usuario con el ID: 9001
+2025-03-05 21:56:57,278 [10] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:57:07,526 [19] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:57:09,721 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 21:59:29,218 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 21:59:54,562 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 22:00:12,363 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:00:16,036 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:00:39,467 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:00:40,808 [11] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:01:28,539 [10] INFO  Service.Controllers.UserController - Usuario creado directamente: jmmorales11@espe.edu.ec
+2025-03-05 22:01:28,582 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:01:30,719 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:01:36,988 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:01:38,370 [10] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:02:05,285 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:02:38,985 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:02:40,790 [13] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:02:55,891 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:04:03,206 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:04:22,372 [11] INFO  Service.Controllers.UserController - Código de verificación enviado a: jmmorales11@espe.edu.ec
+2025-03-05 22:04:38,788 [11] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-05 22:04:40,915 [11] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:04:43,206 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:04:53,755 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:04:55,425 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:05:00,487 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:05:08,857 [10] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:05:15,846 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:05:20,224 [8] WARN  Service.Controllers.LoanController - No se encontraron préstamos para el usuario con el ID: 9002
+2025-03-05 22:05:21,852 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:05:28,819 [19] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9002
+2025-03-05 22:13:06,050 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:14:18,186 [16] INFO  Service.Controllers.UserController - Código de verificación enviado a: sjpozo1@espe.edu.ec
+2025-03-05 22:20:46,806 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:21:39,118 [11] INFO  Service.Controllers.UserController - Código de verificación enviado a: sjpozo1@espe.edu.ec
+2025-03-05 22:22:01,162 [6] INFO  Service.Controllers.UserController - Usuario creado exitosamente: sjpozo1@espe.edu.ec
+2025-03-05 22:22:14,188 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: sjpozo1@espe.edu.ec
+2025-03-05 22:22:26,210 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: sjpozo1@espe.edu.ec
+2025-03-05 22:22:30,364 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9003
+2025-03-05 22:25:47,907 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:26:30,634 [7] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 22:33:59,335 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:34:29,851 [8] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 22:40:07,652 [9] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 22:41:54,845 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:42:09,415 [13] INFO  Service.Controllers.UserController - Código de verificación enviado a: sjpozo1@espe.edu.ec
+2025-03-05 22:42:21,683 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 22:42:33,385 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:42:35,748 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:43:09,644 [7] WARN  Service.Controllers.UserController - Intento de registro directo con un usuario ya existente: stevenpozo0999@gmail.com
+2025-03-05 22:44:40,182 [8] INFO  Service.Controllers.UserController - Usuario creado directamente: univesidadtrabajos25@gmail.com
+2025-03-05 22:44:40,218 [9] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:44:52,610 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 22:56:00,501 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:56:15,181 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 22:56:36,961 [13] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 22:56:54,588 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:57:00,816 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:57:05,197 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9004
+2025-03-05 22:58:15,669 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9004
+2025-03-05 23:01:49,724 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9004
+2025-03-05 23:04:16,866 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:04:44,532 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:05:02,210 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 23:05:18,989 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:05:22,111 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:05:25,532 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9004
+2025-03-05 23:06:50,565 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:07:03,596 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 23:07:15,466 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:07:17,362 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:07:20,758 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:07:23,395 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:07:34,118 [8] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 23:07:41,387 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:07:46,024 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:07:52,290 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:08:27,458 [7] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: stevenpozo0999@gmail.com
+2025-03-05 23:08:33,588 [7] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: stevenpozo0999@gmail.com
+2025-03-05 23:08:42,412 [9] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:08:55,262 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:08:57,831 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:12:29,224 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:12:44,553 [9] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 23:12:54,055 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:12:55,848 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:12:56,753 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:12:59,013 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9004
+2025-03-05 23:13:21,238 [7] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 23:14:09,578 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:18:25,806 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:18:47,065 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 23:18:57,971 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:19:02,216 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:19:03,885 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:19:13,456 [7] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 23:19:21,845 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:19:38,592 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:19:49,189 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:20:00,345 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:22:32,354 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:22:33,437 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:22:36,481 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:23:04,645 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:23:21,519 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 23:23:40,185 [8] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:23:46,429 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:24:21,544 [18] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:24:23,673 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:33:36,718 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:33:59,735 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: stevenpozo0999@gmail.com
+2025-03-05 23:34:13,931 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:34:18,201 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:23,484 [5] INFO  Service.Controllers.UserController - Usuario eliminado exitosamente: 9004
+2025-03-05 23:34:23,530 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:25,372 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:34:26,842 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:27,907 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:34:34,735 [9] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: sjpozo1@espe.edu.ec
+2025-03-05 23:34:42,156 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:46,280 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:48,668 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:35:25,497 [5] WARN  Service.Controllers.UserController - Intento de registro directo con un usuario ya existente: stevenpozo0999@gmail.com
+2025-03-05 23:35:32,606 [7] INFO  Service.Controllers.UserController - Usuario creado directamente: univesidadtrabajos25@gmail.com
+2025-03-05 23:35:32,684 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:35:43,281 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:35:47,970 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:35:52,000 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:35:56,565 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:02,121 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:15,123 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:20,790 [6] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:29,175 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:30,574 [9] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:34,672 [10] WARN  Service.Controllers.LoanController - No se encontraron préstamos para el usuario con el ID: 8008
+2025-03-05 23:36:36,848 [5] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:37:01,811 [9] INFO  Service.Controllers.LoanController - Préstamo creado exitosamente para el usuario 8008
+2025-03-05 23:37:01,860 [6] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:04,061 [7] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:07,927 [5] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:12,189 [5] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4002
+2025-03-05 23:37:12,320 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:13,994 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4003
+2025-03-05 23:37:14,072 [8] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:15,851 [5] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4004
+2025-03-05 23:37:15,980 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:17,627 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4005
+2025-03-05 23:37:17,748 [6] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:19,571 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4006
+2025-03-05 23:37:19,712 [6] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:22,158 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4007
+2025-03-05 23:37:22,255 [6] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:25,492 [6] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4008
+2025-03-05 23:37:25,633 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:27,669 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4009
+2025-03-05 23:37:27,795 [6] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:29,401 [5] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4010
+2025-03-05 23:37:29,671 [8] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:35,100 [17] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4011
+2025-03-05 23:37:35,211 [7] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:37,487 [5] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:42,615 [5] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:44,396 [9] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:38:34,835 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-05 23:38:51,729 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:38:53,897 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:38:55,802 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:39:16,619 [7] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: univesidadtrabajos25@gmail.com
+2025-03-05 23:39:45,501 [7] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:39:46,182 [8] INFO  Service.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:39:47,803 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 8008
+2025-03-05 23:39:55,365 [8] WARN  Service.Controllers.UserController - Intento de registro con un usuario ya existente: stevenpozo0999@gmail.com
+2025-03-05 23:40:32,264 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:40:35,964 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:41:02,375 [8] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:41:11,397 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:41:13,075 [5] WARN  Service.Controllers.LoanController - No se encontraron préstamos para el usuario con el ID: 9005
+2025-03-05 23:41:15,345 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:41:35,323 [7] INFO  Service.Controllers.LoanController - Préstamo creado exitosamente para el usuario 9005
+2025-03-05 23:41:35,351 [8] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:41:37,458 [8] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:41:39,921 [5] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:42,945 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4012
+2025-03-05 23:41:43,325 [8] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:45,177 [7] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4013
+2025-03-05 23:41:45,401 [8] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:47,597 [5] INFO  Service.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4014
+2025-03-05 23:41:47,726 [8] INFO  Service.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:50,249 [7] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:41:59,822 [5] INFO  Service.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:42:05,962 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:44:29,001 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:44:57,856 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-05 23:45:18,300 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:45:21,436 [5] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:45:23,635 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:45:33,936 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:48:46,385 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:49:07,066 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-05 23:49:23,141 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:49:31,000 [6] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-05 23:52:17,187 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:53:49,573 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:54:56,035 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:55:17,342 [7] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-05 23:55:37,955 [10] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:56:54,303 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:58:09,762 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-05 23:58:28,376 [12] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-05 23:58:51,990 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:00:27,904 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-06 00:00:45,271 [12] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-06 00:01:07,611 [6] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:01:15,715 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-06 00:03:56,052 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-06 00:04:18,619 [6] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-06 00:04:50,961 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:07:41,348 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-06 00:08:47,870 [5] ERROR Service.Controllers.UserController - Error en el inicio de sesión
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.Net.WebException: No es posible conectar con el servidor remoto ---> System.Net.Sockets.SocketException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 142.250.12.108:587
+   en System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.End(IAsyncResult result)
+   en System.Net.Mail.SmtpTransport.EndGetConnection(IAsyncResult result)
+   en System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   en SL.Authentication.EmailService.<SendEmailAsync>d__5.MoveNext() en D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\SL\Authentication\EmailService.cs:línea 37
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   en Service.Controllers.UserController.<Login>d__9.MoveNext() en D:\7. Septimo Semestre\7. Desarrollo de Software Seguro\TERCER PARCIAL\BankSystem\Banck\Service\Controllers\UserController.cs:línea 195
+2025-03-06 00:09:48,918 [5] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-06 00:10:04,732 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:11:28,938 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-06 00:11:46,895 [9] INFO  Service.Controllers.UserController - Código de verificación enviado a: univesidadtrabajos25@gmail.com
+2025-03-06 00:12:01,290 [7] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:17:01,687 [7] INFO  Service.Controllers.UserController - Usuario recuperado exitosamente: 9005
+2025-03-06 00:17:43,259 [1] INFO  Service.WebApiApplication - log4net ha sido configurado correctamente.
+2025-03-06 00:19:23,024 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: jeimymorales06@gmail.com
+2025-03-06 00:20:51,692 [10] INFO  Service.Controllers.UserController - Código de verificación enviado a: electrictiesto@gmail.com
+2025-03-06 00:21:23,279 [7] INFO  Service.Controllers.UserController - Usuario creado exitosamente: electrictiesto@gmail.com
+2025-03-06 00:21:54,288 [15] INFO  Service.Controllers.UserController - Código de verificación enviado a: electrictiesto@gmail.com
+2025-03-06 00:22:18,202 [10] INFO  Service.Controllers.UserController - Inicio de sesión exitoso para el usuario: electrictiesto@gmail.com

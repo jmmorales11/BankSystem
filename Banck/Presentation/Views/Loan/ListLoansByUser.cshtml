@@ -57,6 +57,10 @@
                         }
                     </td>
                     <td>
+                        <a href="@Url.Action("LoanDetails", "Loan", new { loanId = loan.loan_id })" class="btn btn-info mt-3">
+                            Ver Detalle
+                        </a>
+
                         <a href="@Url.Action("Amortization", "Amortization", new { loanId = loan.loan_id, userId = ViewBag.UserId })" class="btn btn-primary mt-3">
                             Ver Amortización
                         </a>
@@ -92,4 +96,12 @@ else
             }
         });
     }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var token = localStorage.getItem("authToken");
+        if (!token) {
+            window.location.href = "/User/Login";
+        }
+    });
 </script>

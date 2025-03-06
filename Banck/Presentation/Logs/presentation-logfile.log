@@ -361,3 +361,714 @@ Nombre del parámetro: address
 2025-03-03 01:17:24,361 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 1004
 2025-03-03 01:17:28,096 [6] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 1004
 2025-03-03 01:17:29,599 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 1004
+2025-03-05 20:12:39,177 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 20:12:41,217 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:13:32,468 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Error en el servidor: The underlying provider failed on Open.
+2025-03-05 20:15:38,110 [7] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Credenciales incorrectas.
+2025-03-05 20:15:45,930 [8] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: sjpozo1@espe.edu.ec - Credenciales incorrectas.
+2025-03-05 20:16:17,913 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de recuperación de contraseña.
+2025-03-05 20:16:26,386 [7] INFO  Presentation.Controllers.UserController - Código de recuperación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:16:26,427 [19] INFO  Presentation.Controllers.UserController - Accediendo a la página de reseteo de contraseña.
+2025-03-05 20:17:18,849 [7] WARN  Presentation.Controllers.UserController - Error al resetear la contraseña para el usuario: stevenpozo0999@gmail.com - La contraseña debe contener al menos una letra mayúscula.
+2025-03-05 20:17:26,701 [7] WARN  Presentation.Controllers.UserController - Error al resetear la contraseña para el usuario: stevenpozo0999@gmail.com - Código de recuperación inválido o expirado.
+2025-03-05 20:17:37,783 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de reseteo de contraseña.
+2025-03-05 20:17:43,875 [7] INFO  Presentation.Controllers.UserController - Código de recuperación enviado a: stevenpozo0999@gmail.com
+2025-03-05 20:17:43,883 [18] INFO  Presentation.Controllers.UserController - Accediendo a la página de reseteo de contraseña.
+2025-03-05 20:18:05,584 [7] INFO  Presentation.Controllers.UserController - Contraseña reseteada exitosamente para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:18:05,591 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:18:14,476 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:18:14,487 [18] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 20:18:31,569 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:19:32,394 [12] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 20:19:32,396 [12] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 20:19:32,413 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:19:43,864 [7] WARN  Presentation.Controllers.UserController - No se encontró token en la sesión.
+2025-03-05 20:19:43,876 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:19:54,363 [7] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 20:19:54,375 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:20:02,255 [44] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 20:20:02,265 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:20:12,017 [9] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 20:21:56,238 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 20:21:57,011 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:22:24,403 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Credenciales incorrectas.
+2025-03-05 20:43:23,578 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 20:43:24,638 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:45:00,782 [11] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:45:00,826 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 20:45:21,480 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:45:26,674 [5] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 20:45:26,675 [5] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 20:45:26,683 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 20:45:31,284 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Quedan 2 intentos.
+2025-03-05 20:45:46,594 [5] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Quedan 1 intento.
+2025-03-05 20:45:58,513 [9] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Este usuario se encuentra bloqueado por 2 minutos.
+2025-03-05 20:50:19,855 [8] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Este usuario se encuentra bloqueado por 2 minutos.
+2025-03-05 20:50:39,995 [10] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:50:40,006 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 20:50:54,766 [8] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Quedan 2 intentos.
+2025-03-05 20:50:58,009 [11] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Quedan 1 intento.
+2025-03-05 20:51:00,579 [11] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Este usuario se encuentra bloqueado por 2 minutos.
+2025-03-05 20:51:12,712 [8] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 20:51:12,723 [31] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 20:59:51,010 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 20:59:51,811 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:00:42,989 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Quedan 2 intentos.
+2025-03-05 21:00:50,780 [9] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Quedan 1 intento.
+2025-03-05 21:01:05,677 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Este usuario se encuentra bloqueado por 2 minutos.
+2025-03-05 21:01:26,452 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: stevenpozo0999@gmail.com - Este usuario se encuentra bloqueado. Intente más tarde.
+2025-03-05 21:03:23,550 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:03:23,615 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:04:01,189 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:04:03,191 [11] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:04:20,892 [7] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 8004
+2025-03-05 21:04:40,798 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:04:47,860 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8004
+2025-03-05 21:05:19,231 [8] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8004 - Error al actualizar usuario: An error occurred while updating the entries. See the inner exception for details.
+2025-03-05 21:05:32,556 [12] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:05:36,631 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8004
+2025-03-05 21:05:49,721 [32] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 8004
+2025-03-05 21:05:49,751 [23] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:05:52,889 [18] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 8004
+2025-03-05 21:05:55,561 [31] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:05:58,358 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8004
+2025-03-05 21:11:16,897 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:11:18,632 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:11:18,688 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 21:12:26,314 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:12:26,351 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:12:56,098 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:13:01,406 [8] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:13:06,195 [9] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:17:00,373 [22] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 21:17:00,427 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:25:23,596 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:25:25,163 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:25:52,850 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:25:52,893 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:26:42,289 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:27:30,297 [5] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:27:34,861 [5] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:27:43,500 [5] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 21:29:32,839 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:29:34,540 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:30:34,805 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:30:34,865 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:30:46,918 [15] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:30:55,012 [14] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:31:01,256 [6] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 21:31:34,852 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:31:40,958 [17] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 21:31:40,971 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:31:44,522 [7] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:31:46,777 [16] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:31:52,323 [7] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 21:31:52,338 [15] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:31:59,002 [16] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:32:03,848 [7] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 21:32:20,258 [7] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:32:26,604 [7] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 21:32:26,616 [14] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:32:28,409 [18] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 4002
+2025-03-05 21:32:33,560 [7] ERROR Presentation.Controllers.AmortizationController - No hay token disponible.
+2025-03-05 21:32:33,571 [15] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:33:35,813 [7] ERROR Presentation.Controllers.AmortizationController - No hay token disponible.
+2025-03-05 21:33:35,823 [31] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:33:39,127 [7] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8004
+2025-03-05 21:33:40,763 [7] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:33:44,071 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 8008
+2025-03-05 21:33:48,573 [14] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 21:33:48,588 [31] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:34:46,686 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:35:56,388 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:35:57,059 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:36:16,088 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:36:16,155 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:36:38,341 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:36:54,158 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:38:05,409 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:38:06,164 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:38:21,075 [16] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:38:21,163 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:38:33,585 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:38:48,949 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 8008
+2025-03-05 21:38:52,898 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 21:38:52,899 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 21:38:52,908 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:39:01,499 [6] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 21:39:01,509 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:39:06,762 [7] WARN  Presentation.Controllers.UserController - No se encontró token en la sesión.
+2025-03-05 21:39:06,771 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:39:17,360 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:39:17,367 [16] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:39:32,120 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:41:44,823 [39] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 21:41:44,824 [39] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 21:41:44,835 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:43:58,065 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:43:59,928 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:44:37,934 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:44:37,993 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:44:55,376 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:45:08,159 [9] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:45:09,365 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación directa de usuario.
+2025-03-05 21:46:40,309 [6] WARN  Presentation.Controllers.UserController - Error al crear el usuario directamente: epramirez2@espe.edu.ec - La contraseña debe contener al menos una letra mayúscula.
+2025-03-05 21:46:56,958 [6] INFO  Presentation.Controllers.UserController - Usuario creado directamente: epramirez2@espe.edu.ec
+2025-03-05 21:46:56,991 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:47:05,903 [7] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 9001
+2025-03-05 21:47:08,182 [9] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:47:09,476 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9001
+2025-03-05 21:47:50,461 [7] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 9001 - Error al actualizar usuario: An error occurred while updating the entries. See the inner exception for details.
+2025-03-05 21:47:56,581 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 8008
+2025-03-05 21:48:01,806 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:21,735 [10] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:30,103 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 21:48:40,510 [6] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 8008
+2025-03-05 21:48:40,542 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:48:44,302 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 21:49:01,090 [6] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 8008
+2025-03-05 21:49:01,114 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:49:13,013 [6] INFO  Presentation.Controllers.UserController - Usuario eliminado correctamente: 8009
+2025-03-05 21:49:13,035 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:49:15,395 [7] INFO  Presentation.Controllers.UserController - Usuario eliminado correctamente: 8004
+2025-03-05 21:49:15,421 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 21:51:48,463 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:52:08,759 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:52:10,217 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:52:40,591 [9] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:52:40,642 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 21:52:51,759 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:56:42,775 [7] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:56:49,333 [19] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 8008 - No se encontraron préstamos para el usuario solicitado.
+2025-03-05 21:56:52,901 [22] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:56:55,824 [22] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 9001 - No se encontraron préstamos para el usuario solicitado.
+2025-03-05 21:56:57,282 [19] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:56:58,366 [7] INFO  Presentation.Controllers.LoanController - Accediendo a la página de creación de préstamo para el usuario: 8008
+2025-03-05 21:57:07,535 [22] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 21:57:09,727 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 8008
+2025-03-05 21:59:31,839 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 21:59:33,384 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 21:59:54,650 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 21:59:54,696 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 22:00:12,372 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:00:40,813 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:00:44,671 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación directa de usuario.
+2025-03-05 22:01:28,554 [7] INFO  Presentation.Controllers.UserController - Usuario creado directamente: jmmorales11@espe.edu.ec
+2025-03-05 22:01:28,587 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:01:30,724 [7] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 9002
+2025-03-05 22:01:36,992 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:02:40,794 [8] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 22:02:45,953 [7] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 22:02:45,966 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:04:03,212 [7] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 22:04:08,017 [8] ERROR Presentation.Controllers.LoanController - No hay token disponible.
+2025-03-05 22:04:08,036 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:04:22,377 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: jmmorales11@espe.edu.ec
+2025-03-05 22:04:22,386 [18] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 22:04:38,791 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: jmmorales11@espe.edu.ec
+2025-03-05 22:04:40,918 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:04:43,209 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9002
+2025-03-05 22:04:53,720 [8] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 9002
+2025-03-05 22:04:53,729 [13] INFO  Presentation.Controllers.UserController - No autorizado: Solo un administrador puede ver la lista de usuarios.
+2025-03-05 22:04:53,758 [18] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:04:55,433 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9002
+2025-03-05 22:05:00,457 [7] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 9002
+2025-03-05 22:05:00,466 [13] INFO  Presentation.Controllers.UserController - No autorizado: Solo un administrador puede ver la lista de usuarios.
+2025-03-05 22:05:00,491 [43] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:05:08,861 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:05:15,851 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:05:20,261 [50] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 9002 - No se encontraron préstamos para el usuario solicitado.
+2025-03-05 22:05:21,855 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:05:23,003 [18] INFO  Presentation.Controllers.LoanController - Accediendo a la página de creación de préstamo para el usuario: 9002
+2025-03-05 22:05:28,823 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9002
+2025-03-05 22:05:30,922 [7] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 22:05:30,923 [7] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 22:05:30,932 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:05:33,437 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:06:33,939 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:13:09,526 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:13:11,019 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:13:16,151 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:14:18,282 [6] INFO  Presentation.Controllers.UserController - Usuario creado exitosamente: sjpozo1@espe.edu.ec
+2025-03-05 22:14:18,329 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de usuario.
+2025-03-05 22:20:46,401 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:20:47,104 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:20:55,487 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:21:39,225 [6] INFO  Presentation.Controllers.UserController - Usuario creado exitosamente: sjpozo1@espe.edu.ec
+2025-03-05 22:21:41,090 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de usuario.
+2025-03-05 22:22:01,184 [6] INFO  Presentation.Controllers.UserController - Usuario verificado exitosamente: sjpozo1@espe.edu.ec
+2025-03-05 22:22:01,258 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:22:14,198 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: sjpozo1@espe.edu.ec
+2025-03-05 22:22:14,222 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 22:22:26,218 [8] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: sjpozo1@espe.edu.ec
+2025-03-05 22:22:30,380 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9003
+2025-03-05 22:25:47,806 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:25:48,578 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:25:50,978 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:25:54,783 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:26:30,709 [7] WARN  Presentation.Controllers.UserController - Error al crear el usuario: Este usuario ya existe.
+2025-03-05 22:33:59,149 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:33:59,852 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:34:07,248 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:34:29,934 [6] WARN  Presentation.Controllers.UserController - Error al crear el usuario: Este usuario ya existe.
+2025-03-05 22:34:33,918 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:39:44,164 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-05 22:40:07,656 [9] WARN  Presentation.Controllers.UserController - Error al crear el usuario: Este usuario ya existe.
+2025-03-05 22:40:17,673 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:41:54,254 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:41:55,083 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:42:09,499 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: sjpozo1@espe.edu.ec
+2025-03-05 22:42:09,542 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 22:42:21,691 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:42:21,708 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 22:42:33,390 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:42:35,845 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:42:37,423 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación directa de usuario.
+2025-03-05 22:43:09,654 [6] WARN  Presentation.Controllers.UserController - Error al crear el usuario directamente: stevenpozo0999@gmail.com - Este usuario ya existe.
+2025-03-05 22:44:40,189 [10] INFO  Presentation.Controllers.UserController - Usuario creado directamente: univesidadtrabajos25@gmail.com
+2025-03-05 22:44:40,222 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:44:52,616 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 22:55:56,257 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:56:14,844 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 22:56:15,732 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 22:56:37,048 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:56:37,095 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 22:56:54,594 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 22:57:00,950 [9] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 22:57:05,203 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9004
+2025-03-05 22:58:15,673 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9004
+2025-03-05 23:01:49,727 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9004
+2025-03-05 23:04:16,544 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:04:44,669 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:04:46,005 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:05:02,283 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:05:02,342 [15] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:05:19,000 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:05:22,169 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:05:25,549 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9004
+2025-03-05 23:06:49,833 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:06:50,684 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:07:03,717 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:07:03,779 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:07:15,472 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:07:20,762 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:07:23,404 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 23:07:34,128 [6] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8008 - Este usuario ya existe.
+2025-03-05 23:07:41,391 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 23:07:46,026 [13] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:07:52,296 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 23:08:27,466 [7] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8008 - Este usuario ya existe.
+2025-03-05 23:08:33,594 [13] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8008 - Este usuario ya existe.
+2025-03-05 23:08:55,265 [14] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:08:57,835 [7] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 8008
+2025-03-05 23:12:28,427 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:12:29,246 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:12:44,861 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:12:44,975 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:12:54,061 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:12:56,756 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:12:59,029 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9004
+2025-03-05 23:13:21,245 [6] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 9004 - Este usuario ya existe.
+2025-03-05 23:14:09,582 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:18:29,707 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:18:32,135 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:18:47,198 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:18:47,276 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:18:57,979 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:19:02,263 [13] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:19:03,897 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 23:19:13,493 [6] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8008 - Este usuario ya existe.
+2025-03-05 23:19:21,851 [6] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:22:32,359 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:23:03,732 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:23:04,976 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:23:21,722 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:23:21,823 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:23:40,194 [8] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:24:21,549 [6] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 23:33:25,658 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:33:31,975 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:34:00,270 [10] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:34:00,452 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:34:13,940 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: stevenpozo0999@gmail.com
+2025-03-05 23:34:18,268 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:23,491 [6] INFO  Presentation.Controllers.UserController - Usuario eliminado correctamente: 9004
+2025-03-05 23:34:23,533 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:25,379 [5] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 8008
+2025-03-05 23:34:26,856 [5] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:27,910 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 23:34:34,741 [5] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8008 - Este usuario ya existe.
+2025-03-05 23:34:42,158 [5] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:48,676 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:34:49,781 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación directa de usuario.
+2025-03-05 23:35:25,502 [5] WARN  Presentation.Controllers.UserController - Error al crear el usuario directamente: stevenpozo0999@gmail.com - Este usuario ya existe.
+2025-03-05 23:35:32,620 [5] INFO  Presentation.Controllers.UserController - Usuario creado directamente: univesidadtrabajos25@gmail.com
+2025-03-05 23:35:32,689 [5] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:35:43,286 [6] INFO  Presentation.Controllers.UserController - Detalles del usuario recuperados exitosamente: 9005
+2025-03-05 23:35:47,974 [8] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:30,580 [8] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:34,733 [8] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 8008 - No se encontraron préstamos para el usuario solicitado.
+2025-03-05 23:36:36,851 [8] INFO  Presentation.Controllers.LoanController - Usuarios recuperados exitosamente.
+2025-03-05 23:36:37,799 [6] INFO  Presentation.Controllers.LoanController - Accediendo a la página de creación de préstamo para el usuario: 8008
+2025-03-05 23:37:01,823 [5] INFO  Presentation.Controllers.LoanController - Préstamo creado exitosamente para el usuario: 8008
+2025-03-05 23:37:01,888 [5] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:04,065 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:07,954 [8] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:12,199 [5] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4002
+2025-03-05 23:37:12,325 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:14,005 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4003
+2025-03-05 23:37:14,075 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:15,870 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4004
+2025-03-05 23:37:15,983 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:17,639 [7] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4005
+2025-03-05 23:37:17,753 [6] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:19,578 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4006
+2025-03-05 23:37:19,721 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:22,168 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4007
+2025-03-05 23:37:22,260 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:25,508 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4008
+2025-03-05 23:37:25,645 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:27,673 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4009
+2025-03-05 23:37:27,800 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:29,608 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4010
+2025-03-05 23:37:29,680 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:35,102 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4011
+2025-03-05 23:37:35,215 [5] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5002
+2025-03-05 23:37:37,492 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:42,622 [5] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 8008
+2025-03-05 23:37:44,401 [5] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 8008
+2025-03-05 23:37:57,558 [5] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 23:37:57,597 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:38:34,842 [5] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:38:34,859 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:38:51,733 [5] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:38:53,905 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:38:55,814 [5] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9005
+2025-03-05 23:39:16,636 [6] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 9005 - Este usuario ya existe.
+2025-03-05 23:39:46,206 [7] INFO  Presentation.Controllers.UserController - Usuarios recuperados exitosamente.
+2025-03-05 23:39:47,811 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 8008
+2025-03-05 23:39:55,371 [8] WARN  Presentation.Controllers.UserController - Error al actualizar el usuario: 8008 - Este usuario ya existe.
+2025-03-05 23:40:32,267 [10] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:40:35,967 [8] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:41:02,380 [26] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:41:11,405 [9] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:41:13,189 [9] WARN  Presentation.Controllers.LoanController - Error al recuperar los préstamos para el usuario: 9005 - No se encontraron préstamos para el usuario solicitado.
+2025-03-05 23:41:15,357 [8] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:41:16,573 [26] INFO  Presentation.Controllers.LoanController - Accediendo a la página de creación de préstamo para el usuario: 9005
+2025-03-05 23:41:35,328 [8] INFO  Presentation.Controllers.LoanController - Préstamo creado exitosamente para el usuario: 9005
+2025-03-05 23:41:35,354 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:41:37,476 [10] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:41:39,928 [18] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:42,991 [8] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4012
+2025-03-05 23:41:43,332 [12] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:45,186 [18] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4013
+2025-03-05 23:41:45,404 [18] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:47,602 [53] INFO  Presentation.Controllers.AmortizationController - Cuota pagada exitosamente para la amortización con ID: 4014
+2025-03-05 23:41:47,731 [23] INFO  Presentation.Controllers.AmortizationController - Cronograma de amortización recuperado exitosamente para el préstamo con ID: 5003
+2025-03-05 23:41:50,255 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:41:59,834 [8] INFO  Presentation.Controllers.LoanController - Préstamos recuperados exitosamente para el usuario: 9005
+2025-03-05 23:42:05,965 [8] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:42:12,602 [8] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 23:42:12,605 [8] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 23:42:12,630 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:44:21,267 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:44:23,424 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:44:57,960 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:44:58,010 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:45:18,305 [7] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:45:21,584 [8] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:45:23,640 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de edición de usuario: 9005
+2025-03-05 23:45:33,902 [6] INFO  Presentation.Controllers.UserController - Usuario actualizado exitosamente: 9005
+2025-03-05 23:45:33,916 [10] INFO  Presentation.Controllers.UserController - No autorizado: Solo un administrador puede ver la lista de usuarios.
+2025-03-05 23:45:33,947 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:48:45,235 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:48:47,213 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:49:07,411 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:49:07,690 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:49:23,151 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:49:31,071 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-05 23:49:38,098 [6] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 23:49:38,099 [6] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 23:49:38,111 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:16,964 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:52:18,403 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:30,359 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:30,376 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:31,720 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:31,729 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,127 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,132 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,271 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,299 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,435 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,448 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,595 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,616 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,774 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,801 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,947 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:32,963 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,144 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,166 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,337 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,353 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,566 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,579 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,755 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,782 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,961 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:33,968 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,163 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,191 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,358 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,418 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,596 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,623 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,791 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,801 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:34,988 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,004 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,192 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,220 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,380 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,405 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,598 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,615 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,863 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:35,871 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,003 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,022 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,207 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,233 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,406 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,433 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,587 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,622 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,773 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,804 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,950 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:36,960 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,096 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,111 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,277 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,306 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,458 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,471 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,654 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,663 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,843 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:37,860 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,040 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,064 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,222 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,243 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,431 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,438 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,626 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,638 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,829 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:38,852 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,154 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,179 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,351 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,363 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,531 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,553 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,711 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,741 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,911 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:39,941 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,126 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,147 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,309 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,325 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,521 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,557 [14] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,710 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,724 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,890 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:52:40,918 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:53:49,946 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:53:52,082 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:01,722 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:02,728 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:02,891 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:03,059 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:03,268 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:03,399 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:03,587 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:03,787 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:03,955 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:04,164 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:04,334 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:04,499 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:04,687 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:04,852 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:05,019 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:05,199 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:05,367 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:05,510 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:05,739 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:05,927 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:06,091 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:06,269 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:06,439 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:06,616 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:06,820 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,022 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,167 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,336 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,503 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,650 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,827 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:07,990 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:08,149 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:08,334 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:08,504 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:08,664 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:08,880 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:09,055 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:09,220 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:09,396 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:09,636 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:09,801 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:09,986 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:10,198 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:10,359 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:10,546 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:10,754 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:10,980 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:11,140 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:11,340 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:11,521 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:11,700 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:11,904 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:12,082 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:12,258 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:12,437 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:12,612 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:12,792 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:12,974 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:13,123 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:13,284 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:13,483 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:13,651 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:13,856 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:14,038 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:14,226 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:14,449 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:14,635 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:14,815 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:15,030 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:15,210 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:15,370 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:15,548 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:15,784 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:15,960 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:16,157 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:16,352 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:16,502 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:17,018 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:17,191 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:17,373 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:17,532 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:17,735 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:17,920 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:18,098 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:18,284 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:18,452 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:18,632 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:18,932 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:19,209 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:19,346 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:19,541 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:19,719 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:19,889 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:20,064 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:20,249 [10] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:20,408 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:20,598 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:20,804 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:20,998 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:21,172 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:21,391 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:21,555 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:21,729 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:21,912 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:22,134 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:22,307 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:22,515 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:22,716 [11] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:22,902 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:23,132 [12] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:23,323 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:23,603 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:23,833 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:24,073 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:24,349 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:25,265 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:26,331 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:27,228 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:28,097 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:28,977 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:29,849 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:30,590 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:31,432 [13] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:54:55,863 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:54:57,650 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:55:17,487 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:55:17,561 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:55:37,966 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:55:46,994 [7] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 23:55:46,994 [7] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 23:55:47,000 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:55:56,410 [8] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 23:55:56,420 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:56:53,707 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:58:08,853 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-05 23:58:10,995 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:58:28,541 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:58:28,602 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-05 23:58:52,000 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-05 23:58:59,833 [7] INFO  Presentation.Controllers.UserController - Token encontrado en la sesión. Procediendo a destruirlo.
+2025-03-05 23:58:59,835 [7] INFO  Presentation.Controllers.UserController - Token destruido exitosamente.
+2025-03-05 23:58:59,842 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:59:07,925 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 23:59:07,943 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-05 23:59:11,738 [6] ERROR Presentation.Controllers.UserController - No hay token disponible.
+2025-03-05 23:59:11,752 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:00:26,673 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 00:00:29,263 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:00:45,476 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:00:45,612 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 00:01:07,623 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:01:15,792 [6] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-06 00:03:55,851 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 00:03:56,895 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:04:18,727 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:04:18,792 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 00:04:50,973 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:07:41,133 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 00:07:43,961 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:08:48,033 [6] WARN  Presentation.Controllers.UserController - Fallo en el inicio de sesión para el usuario: univesidadtrabajos25@gmail.com - Error en el servidor: Error al enviar correo.
+2025-03-06 00:09:48,928 [6] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:09:48,986 [19] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 00:10:04,738 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:11:28,385 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 00:11:29,337 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:11:47,046 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:11:47,112 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 00:12:01,296 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: univesidadtrabajos25@gmail.com
+2025-03-06 00:17:01,761 [7] INFO  Presentation.Controllers.UserController - Accediendo al perfil del usuario: 9005
+2025-03-06 00:17:43,038 [1] INFO  Presentation.MvcApplication - log4net ha sido configurado correctamente en la aplicación MVC.
+2025-03-06 00:17:43,660 [6] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:18:04,605 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de creación de usuario.
+2025-03-06 00:19:23,338 [7] INFO  Presentation.Controllers.UserController - Usuario creado exitosamente: jeimymorales06@gmail.com
+2025-03-06 00:19:23,476 [8] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de usuario.
+2025-03-06 00:20:51,707 [6] INFO  Presentation.Controllers.UserController - Usuario creado exitosamente: electrictiesto@gmail.com
+2025-03-06 00:20:51,733 [9] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de usuario.
+2025-03-06 00:21:23,292 [6] INFO  Presentation.Controllers.UserController - Usuario verificado exitosamente: electrictiesto@gmail.com
+2025-03-06 00:21:23,346 [32] INFO  Presentation.Controllers.UserController - Accediendo a la página de inicio de sesión.
+2025-03-06 00:21:54,299 [7] INFO  Presentation.Controllers.UserController - Inicio de sesión exitoso para el usuario: electrictiesto@gmail.com
+2025-03-06 00:21:54,326 [7] INFO  Presentation.Controllers.UserController - Accediendo a la página de verificación de código de inicio de sesión.
+2025-03-06 00:22:18,206 [6] INFO  Presentation.Controllers.UserController - Código de verificación correcto para el usuario: electrictiesto@gmail.com

@@ -158,5 +158,27 @@ namespace Service.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin,User")]
+        [HttpGet]
+        [Route("api/Loan/GetLoanDetails/{loanId}")]
+
+        public IHttpActionResult GetLoanDetails(int loanId)
+        {
+            var loanLogic = new LoanLogic();
+            var (success, message, data) = loanLogic.RetrieveLoanDetails(loanId);
+
+            if (!success)
+            {
+                return Content(System.Net.HttpStatusCode.NotFound, new { Success = false, Message = message });
+            }
+
+            return Ok(new
+            {
+                Success = true,
+                Message = message,
+                Data = data
+            });
+        }
+
     }
 }

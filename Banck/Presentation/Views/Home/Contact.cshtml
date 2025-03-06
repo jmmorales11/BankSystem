@@ -1,19 +1,66 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Bienvenido a Banco SEM";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+<!-- Estilos propios para la página de Contact -->
+<style>
+    /* Opcional: si quieres un contenedor con fondo claro */
+    .contact-container {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* Ajusta la tipografía si lo deseas */
+    .contact-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
-</main>
+    .contact-subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #666;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="contact-container text-center">
+                <h1 class="contact-title">@ViewBag.Title</h1>
+                <h3 class="contact-subtitle">Donde su seguridad y satisfacción son nuestra prioridad.</h3>
+
+                <p class="mb-4">
+                    Bienvenido a Banco SEM. Disfrute de una experiencia bancaria segura y moderna.
+                </p>
+
+                <hr />
+
+                <address class="mt-4 mb-4">
+                    One Microsoft Way<br />
+                    Redmond, WA 98052-6399<br />
+                    <abbr title="Teléfono">P:</abbr> 123456789
+                </address>
+
+                <address>
+                    <strong>Soporte:</strong> <a href="mailto:jmmorales11@espe.edu.ec">jmmorales11@espe.edu.ec</a><br />
+                    <strong>Soporte del Soporte:</strong> <a href="mailto:epramirez2@espe.edu.ec">epramirez2@espe.edu.ec</a><br />
+                    <strong>Soporte del Soporte del Soporte:</strong> <a href="mailto:sjpozo1@espe.edu.ec">sjpozo1@espe.edu.ec</a>
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var token = localStorage.getItem("authToken");
+        if (!token) {
+            window.location.href = "/User/Login";
+        }
+    });
+</script>

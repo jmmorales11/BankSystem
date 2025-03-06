@@ -24,37 +24,37 @@
         <div class="col-md-6">
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.first_name, "Nombre", new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.first_name, new { @class = "form-control", placeholder = "Ingrese el nombre" })
+                @Html.TextBoxFor(model => model.first_name, new { @class = "form-control", placeholder = "Ingrese el nombre", id = "first_name" })
             </div>
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.last_name, "Apellido", new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.last_name, new { @class = "form-control", placeholder = "Ingrese el apellido" })
+                @Html.TextBoxFor(model => model.last_name, new { @class = "form-control", placeholder = "Ingrese el apellido", id = "last_name" })
             </div>
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.birth_date, "Fecha de Nacimiento", new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.birth_date, new { @class = "form-control", type = "date" })
+                @Html.TextBoxFor(model => model.birth_date, new { @class = "form-control", type = "date", id = "birth_date" })
             </div>
         </div>
         <!-- Segunda columna -->
         <div class="col-md-6">
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.address, "Dirección", new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.address, new { @class = "form-control", placeholder = "Ingrese la dirección" })
+                @Html.TextBoxFor(model => model.address, new { @class = "form-control", placeholder = "Ingrese la dirección", id = "address" })
             </div>
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.email, "Correo Electrónico", new { @class = "form-label" })
-                @Html.TextBoxFor(model => model.email, new { @class = "form-control", placeholder = "Ingrese el correo" })
+                @Html.TextBoxFor(model => model.email, new { @class = "form-control", placeholder = "Ingrese el correo", id = "email" })
             </div>
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.password, "Contraseña", new { @class = "form-label" })
-                @Html.PasswordFor(model => model.password, new { @class = "form-control", placeholder = "Ingrese la contraseña" })
+                @Html.PasswordFor(model => model.password, new { @class = "form-control", placeholder = "Ingrese la contraseña", id = "password" })
             </div>
             <div class="form-group mb-3">
                 @Html.LabelFor(model => model.role, "Rol", new { @class = "form-label" })
                 @Html.DropDownListFor(model => model.role,
                     new SelectList(new List<string> { "Admin", "User" }),
                     "Selecciona un rol",
-                    new { @class = "form-control" })
+                    new { @class = "form-control", id = "role" })
                 @Html.ValidationMessageFor(model => model.role, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -108,14 +108,126 @@
     </div>
 </div>
 
-<!-- Scripts: Bootstrap y jQuery se incluyen directamente, tal como en tu ejemplo -->
+<!-- Scripts: Bootstrap y jQuery -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script>
     // Al confirmar guardado, se oculta el modal y se envía el formulario.
     document.getElementById('confirmSaveBtn').addEventListener('click', function () {
         var saveModal = bootstrap.Modal.getInstance(document.getElementById('confirmSaveModal'));
         saveModal.hide();
         $('form').submit();
+    });
+</script>
+
+<!-- Validación del formulario -->
+<script>
+    $(document).ready(function () {
+        // Método para validar solo letras (incluye acentos y ñ)
+        $.validator.addMethod("lettersonly", function (value, element) {
+            return this.optional(element) || /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(value);
+        }, "Solo se permiten letras.");
+
+        // Método para validar que el usuario sea mayor de 18 años
+        $.validator.addMethod("olderThan18", function (value, element) {
+            if (!value) return false;
+            var inputDate = new Date(value);
+            var today = new Date();
+            var age = today.getFullYear() - inputDate.getFullYear();
+            var m = today.getMonth() - inputDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < inputDate.getDate())) {
+                age--;
+            }
+            return age >= 18;
+        }, "Debe ser mayor de 18 años");
+
+        $("form").validate({
+            rules: {
+                first_name: {
+                    required: true,
+                    maxlength: 50,
+                    lettersonly: true
+                },
+                last_name: {
+                    required: true,
+                    maxlength: 50,
+                    lettersonly: true
+                },
+                birth_date: {
+                    required: true,
+                    date: true,
+                    olderThan18: true
+                },
+                address: {
+                    required: true,
+                    maxlength: 100
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 8
+                },
+                role: {
+                    required: true
+                }
+            },
+            messages: {
+                first_name: {
+                    required: "Por favor, ingrese su nombre",
+                    maxlength: "El nombre no debe exceder los 50 caracteres",
+                    lettersonly: "El nombre solo puede contener letras."
+                },
+                last_name: {
+                    required: "Por favor, ingrese su apellido",
+                    maxlength: "El apellido no debe exceder los 50 caracteres",
+                    lettersonly: "El apellido solo puede contener letras."
+                },
+                birth_date: {
+                    required: "Seleccione una fecha de nacimiento válida",
+                    olderThan18: "Debe ser mayor de 18 años"
+                },
+                address: {
+                    required: "Ingrese la dirección",
+                    maxlength: "La dirección no debe exceder los 100 caracteres"
+                },
+                email: {
+                    required: "Ingrese el correo",
+                    email: "Ingrese un correo válido"
+                },
+                password: {
+                    required: "Ingrese la contraseña",
+                    minlength: "La contraseña debe tener al menos 8 caracteres"
+                },
+                role: {
+                    required: "Seleccione un rol"
+                }
+            },
+            errorClass: "text-danger",
+            errorElement: "div"
+        });
+    });
+</script>
+
+<!-- Limitar la fecha de nacimiento para mayores de 18 años -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let today = new Date();
+        // Calcula la fecha máxima permitida (hoy menos 18 años)
+        let maxDateObj = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+        let maxDate = maxDateObj.toISOString().split("T")[0];
+        document.getElementById("birth_date").setAttribute("max", maxDate);
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var token = localStorage.getItem("authToken");
+        if (!token) {
+            window.location.href = "/User/Login";
+        }
     });
 </script>

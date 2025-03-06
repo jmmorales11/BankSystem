@@ -7,15 +7,15 @@
 
 <head>
     <style>
+        /* Tus estilos actuales */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             position: relative;
-            overflow: hidden; /* Evita desbordes por el pseudo-elemento */
+            overflow: hidden;
         }
 
-            /* Pseudo-elemento para la imagen de fondo desenfocada */
             body::before {
                 content: "";
                 position: fixed;
@@ -25,11 +25,10 @@
                 height: 100%;
                 background: url('https://wallpaper-house.com/data/out/8/wallpaper2you_252332.jpg') no-repeat center center fixed;
                 background-size: cover;
-                filter: blur(18px); /* Ajusta el valor para más o menos desenfoque */
-                z-index: -1; /* Coloca la imagen detrás del contenido */
-                opacity: 0.9; /* Controla la visibilidad de la imagen */
+                filter: blur(18px);
+                z-index: -1;
+                opacity: 0.9;
             }
-
 
         .form-container {
             background: rgba(255, 255, 255, 0.8);
@@ -98,11 +97,46 @@
             color: red;
             font-size: 12px;
         }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+
+        .alert-danger {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
     </style>
 </head>
 
 <div class="form-container">
     <h2>Registrar usuario</h2>
+
+    <!-- Mostrar mensaje de éxito si existe -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <!-- Mostrar mensaje de error si existe -->
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
 
     <div id="userCreationSection">
         @using (Html.BeginForm())
@@ -112,19 +146,19 @@
             <div class="form-grid">
                 <div class="form-group">
                     @Html.LabelFor(model => model.first_name, "Nombre", htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(model => model.first_name, new { @class = "form-control" })
+                    @Html.TextBoxFor(model => model.first_name, new { @class = "form-control", id = "first_name" })
                     @Html.ValidationMessageFor(model => model.first_name, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.last_name, "Apellido", htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(model => model.last_name, new { @class = "form-control" })
+                    @Html.TextBoxFor(model => model.last_name, new { @class = "form-control", id = "last_name" })
                     @Html.ValidationMessageFor(model => model.last_name, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.email, "Correo electrónico", htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(model => model.email, new { @class = "form-control" })
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control", id = "email" })
                     @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
                 </div>
 
@@ -136,17 +170,21 @@
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.address, "Dirección", htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(model => model.address, new { @class = "form-control" })
+                    @Html.TextBoxFor(model => model.address, new { @class = "form-control", id = "address" })
                     @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.password, "Contraseña", htmlAttributes: new { @class = "form-label" })
-                    @Html.TextBoxFor(model => model.password, new { @class = "form-control", type = "password" })
+                    @Html.TextBoxFor(model => model.password, new { @class = "form-control", type = "password", id = "password" })
                     @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
                 </div>
 
-
+                <div class="form-group">
+                    @Html.Label("Repetir Contraseña", htmlAttributes: new { @class = "form-label" })
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" />
+                    <div class="text-danger" data-valmsg-for="confirm_password" data-valmsg-replace="true"></div>
+                </div>
             </div>
 
             <div class="form-buttons">
@@ -156,19 +194,40 @@
         }
     </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script>
     $(document).ready(function () {
+        // Método para validar solo letras
+        $.validator.addMethod("lettersonly", function (value, element) {
+            return this.optional(element) || /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(value);
+        }, "Solo se permiten letras.");
+
+        // Método para validar mayor de 18 años
+        $.validator.addMethod("olderThan18", function (value, element) {
+            if (!value) return false;
+            var inputDate = new Date(value);
+            var today = new Date();
+            var age = today.getFullYear() - inputDate.getFullYear();
+            var m = today.getMonth() - inputDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < inputDate.getDate())) {
+                age--;
+            }
+            return age >= 18;
+        }, "Debe ser mayor de 18 años");
+
         $("form").validate({
             rules: {
                 first_name: {
                     required: true,
-                    maxlength: 50
+                    maxlength: 50,
+                    lettersonly: true
                 },
                 last_name: {
                     required: true,
-                    maxlength: 50
+                    maxlength: 50,
+                    lettersonly: true
                 },
                 email: {
                     required: true,
@@ -176,7 +235,8 @@
                 },
                 birth_date: {
                     required: true,
-                    date: true
+                    date: true,
+                    olderThan18: true
                 },
                 address: {
                     required: true,
@@ -185,16 +245,22 @@
                 password: {
                     required: true,
                     minlength: 8
+                },
+                confirm_password: {
+                    required: true,
+                    equalTo: "#password"
                 }
             },
             messages: {
                 first_name: {
                     required: "Por favor, ingrese su nombre",
-                    maxlength: "El nombre no debe exceder los 50 caracteres"
+                    maxlength: "El nombre no debe exceder los 50 caracteres",
+                    lettersonly: "El nombre solo puede contener letras."
                 },
                 last_name: {
                     required: "Por favor, ingrese su apellido",
-                    maxlength: "El apellido no debe exceder los 50 caracteres"
+                    maxlength: "El apellido no debe exceder los 50 caracteres",
+                    lettersonly: "El apellido solo puede contener letras."
                 },
                 email: {
                     required: "Por favor, ingrese su correo",
@@ -210,6 +276,10 @@
                 password: {
                     required: "Ingrese una contraseña",
                     minlength: "La contraseña debe tener al menos 8 caracteres"
+                },
+                confirm_password: {
+                    required: "Por favor, repita la contraseña",
+                    equalTo: "Las contraseñas no coinciden"
                 }
             },
             errorClass: "text-danger",
@@ -220,23 +290,13 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let today = new Date();
-
-        let maxDate = today.toISOString().split("T")[0];
-
+        // Resta 18 años a la fecha actual para limitar el selector
+        let maxDateObj = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+        let maxDate = maxDateObj.toISOString().split("T")[0];
         document.getElementById("birth_date").setAttribute("max", maxDate);
     });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const now = new Date();
-        const formattedDate = now.toISOString().slice(0, 16);
-        const createdAtInput = document.getElementById('CreatedAt');
-
-        if (createdAtInput && !createdAtInput.value) {
-            createdAtInput.value = formattedDate;
-        }
-    });
-
     function escapeHTML(str) {
         return str.replace(/[&<>"']/g, function (char) {
             return {
@@ -251,8 +311,7 @@
 
     function handleSubmit(event) {
         event.preventDefault();
-
-        const fields = ['first_name', 'last_name', 'email', 'birth_date', 'address', 'password', 'role'];
+        const fields = ['first_name', 'last_name', 'email', 'birth_date', 'address', 'password'];
         fields.forEach(field => {
             const input = document.getElementById(field);
             if (input) {
@@ -263,6 +322,13 @@
             event.target.form.submit();
         }
     }
+</script>
 
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var token = localStorage.getItem("authToken");
+        if (!token) {
+            window.location.href = "/User/Login";
+        }
+    });
 </script>

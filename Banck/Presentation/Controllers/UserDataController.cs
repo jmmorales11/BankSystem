@@ -16,11 +16,17 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> ListUserData()
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
             if (string.IsNullOrEmpty(token))
             {
-                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
                 return RedirectToAction("Login");
+            }
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                return RedirectToAction("Login","User");
             }
 
             // 2. Decodificar el token para obtener el rol
@@ -31,7 +37,7 @@ namespace Presentation.Controllers
             if (roleClaim == null)
             {
                 TempData["ErrorMessage"] = "El token no contiene el rol.";
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "User");
             }
 
             var userRole = roleClaim.Value; // "Admin", "User", etc.
@@ -71,7 +77,13 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> CreateUserData(int userId)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                return RedirectToAction("Login", "User");
+            }
             var proxyService = new ProxyUserData(token); // Usar el proxy adecuado para UserData
 
             // Decodificar el token para obtener el rol
@@ -115,7 +127,13 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> CreateUserData(User_Data userData)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                return RedirectToAction("Login", "User");
+            };
             var proxyService = new ProxyUserData(token);
             try
             {
@@ -147,6 +165,11 @@ namespace Presentation.Controllers
         public async Task<ActionResult> ViewUserData(int userId)
         {
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                return RedirectToAction("Login", "User");
+            }
             var proxyService = new ProxyUserData(token);
 
             // Decodificar el token para obtener el rol
@@ -161,23 +184,28 @@ namespace Presentation.Controllers
             {
                 var response = await proxyService.GetUserDataById(userId);
 
-                if (response != null && response.Success)
+                // Asegúrate de que response.UserData no sea nulo
+                if (response != null && response.Success && response.UserData != null)
                 {
                     // Mostrar los datos en modo lectura
                     return View("ViewUserData", response.UserData);
                 }
                 else
                 {
+                    // Si no hay datos, o la respuesta indica error, muestra mensaje
                     TempData["ErrorMessage"] = response?.Message ?? "No se encontraron datos para el usuario.";
-                    return View();
+                    // Retorna la vista sin modelo o una vista especial para "sin datos"
+                    return View("ViewUserData");
+                    // o return View("NoUserDataFound"); // si tuvieras otra vista específica
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Error al obtener los datos del usuario: {ex.Message}";
-                return View();
+                return View("ViewUserData");
             }
         }
+
 
 
 

@@ -273,6 +273,7 @@
     <Content Include="Views\User\RecoverPassword.cshtml" />
     <Content Include="Views\User\ResetPassword.cshtml" />
     <Content Include="Views\User\Details.cshtml" />
+    <Content Include="Views\Loan\LoanDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

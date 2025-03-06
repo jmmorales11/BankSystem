@@ -228,7 +228,7 @@ namespace Presentation.Controllers
             var token = Session["JWT_Token"] as string;
             if (string.IsNullOrEmpty(token))
             {
-                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
                 log.Error("No hay token disponible.");
                 return RedirectToAction("Login");
             }
@@ -287,7 +287,14 @@ namespace Presentation.Controllers
         // Acción para eliminar un usuario por ID
         public ActionResult DeleteUser(int id)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login");
+            }
             var proxy_service = new ProxyUser(token);
 
             try
@@ -320,7 +327,17 @@ namespace Presentation.Controllers
         [HttpGet]
         public ActionResult EditUser(int id)
         {
+
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login");
+            }
+
+
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
             var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
@@ -344,7 +361,22 @@ namespace Presentation.Controllers
         [HttpPost]
         public ActionResult EditUser(int id, User updatedUser)
         {
+            // Recuperar el token de la sesión
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login");
+            }
+
+            // Obtener el rol del token para asignar ViewBag.IsAdmin
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
+            bool isAdmin = roleClaim != null && roleClaim.Value == "Admin";
+            ViewBag.IsAdmin = isAdmin;  // Asegurarse de establecerlo en el POST
+
             var proxyService = new ProxyUser(token);
 
             try
@@ -361,16 +393,17 @@ namespace Presentation.Controllers
                 {
                     TempData["ErrorMessage"] = response.Message;  // Mensaje de error
                     log.Warn($"Error al actualizar el usuario: {id} - {response.Message}");
-                    return View(updatedUser);  // Mostrar de nuevo el formulario de edición con errores
+                    return View(updatedUser);  // Retornar la vista de edición con errores y con la variable ViewBag.IsAdmin correctamente asignada
                 }
             }
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Error: {ex.Message}";
                 log.Error($"Error al actualizar el usuario: {id}", ex);
-                return View(updatedUser);  // Mostrar el formulario de edición con errores
+                return View(updatedUser);  // Retornar la vista de edición con errores y con la variable ViewBag.IsAdmin correctamente asignada
             }
         }
+
 
 
         // GET: Mostrar el formulario para crear un usuario de forma directa
@@ -385,7 +418,14 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DirectCreateUser(User newUser)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login");
+            }
             var proxyService = new ProxyUser(token);
             if (ModelState.IsValid)
             {
@@ -426,7 +466,14 @@ namespace Presentation.Controllers
             }
             else
             {
+                // Recuperar el token de la sesión (ejemplo)
                 var token = Session["JWT_Token"] as string;
+                if (string.IsNullOrEmpty(token))
+                {
+                    TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                    log.Error("No hay token disponible.");
+                    return RedirectToAction("Login");
+                }
                 var handler = new JwtSecurityTokenHandler();
                 var jwtToken = handler.ReadJwtToken(token);
                 var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "UserId");
@@ -558,7 +605,14 @@ namespace Presentation.Controllers
         [HttpGet]
         public ActionResult Details(int id)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login");
+            }
             if (string.IsNullOrEmpty(token))
             {
                 TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicie sesión.";

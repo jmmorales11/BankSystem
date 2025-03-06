@@ -1,5 +1,6 @@
 ﻿using DAL;
 using Entities;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -165,6 +166,75 @@ namespace BLL
 
             // Si se cumplen las condiciones:
             return (true, "El usuario es elegible para el préstamo.");
+        }
+
+
+        public (bool Success, string Message, LoanDetailsDTO Data) RetrieveLoanDetails(int loanId)
+        {
+            try
+            {
+                using (var r = RepositoryFactory.CreateRepository())
+                {
+                    // 1. Recuperar el préstamo
+                    var loan = r.Retrieve<Loan>(l => l.loan_id == loanId);
+                    if (loan == null)
+                    {
+                        return (false, "Préstamo no encontrado", null);
+                    }
+
+                    // 2. Recuperar el usuario a través de UserLogic
+                    var userLogic = new UserLogic();
+                    var userResult = userLogic.RetrieveByIdUser(loan.user_id);
+
+                    if (!userResult.Success || userResult.User == null)
+                    {
+                        return (false, "Usuario no encontrado para este préstamo", null);
+                    }
+
+                    var user = userResult.User;
+                    // La fecha de inicio se toma de la solicitud del préstamo.
+                    DateTime? startDate = loan.application_date;
+                    // Por defecto, no se asigna fecha final (EndDate) hasta que se encuentre un pago.
+                    DateTime? endDate = null;
+
+                    // Consultar las amortizaciones del préstamo
+                    var amortizations = r.RetrieveAll<Amortization>()
+                                         .Where(a => a.loan_id == loan.loan_id)
+                                         .ToList();
+
+                    if (amortizations.Any())
+                    {
+                        // Ordenar las cuotas de manera descendente y obtener la última cuota
+                        var lastInstallment = amortizations
+                                                .OrderByDescending(a => a.installment_number)
+                                                .FirstOrDefault();
+
+                        // Solo asignar EndDate si la última cuota ya fue pagada
+                        if (lastInstallment != null && lastInstallment.payment_date.HasValue)
+                        {
+                            endDate = lastInstallment.payment_date;
+                        }
+                    }
+
+                    // Construir el DTO
+                    var detailsDto = new LoanDetailsDTO
+                    {
+                        UserFullName = $"{user.first_name} {user.last_name}",
+                        Address = user.address,
+                        Email = user.email,
+                        RequestedAmount = loan.requested_amount,
+                        PaymentTermMonths = loan.payment_term_months,
+                        StartDate = startDate,
+                        EndDate = endDate
+                    };
+
+                    return (true, "Datos del préstamo recuperados exitosamente", detailsDto);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al recuperar los datos del préstamo: {ex.Message}", null);
+            }
         }
 
 

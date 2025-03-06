@@ -141,15 +141,71 @@ namespace BLL
 
         }
 
-        public User Authenticate(string email, string password)
+        public (User user, string message) Authenticate(string email, string password)
         {
             using (var r = RepositoryFactory.CreateRepository())
             {
-                // Encriptar la contraseña ingresada para compararla con la almacenada
+                var user = r.Retrieve<User>(u => u.email.ToLower() == email.ToLower());
+                if (user == null)
+                    return (null, "Usuario no encontrado.");
+
+                // Verificar si el usuario se encuentra inhabilitado según el status.
+                if (user.status.HasValue && user.status.Value == 0)
+                    return (null, "El usuario se encuentra inhabilitado en el sistema.");
+
+                // Verificar bloqueo temporal
+                if (user.account_locked_until.HasValue)
+                {
+                    if (user.account_locked_until.Value > DateTime.Now)
+                    {
+                        // Si la cuenta está bloqueada, se retorna el mensaje sin evaluar la contraseña.
+                        return (null, "Este usuario se encuentra bloqueado. Intente más tarde.");
+                    }
+                    else
+                    {
+                        // Si el bloqueo ya expiró, se reinician los contadores y se elimina el bloqueo.
+                        user.failed_login_attempts = 0;
+                        user.account_locked_until = null;
+                        r.Update(user);
+                    }
+                }
+
+                // Encriptar la contraseña ingresada para compararla con la almacenada.
                 string encryptedPassword = EncryptPassword(password);
-                return r.Retrieve<User>(u => u.email.ToLower() == email.ToLower() && u.password == encryptedPassword);
+
+                if (user.password == encryptedPassword)
+                {
+                    // Credenciales correctas: se resetean los intentos fallidos y el bloqueo.
+                    user.failed_login_attempts = 0;
+                    user.account_locked_until = null;
+                    r.Update(user);
+                    return (user, "Autenticación exitosa.");
+                }
+                else
+                {
+                    // Credenciales incorrectas: incrementar el contador de intentos fallidos.
+                    int failedAttempts = (user.failed_login_attempts ?? 0) + 1;
+                    user.failed_login_attempts = failedAttempts;
+
+                    string message = string.Empty;
+                    if (failedAttempts < 3)
+                    {
+                        int attemptsLeft = 3 - failedAttempts;
+                        message = $"Quedan {attemptsLeft} intento{(attemptsLeft > 1 ? "s" : "")}.";
+                    }
+                    else
+                    {
+                        // Al alcanzar 3 intentos fallidos, se bloquea la cuenta por 2 minutos.
+                        user.account_locked_until = DateTime.Now.AddMinutes(2);
+                        message = "Este usuario se encuentra bloqueado por 2 minutos.";
+                    }
+                    r.Update(user);
+                    return (null, message);
+                }
             }
         }
+
+
 
 
         public (bool Success, string Message) ResetPassword(string email, string newPassword)

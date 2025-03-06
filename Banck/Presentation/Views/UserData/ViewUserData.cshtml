@@ -56,48 +56,81 @@
             background-color: #6c757d;
             color: #fff;
         }
+
+    /* Estilos para el mensaje de "no se encontraron datos" */
+    .no-data-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        text-align: center;
+        z-index: 9999;
+    }
 </style>
 
-<div class="userdata-container">
-    <h2 class="userdata-title">Ver Datos de Usuario</h2>
+<!-- Mostrar mensaje de error (si existe) -->
+@if (TempData["ErrorMessage"] != null)
+{
+    <p style="color:red;">@TempData["ErrorMessage"]</p>
+}
 
-    <div class="userdata-info">
-        <label>Salario:</label>
-        <p>@Model.salary</p>
+<!-- Si no hay error pero tampoco hay datos, se muestra el mensaje centrado en un cajón -->
+@if (TempData["ErrorMessage"] == null && Model == null)
+{
+    <div class="no-data-message">
+        <p>No se encontraron datos para el usuario.</p>
     </div>
-    <div class="userdata-info">
-        <label>Carga Familiar:</label>
-        <p>@Model.family_load</p>
-    </div>
-    <div class="userdata-info">
-        <label>Lugar de Trabajo:</label>
-        <p>@Model.workplace</p>
-    </div>
-    <div class="userdata-info">
-        <label>Tipo de Vivienda:</label>
-        <p>@Model.housing_type</p>
-    </div>
-    <div class="userdata-info">
-        <label>Costo de Alquiler:</label>
-        <p>@Model.rent_cost</p>
-    </div>
-    <div class="userdata-info">
-        <label>Años de Empleo:</label>
-        <p>@Model.years_of_employment</p>
-    </div>
-    <div class="userdata-info">
-        <label>Estado de Empleo:</label>
-        <p>@Model.employment_status</p>
-    </div>
+}
 
-    <div class="userdata-links">
-        @if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin)
-        {
-            <a href="@Url.Action("ListUserData", "UserData")">Gestión de usuarios</a>
-        }
-        else
-        {
-            <a href="@Url.Action("MyProfile", "User", new { userId = ViewBag.UserId })">Volver a Mi Perfil</a>
-        }
+<!-- Si hay datos, se muestran normalmente -->
+@if (Model != null)
+{
+    <div class="userdata-container">
+        <h2 class="userdata-title">Ver Datos de Usuario</h2>
+
+        <div class="userdata-info">
+            <label>Salario:</label>
+            <p>@Model.salary</p>
+        </div>
+        <div class="userdata-info">
+            <label>Carga Familiar:</label>
+            <p>@Model.family_load</p>
+        </div>
+        <div class="userdata-info">
+            <label>Lugar de Trabajo:</label>
+            <p>@Model.workplace</p>
+        </div>
+        <div class="userdata-info">
+            <label>Tipo de Vivienda:</label>
+            <p>@Model.housing_type</p>
+        </div>
+        <div class="userdata-info">
+            <label>Costo de Alquiler:</label>
+            <p>@Model.rent_cost</p>
+        </div>
+        <div class="userdata-info">
+            <label>Años de Empleo:</label>
+            <p>@Model.years_of_employment</p>
+        </div>
+        <div class="userdata-info">
+            <label>Estado de Empleo:</label>
+            <p>@Model.employment_status</p>
+        </div>
+
+        <div class="userdata-links">
+            @if (ViewBag.IsAdmin != null && (bool)ViewBag.IsAdmin)
+            {
+                <a href="@Url.Action("ListUserData", "UserData")">Gestión de usuarios</a>
+            }
+            else
+            {
+                <a href="@Url.Action("MyProfile", "User", new { userId = ViewBag.UserId })">Volver a Mi Perfil</a>
+            }
+        </div>
     </div>
-</div>
+}

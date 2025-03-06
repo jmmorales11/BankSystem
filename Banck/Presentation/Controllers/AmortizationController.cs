@@ -19,7 +19,14 @@ namespace Presentation.Controllers
         // Acción para mostrar el cronograma de amortización de un préstamo
         public async Task<ActionResult> Amortization(int loanId)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login", "User");
+            }
             var proxy = new ProxyAmortization(token);
 
             int userId = Convert.ToInt32(Session["UserId"]);

@@ -86,11 +86,20 @@
             $(".nav-link").click(function (e) {
                 e.preventDefault();
                 var url = $(this).data("url");
-            
+
                 if (url) {
                     $("#main-content").load(url);
                 }
             });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var token = localStorage.getItem("authToken");
+            if (!token) {
+                window.location.href = "/User/Login";
+            }
         });
     </script>
 

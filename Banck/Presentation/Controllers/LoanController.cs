@@ -19,7 +19,14 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> ListUser()
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login", "User");
+            }
             if (string.IsNullOrEmpty(token))
             {
                 TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
@@ -36,7 +43,7 @@ namespace Presentation.Controllers
             {
                 TempData["ErrorMessage"] = "El token no contiene el rol.";
                 log.Error("El token no contiene el rol.");
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "User");
             }
 
             var userRole = roleClaim.Value; // "Admin", "User", etc.
@@ -78,7 +85,14 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult> ListLoansByUser(int userId)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login", "User");
+            }
             var proxyService = new ProxyLoan(token);
             // Guardamos el userId en la sesión y en el ViewBag
             Session["UserId"] = userId;
@@ -121,14 +135,21 @@ namespace Presentation.Controllers
         [HttpGet]
         public ActionResult CreateLoan(int userId)
         {
+
             // Crear un modelo vacío para el préstamo
             var loan = new Loan
             {
                 user_id = userId
             };
 
-            // Recuperar el token y obtener el rol para el ViewBag
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login", "User");
+            }
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
             var roleClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "role");
@@ -143,7 +164,14 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<ActionResult> CreateLoan(Loan loan)
         {
+            // Recuperar el token de la sesión (ejemplo)
             var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "Por favor, inicia sesión.";
+                log.Error("No hay token disponible.");
+                return RedirectToAction("Login", "User");
+            }
             var proxyService = new ProxyLoan(token);
             try
             {
@@ -169,7 +197,43 @@ namespace Presentation.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<ActionResult> LoanDetails(int loanId)
+        {
+            var token = Session["JWT_Token"] as string;
+            if (string.IsNullOrEmpty(token))
+            {
+                TempData["ErrorMessage"] = "No hay token disponible. Por favor, inicia sesión.";
+                return RedirectToAction("Login");
+            }
+            var proxyLoan = new ProxyLoan(token);
 
+            try
+            {
+                var response = await proxyLoan.GetLoanDetails(loanId);
+                if (response != null && response.Success && response.Data != null)
+                {
+                    // Si EndDate es null, la última cuota no ha sido pagada
+                    if (!response.Data.EndDate.HasValue)
+                    {
+                        TempData["ErrorMessage"] = "El préstamo aún no ha sido pagado en su totalidad. No se puede ver el detalle.";
+                        return RedirectToAction("ListLoansByUser", new { userId = Session["UserId"] });
+                    }
+                    // Se pasó el DTO a la vista solo si EndDate tiene valor
+                    return View(response.Data);
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = response?.Message ?? "Error al recuperar el detalle del préstamo.";
+                    return RedirectToAction("ListLoansByUser", new { userId = Session["UserId"] });
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = ex.Message;
+                return RedirectToAction("ListLoansByUser", new { userId = Session["UserId"] });
+            }
+        }
 
 
     }

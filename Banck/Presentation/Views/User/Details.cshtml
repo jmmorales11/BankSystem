@@ -80,3 +80,11 @@
     <a href="@Url.Action("GetAllUsers", "User")" class="back-btn">Volver a Lista de Usuarios</a>
 
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var token = localStorage.getItem("authToken");
+        if (!token) {
+            window.location.href = "/User/Login";
+        }
+    });
+</script>

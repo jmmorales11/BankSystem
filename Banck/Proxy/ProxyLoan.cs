@@ -277,6 +277,37 @@ namespace Proxy
         }
 
 
+        // OBTENER DETALLE DEL PRÉSTAMO POR ID
+        public async Task<LoanDetailsResponseDto> GetLoanDetails(int loanId)
+        {
+            try
+            {
+                // Realiza la solicitud GET al endpoint que devuelve el detalle del préstamo
+                var response = await SendGet<LoanDetailsResponseDto>($"/api/Loan/GetLoanDetails/{loanId}");
+
+                // Verifica que la respuesta y el objeto Data no sean nulos
+                if (response == null || response.Data == null)
+                {
+                    return new LoanDetailsResponseDto
+                    {
+                        Success = false,
+                        Message = "No se encontró el detalle del préstamo."
+                    };
+                }
+
+                response.Success = true;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                return new LoanDetailsResponseDto
+                {
+                    Success = false,
+                    Message = $"Error al obtener el detalle del préstamo: {ex.Message}"
+                };
+            }
+        }
+
 
 
 
